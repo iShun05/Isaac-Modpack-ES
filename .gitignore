@@ -1,0 +1,5 @@
+.DS_Store
+._*
+auto_espanol.log
+__pycache__/
+*.pyc

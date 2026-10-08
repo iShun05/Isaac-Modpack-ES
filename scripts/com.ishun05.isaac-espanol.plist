@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.ishun05.isaac-espanol</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Volumes/SanDisk/Juegos/mods/Isaac_Pack_ES/scripts/isaac_pack.py</string>
+    <string>espanol</string>
+    <string>--auto</string>
+  </array>
+  <!-- Se ejecuta al cambiar la carpeta de mods, el manifiesto de Steam o las opciones, y cada hora como red de seguridad -->
+  <key>WatchPaths</key>
+  <array>
+    <string>/Volumes/SanDisk/Juegos/whisky/steam11/drive_c/Program Files (x86)/Steam/steamapps/common/The Binding of Isaac Rebirth/mods</string>
+    <string>/Volumes/SanDisk/Juegos/whisky/steam11/drive_c/Program Files (x86)/Steam/steamapps/appmanifest_250900.acf</string>
+  </array>
+  <key>StartInterval</key><integer>3600</integer>
+  <key>ThrottleInterval</key><integer>60</integer>
+  <key>RunAtLoad</key><true/>
+  <key>StandardErrorPath</key><string>/tmp/isaac-espanol.err</string>
+  <key>StandardOutPath</key><string>/tmp/isaac-espanol.out</string>
+</dict>
+</plist>
