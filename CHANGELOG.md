@@ -1,5 +1,19 @@
 # Registro de cambios
 
+## v0.2 — 2026-10-09
+### Añadido
+- **Packs temáticos** (Base, Calidad de vida, Interfaz, Sinergias, Contenido grande, Personajes, Visual y audio, Caprichos, Trucos) y comando `aplicar` que deja activos solo los elegidos con `disable.it` (reversible), más presets `minimo`, `clean`, `completo` y **perfiles guardados** (`guardar`).
+- **Valoración de combinaciones** 🟢🟠🔴 (Epiphany con otro contenido, 3+ expansiones, REPENTOGON ausente, 4+ personajes, más de 60 mods). Criterio propio, **sin probar en el juego**.
+- **43 mods recomendados nuevos** con nombre exacto de Workshop, suscriptores y fecha leídos de la API de Steam: Mod Config Menu - Impure, Mod Error Container, Faster Animations, Encyclopedia, Unlocks Reminder, **Lazy MattPack** (objetos de calidad 5), nueve mods de sinergias, Repentance Plus!, Reshaken, Fiend Folio Reloaded, Epiphany, Revelations Ch. 2, Andromeda, Job 2.5 y más (`docs/RECOMENDADOS.md`).
+- `docs/PACKS.md`, `docs/DECISION_WORKSHOP.md` (recomendación Workshop vs todo fuera), `docs/suscribir_todo.js` (suscripción en bloque, **no probado**) y `scripts/packs_mac.command`.
+- Comando `respaldo`: zip de `mods/` en `/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/respaldos/`.
+### Cambiado
+- `perfil clean|completo` (v0.1) sustituido por `aplicar clean|completo`. `docs/suscribir.html` ahora lista solo lo que falta, por pack. `estado` resume cada pack.
+### Corregido
+- **Mod Config Menu:** en v0.1 recomendé «Pure», que ya no existe en Workshop; la versión mantenida es **Impure** (3701683951).
+### Archivos y pruebas
+- Tocados: `scripts/isaac_pack.py` (reescrito), `datos/mods.json` (113 entradas), `docs/*`, `README.md`. Verificado: el CLI genera docs y estado sin errores y la sintaxis de `suscribir_todo.js`. **Sin probar en el juego**; las pruebas de fiabilidad quedan para más adelante a petición del usuario. No se ha aplicado ningún pack: tus 70 mods siguen como estaban.
+
 ## v0.1 — 2026-10-09
 ### Añadido
 - **Manifiesto `datos/mods.json`** con los 70 mods de Workshop instalados: id, versión, categoría, descripción en español y veredicto.

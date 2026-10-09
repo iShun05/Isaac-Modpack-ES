@@ -13,7 +13,10 @@
    "veredicto": "esencial",
    "descripcion": "Custom Stage API: base para crear pisos personalizados; la usan otros mods.",
    "nota": "Librería: no hace nada por sí sola.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1348031964"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1348031964",
+   "pack": "base",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "836319872",
@@ -25,7 +28,10 @@
    "veredicto": "esencial",
    "descripcion": "External Item Descriptions (EID): muestra junto a cada objeto, baratija, carta o píldora qué hace exactamente. Ya trae descripciones en español.",
    "nota": "Imprescindible. Se deja con idioma «spa» y nombres traducidos.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=836319872"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=836319872",
+   "pack": "base",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "1978904635",
@@ -37,7 +43,10 @@
    "veredicto": "esencial",
    "descripcion": "miniMAPI: API del minimapa que permite a otros mods añadir iconos y estilos.",
    "nota": "Librería: no hace nada por sí sola.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1978904635"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1978904635",
+   "pack": "base",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "855188478",
@@ -49,7 +58,10 @@
    "veredicto": "recomendado",
    "descripcion": "Rocas con «?»: las rocas tintadas se ven mucho más fácil para no pasarlas por alto.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=855188478"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=855188478",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "840107435",
@@ -61,7 +73,10 @@
    "veredicto": "recomendado",
    "descripcion": "Angels Drop Items: si ya tienes las dos mitades de llave, Uriel y Gabriel sueltan objetos al morir.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=840107435"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=840107435",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3728484997",
@@ -73,7 +88,10 @@
    "veredicto": "recomendado",
    "descripcion": "No Costumes: evita que los objetos cambien el aspecto de tu personaje (no necesita REPENTOGON).",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3728484997"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3728484997",
+   "pack": "qol",
+   "rgon": "recomendado",
+   "gran": false
   },
   {
    "id": "2369306194",
@@ -85,7 +103,10 @@
    "veredicto": "recomendado",
    "descripcion": "No Jam: las máquinas de donación ya no se atascan.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2369306194"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2369306194",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2887926286",
@@ -97,7 +118,10 @@
    "veredicto": "recomendado",
    "descripcion": "Watch out, laser!: efecto visual en los ataques de Brimstone para verlos mejor.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2887926286"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2887926286",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2851861015",
@@ -109,7 +133,10 @@
    "veredicto": "recomendado",
    "descripcion": "Improved Chargebars: barras de carga rediseñadas para los objetos activos.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2851861015"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2851861015",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "835236871",
@@ -121,7 +148,10 @@
    "veredicto": "recomendado",
    "descripcion": "Better Character Menu: mejora la selección de personaje con sprites reales e información extra.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=835236871"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=835236871",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2492654252",
@@ -133,7 +163,10 @@
    "veredicto": "recomendado",
    "descripcion": "Boss Rush Wave Counter: contador de oleadas en el HUD del Boss Rush, como el del Modo Avaricia.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2492654252"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2492654252",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2783072644",
@@ -145,7 +178,10 @@
    "veredicto": "recomendado",
    "descripcion": "Colored Achievement Descriptions: colorea los logros desbloqueados y muestra requisitos y pool del objeto.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2783072644"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2783072644",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2961284433",
@@ -157,7 +193,10 @@
    "veredicto": "recomendado",
    "descripcion": "Echo Chamber Guide: guía en pantalla para la runa Echo Chamber.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2961284433"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2961284433",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2635267643",
@@ -169,7 +208,10 @@
    "veredicto": "recomendado",
    "descripcion": "Enhanced Boss Bars: barras de vida de jefes renovadas, únicas por jefe y personalizables.",
    "nota": "Aprovecha REPENTOGON si está.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2635267643"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2635267643",
+   "pack": "interfaz",
+   "rgon": "recomendado",
+   "gran": false
   },
   {
    "id": "2881588359",
@@ -181,7 +223,10 @@
    "veredicto": "recomendado",
    "descripcion": "Lemegeton Wisp List: lista qué llamas de Lemegeton tienes en cada momento.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2881588359"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2881588359",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3774566322",
@@ -193,7 +238,10 @@
    "veredicto": "recomendado",
    "descripcion": "Ready to Fire!: indicador dinámico de carga del objeto activo para saber cuándo está listo.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774566322"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774566322",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2729900570",
@@ -205,7 +253,10 @@
    "veredicto": "recomendado",
    "descripcion": "Stats+: amplía el panel de estadísticas con más datos y animaciones nativas.",
    "nota": "Se configura desde Mod Config Menu.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2729900570"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2729900570",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3782698829",
@@ -217,7 +268,10 @@
    "veredicto": "recomendado",
    "descripcion": "Tainted Samson Berserk Meter: barra de progreso del modo berserk encima de Samson Corrupto.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3782698829"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3782698829",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2622566172",
@@ -229,7 +283,10 @@
    "veredicto": "recomendado",
    "descripcion": "Visible Challenge Unlocks: muestra qué desbloquea cada desafío para no ir a ciegas con un guardado nuevo.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2622566172"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2622566172",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2835074113",
@@ -241,7 +298,10 @@
    "veredicto": "recomendado",
    "descripcion": "A Pony Synergies!: sinergias nuevas para el objeto A Pony.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2835074113"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2835074113",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2887600656",
@@ -253,7 +313,10 @@
    "veredicto": "recomendado",
    "descripcion": "Dr. Fetus Synergies!: sinergia nueva entre Brimstone y Dr. Fetus.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2887600656"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2887600656",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2626756137",
@@ -265,7 +328,10 @@
    "veredicto": "recomendado",
    "descripcion": "Greed Mode Improved Repentance: renueva el Modo Avaricia con más contenido y equilibrio.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2626756137"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2626756137",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2903016019",
@@ -277,7 +343,10 @@
    "veredicto": "recomendado",
    "descripcion": "Mom's Knife Synergies!: sinergias nuevas para Mom's Knife.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2903016019"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2903016019",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2890628387",
@@ -289,7 +358,10 @@
    "veredicto": "recomendado",
    "descripcion": "Spirit Sword Synergies!: sinergias nuevas para Spirit Sword.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2890628387"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2890628387",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2690434875",
@@ -301,7 +373,10 @@
    "veredicto": "recomendado",
    "descripcion": "Unique Birthrights: cada personaje tiene su sprite propio de Birthright.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2690434875"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2690434875",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2649524780",
@@ -313,7 +388,10 @@
    "veredicto": "opcional",
    "descripcion": "Donation Machine On The Last Floors: máquina de donación en los últimos pisos para gastar monedas sobrantes.",
    "nota": "Cambia ligeramente la economía final.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2649524780"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2649524780",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2796835209",
@@ -325,7 +403,10 @@
    "veredicto": "opcional",
    "descripcion": "Less Fair Options at the Start: quita restricciones de reroll y opciones equilibradas del inicio.",
    "nota": "Hace la partida menos «justa».",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2796835209"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2796835209",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2620743567",
@@ -337,7 +418,10 @@
    "veredicto": "opcional",
    "descripcion": "Minty Lucky Penny: versión propia de la moneda de la suerte, sin los fallos de otras.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2620743567"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2620743567",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "965856585",
@@ -349,7 +433,10 @@
    "veredicto": "opcional",
    "descripcion": "Never Breakfast!: evita que el desayuno (u objetos de reroll) estropee combinaciones que ya tienes.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=965856585"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=965856585",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2766379837",
@@ -361,7 +448,10 @@
    "veredicto": "opcional",
    "descripcion": "Regret Pedestals: marca con «?» los objetos «a ciegas» y recuerda los pedestales que desaparecen al elegir otro.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2766379837"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2766379837",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2493403665",
@@ -373,7 +463,10 @@
    "veredicto": "opcional",
    "descripcion": "Runs Continue Past Mother: permite seguir la partida tras Mother en vez de terminarla.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2493403665"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2493403665",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2560433301",
@@ -385,7 +478,10 @@
    "veredicto": "opcional",
    "descripcion": "Treasure Room Start: reinicia la partida hasta empezar junto a la sala o con el objeto que elijas.",
    "nota": "Pensado para runs rápidas; usa REPENTOGON.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2560433301"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2560433301",
+   "pack": "qol",
+   "rgon": "requiere",
+   "gran": false
   },
   {
    "id": "2897716537",
@@ -397,7 +493,10 @@
    "veredicto": "opcional",
    "descripcion": "Devil Keys: las llaves de ángel/demonio se vuelven útiles frente a la ruta de ángeles de Repentance.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2897716537"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2897716537",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2584013198",
@@ -409,7 +508,10 @@
    "veredicto": "opcional",
    "descripcion": "Steal From Shops!: permite robar 1 objeto por piso en la tienda, con consecuencias.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2584013198"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2584013198",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2617557401",
@@ -421,7 +523,10 @@
    "veredicto": "opcional",
    "descripcion": "TimeMachine: tragaperras, adivina, grúa, confesionario y mendigos funcionan como la máquina de donación.",
    "nota": "Configurable en tmmc_config.lua.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2617557401"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2617557401",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "843351279",
@@ -433,7 +538,10 @@
    "veredicto": "opcional",
    "descripcion": "Transformer: objeto pasivo que actúa como transformación «en blanco».",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=843351279"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=843351279",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2928402913",
@@ -445,7 +553,10 @@
    "veredicto": "opcional",
    "descripcion": "Agatha: personaje mago que ataca con el bastón y lanza hechizos con efectos de estado.",
    "nota": "Versión corrupta aún no disponible.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2928402913"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2928402913",
+   "pack": "personajes",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2653691445",
@@ -457,7 +568,10 @@
    "veredicto": "opcional",
    "descripcion": "Eevee: Reunited (demo): Eevee con todas sus evoluciones, ataques e objetos temáticos Pokémon.",
    "nota": "Demo; retira el viejo Eevee de AB+.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2653691445"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2653691445",
+   "pack": "personajes",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2955792897",
@@ -469,7 +583,10 @@
    "veredicto": "opcional",
    "descripcion": "Icesaac: personaje sin usar del juego, con moscas congeladas y mecánica resbaladiza.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2955792897"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2955792897",
+   "pack": "personajes",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "842051906",
@@ -481,7 +598,10 @@
    "veredicto": "opcional",
    "descripcion": "Mei: fantasma con poderes telequinéticos y varios anillos orbitales.",
    "nota": "Soporta Mod Config Menu.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=842051906"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=842051906",
+   "pack": "personajes",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3421378018",
@@ -493,7 +613,10 @@
    "veredicto": "opcional",
    "descripcion": "Doblaje al Latino: doblaje profesional en español latino de la introducción y escenas.",
    "nota": "Es español latino; el resto del juego sigue en español de España.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3421378018"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3421378018",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2812276629",
@@ -505,7 +628,10 @@
    "veredicto": "opcional",
    "descripcion": "Better Zodiacs: objetos zodiacales y de planetario con degradados y diseños propios.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2812276629"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2812276629",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "834317560",
@@ -517,7 +643,10 @@
    "veredicto": "opcional",
    "descripcion": "Color Stat HUD Icons: cambia el color de los iconos de estadísticas del HUD (solo iconos).",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=834317560"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=834317560",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3751697062",
@@ -529,7 +658,10 @@
    "veredicto": "opcional",
    "descripcion": "Damocles Cinematic Death: la muerte por Damocles pasa a ser una cinemática completa.",
    "nota": "v0.1 del autor.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3751697062"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3751697062",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2629925987",
@@ -541,7 +673,10 @@
    "veredicto": "opcional",
    "descripcion": "Master Sword & Hylian Shield: sustituye Trinity Shield y Spirit Sword por el escudo hylian y la Espada Maestra.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2629925987"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2629925987",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2615720951",
@@ -553,7 +688,10 @@
    "veredicto": "opcional",
    "descripcion": "Mega Mush Costume Compat: parche para separar disfraces de Mega Mush (cuerpo/cabeza).",
    "nota": "Solo útil junto a mods de disfraces.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2615720951"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2615720951",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2488945061",
@@ -565,7 +703,10 @@
    "veredicto": "opcional",
    "descripcion": "Old Wardrobe: armario en la primera sala de cada piso para personalizar el aspecto de Isaac.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2488945061"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2488945061",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2599592876",
@@ -577,7 +718,10 @@
    "veredicto": "opcional",
    "descripcion": "Original Style Meat Boy & Bandage Girl: sprites de estilo original para Meat Boy y Bandage Girl.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2599592876"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2599592876",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3787213796",
@@ -589,7 +733,10 @@
    "veredicto": "opcional",
    "descripcion": "Personalized Portraits: retratos de los 34 personajes dibujados y coloreados a mano.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3787213796"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3787213796",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3793943585",
@@ -601,7 +748,10 @@
    "veredicto": "opcional",
    "descripcion": "Resprited Item/Trinket Icons: rehace los iconos pequeños de objetos y baratijas.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3793943585"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3793943585",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2403871374",
@@ -613,7 +763,10 @@
    "veredicto": "herramienta",
    "descripcion": "Da Rules: menú sandbox para toquetear casi todo el juego (monstruos, reglas, objetos).",
    "nota": "Trucos: desactívalo para partidas serias.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2403871374"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2403871374",
+   "pack": "trucos",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "1630477831",
@@ -625,7 +778,10 @@
    "veredicto": "herramienta",
    "descripcion": "GoodTrip: viaja a cualquier sala limpia con Tab + clic en el minimapa.",
    "nota": "Atajo de movimiento: quita tensión a la exploración.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1630477831"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1630477831",
+   "pack": "trucos",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "913577712",
@@ -637,7 +793,10 @@
    "veredicto": "herramienta",
    "descripcion": "InvEdit: edita tus objetos con una interfaz gráfica.",
    "nota": "Trucos.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=913577712"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=913577712",
+   "pack": "trucos",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "918510405",
@@ -649,7 +808,10 @@
    "veredicto": "herramienta",
    "descripcion": "InvEdit Cursor Trigger: activa el cursor dentro de InvEdit.",
    "nota": "Solo con InvEdit.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=918510405"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=918510405",
+   "pack": "trucos",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "918170746",
@@ -661,7 +823,10 @@
    "veredicto": "herramienta",
    "descripcion": "NO CURSES: desactiva las maldiciones que elijas.",
    "nota": "Es un truco: quita parte del desafío.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=918170746"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=918170746",
+   "pack": "trucos",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3805268235",
@@ -673,7 +838,10 @@
    "veredicto": "capricho",
    "descripcion": "Alice sobre Tainted Bethany: sustituye sprites de Bethany Corrupta por Alice de «Meow Meow's Isaac».",
    "nota": "Texto original en chino.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3805268235"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3805268235",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3799649569",
@@ -685,7 +853,10 @@
    "veredicto": "capricho",
    "descripcion": "Los personajes maúllan al recibir daño.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3799649569"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3799649569",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3741865973",
@@ -697,7 +868,10 @@
    "veredicto": "capricho",
    "descripcion": "Falin como Azazel: Azazel con el aspecto de Falin.",
    "nota": "Solo funciona con REPENTOGON.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3741865973"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3741865973",
+   "pack": "capricho",
+   "rgon": "requiere",
+   "gran": false
   },
   {
    "id": "3806764800",
@@ -709,7 +883,10 @@
    "veredicto": "capricho",
    "descripcion": "Miku baila en la sala del tesoro: animación y música de Miku al entrar.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3806764800"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3806764800",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2946914103",
@@ -721,7 +898,10 @@
    "veredicto": "capricho",
    "descripcion": "Neko alt Judas: aspecto alternativo de Judas con temática neko.",
    "nota": "El autor no da más detalles.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2946914103"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2946914103",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2490515687",
@@ -733,7 +913,10 @@
    "veredicto": "capricho",
    "descripcion": "POG for Good Items: Isaac hace «pog» al ver un objeto bueno.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2490515687"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2490515687",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3801903560",
@@ -745,7 +928,10 @@
    "veredicto": "capricho",
    "descripcion": "Teto sobre Eve: sustituye a Eve por Teto.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3801903560"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3801903560",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2575911103",
@@ -757,7 +943,10 @@
    "veredicto": "capricho",
    "descripcion": "The Specialist for Good Items: Isaac baila The Specialist con objetos de calidad 4.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2575911103"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2575911103",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3739714190",
@@ -769,7 +958,10 @@
    "veredicto": "capricho",
    "descripcion": "energypills: las píldoras aleatorias se vuelven peligrosas.",
    "nota": "Cambia el equilibrio: solo si te apetece el riesgo.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3739714190"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3739714190",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3739872352",
@@ -781,7 +973,10 @@
    "veredicto": "capricho",
    "descripcion": "Schrödinger's Cat sobre T. Lazarus: cambia el aspecto de Lazarus Contaminado.",
    "nota": "Modifica players.xml: puede chocar con otros mods de Lazarus.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3739872352"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3739872352",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3772543243",
@@ -793,7 +988,10 @@
    "veredicto": "capricho",
    "descripcion": "Squigly 2.0: personaje basado en Squigly (Skullgirls).",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3772543243"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3772543243",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2788453409",
@@ -805,7 +1003,10 @@
    "veredicto": "capricho",
    "descripcion": "Garry's Mod Death Animation: cambia la animación y el sonido de muerte de los personajes.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2788453409"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2788453409",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3783134747",
@@ -817,7 +1018,10 @@
    "veredicto": "capricho",
    "descripcion": "Slime Rancher: tus bloodclots pasan a ser slimes de Slime Rancher.",
    "nota": "",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3783134747"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3783134747",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "2489006943",
@@ -829,7 +1033,10 @@
    "veredicto": "quitar",
    "descripcion": "Muestra en el HUD la probabilidad de planetario del piso.",
    "nota": "REPENTOGON ya trae su propio HUD de planetario y este mod se desactiva solo: sobra.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2489006943"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2489006943",
+   "pack": "descartado",
+   "rgon": "no",
+   "gran": false
   },
   {
    "id": "3769073098",
@@ -841,7 +1048,742 @@
    "veredicto": "quitar",
    "descripcion": "Variante no oficial de EID con descripciones en línea. Duplica a EID y ya está desactivada con disable.it.",
    "nota": "Duplicado de EID: desuscríbete en Steam para no tener dos.",
-   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3769073098"
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3769073098",
+   "pack": "descartado",
+   "rgon": "no",
+   "gran": false
+  },
+  {
+   "id": "3701683951",
+   "carpeta": "",
+   "nombre": "Mod Config Menu - Impure",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Librería",
+   "veredicto": "esencial",
+   "descripcion": "Mod Config Menu - Impure: menú de ajustes dentro del juego que usan muchos mods (Stats+, Mei, Animated Items...).",
+   "nota": "Sustituye a «Pure», que ya no está en Workshop. Es la librería que hoy te falta.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951",
+   "pack": "base",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 583950,
+   "actualizado": "2026-05-03"
+  },
+  {
+   "id": "3445014938",
+   "carpeta": "",
+   "nombre": "Ambush Spawn Indicators",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "recomendado",
+   "descripcion": "Ambush Spawn Indicators: marca dónde aparecerán los enemigos en oleadas (Modo Avaricia, desafíos).",
+   "nota": "Requiere REPENTOGON.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3445014938",
+   "pack": "qol",
+   "rgon": "requiere",
+   "gran": false,
+   "suscriptores": 59327,
+   "actualizado": "2025-04-23"
+  },
+  {
+   "id": "3381237554",
+   "carpeta": "",
+   "nombre": "Chaos Card QOL",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "recomendado",
+   "descripcion": "Chaos Card QOL: la carta del Caos se lanza hacia el cursor/disparo en vez de hacia donde caminas.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3381237554",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 55308,
+   "actualizado": "2024-12-14"
+  },
+  {
+   "id": "2499964071",
+   "carpeta": "",
+   "nombre": "Faster Animations",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "recomendado",
+   "descripcion": "Faster Animations: acelera animaciones que hacen perder tiempo (arcade, descansos, máquinas).",
+   "nota": "Compatible con REPENTOGON. Hay versión «Lite» en su página.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2499964071",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 62184,
+   "actualizado": "2025-04-10"
+  },
+  {
+   "id": "3374806352",
+   "carpeta": "",
+   "nombre": "Laser Ludovico Fix",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "recomendado",
+   "descripcion": "Laser Ludovico Fix: arregla el anillo láser de Ludovico + Brimstone/Technology, que no funcionaba con muchos objetos.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3374806352",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 87406,
+   "actualizado": "2026-07-14"
+  },
+  {
+   "id": "2917616737",
+   "carpeta": "",
+   "nombre": "Mod Error Container - Compat with erroring mods",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "recomendado",
+   "descripcion": "Mod Error Container: si un mod falla en un callback, los demás siguen funcionando en vez de caer en cadena.",
+   "nota": "Muy útil con 70+ mods: un fallo ya no tumba al resto.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2917616737",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 190115,
+   "actualizado": "2024-01-18"
+  },
+  {
+   "id": "2769063897",
+   "carpeta": "",
+   "nombre": "unintrusive pause menu",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "recomendado",
+   "descripcion": "Unintrusive Pause Menu: quita el menú de pausa gigante y deja uno mínimo para pensar sin perder la pantalla.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2769063897",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 566383,
+   "actualizado": "2025-12-08"
+  },
+  {
+   "id": "2627014611",
+   "carpeta": "",
+   "nombre": "Repentance Plus!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Contenido",
+   "veredicto": "recomendado",
+   "descripcion": "Repentance Plus!: expansión estilo vanilla con 59 objetos, 23 baratijas, 41 cartas, 6 píldoras, desbloqueos y más.",
+   "nota": "Requiere REPENTOGON. Sigue el estilo del juego original.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2627014611",
+   "pack": "contenido",
+   "rgon": "requiere",
+   "gran": true,
+   "suscriptores": 128739,
+   "actualizado": "2026-01-22"
+  },
+  {
+   "id": "3134600246",
+   "carpeta": "",
+   "nombre": "The Binding of Isaac Reshaken - Vol 1.5: Shattered Souls+!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Contenido",
+   "veredicto": "recomendado",
+   "descripcion": "Isaac Reshaken (Vol. 1.5): más de 40 objetos, baratijas, consumibles y enemigos de alta calidad.",
+   "nota": "Actualizado en jul 2026.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3134600246",
+   "pack": "contenido",
+   "rgon": "no",
+   "gran": true,
+   "suscriptores": 73731,
+   "actualizado": "2026-07-29"
+  },
+  {
+   "id": "2376005362",
+   "carpeta": "",
+   "nombre": "Encyclopedia - An In-Game Wiki!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Interfaz",
+   "veredicto": "recomendado",
+   "descripcion": "Encyclopedia: wiki dentro del juego con objetos, baratijas, píldoras, cartas y personajes, incluidos los de mods.",
+   "nota": "Se actualizó en dic 2025.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2376005362",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 279814,
+   "actualizado": "2025-12-05"
+  },
+  {
+   "id": "3334902042",
+   "carpeta": "",
+   "nombre": "Unlocks Reminder",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Interfaz",
+   "veredicto": "recomendado",
+   "descripcion": "Unlocks Reminder: te dice qué desbloqueos buenos le faltan a cada personaje al elegirlo.",
+   "nota": "Actualizado en sep 2026.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3334902042",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 300444,
+   "actualizado": "2026-09-25"
+  },
+  {
+   "id": "2910123966",
+   "carpeta": "",
+   "nombre": "Book of Belial Synergies!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "recomendado",
+   "descripcion": "Book of Belial Synergies: sinergias para Book of Belial y el Birthright de Judas.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2910123966",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 157662,
+   "actualizado": "2023-01-07"
+  },
+  {
+   "id": "2916599212",
+   "carpeta": "",
+   "nombre": "Car Battery Synergies",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "recomendado",
+   "descripcion": "Car Battery Synergies: Car Battery pasa a hacer efecto con 26 activos más (casi todos con efecto propio, no solo repetir).",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2916599212",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 99507,
+   "actualizado": "2023-08-25"
+  },
+  {
+   "id": "2897480136",
+   "carpeta": "",
+   "nombre": "Epic Fetus Synergies",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "recomendado",
+   "descripcion": "Epic Fetus Synergies: sinergias nuevas para Epic Fetus con Azazel, Brimstone y más.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2897480136",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 261538,
+   "actualizado": "2022-12-18"
+  },
+  {
+   "id": "3408993906",
+   "carpeta": "",
+   "nombre": "Lazy MattPack",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "recomendado",
+   "descripcion": "Lazy MattPack: los objetos encargados por Lazy Mattman, muchos de calidad 5 (nivel máximo) con sinergias entre sí.",
+   "nota": "Es lo más parecido a «mods de tier 5». Requiere REPENTOGON. Contenido nuevo, no solo sinergias.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3408993906",
+   "pack": "sinergias",
+   "rgon": "requiere",
+   "gran": true,
+   "suscriptores": 145563,
+   "actualizado": "2026-04-18"
+  },
+  {
+   "id": "2996716893",
+   "carpeta": "",
+   "nombre": "Monstro's Lung Synergies!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "recomendado",
+   "descripcion": "Monstro's Lung Synergies: sinergias nuevas para Monstro's Lung.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2996716893",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 242567,
+   "actualizado": "2023-07-07"
+  },
+  {
+   "id": "2965292371",
+   "carpeta": "",
+   "nombre": "Neptunus Synergies",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "recomendado",
+   "descripcion": "Neptunus Synergies: Neptunus pasa a funcionar con modificadores de lágrimas; con REPENTOGON hay sinergias extra.",
+   "nota": "Actualizado en ago 2026.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2965292371",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 107928,
+   "actualizado": "2026-08-18"
+  },
+  {
+   "id": "2529811350",
+   "carpeta": "",
+   "nombre": "Missing Costumes",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "opcional",
+   "descripcion": "Missing Costumes: añade y arregla disfraces que faltan, también en personajes corruptos.",
+   "nota": "Choca con mods que editen players.xml o costumes2.xml (Eevee, personajes). Pruébalo con tu pack.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2529811350",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 194577,
+   "actualizado": "2026-09-11"
+  },
+  {
+   "id": "3033566163",
+   "carpeta": "",
+   "nombre": "Range fix for Bones & Sword",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "opcional",
+   "descripcion": "Range fix for Bones & Sword: corrige el alcance de Bone Club, Donkey Jaw, Notched Axe y Spirit Sword.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033566163",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 572760,
+   "actualizado": "2023-11-04"
+  },
+  {
+   "id": "3797506645",
+   "carpeta": "",
+   "nombre": "Tear Consistency Fix",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Calidad de vida",
+   "veredicto": "opcional",
+   "descripcion": "Tear Consistency Fix: arregla colores de lágrimas incoherentes (p. ej. Esaú con lágrimas azules).",
+   "nota": "Mod pequeño y reciente (sep 2026).",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3797506645",
+   "pack": "qol",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 8950,
+   "actualizado": "2026-09-17"
+  },
+  {
+   "id": "3778123093",
+   "carpeta": "",
+   "nombre": "Fiend Folio: RELOADED - 700 New Monsters!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Contenido",
+   "veredicto": "opcional",
+   "descripcion": "Fiend Folio: RELOADED: 700 monstruos nuevos, objetos, salas y animaciones.",
+   "nota": "Requiere REPENTOGON. Cerró el juego en ocasiones sin él; con REPENTOGON 1.1.3 hay que probarlo solo.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778123093",
+   "pack": "contenido",
+   "rgon": "requiere",
+   "gran": true,
+   "suscriptores": 93963,
+   "actualizado": "2026-09-20"
+  },
+  {
+   "id": "3655824749",
+   "carpeta": "",
+   "nombre": "Isaac Reflourished!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Contenido",
+   "veredicto": "opcional",
+   "descripcion": "Isaac Reflourished!: renueva mecánicas pequeñas (rejillas, menús, controles) más que objetos.",
+   "nota": "Requiere REPENTOGON. Cambia el comportamiento base: pruébalo solo.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3655824749",
+   "pack": "contenido",
+   "rgon": "requiere",
+   "gran": true,
+   "suscriptores": 59638,
+   "actualizado": "2026-08-10"
+  },
+  {
+   "id": "2880387531",
+   "carpeta": "",
+   "nombre": "Revelations Ch. 2",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Contenido",
+   "veredicto": "opcional",
+   "descripcion": "Revelations Ch. 2: capítulo nuevo con pisos, jefes y objetos propios.",
+   "nota": "Necesita Custom Stage API (ya la tienes); REPENTOGON muy recomendado. Última actualización jun 2024.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2880387531",
+   "pack": "contenido",
+   "rgon": "recomendado",
+   "gran": true,
+   "suscriptores": 133451,
+   "actualizado": "2024-06-23"
+  },
+  {
+   "id": "3012430463",
+   "carpeta": "",
+   "nombre": "The Binding of Isaac: Epiphany",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Contenido",
+   "veredicto": "opcional",
+   "descripcion": "The Binding of Isaac: Epiphany: reescribe el juego con variantes de todos los personajes y mucho contenido nuevo.",
+   "nota": "Es una conversión casi total: úsalo solo, sin otro mod de contenido.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3012430463",
+   "pack": "contenido",
+   "rgon": "no",
+   "gran": true,
+   "suscriptores": 261300,
+   "actualizado": "2026-03-24"
+  },
+  {
+   "id": "3599664675",
+   "carpeta": "",
+   "nombre": "Animated Pickup Counter",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Interfaz",
+   "veredicto": "opcional",
+   "descripcion": "Animated Pickup Counter: animación en el contador de monedas, bombas y llaves.",
+   "nota": "Requiere REPENTOGON.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3599664675",
+   "pack": "interfaz",
+   "rgon": "requiere",
+   "gran": false,
+   "suscriptores": 75743,
+   "actualizado": "2026-08-15"
+  },
+  {
+   "id": "2603224299",
+   "carpeta": "",
+   "nombre": "Completion Mark Reminder",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Interfaz",
+   "veredicto": "opcional",
+   "descripcion": "Completion Mark Reminder: muestra en el papel las marcas de completado que te faltan por personaje.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2603224299",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 324693,
+   "actualizado": "2025-02-03"
+  },
+  {
+   "id": "2503022727",
+   "carpeta": "",
+   "nombre": "Completion Marks for ALL Modded Characters",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Interfaz",
+   "veredicto": "opcional",
+   "descripcion": "Completion Marks for ALL Modded Characters: marcas de completado también para personajes de mods (mantén Tab en partida).",
+   "nota": "Solo si usas varios personajes de mods.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2503022727",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 114625,
+   "actualizado": "2025-09-13"
+  },
+  {
+   "id": "3461938404",
+   "carpeta": "",
+   "nombre": "Options? Reminder",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Interfaz",
+   "veredicto": "opcional",
+   "descripcion": "Options? Reminder: indicador discreto sobre los objetos entre los que puedes elegir con «Options?».",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3461938404",
+   "pack": "interfaz",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 128658,
+   "actualizado": "2025-04-12"
+  },
+  {
+   "id": "2661109135",
+   "carpeta": "",
+   "nombre": "Akeldama Synergy",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "opcional",
+   "descripcion": "Akeldama Synergy: las lágrimas de Akeldama copian tus lágrimas (Cupid Arrow, Spoon Bender...).",
+   "nota": "Algunos efectos están en lista negra.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2661109135",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 59829,
+   "actualizado": "2021-11-23"
+  },
+  {
+   "id": "2980857979",
+   "carpeta": "",
+   "nombre": "Flat Stone Synergies!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "opcional",
+   "descripcion": "Flat Stone Synergies: sinergias nuevas para Flat Stone (mod corto, el propio autor lo reconoce).",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2980857979",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 223241,
+   "actualizado": "2023-05-27"
+  },
+  {
+   "id": "1230880928",
+   "carpeta": "",
+   "nombre": "Jacob's Ladder Synergies",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "opcional",
+   "descripcion": "Jacob's Ladder Synergies: Jacob's Ladder funciona con Brimstone, Technology y más.",
+   "nota": "Mod antiguo (2017): comprobar que no falla.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1230880928",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 112664,
+   "actualizado": "2017-12-16"
+  },
+  {
+   "id": "2978501842",
+   "carpeta": "",
+   "nombre": "Totally Unnecessary But Nonetheless Epic Giga Bomb Synergies",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Jugabilidad",
+   "veredicto": "opcional",
+   "descripcion": "Giga Bomb Synergies: 12 sinergias entre Giga Bombs y objetos de bombas.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2978501842",
+   "pack": "sinergias",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 61943,
+   "actualizado": "2024-12-29"
+  },
+  {
+   "id": "2722017893",
+   "carpeta": "",
+   "nombre": "Andromeda (+28 Unlocks)",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Personajes",
+   "veredicto": "opcional",
+   "descripcion": "Andromeda (+28 desbloqueos): personaje basado en planetarios, con versión corrupta y desbloqueos completos.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2722017893",
+   "pack": "personajes",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 192829,
+   "actualizado": "2026-05-11"
+  },
+  {
+   "id": "2567634705",
+   "carpeta": "",
+   "nombre": "Job 2.5 - Over 25 (+45) New Unlocks!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Personajes",
+   "veredicto": "opcional",
+   "descripcion": "Job 2.5: personaje Job con nueva expansión, más de 25 desbloqueos y versión corrupta.",
+   "nota": "Actualizado en dic 2025.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2567634705",
+   "pack": "personajes",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 62611,
+   "actualizado": "2025-12-02"
+  },
+  {
+   "id": "2570913695",
+   "carpeta": "",
+   "nombre": "Animated Items",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Visual",
+   "veredicto": "opcional",
+   "descripcion": "Animated Items: objetos animados, activables uno a uno desde Mod Config Menu.",
+   "nota": "Necesita Mod Config Menu para elegir.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2570913695",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 754533,
+   "actualizado": "2023-11-07"
+  },
+  {
+   "id": "3783435722",
+   "carpeta": "",
+   "nombre": "Colorful Outlines For Items",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Visual",
+   "veredicto": "opcional",
+   "descripcion": "Colorful Outlines for Items: contornos de color a los objetos (estilo Paper Mario 64).",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3783435722",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 26357,
+   "actualizado": "2026-08-15"
+  },
+  {
+   "id": "3585879877",
+   "carpeta": "",
+   "nombre": "Door Overhaul",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Visual",
+   "veredicto": "opcional",
+   "descripcion": "Door Overhaul: rehace los sprites de las puertas del juego.",
+   "nota": "Compatible con Repentance+; REPENTOGON no es obligatorio.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3585879877",
+   "pack": "visual",
+   "rgon": "recomendado",
+   "gran": false,
+   "suscriptores": 89029,
+   "actualizado": "2026-09-21"
+  },
+  {
+   "id": "3599747427",
+   "carpeta": "",
+   "nombre": "Items Drop on Death - Animation",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Visual",
+   "veredicto": "opcional",
+   "descripcion": "Items Drop on Death - Animation: animación al morir en la que los objetos caen al suelo (solo visual).",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3599747427",
+   "pack": "visual",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 223699,
+   "actualizado": "2026-09-01"
+  },
+  {
+   "id": "1933285222",
+   "carpeta": "",
+   "nombre": "Soundtrack Menu",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Visual",
+   "veredicto": "opcional",
+   "descripcion": "Soundtrack Menu: cambia la banda sonora desde Mod Config Menu.",
+   "nota": "Requiere REPENTOGON (o Music Mod Callback, no ambos).",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1933285222",
+   "pack": "visual",
+   "rgon": "requiere",
+   "gran": false,
+   "suscriptores": 293711,
+   "actualizado": "2026-09-24"
+  },
+  {
+   "id": "3363277114",
+   "carpeta": "",
+   "nombre": "Voiding effect",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Visual",
+   "veredicto": "opcional",
+   "descripcion": "Voiding Effect: efecto de absorción para Void, Abyss y Black Rune.",
+   "nota": "Mejor con REPENTOGON.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3363277114",
+   "pack": "visual",
+   "rgon": "recomendado",
+   "gran": false,
+   "suscriptores": 120607,
+   "actualizado": "2025-03-04"
+  },
+  {
+   "id": "3778307529",
+   "carpeta": "",
+   "nombre": "Every Item Stacks!",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Capricho",
+   "veredicto": "capricho",
+   "descripcion": "Every Item Stacks!: más de 30 objetos que antes no se acumulaban ahora sí.",
+   "nota": "Requiere REPENTOGON. Rompe el equilibrio: solo para partidas de caos.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778307529",
+   "pack": "capricho",
+   "rgon": "requiere",
+   "gran": false,
+   "suscriptores": 41696,
+   "actualizado": "2026-08-06"
+  },
+  {
+   "id": "3622418481",
+   "carpeta": "",
+   "nombre": "Just Gambling",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Capricho",
+   "veredicto": "capricho",
+   "descripcion": "Just Gambling!: sistema gacha con pools, pity y probabilidades públicas.",
+   "nota": "",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622418481",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 58036,
+   "actualizado": "2026-03-20"
+  },
+  {
+   "id": "3305869734",
+   "carpeta": "",
+   "nombre": "Passive Skill Trees (Rep+)",
+   "version": "",
+   "origen": "workshop",
+   "categoria": "Capricho",
+   "veredicto": "capricho",
+   "descripcion": "Passive Skill Trees: sistema RPG con experiencia, niveles y árbol de habilidades pasivas.",
+   "nota": "Cambia mucho la partida; actualizado en oct 2026.",
+   "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3305869734",
+   "pack": "capricho",
+   "rgon": "no",
+   "gran": false,
+   "suscriptores": 94193,
+   "actualizado": "2026-10-06"
   }
- ]
+ ],
+ "version_pack": "0.2"
 }
