@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## v0.4 — 2026-10-09
+### Corregido
+- **Seguridad (path traversal) en `sincronizar`:** el nombre de carpeta salía del `<directory>` del `metadata.xml` de cada mod, que es un dato ajeno. Ahora solo se acepta un nombre simple (sin barras ni `..`), la ruta final debe quedar dentro de `mods/` y la copia no sigue enlaces simbólicos. Detectado por la revisión automática de seguridad.
+### Archivos y pruebas
+- `scripts/isaac_pack.py`. Probado el filtro con `../x`, `a/b`, `..`, `a\\b` y vacío (rechazados) y con las carpetas reales de los 111 mods (todas aceptadas).
+
 ## v0.3 — 2026-10-09
 ### Añadido
 - **Pack «Rendimiento y estabilidad»** (entra en los presets `minimo` y `clean`): Mod Error Container, **Smart Culling** (3726132245, sin REPENTOGON), **AntiCrash** (2784448102), Potato Cup (2902768955) y Clear Tears/Antilag (2758700407). Elegidos con datos de la API de Steam; descartados `fpsup`, `lowfx` (2018, experimentales), **Mod Compatibility Hack** (obsoleto y puede empeorar el rendimiento) y **FPS Enhancer** (hace lo mismo que Smart Culling; usar uno solo). **High FPS** (3776277093) requiere instalar un componente nativo a mano: no se toca sin tu visto bueno.

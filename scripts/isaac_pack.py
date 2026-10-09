@@ -38,6 +38,7 @@ EXTERNOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/externos")
 RESPALDOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/respaldos")
 LOCAL = REPO / "mods_locales"
 PERFILES = REPO / "datos/perfiles.json"
+NOMBRE_SEGURO = re.compile(r"[\w .\-()\[\]'`!+&]+")  # sin barras ni rutas
 IDIOMA_ES = "2"  # índice de español en options.ini (descubierto en isaac-ng.exe, ver CHANGELOG v0.1)
 LOG = REPO / "auto_espanol.log"
 VERSION = (REPO / "VERSION").read_text().strip() if (REPO / "VERSION").exists() else "0.2"
@@ -260,10 +261,15 @@ def sincronizar(_args=None) -> int:
         directorio = re.search(r"<directory>(.*?)</directory>", t, re.S)
         if not directorio:
             continue
-        destino = MODS / f"{directorio.group(1).strip()}_{d.name}"
-        if destino.exists():
+        nombre = directorio.group(1).strip()
+        # <directory> viene de un mod ajeno: solo se acepta un nombre de carpeta simple, dentro de mods/
+        if not NOMBRE_SEGURO.fullmatch(nombre) or nombre in (".", ".."):
+            print(f"Nombre de carpeta sospechoso en {d.name}, se omite")
             continue
-        shutil.copytree(d, destino)
+        destino = (MODS / f"{nombre}_{d.name}").resolve()
+        if destino.parent != MODS.resolve() or destino.exists():
+            continue
+        shutil.copytree(d, destino, symlinks=True)
         m = man.get(d.name)
         apagado = m is None or m.get("apagado") or m["pack"] in ("contenido", "capricho", "trucos", "descartado")
         if apagado:
