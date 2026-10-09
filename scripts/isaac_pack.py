@@ -76,6 +76,20 @@ def log(msg: str, auto: bool = False) -> None:
         print(msg)
 
 
+def marcar(d: Path, apagar: bool) -> bool:
+    """Crea/quita d/disable.it sin seguir enlaces simbólicos (un mod ajeno podría traer uno). Devuelve si cambió algo."""
+    marca = d / "disable.it"
+    if marca.is_symlink():
+        marca.unlink()
+    if apagar and not marca.exists():
+        marca.touch()
+        return True
+    if not apagar and marca.exists():
+        marca.unlink()
+        return True
+    return False
+
+
 def juego_abierto() -> bool:
     return subprocess.run(["pgrep", "-fi", "isaac-ng"], capture_output=True).returncode == 0
 
@@ -213,13 +227,8 @@ def aplicar(args) -> int:
         if not d:
             continue
         encender = m["pack"] in elegidos
-        marca = d / "disable.it"
-        if encender and marca.exists():
-            marca.unlink()
-            print(f'activado: {m["nombre"]}')
-        elif not encender and not marca.exists():
-            marca.touch()
-            print(f'desactivado: {m["nombre"]}')
+        if marcar(d, not encender):
+            print(f'{"activado" if encender else "desactivado"}: {m["nombre"]}')
     print(f"\nPacks activos: {', '.join(PACKS[p][0] for p in elegidos)}")
     activos = [m for m in seleccion if m["id"] in ins]
     for color, txt in valorar(activos, bool(version_repentogon_instalada())):
@@ -272,8 +281,7 @@ def sincronizar(_args=None) -> int:
         shutil.copytree(d, destino, symlinks=True)
         m = man.get(d.name)
         apagado = m is None or m.get("apagado") or m["pack"] in ("contenido", "capricho", "trucos", "descartado")
-        if apagado:
-            (destino / "disable.it").touch()
+        marcar(destino, apagado)
         nuevos += 1
         print(f'{"copiado (desactivado)" if apagado else "copiado y activo"}: {m["nombre"] if m else destino.name}')
     print(f"{nuevos} mods copiados a mods/." if nuevos else "Nada nuevo que copiar.")

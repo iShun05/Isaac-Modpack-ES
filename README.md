@@ -2,7 +2,7 @@
 
 Catálogo, packs, instalador y traducción automática al español de los mods de **Isaac: Repentance+** en macOS (Whisky, botella `steam11`): **111 instalados (10 desactivados a propósito)** y más recomendados, cada uno con ficha en español, agrupados en packs para activar solo lo que quieras.
 
-- **Versión actual:** v0.4
+- **Versión actual:** v0.5
 - **Plataforma:** macOS + Whisky (Steam de Windows). Juego: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3
 - **Estado:** pendiente de pruebas manuales (idioma `Language=2`, mod de traducción, packs y combinaciones). Las pruebas de fiabilidad las hace el usuario más adelante
 
@@ -48,12 +48,13 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ## Versiones y código fuente
 | Versión | Fecha | Resumen | Código |
 |---|---|---|---|
-| [`v0.4`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.4) **(actual)** | 2026-10-09 | Corrección de seguridad en `sincronizar` (nombres de carpeta) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.4) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.4.zip) |
+| [`v0.5`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.5) **(actual)** | 2026-10-09 | `disable.it` sin seguir enlaces simbólicos | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.5) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.5.zip) |
+| [`v0.4`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.4) | 2026-10-09 | Corrección de seguridad en `sincronizar` (nombres de carpeta) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.4) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.4.zip) |
 | [`v0.3`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.3) | 2026-10-09 | Pack de rendimiento, `sincronizar` y 42 mods copiados a mods/ | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.3) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.3.zip) |
 | [`v0.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.2) | 2026-10-09 | Packs con valoración y perfiles, 43 mods recomendados, suscripción en bloque y respaldo | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.2.zip) |
 | [`v0.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.1) | 2026-10-09 | Catálogo de 70 mods, instalador, español automático y recomendaciones | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.1.zip) |
 
-Volver a una versión: `git checkout v0.4`.
+Volver a una versión: `git checkout v0.5`.
 
 ## Contacto
 Instagram: [@_shun._05](https://www.instagram.com/_shun._05/)

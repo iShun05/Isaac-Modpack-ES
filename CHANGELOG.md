@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## v0.5 — 2026-10-09
+### Corregido
+- **Seguridad:** `disable.it` ya no se crea siguiendo un enlace simbólico (un mod ajeno podría traerlo como enlace y hacer que `touch` escribiera fuera de `mods/`). Nueva función `marcar()` usada por `aplicar` y `sincronizar`.
+### Archivos y pruebas
+- `scripts/isaac_pack.py`. Probado con un enlace simbólico de prueba en una carpeta temporal: el enlace se elimina, el archivo destino queda intacto. El aviso automático no traía detalles; esta es la única escritura sobre rutas de mods ajenos que podía seguir enlaces.
+
 ## v0.4 — 2026-10-09
 ### Corregido
 - **Seguridad (path traversal) en `sincronizar`:** el nombre de carpeta salía del `<directory>` del `metadata.xml` de cada mod, que es un dato ajeno. Ahora solo se acepta un nombre simple (sin barras ni `..`), la ruta final debe quedar dentro de `mods/` y la copia no sigue enlaces simbólicos. Detectado por la revisión automática de seguridad.
