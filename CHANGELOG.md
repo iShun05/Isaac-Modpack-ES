@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## v0.7 — 2026-10-09
+### Corregido
+- **El lanzador de REPENTOGON se cerraba en Wine** (Program Error / Wine Debugger) y el juego arrancaba sin REPENTOGON. Causa: `launcher-data` era 0.3.12-beta con el `.exe` en 0.4.8-beta. Sustituido por el paquete oficial 0.4.8-beta (hash verificado) con copia previa. Detalle en `docs/REPENTOGON_LANZADOR.md`.
+### Archivos y pruebas
+- Probado dos veces con un Wine limpio: el hilo remoto termina con código 0, el juego sigue abierto y el log muestra REPENTOGON detectado (Encyclopedia) y 116 mods cargados.
+- Pendiente: probar el acceso desde Whisky (con su configuración) y los mods que requieren REPENTOGON.
+
 ## v0.6 — 2026-10-09
 ### Añadido
 - Los 4 mods de rendimiento (Smart Culling, AntiCrash, Potato Cup, Clear Tears) ya están suscritos (115 suscripciones, comprobado releyendo la lista de Steam) y copiados a `mods/` con `sincronizar`. Ya no queda nada por suscribir.
