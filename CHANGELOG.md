@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## v0.8 — 2026-10-09
+### Añadido
+- **Instalador de Windows 10/11** (`Instalar_Windows.bat` + `windows/instalar_windows.ps1`), listo para otros equipos: localiza Isaac en Steam (registro y `libraryfolders.vdf`), instala lo que no es de Workshop (lanzador oficial de REPENTOGON con hash verificado y acceso directo en el Escritorio, mod local de traducción), detecta qué mods de Workshop faltan y ofrece suscribirse a todos de golpe (script copiado al portapapeles para la consola de steamcommunity.com) o abrir cada página en la aplicación de Steam, y activa los packs elegidos con `disable.it` (clean, completo o mínimo). Se puede ejecutar varias veces.
+- Comando `empaquetar`: genera `dist/Isaac_Pack_ES_Windows_v<versión>.zip`, adjunto a la release.
+### Cambiado
+- Versiones del manifiesto refrescadas con las instaladas (50 mods).
+### Archivos y pruebas
+- Comprobado en la botella: 115 mods registrados e instalados, ninguno sin registrar ni sin copiar a `mods/`, 10 desactivados a propósito. **El instalador de Windows NO está probado**: aquí no hay PowerShell ni Windows; solo revisé equilibrio de llaves y los casos conocidos de PowerShell 5.1. Steam no permite suscribirse sin tu sesión, por eso ese paso es semiautomático.
+
 ## v0.7 — 2026-10-09
 ### Corregido
 - **El lanzador de REPENTOGON se cerraba en Wine** (Program Error / Wine Debugger) y el juego arrancaba sin REPENTOGON. Causa: `launcher-data` era 0.3.12-beta con el `.exe` en 0.4.8-beta. Sustituido por el paquete oficial 0.4.8-beta (hash verificado) con copia previa. Detalle en `docs/REPENTOGON_LANZADOR.md`.

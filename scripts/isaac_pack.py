@@ -10,6 +10,7 @@ Uso:
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
+  isaac_pack.py empaquetar                zip con el instalador de Windows 10/11 (dist/)
   isaac_pack.py instalar                  estado + REPENTOGON si falta + español + docs
 Presets: minimo · clean · completo
 """
@@ -492,6 +493,32 @@ footer{{margin-top:24px;color:var(--mut);font-size:.85rem}}
     return 0
 
 
+def empaquetar(_args=None) -> int:
+    """Crea dist/Isaac_Pack_ES_Windows_v<ver>.zip: instalador .bat + .ps1, manifiesto, mod local y lista de suscripción."""
+    docs()
+    dist = REPO / "dist"
+    dist.mkdir(exist_ok=True)
+    destino = dist / f"Isaac_Pack_ES_Windows_v{VERSION}.zip"
+    leeme = (
+        "ISAAC PACK ES - instalador para Windows 10/11\r\n\r\n"
+        "1. Descomprime este zip ENTERO (no lo abras desde dentro del zip).\r\n"
+        "2. Doble clic en Instalar_Windows.bat. Si SmartScreen avisa: Mas informacion > Ejecutar de todas formas.\r\n"
+        "3. Elige tu pack y sigue los pasos. Se puede ejecutar varias veces.\r\n"
+        "4. Abre Isaac con el acceso 'Isaac con REPENTOGON' del Escritorio.\r\n\r\n"
+        "Contacto: https://www.instagram.com/_shun._05/\r\n"
+    )
+    with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
+        z.write(REPO / "Instalar_Windows.bat", "Instalar_Windows.bat")
+        z.write(REPO / "windows/instalar_windows.ps1", "windows/instalar_windows.ps1")
+        z.write(REPO / "datos/mods.json", "datos/mods.json")
+        for f in sorted((LOCAL).rglob("*")):
+            if f.is_file():
+                z.write(f, "mods_locales/" + str(f.relative_to(LOCAL)))
+        z.writestr("LEEME.txt", leeme)
+    print(f"Creado {destino} ({destino.stat().st_size // 1024} KB)")
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -510,6 +537,7 @@ def main() -> int:
     sub.add_parser("docs").set_defaults(f=docs)
     sub.add_parser("respaldo").set_defaults(f=respaldo)
     sub.add_parser("sincronizar").set_defaults(f=sincronizar)
+    sub.add_parser("empaquetar").set_defaults(f=empaquetar)
     sub.add_parser("instalar").set_defaults(f=instalar)
     args = p.parse_args()
     return args.f(args)

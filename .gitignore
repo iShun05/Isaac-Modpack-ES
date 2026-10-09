@@ -3,3 +3,4 @@
 auto_espanol.log
 __pycache__/
 *.pyc
+dist/
