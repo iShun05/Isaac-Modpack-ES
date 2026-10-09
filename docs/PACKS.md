@@ -9,7 +9,7 @@ Un pack = un tema. `aplicar` deja activos solo los packs que elijas (más **Base
 | **Base** (`base`) | Librerías y menú de ajustes que usan los demás mods | 4 / 4 |
 | **Calidad de vida** (`qol`) | Arreglos y comodidades que no cambian el equilibrio | 20 / 20 |
 | **Interfaz e información** (`interfaz`) | HUD, estadísticas, enciclopedia y recordatorios | 17 / 17 |
-| **Rendimiento y estabilidad** (`rendimiento`) | Menos tirones y menos cierres con muchos objetos y mods | 1 / 5 |
+| **Rendimiento y estabilidad** (`rendimiento`) | Menos tirones y menos cierres con muchos objetos y mods | 5 / 5 |
 | **Sinergias y jugabilidad** (`sinergias`) | Sinergias nuevas, objetos extra y pequeños cambios de reglas | 19 / 19 |
 | **Contenido grande** (`contenido`) | Expansiones con muchos objetos, enemigos y mecánicas | 6 / 6 |
 | **Personajes** (`personajes`) | Personajes jugables nuevos | 6 / 6 |

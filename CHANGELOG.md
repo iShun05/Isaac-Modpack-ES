@@ -1,5 +1,13 @@
 # Registro de cambios
 
+## v0.6 — 2026-10-09
+### Añadido
+- Los 4 mods de rendimiento (Smart Culling, AntiCrash, Potato Cup, Clear Tears) ya están suscritos (115 suscripciones, comprobado releyendo la lista de Steam) y copiados a `mods/` con `sincronizar`. Ya no queda nada por suscribir.
+### Cambiado
+- Docs regenerados con el estado real: 115 mods instalados, 10 desactivados a propósito.
+### Archivos y pruebas
+- `docs/*`. Sin cambios de código. Sin probar en el juego.
+
 ## v0.5 — 2026-10-09
 ### Corregido
 - **Seguridad:** `disable.it` ya no se crea siguiendo un enlace simbólico (un mod ajeno podría traerlo como enlace y hacer que `touch` escribiera fuera de `mods/`). Nueva función `marcar()` usada por `aplicar` y `sincronizar`.

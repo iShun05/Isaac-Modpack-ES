@@ -11,7 +11,7 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [miniMAPI](https://steamcommunity.com/sharedfiles/filedetails/?id=1978904635) | miniMAPI: API del minimapa que permite a otros mods añadir iconos y estilos. | Librería: no hace nada por sí sola. |
 | [Mod Config Menu - Impure](https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951) | Mod Config Menu - Impure: menú de ajustes dentro del juego que usan muchos mods (Stats+, Mei, Animated Items...). | Sustituye a «Pure», que ya no está en Workshop. Es la librería que hoy te falta. |
 
-## ✅ Recomendado (38)
+## ✅ Recomendado (40)
 
 | Mod | Qué hace | Nota |
 |---|---|---|
@@ -53,8 +53,10 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [Lazy MattPack](https://steamcommunity.com/sharedfiles/filedetails/?id=3408993906) | Lazy MattPack: los objetos encargados por Lazy Mattman, muchos de calidad 5 (nivel máximo) con sinergias entre sí. ⚙ REPENTOGON | Es lo más parecido a «mods de tier 5». Requiere REPENTOGON. Contenido nuevo, no solo sinergias. |
 | [Monstro's Lung Synergies!](https://steamcommunity.com/sharedfiles/filedetails/?id=2996716893) | Monstro's Lung Synergies: sinergias nuevas para Monstro's Lung. |  |
 | [Neptunus Synergies](https://steamcommunity.com/sharedfiles/filedetails/?id=2965292371) | Neptunus Synergies: Neptunus pasa a funcionar con modificadores de lágrimas; con REPENTOGON hay sinergias extra. | Actualizado en ago 2026. |
+| [Smart Culling](https://steamcommunity.com/sharedfiles/filedetails/?id=3726132245) | Smart Culling: limita y fusiona proyectiles redundantes antes de que el motor se desborde (tirones y lágrimas borradas), pasando el daño al resto. | No necesita REPENTOGON. Elige este o FPS Enhancer, no los dos (hacen lo mismo). |
+| [AntiCrash](https://steamcommunity.com/sharedfiles/filedetails/?id=2784448102) | AntiCrash: tras un cierre (o si lo activas en MCM) quita efectos visuales y limita los láseres en pantalla para que la partida no vuelva a cerrarse. | Pensado para builds rotas con muchos efectos. |
 
-## ◻️ Opcional (48)
+## ◻️ Opcional (50)
 
 | Mod | Qué hace | Nota |
 |---|---|---|
@@ -106,6 +108,8 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [Items Drop on Death - Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=3599747427) | Items Drop on Death - Animation: animación al morir en la que los objetos caen al suelo (solo visual). |  |
 | [Soundtrack Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=1933285222) | Soundtrack Menu: cambia la banda sonora desde Mod Config Menu. ⚙ REPENTOGON | Requiere REPENTOGON (o Music Mod Callback, no ambos). |
 | [Voiding effect](https://steamcommunity.com/sharedfiles/filedetails/?id=3363277114) | Voiding Effect: efecto de absorción para Void, Abyss y Black Rune. ⚙ mejor con REPENTOGON | Mejor con REPENTOGON. |
+| [Potato Cup](https://steamcommunity.com/sharedfiles/filedetails/?id=2902768955) | Potato Cup: menos tirones; quita o simplifica efectos como restos y partículas. | Mod de 2023. Resta detalle visual a cambio de fluidez. |
+| ['Clear Tears' (Antilag) Buttons](https://steamcommunity.com/sharedfiles/filedetails/?id=2758700407) | Clear Tears (Antilag): un botón que borra todas las lágrimas, cuchillos, bombas y láseres de la pantalla. | Mod de 2022. Se configura desde Mod Config Menu. |
 
 ## 🛠 Herramienta (5)
 
