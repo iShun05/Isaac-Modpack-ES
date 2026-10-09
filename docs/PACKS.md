@@ -1,26 +1,27 @@
 # Packs de mods
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v0.2_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v0.3_
 
 Un pack = un tema. `aplicar` deja activos solo los packs que elijas (más **Base**) y desactiva el resto con `disable.it` (reversible). Cambia de pack con el juego cerrado.
 
 | Pack | Qué trae | Mods (instalados / total) |
 |---|---|---|
-| **Base** (`base`) | Librerías y menú de ajustes que usan los demás mods | 3 / 4 |
-| **Calidad de vida** (`qol`) | Arreglos y comodidades que no cambian el equilibrio | 12 / 21 |
-| **Interfaz e información** (`interfaz`) | HUD, estadísticas, enciclopedia y recordatorios | 11 / 17 |
-| **Sinergias y jugabilidad** (`sinergias`) | Sinergias nuevas, objetos extra y pequeños cambios de reglas | 9 / 19 |
-| **Contenido grande** (`contenido`) | Expansiones con muchos objetos, enemigos y mecánicas | 0 / 6 |
-| **Personajes** (`personajes`) | Personajes jugables nuevos | 4 / 6 |
-| **Visual y audio** (`visual`) | Sprites, animaciones, música y doblaje | 11 / 17 |
-| **Caprichos** (`capricho`) | Memes, cambios de aspecto y modos de caos | 13 / 16 |
+| **Base** (`base`) | Librerías y menú de ajustes que usan los demás mods | 4 / 4 |
+| **Calidad de vida** (`qol`) | Arreglos y comodidades que no cambian el equilibrio | 20 / 20 |
+| **Interfaz e información** (`interfaz`) | HUD, estadísticas, enciclopedia y recordatorios | 17 / 17 |
+| **Rendimiento y estabilidad** (`rendimiento`) | Menos tirones y menos cierres con muchos objetos y mods | 1 / 5 |
+| **Sinergias y jugabilidad** (`sinergias`) | Sinergias nuevas, objetos extra y pequeños cambios de reglas | 19 / 19 |
+| **Contenido grande** (`contenido`) | Expansiones con muchos objetos, enemigos y mecánicas | 6 / 6 |
+| **Personajes** (`personajes`) | Personajes jugables nuevos | 6 / 6 |
+| **Visual y audio** (`visual`) | Sprites, animaciones, música y doblaje | 17 / 17 |
+| **Caprichos** (`capricho`) | Memes, cambios de aspecto y modos de caos | 16 / 17 |
 | **Trucos y herramientas** (`trucos`) | Menús de trucos y atajos para probar cosas | 5 / 5 |
 
 ## Presets
 
-- `minimo`: Base, Calidad de vida, Interfaz e información
-- `clean`: Base, Calidad de vida, Interfaz e información, Sinergias y jugabilidad, Visual y audio
-- `completo`: Base, Calidad de vida, Interfaz e información, Sinergias y jugabilidad, Contenido grande, Personajes, Visual y audio, Caprichos, Trucos y herramientas
+- `minimo`: Base, Calidad de vida, Interfaz e información, Rendimiento y estabilidad
+- `clean`: Base, Calidad de vida, Interfaz e información, Rendimiento y estabilidad, Sinergias y jugabilidad, Visual y audio
+- `completo`: Base, Calidad de vida, Interfaz e información, Rendimiento y estabilidad, Sinergias y jugabilidad, Contenido grande, Personajes, Visual y audio, Caprichos, Trucos y herramientas
 
 ## Valoración de combinaciones (orientativa, sin probar en el juego)
 - 🔴 Epiphany con cualquier otra expansión grande · 3 o más expansiones grandes · mods que requieren REPENTOGON sin REPENTOGON.

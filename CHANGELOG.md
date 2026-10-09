@@ -1,5 +1,18 @@
 # Registro de cambios
 
+## v0.3 — 2026-10-09
+### Añadido
+- **Pack «Rendimiento y estabilidad»** (entra en los presets `minimo` y `clean`): Mod Error Container, **Smart Culling** (3726132245, sin REPENTOGON), **AntiCrash** (2784448102), Potato Cup (2902768955) y Clear Tears/Antilag (2758700407). Elegidos con datos de la API de Steam; descartados `fpsup`, `lowfx` (2018, experimentales), **Mod Compatibility Hack** (obsoleto y puede empeorar el rendimiento) y **FPS Enhancer** (hace lo mismo que Smart Culling; usar uno solo). **High FPS** (3776277093) requiere instalar un componente nativo a mano: no se toca sin tu visto bueno.
+- Comando **`sincronizar`**: copia a `mods/` lo que Steam ya descargó. Comprobado que el lanzador de REPENTOGON (`SkipUpdateMods = 1`) no lo hace. Los nuevos de contenido grande, caprichos, trucos y Missing Costumes entran desactivados.
+- [Q5] Golden Brimstone (3007108843) catalogado como capricho, no suscrito.
+### Cambiado
+- `instalar` ahora también sincroniza. `juego_abierto()` ya no confunde el Steam de Whisky con el juego (antes bloqueaba `aplicar` con Steam abierto).
+### Corregido
+- Tras suscribirte a los 42 mods en v0.2, ninguno cargaba: seguían en `workshop/content` sin copiarse a `mods/`. Ahora están los 111 en `mods/` (10 desactivados a propósito).
+### Archivos y pruebas
+- Verificado: manifiesto sin ids duplicados ni descripciones vacías, regla de carpetas `<directory>_<id>` contra 69/69 mods, sintaxis de Python y JS, copia de seguridad previa, 10 `disable.it` esperados. Hallazgo: el juego volvió a escribir `Language=0` tras jugar (ver `docs/TRADUCCION.md`). **Sin probar el juego con los 111 mods**; las pruebas de fiabilidad las hace el usuario más adelante.
+- Pendiente: suscribir los 4 mods de rendimiento (la sesión de Steam en Chrome se cerró).
+
 ## v0.2 — 2026-10-09
 ### Añadido
 - **Packs temáticos** (Base, Calidad de vida, Interfaz, Sinergias, Contenido grande, Personajes, Visual y audio, Caprichos, Trucos) y comando `aplicar` que deja activos solo los elegidos con `disable.it` (reversible), más presets `minimo`, `clean`, `completo` y **perfiles guardados** (`guardar`).

@@ -6,6 +6,7 @@ Uso:
   isaac_pack.py packs                     lista los packs
   isaac_pack.py aplicar qol interfaz ...  deja activos SOLO esos packs (+ base); acepta presets y perfiles guardados
   isaac_pack.py guardar NOMBRE qol ...    guarda una combinación como perfil
+  isaac_pack.py sincronizar               copia a mods/ lo ya descargado por Steam (el lanzador REPENTOGON tiene SkipUpdateMods=1)
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
@@ -30,6 +31,7 @@ REPO = Path(__file__).resolve().parent.parent
 BOTELLA = Path("/Volumes/SanDisk/Juegos/whisky/steam11/drive_c")
 JUEGO = BOTELLA / "Program Files (x86)/Steam/steamapps/common/The Binding of Isaac Rebirth"
 MODS = JUEGO / "mods"
+WORKSHOP = BOTELLA / "Program Files (x86)/Steam/steamapps/workshop/content/250900"
 DATOS_EID = JUEGO / "data/external item descriptions"
 OPCIONES = [BOTELLA / f"users/{u}/Documents/My Games/Binding of Isaac Repentance+/options.ini" for u in ("david", "crossover")]
 EXTERNOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/externos")
@@ -45,6 +47,7 @@ PACKS = {
     "base": ("Base", "Librerías y menú de ajustes que usan los demás mods"),
     "qol": ("Calidad de vida", "Arreglos y comodidades que no cambian el equilibrio"),
     "interfaz": ("Interfaz e información", "HUD, estadísticas, enciclopedia y recordatorios"),
+    "rendimiento": ("Rendimiento y estabilidad", "Menos tirones y menos cierres con muchos objetos y mods"),
     "sinergias": ("Sinergias y jugabilidad", "Sinergias nuevas, objetos extra y pequeños cambios de reglas"),
     "contenido": ("Contenido grande", "Expansiones con muchos objetos, enemigos y mecánicas"),
     "personajes": ("Personajes", "Personajes jugables nuevos"),
@@ -53,8 +56,8 @@ PACKS = {
     "trucos": ("Trucos y herramientas", "Menús de trucos y atajos para probar cosas"),
 }
 PRESETS = {
-    "minimo": ["base", "qol", "interfaz"],
-    "clean": ["base", "qol", "interfaz", "sinergias", "visual"],
+    "minimo": ["base", "qol", "interfaz", "rendimiento"],
+    "clean": ["base", "qol", "interfaz", "rendimiento", "sinergias", "visual"],
     "completo": list(PACKS),
 }
 VEREDICTOS = {"esencial": "⭐ Esencial", "recomendado": "✅ Recomendado", "opcional": "◻️ Opcional", "herramienta": "🛠 Herramienta", "capricho": "🎭 Capricho", "quitar": "🗑 Quitar"}
@@ -73,7 +76,7 @@ def log(msg: str, auto: bool = False) -> None:
 
 
 def juego_abierto() -> bool:
-    return subprocess.run(["pgrep", "-fi", "isaac-ng|steam.exe"], capture_output=True).returncode == 0
+    return subprocess.run(["pgrep", "-fi", "isaac-ng"], capture_output=True).returncode == 0
 
 
 def instalados() -> dict[str, Path]:
@@ -127,7 +130,7 @@ def estado(_args=None, auto: bool = False) -> int:
             v = re.search(r"<version>(.*?)</version>", t)
             if v and v.group(1).strip() != man[i]["version"]:
                 log(f'Versión nueva: {man[i]["nombre"]}: {man[i]["version"]} -> {v.group(1).strip()}', auto)
-    por_instalar = [m for m in mods if m["id"] not in ins and m["pack"] != "descartado"]
+    por_instalar = [m for m in mods if m["id"] not in ins and m["pack"] != "descartado" and not m.get("no_suscribir")]
     if por_instalar:
         log(f"Por suscribir en Steam: {len(por_instalar)} (docs/suscribir.html o docs/suscribir_todo.js)", auto)
     for m in mods:
@@ -239,6 +242,38 @@ def guardar(args) -> int:
     return 0
 
 
+def sincronizar(_args=None) -> int:
+    """Copia a mods/ los mods que Steam ya descargó en workshop/content (el juego lo haría al arrancar, pero
+    el lanzador de REPENTOGON salta ese paso con SkipUpdateMods=1). Carpeta destino = <directory>_<id>, como el juego.
+    Contenido grande, caprichos y trucos nuevos entran DESACTIVADOS (disable.it) para no mezclar expansiones sin querer."""
+    if juego_abierto():
+        print("Cierra Isaac antes de sincronizar.")
+        return 1
+    man = {m["id"]: m for m in cargar()["mods"]}
+    ins = instalados()
+    nuevos = 0
+    for d in sorted(WORKSHOP.iterdir()) if WORKSHOP.exists() else []:
+        meta = d / "metadata.xml"
+        if d.name in ins or not meta.exists():
+            continue
+        t = meta.read_text(encoding="utf-8", errors="ignore")
+        directorio = re.search(r"<directory>(.*?)</directory>", t, re.S)
+        if not directorio:
+            continue
+        destino = MODS / f"{directorio.group(1).strip()}_{d.name}"
+        if destino.exists():
+            continue
+        shutil.copytree(d, destino)
+        m = man.get(d.name)
+        apagado = m is None or m.get("apagado") or m["pack"] in ("contenido", "capricho", "trucos", "descartado")
+        if apagado:
+            (destino / "disable.it").touch()
+        nuevos += 1
+        print(f'{"copiado (desactivado)" if apagado else "copiado y activo"}: {m["nombre"] if m else destino.name}')
+    print(f"{nuevos} mods copiados a mods/." if nuevos else "Nada nuevo que copiar.")
+    return 0
+
+
 # ---------------------------------------------------------------- español
 def instalar_mod_local(auto: bool) -> None:
     """Copia mods_locales/* a mods/ si cambian (no son de Workshop: sin sufijo _id)."""
@@ -322,6 +357,7 @@ def instalar(_args=None) -> int:
             print("Instálalo con el instalador oficial (repentogon.com/install) o descomprime el zip sobre la carpeta del juego.")
     except Exception as e:
         print(f"REPENTOGON: no se pudo descargar ({e}).")
+    sincronizar()
     espanol(argparse.Namespace(auto=False))
     docs()
     return 0
@@ -343,7 +379,7 @@ def docs(_args=None) -> int:
     mods = d["mods"]
     ins = instalados() if MODS.exists() else {}
     puestos = [m for m in mods if m["id"] in ins]
-    nuevos = [m for m in mods if m["id"] not in ins and m["pack"] != "descartado"]
+    nuevos = [m for m in mods if m["id"] not in ins and m["pack"] != "descartado" and not m.get("no_suscribir")]
     cab = f'_Generado desde `datos/mods.json` · {d["juego"]} {d["version_juego"]} · REPENTOGON {d["repentogon"]} · v{VERSION}_'
 
     # MODS.md: instalados, por veredicto
@@ -357,7 +393,7 @@ def docs(_args=None) -> int:
     # RECOMENDADOS.md: por instalar, por pack
     L = ["# Mods recomendados que aún no tienes", "", cab, "",
          "Datos (suscriptores y fecha) leídos de la API de Steam el 2026-10-09. Todos son de Workshop: se suscriben con un clic y Steam los mantiene al día.",
-         "⚙ = usa REPENTOGON (ya lo tienes instalado). «Tier 5» en el sentido de objetos de **calidad 5** = Lazy MattPack.", ""]
+         "⚙ = usa REPENTOGON (ya lo tienes instalado). «Tier 5» = objetos de **calidad 5**: **Lazy MattPack** (ya suscrito) trae versiones muy mejoradas de objetos que ya existían (Tech 5090, Knife Bender, Multi Mush, Comically Large Spoon Bender...). [Q5] Golden Brimstone es un modo caos aparte.", ""]
     for pid, (nombre, desc) in PACKS.items():
         g = [m for m in nuevos if m["pack"] == pid]
         if g:
@@ -459,6 +495,7 @@ def main() -> int:
     e.set_defaults(f=espanol)
     sub.add_parser("docs").set_defaults(f=docs)
     sub.add_parser("respaldo").set_defaults(f=respaldo)
+    sub.add_parser("sincronizar").set_defaults(f=sincronizar)
     sub.add_parser("instalar").set_defaults(f=instalar)
     args = p.parse_args()
     return args.f(args)

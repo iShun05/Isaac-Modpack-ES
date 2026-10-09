@@ -26,4 +26,5 @@ launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.ishun05.isaac-espanol.
 ```
 
 ## Dudas honestas
+- **Comprobado el 2026-10-09:** tras jugar, el juego volvió a escribir `Language=0` en `options.ini`. El valor 2 no se mantiene. El lanzador de REPENTOGON tiene su propio ajuste de idioma («Change Game Options», novedad de REPENTOGON 1.1.2e): úsalo para fijar el español y dime si el juego sale en español.
 - `Language=2` es el índice de español descubierto en `isaac-ng.exe` (registro 2026-09-28). El juego lo había vuelto a `0` tras las últimas sesiones; si tras aplicarlo sigue en inglés, el culpable es el idioma que informa Steam y habrá que revisarlo.

@@ -19,3 +19,8 @@ Es la mezcla que ya tienes, y es la mejor para una experiencia sin problemas.
 3. Abre Steam (en Whisky) y deja que descargue. Luego `python3 scripts/isaac_pack.py estado`.
 
 > No he podido suscribirte yo: requiere tu sesión de Steam y no tengo acceso a ella. El script usa la petición `/sharedfiles/subscribe` de la web de Steam y **no está probado**; si falla, usa `docs/suscribir.html` (un clic por mod).
+
+## Qué pasa después de suscribirte (comprobado el 2026-10-09)
+- Steam descarga el mod a `workshop/content/250900/<id>/`, pero **no lo copia a `mods/`**: el lanzador de REPENTOGON tiene `SkipUpdateMods = 1` (`Documents/My Games/repentogon_launcher.ini`) y salta esa copia. Por eso un mod recién suscrito no carga solo.
+- `python3 scripts/isaac_pack.py sincronizar` hace esa copia (carpeta `<directory>_<id>`, igual que el juego; comprobado con los 69 mods ya instalados) y deja **desactivados** los nuevos de contenido grande, caprichos y trucos.
+- Antes de sincronizar, `respaldo` guarda un zip de `mods/` (hecho hoy: `respaldos/mods_2026-10-09.zip`).
