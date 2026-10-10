@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## v1.7 — 2026-10-10
+### Añadido
+- **Escáner de lag dentro del juego** (panel `Packs ES` → pestaña **Escáner**): FPS medios, peor fotograma, tirones, entidades en pantalla y recomendaciones; **avisa con una notificación** si el juego va lento de forma sostenida y señala al mod sospechoso.
+- **Escáner por mod** (`mods_locales/!!!isaac_pack_scanner`, se carga el primero): mide cuánto tarda cada mod en sus callbacks (ms por fotograma) y los ordena. Opcional: `isaac_pack.py escaner on|off`, casilla en el panel o en la ventana de Windows. Anota los resultados en `log.txt` (`[PackScanner]`) y `diagnostico` los resume.
+### Archivos y pruebas
+- Lua comprobado con `lua-language-server` y probado con un Lua embebido (lupa) y APIs simuladas: el envoltorio devuelve los mismos valores, quita callbacks y propaga errores; el monitor calcula FPS, entidades y recomendaciones y lanza el aviso. PowerShell comprobado con PowerShell 7 (sintaxis y escritura de `config.lua`). **Sin probar dentro de Isaac ni en Windows.** Activado en el Mac para medir el lag.
+
 ## v1.6 — 2026-10-10
 ### Añadido
 - **Botón «▶ JUGAR» en la ventana de Windows**: en un clic copia a `mods\` lo que Steam ya descargó (comprobando el nombre de carpeta), aplica tus packs y las órdenes sueltas, fija el español, abre Steam si no está abierto y espera a que cargue, lanza el lanzador de REPENTOGON en modo sin ventana y **comprueba que Isaac cargó de verdad con REPENTOGON** (ruta `...\Repentogon\isaac-ng.exe`) y no la versión normal, avisando si no. Si faltan mods de Workshop pregunta si quieres jugar igualmente.

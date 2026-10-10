@@ -274,9 +274,20 @@ function Escribir-Panel($elegidos) {
     [IO.File]::WriteAllText($salida, (($L -join "`n") + "`n"), $script:utf8)
 }
 
+# Escáner por mod (mods\!!!isaac_pack_scanner\config.lua): mide cuánto tarda cada mod en sus callbacks. Pequeño coste, solo para diagnosticar.
+function Escribir-Config-Escaner($activo) {
+    $d = Join-Path $script:ModsDir '!!!isaac_pack_scanner'
+    if (-not (Test-Path $d)) { return }
+    $f = Join-Path $d 'config.lua'
+    $it = Get-Item $f -Force -ErrorAction SilentlyContinue
+    if ($it -and $it.Attributes -band [IO.FileAttributes]::ReparsePoint) { Remove-Item $f -Force }   # nunca escribir a través de un enlace
+    [IO.File]::WriteAllText($f, ('return { activo = ' + $(if ($activo) { 'true' } else { 'false' }) + " }`n"), $script:utf8)
+    Set-Content (Join-Path $script:Estado 'escaner.txt') $(if ($activo) { '1' } else { '0' })
+}
+
 # ---------------------------------------------------------------- Aplicar packs
 # Activa/desactiva los mods según los packs (y órdenes sueltas), aplica el parche de Job y refresca el panel.
-function Aplicar-Packs($elegidos, $on = @(), $off = @(), $ticksPendiente = $null) {
+function Aplicar-Packs($elegidos, $on = @(), $off = @(), $ticksPendiente = $null, $scanner = $null) {
     Parche-Job
     $n = 0
     foreach ($m in $script:Mods) {
@@ -290,6 +301,7 @@ function Aplicar-Packs($elegidos, $on = @(), $off = @(), $ticksPendiente = $null
     if ($ticksPendiente) { Set-Content (Join-Path $script:Estado 'panel_aplicado.txt') ([string]$ticksPendiente) }
     Set-Content (Join-Path $script:Estado 'ultimo.txt') ($elegidos -join ',')
     Escribir-Panel $elegidos
+    if ($null -ne $scanner) { Escribir-Config-Escaner ([bool]$scanner) }
     Log "$n mods configurados y panel del juego actualizado." 'ok'
     return $n
 }

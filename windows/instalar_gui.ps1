@@ -84,7 +84,10 @@ $btnClean = Nuevo-Boton 'Clean' 78; $btnCompleto = Nuevo-Boton 'Completo' 92; $b
 $flowPre.Controls.AddRange(@($btnClean, $btnCompleto, $btnMinimo))
 $lblPacks = Nueva-Etiqueta 'Packs (elige los que quieres jugar)' 10 $cTexto $true
 $lblPacks.Dock = 'Top'; $lblPacks.Height = 26
-$pnlIzq.Controls.Add($clbPacks); $pnlIzq.Controls.Add($flowPre); $pnlIzq.Controls.Add($lblPacks)
+$chkEscaner = New-Object Windows.Forms.CheckBox
+$chkEscaner.Text = 'Escáner de lag dentro del juego (mide cada mod)'; $chkEscaner.Dock = 'Bottom'; $chkEscaner.Height = 30
+$chkEscaner.ForeColor = $cTexto; $chkEscaner.BackColor = $cFondo
+$pnlIzq.Controls.Add($clbPacks); $pnlIzq.Controls.Add($chkEscaner); $pnlIzq.Controls.Add($flowPre); $pnlIzq.Controls.Add($lblPacks)
 
 $pnlDer = New-Object Windows.Forms.Panel; $pnlDer.Dock = 'Fill'; $pnlDer.Padding = New-Object Windows.Forms.Padding(8, 0, 4, 0)
 $clbMods = Nueva-Lista
@@ -176,7 +179,10 @@ function Cargar-Lista {
         Poner-Packs @($script:Pend.packs)
         foreach ($id in @($script:Pend.on)) { $script:Ovr["$id"] = $true }
         foreach ($id in @($script:Pend.off)) { $script:Ovr["$id"] = $false }
+        if ($null -ne $script:Pend.scanner) { $chkEscaner.Checked = [bool]$script:Pend.scanner }
         Log 'Selección guardada en el panel del juego cargada.' 'ok'
+    } elseif (Test-Path (Join-Path $script:Estado 'escaner.txt')) {
+        $chkEscaner.Checked = ((Get-Content (Join-Path $script:Estado 'escaner.txt') -Raw).Trim() -eq '1')
     }
     Pintar-Mods
     Refrescar-Estado
@@ -243,7 +249,7 @@ $btnInstalar.Add_Click({
         [void](Leer-Instalados)
         $falt = Mods-Que-Faltan $el $o.on $o.off
         Log "Faltan $($falt.Count) mods de Workshop." $(if ($falt.Count -gt 0) { 'aviso' } else { 'ok' })
-        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }))
+        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }) $chkEscaner.Checked)
         Fijar-Idioma
         $txt = "Listo.`r`n`r`n"
         if ($falt.Count -gt 0) { $txt += "Faltan $($falt.Count) mods de Workshop: pulsa «Suscribirme a lo que falta» (o «Abrir páginas en Steam»).`r`n`r`n" }
@@ -283,7 +289,7 @@ $btnAplicar.Add_Click({
         if (Aviso-Cerrar-Isaac) { return }
         $el = Packs-Elegidos; $o = Ordenes-Sueltas
         [void](Leer-Instalados)
-        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }))
+        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }) $chkEscaner.Checked)
         Log 'Selección aplicada. Abre Isaac con REPENTOGON.' 'ok'
     }
 })
@@ -303,7 +309,7 @@ $btnJugar.Add_Click({
         $n = Sincronizar-Workshop
         if ($n -gt 0) { Log "Copiados $n mods recién descargados a la carpeta de mods." 'ok' }
         [void](Leer-Instalados)
-        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }))
+        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }) $chkEscaner.Checked)
         Fijar-Idioma
         if (-not (Asegurar-Steam)) { return }
         [void](Lanzar-Isaac)

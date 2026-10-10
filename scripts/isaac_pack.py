@@ -10,6 +10,7 @@ Uso:
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
+  isaac_pack.py escaner on|off            activa/desactiva el escáner por mod (mide ms por fotograma de cada mod; se ve en el panel)
   isaac_pack.py preparar                  lo que se hace antes de abrir Isaac: copia mods nuevos, parches, aplica el panel y lo refresca
   isaac_pack.py parches                   crea copias corregidas de mods ajenos (Job) sin tocar los originales
   isaac_pack.py diagnostico               lee log.txt del juego: mods que fallan en bucle, avisos repetidos y memoria Lua
@@ -263,6 +264,7 @@ def aplicar(args) -> int:
 
 # ---------------------------------------------------------------- panel dentro del juego
 PANEL = "isaac_pack_panel"
+ESCANER = "!!!isaac_pack_scanner"
 
 
 def lua_str(s: str) -> str:
@@ -359,6 +361,23 @@ def escribir_panel() -> None:
     salida.write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
+def escribir_config_escaner(activo: bool) -> None:
+    """El escáner por mod solo mide si su config.lua dice activo = true (mide cada callback: pequeño coste)."""
+    destino = MODS / ESCANER
+    if not destino.exists():
+        return
+    salida = destino / "config.lua"
+    if salida.is_symlink():
+        salida.unlink()
+    salida.write_text(f"return {{ activo = {'true' if activo else 'false'} }}\n", encoding="utf-8")
+
+
+def escaner(args) -> int:
+    escribir_config_escaner(args.estado == "on")
+    print(f"Escáner por mod {'ACTIVADO' if args.estado == 'on' else 'desactivado'}: se aplica al abrir Isaac. Resultados: panel (F9) → Escáner y `diagnostico`.")
+    return 0
+
+
 def preparar(_args=None) -> int:
     """Lo que hay que hacer justo antes de abrir Isaac: copiar mods nuevos, parches, aplicar lo elegido en el panel y refrescar el panel."""
     if not MODS.exists():
@@ -377,6 +396,8 @@ def preparar(_args=None) -> int:
         _aplicar(elegidos, set(map(str, pend.get("on") or [])), set(map(str, pend.get("off") or [])))
         (REPO / "datos" / "panel_aplicado.txt").write_text(str(pend["_mtime"]))
     instalar_mod_local(False)
+    if pend and "scanner" in pend:
+        escribir_config_escaner(bool(pend["scanner"]))
     escribir_panel()
     return 0
 
@@ -702,6 +723,16 @@ def diagnostico(_args=None) -> int:
     for k, n in sorted(cuenta.items(), key=lambda kv: -kv[1])[:3]:
         if n >= 500:
             print(f"🟠 {n} avisos repetidos: {k}")
+    medidas = re.findall(r"\[PackScanner\] mod=(.+?) avg_ms=([\d.]+) max_ms=([\d.]+) calls=(\d+) frames=(\d+)", texto)
+    if medidas:
+        ultimo_frames = medidas[-1][4]
+        bloque = {m[0]: m for m in medidas if m[4] == ultimo_frames}
+        print(f"Escáner por mod (último volcado, {ultimo_frames} fotogramas):")
+        for nombre, avg, mx, calls, _ in sorted(bloque.values(), key=lambda m: -float(m[1]))[:8]:
+            marca = "🔴" if float(avg) > 5 else "🟠" if float(avg) > 2 else "  "
+            print(f"  {marca} {nombre}: {float(avg):.2f} ms/fotograma (máx. {float(mx):.1f} ms, {calls} llamadas)")
+    elif OPCIONES[0].parent.exists():
+        print("Escáner por mod sin datos en este log (actívalo con `isaac_pack.py escaner on` o en el panel).")
     mem = [int(x) for x in re.findall(r"Lua mem usage: (\d+) KB", texto)]
     if mem:
         print(f"Memoria Lua: de {mem[0]} KB a {mem[-1]} KB (máx {max(mem)} KB)")
@@ -762,6 +793,9 @@ def main() -> int:
     sub.add_parser("diagnostico").set_defaults(f=diagnostico)
     sub.add_parser("parches").set_defaults(f=parches)
     sub.add_parser("preparar").set_defaults(f=preparar)
+    es = sub.add_parser("escaner")
+    es.add_argument("estado", choices=["on", "off"])
+    es.set_defaults(f=escaner)
     sub.add_parser("instalar").set_defaults(f=instalar)
     args = p.parse_args()
     return args.f(args)

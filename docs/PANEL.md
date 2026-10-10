@@ -11,6 +11,7 @@ Necesita REPENTOGON (usa su menú ImGui, el de la tecla de consola `~`).
 |---|---|
 | **Packs** | Marca los packs que quieres (con su contador de mods activos), usa los presets *clean / completo / minimo* y pulsa **Guardar selección**. |
 | **Mods** | Lista de todos los mods por pack, con una casilla para activar o desactivar uno suelto (pasa el ratón para ver qué hace). Los no instalados salen aparte. |
+| **Escáner** | Mide los FPS y las entidades en pantalla mientras juegas y **te avisa** (notificación) si el juego va lento de forma sostenida. Con «Medir cada mod» activado muestra el **ranking de mods por coste** (ms por fotograma, con ⚠ si pasa de 2 ms) y recomendaciones concretas (qué mod desactivar, qué mods de rendimiento probar). Botones **Copiar informe** y **Reiniciar medidas**. |
 | **Errores** | Errores de Lua de la **sesión anterior**, agrupados por mod, con cuántas veces fallaron, el primer mensaje y la pila. Botón **Copiar al portapapeles** para pegármelos. |
 
 ## Cómo se aplica lo que elijas
@@ -34,3 +35,10 @@ Un mod no puede crear los archivos `disable.it` desde dentro del juego, así que
 - No muestra errores de la sesión en curso (Lua no puede leer el log); salen en el panel rojo de REPENTOGON «Error Display» y en la consola.
 - No suscribe a mods de Workshop: eso solo lo puede hacer tu cuenta de Steam (ver `DECISION_WORKSHOP.md`).
 - **Sin probar dentro del juego.** El código del panel pasa el análisis de `lua-language-server` y usa solo funciones de la documentación oficial de REPENTOGON, pero no lo he podido abrir.
+
+## Escáner de lag
+- **Parte ligera (siempre activa con el panel):** FPS medios, peor fotograma, tirones (>40 ms) y cuántos efectos, lágrimas, láseres, proyectiles y enemigos hay. Si el juego va por debajo de 33 ms/fotograma durante 5 s, sale un aviso (como máximo uno por minuto).
+- **Parte por mod (opcional):** el mod `!!!isaac_pack_scanner` se carga el primero y envuelve los callbacks de los demás mods para medir cuánto tarda cada uno. Se activa con «Medir cada mod» (pestaña Escáner) + Guardar + reabrir, con `isaac_pack.py escaner on` (Mac) o la casilla de la ventana de Windows. Añade un pequeño coste: apágalo cuando ya no lo necesites.
+- **Fuera del juego:** cada ~30 s de juego anota en `log.txt` las líneas `[PackScanner] mod=… avg_ms=…`, y `isaac_pack.py diagnostico` las resume.
+- **Cómo se calcula:** 16,6 ms por fotograma es todo el presupuesto de 60 FPS; un mod que gaste más de 2 ms por sí solo es sospechoso.
+- Probado con un Lua embebido y APIs simuladas (envoltorio de callbacks: devuelve los mismos valores, quita callbacks bien y propaga errores; monitor: FPS, entidades, recomendaciones y aviso). **No probado dentro de Isaac.**

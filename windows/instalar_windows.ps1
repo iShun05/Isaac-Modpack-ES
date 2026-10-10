@@ -89,7 +89,7 @@ if ($faltan.Count -gt 0 -and -not $Rapido) {
 }
 
 Titulo '5. Activando tus packs'
-[void](Aplicar-Packs $elegidos $on $off $(if ($pend) { $pend.ticks } else { $null }))
+[void](Aplicar-Packs $elegidos $on $off $(if ($pend) { $pend.ticks } else { $null }) $(if ($pend -and $null -ne $pend.scanner) { [bool]$pend.scanner } else { $null }))
 Log 'Los mods recién descargados aparecen en la carpeta mods al abrir Isaac por primera vez. Cuando termine de cargar, cierra el juego y VUELVE A EJECUTAR este instalador (o Aplicar_seleccion.bat) para activar solo tus packs.' 'aviso'
 
 Titulo '6. Español y panel'
