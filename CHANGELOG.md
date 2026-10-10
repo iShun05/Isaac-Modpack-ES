@@ -1,5 +1,15 @@
 # Registro de cambios
 
+## v1.5 — 2026-10-10
+### Añadido
+- **Instalador de Windows con ventana** (`Instalar_Windows.bat` → `windows/instalar_gui.ps1`), tema negro: lista de packs con presets Clean/Completo/Mínimo, lista de mods con casilla por mod, contador de lo descargado y lo que falta, y botones **Instalar / actualizar todo**, **Suscribirme a lo que falta**, **Abrir páginas en Steam**, **Aplicar selección** y **Abrir Isaac (REPENTOGON)**, con un registro de lo que va haciendo. Carga la selección guardada en el panel del juego.
+- El modo consola sigue disponible (`Instalar_Windows_consola.bat`).
+### Cambiado
+- La lógica común vive en `windows/lib.ps1`; ventana y consola usan las mismas funciones. «Abrir Isaac» avisa si Steam no está abierto y lo abre.
+### Archivos y pruebas
+- **Comprobado con PowerShell 7 oficial (hash verificado) en el Mac:** los tres `.ps1` pasan el análisis sintáctico, y la lógica de `lib.ps1` se probó contra una carpeta de Isaac de prueba (detección de mods, packs con `disable.it`, parche de Job, datos de Job, generación del panel con Lua válido, descarga del lanzador de REPENTOGON con verificación de hash).
+- **No se pudo probar la ventana** (WinForms no existe fuera de Windows) ni el acceso directo del Escritorio. Con Smart App Control activo, la ventana y REPENTOGON seguirán bloqueados.
+
 ## v1.4 — 2026-10-10
 ### Corregido
 - **Idioma: el código de español era el equivocado.** `Language=2` es **japonés**; el español es **`4`** (REPENTOGON, `enums/Language.md`). Corregido en `isaac_pack.py` (Mac) y en el instalador de Windows. Aplicado en el Mac.

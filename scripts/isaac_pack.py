@@ -719,7 +719,7 @@ def empaquetar(_args=None) -> int:
     leeme = (
         "ISAAC PACK ES - instalador para Windows 10/11\r\n\r\n"
         "1. Descomprime este zip ENTERO (no lo abras desde dentro del zip).\r\n"
-        "2. Doble clic en Instalar_Windows.bat. Si SmartScreen avisa: Mas informacion > Ejecutar de todas formas.\r\n"
+        "2. Doble clic en Instalar_Windows.bat (abre una ventana). Si SmartScreen avisa: Mas informacion > Ejecutar de todas formas. Si la ventana no abre, usa Instalar_Windows_consola.bat.\r\n"
         "3. Elige tu pack y sigue los pasos. Se puede ejecutar varias veces.\r\n"
         "4. Abre Isaac con el acceso 'Isaac con REPENTOGON' del Escritorio (con Steam abierto).\r\n"
         "5. Dentro del juego: pulsa ~ y abre Packs ES (o F9) para elegir packs y mods; luego cierra Isaac y ejecuta Aplicar_seleccion.bat.\r\n\r\n"
@@ -728,7 +728,9 @@ def empaquetar(_args=None) -> int:
     with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
         z.write(REPO / "Instalar_Windows.bat", "Instalar_Windows.bat")
         z.write(REPO / "Aplicar_seleccion.bat", "Aplicar_seleccion.bat")
-        z.write(REPO / "windows/instalar_windows.ps1", "windows/instalar_windows.ps1")
+        for nombre in ("lib.ps1", "instalar_gui.ps1", "instalar_windows.ps1"):
+            z.write(REPO / "windows" / nombre, f"windows/{nombre}")
+        z.write(REPO / "Instalar_Windows_consola.bat", "Instalar_Windows_consola.bat")
         z.write(REPO / "datos/mods.json", "datos/mods.json")
         for f in sorted((LOCAL).rglob("*")):
             if f.is_file():
