@@ -11,3 +11,9 @@
 **Cómo abrir Isaac:** con Steam abierto, desde el acceso **REPENTOGON** (anclado en Whisky o `/Applications/REPENTOGON.app`). Abrirlo desde Steam lo arranca sin REPENTOGON.
 
 **Si vuelve a pasar:** `python3 scripts/isaac_pack.py estado` no lo detecta; comprueba que `REPENTOGONLauncher/launcher-data/launcher.txt` y la versión del `.exe` (primera línea de `launcher.log`) coinciden.
+
+## Segundo fallo: «REPENTOGON REQUIRED» aunque el lanzador funcione (2026-10-10)
+**Síntoma:** Isaac abre y Lazy MattPack dice «REPENTOGON REQUIRED». La barra del juego pone `v1.9.7.17` a secas.
+**Causa (comprobada en `launcher.log`):** el lanzador arrancó, pero `isaac-ng.exe` salió al instante con código `0x35` porque **Steam estaba cerrado**. Isaac se relanza entonces a través de Steam, y Steam abre la versión normal, sin REPENTOGON.
+**Arreglo:** `/Applications/REPENTOGON.app` ahora abre Steam antes (en silencio), espera a que esté listo y después lanza el lanzador. Copia del script anterior en `Juegos/mods/The_Binding_of_Isaac/respaldos/`.
+**Si usas el acceso anclado dentro de Whisky:** abre Steam primero y espera a que cargue.

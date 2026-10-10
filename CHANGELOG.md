@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## v1.0 — 2026-10-10
+### Corregido
+- **«REPENTOGON REQUIRED» tras abrir con el acceso de REPENTOGON.** Con Steam cerrado, el juego salía con código `0x35` y Steam lo relanzaba sin REPENTOGON. `/Applications/REPENTOGON.app` ahora abre Steam antes y espera (detalle en `docs/REPENTOGON_LANZADOR.md`).
+### Archivos y pruebas
+- `REPENTOGON.app` (fuera del repo), `docs/REPENTOGON_LANZADOR.md`. Sintaxis del script comprobada; **no probado abriendo con Steam cerrado**.
+
 ## v0.9 — 2026-10-10
 ### Añadido
 - Comando **`diagnostico`**: lee el `log.txt` del juego y señala mods que fallan en bucle, avisos que se repiten miles de veces y la memoria de Lua.

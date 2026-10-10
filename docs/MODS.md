@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v0.9_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.0_
 
 ## ⭐ Esencial (4)
 
