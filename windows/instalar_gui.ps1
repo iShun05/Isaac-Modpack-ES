@@ -95,7 +95,7 @@ $tlp.Controls.Add($pnlIzq, 0, 0); $tlp.Controls.Add($pnlDer, 1, 0)
 
 # botones de acción
 $pnlAcc = New-Object Windows.Forms.Panel
-$pnlAcc.Dock = 'Bottom'; $pnlAcc.Height = 124; $pnlAcc.BackColor = $cFondo; $pnlAcc.Padding = New-Object Windows.Forms.Padding(18, 6, 18, 0)
+$pnlAcc.Dock = 'Bottom'; $pnlAcc.Height = 132; $pnlAcc.BackColor = $cFondo; $pnlAcc.Padding = New-Object Windows.Forms.Padding(18, 6, 18, 0)
 $lblEstado = Nueva-Etiqueta '' 9.5 $cMut
 $lblEstado.Dock = 'Top'; $lblEstado.Height = 26
 $flowAcc = New-Object Windows.Forms.FlowLayoutPanel; $flowAcc.Dock = 'Fill'; $flowAcc.BackColor = $cFondo
@@ -103,8 +103,9 @@ $btnInstalar = Nuevo-Boton 'Instalar / actualizar todo' 210 $true
 $btnSuscribir = Nuevo-Boton 'Suscribirme a lo que falta' 200
 $btnSteam = Nuevo-Boton 'Abrir páginas en Steam' 170
 $btnAplicar = Nuevo-Boton 'Aplicar selección' 150
-$btnIsaac = Nuevo-Boton 'Abrir Isaac (REPENTOGON)' 200
-$flowAcc.Controls.AddRange(@($btnInstalar, $btnSuscribir, $btnSteam, $btnAplicar, $btnIsaac))
+$btnJugar = Nuevo-Boton '▶  JUGAR' 190 $true
+$btnJugar.Height = 46; $btnJugar.Font = New-Object Drawing.Font('Segoe UI', 12, [Drawing.FontStyle]::Bold)
+$flowAcc.Controls.AddRange(@($btnJugar, $btnInstalar, $btnSuscribir, $btnSteam, $btnAplicar))
 $pnlAcc.Controls.Add($flowAcc); $pnlAcc.Controls.Add($lblEstado)
 
 # registro
@@ -115,6 +116,7 @@ $txtLog.BackColor = $cPanel; $txtLog.ForeColor = $cTexto; $txtLog.BorderStyle = 
 # el orden de alta decide el apilado: primero el centro, luego lo que va pegado a los bordes
 $f.Controls.Add($tlp); $f.Controls.Add($pnlAcc); $f.Controls.Add($txtLog); $f.Controls.Add($pnlTop)
 
+$script:Tick = { [Windows.Forms.Application]::DoEvents() }
 $script:LogFn = {
     param($t, $nivel)
     $pre = switch ($nivel) { 'ok' { '[OK] ' } 'aviso' { '[!]  ' } 'error' { '[X]  ' } default { '' } }
@@ -286,18 +288,25 @@ $btnAplicar.Add_Click({
     }
 })
 
-$btnIsaac.Add_Click({
+$btnJugar.Add_Click({
     Ejecutar-Seguro {
         if (Aviso-Cerrar-Isaac) { return }
-        if (-not (Steam-Abierto)) {
-            Start-Process 'steam://open/main'
-            [void][Windows.Forms.MessageBox]::Show('Steam no estaba abierto: lo estoy abriendo. Espera a que cargue del todo e inicia sesión, y pulsa de nuevo «Abrir Isaac».', 'Isaac Pack ES', 'OK', 'Information')
-            return
+        $el = Packs-Elegidos; $o = Ordenes-Sueltas
+        [void](Leer-Instalados)
+        $falt = Mods-Que-Faltan $el $o.on $o.off
+        if ($falt.Count -gt 0) {
+            $r = [Windows.Forms.MessageBox]::Show("Faltan $($falt.Count) mods de Workshop por suscribirte o descargar. Puedes jugar igualmente sin ellos, o cancelar y pulsar «Suscribirme a lo que falta».`r`n`r`n¿Jugar igualmente?", 'Isaac Pack ES', 'YesNo', 'Question')
+            if ($r -ne 'Yes') { return }
         }
-        $exe = Join-Path $script:Juego 'REPENTOGONLauncher\REPENTOGONLauncher.exe'
-        if (-not (Test-Path $exe)) { Log 'El lanzador de REPENTOGON no está instalado: pulsa «Instalar / actualizar todo».' 'aviso'; return }
-        Start-Process $exe -WorkingDirectory (Split-Path $exe)
-        Log 'Abriendo Isaac con REPENTOGON…' 'ok'
+        [void](Instalar-Lanzador)
+        Instalar-Locales
+        $n = Sincronizar-Workshop
+        if ($n -gt 0) { Log "Copiados $n mods recién descargados a la carpeta de mods." 'ok' }
+        [void](Leer-Instalados)
+        [void](Aplicar-Packs $el $o.on $o.off $(if ($script:Pend) { $script:Pend.ticks } else { $null }))
+        Fijar-Idioma
+        if (-not (Asegurar-Steam)) { return }
+        [void](Lanzar-Isaac)
     }
 })
 

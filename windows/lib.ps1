@@ -9,6 +9,7 @@ $script:Estado = Join-Path $env:LOCALAPPDATA 'IsaacPackES'
 New-Item -ItemType Directory -Path $script:Estado -Force | Out-Null
 $script:utf8 = New-Object Text.UTF8Encoding($false)   # sin BOM: un BOM al inicio rompe los .lua
 $script:LogFn = $null
+$script:Tick = $null   # la ventana pone aquí DoEvents para no congelarse mientras espera
 
 $script:Packs = [ordered]@{
     base        = 'Base (siempre activo)'
@@ -323,4 +324,82 @@ function Texto-Suscripcion($faltan) {
 }
 function Mods-Que-Faltan($elegidos, $on = @(), $off = @()) {
     return @($script:Mods | Where-Object { (Debe-Estar-Activo $_ $elegidos $on $off) -and -not $_.no_suscribir -and -not $script:Instalados.ContainsKey($_.id) })
+}
+
+# ---------------------------------------------------------------- Jugar: todo en un clic
+function Pausa($seg) {
+    $fin = (Get-Date).AddSeconds($seg)
+    while ((Get-Date) -lt $fin) { Start-Sleep -Milliseconds 250; if ($script:Tick) { & $script:Tick } }
+}
+
+# Copia a mods\ lo que Steam ya descargó en workshop\content (carpeta destino = <directory>_<id>, como hace el juego).
+# El nombre viene del metadata.xml de un mod ajeno: solo se acepta un nombre simple dentro de mods\.
+function Sincronizar-Workshop {
+    if (-not (Test-Path $script:WorkshopDir)) { return 0 }
+    $n = 0
+    $modsCompleto = [IO.Path]::GetFullPath($script:ModsDir).TrimEnd('\')
+    foreach ($d in (Get-ChildItem $script:WorkshopDir -Directory)) {
+        $meta = Join-Path $d.FullName 'metadata.xml'
+        if (-not (Test-Path $meta)) { continue }
+        $ya = Get-ChildItem $script:ModsDir -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match ('_' + [regex]::Escape($d.Name) + '$') } | Select-Object -First 1
+        if ($ya) { continue }
+        $m = [regex]::Match([IO.File]::ReadAllText($meta), '<directory>(.*?)</directory>', 'Singleline')
+        if (-not $m.Success) { continue }
+        $nombre = $m.Groups[1].Value.Trim()
+        if ($nombre -notmatch '^[\w .\-()\[\]''`!+&]+$' -or $nombre -eq '.' -or $nombre -eq '..') { Log "Nombre de carpeta sospechoso en $($d.Name): se omite." 'aviso'; continue }
+        $dest = Join-Path $script:ModsDir ($nombre + '_' + $d.Name)
+        if ((Split-Path ([IO.Path]::GetFullPath($dest))).TrimEnd('\') -ne $modsCompleto) { continue }
+        if (Test-Path $dest) { continue }
+        Copy-Item $d.FullName $dest -Recurse
+        $n++
+    }
+    return $n
+}
+
+function Ruta-Steam {
+    $r = (Get-ItemProperty 'HKCU:\Software\Valve\Steam' -ErrorAction SilentlyContinue).SteamExe
+    if ($r) { return ($r -replace '/', '\') }
+    return $null
+}
+
+# Steam tiene que estar abierto ANTES del lanzador: si no, Isaac sale al instante y Steam abre la versión sin REPENTOGON.
+function Asegurar-Steam {
+    if (Steam-Abierto) { return $true }
+    $exe = Ruta-Steam
+    if (-not $exe -or -not (Test-Path $exe)) { Log 'No encuentro Steam: ábrelo tú, inicia sesión y vuelve a pulsar Jugar.' 'aviso'; return $false }
+    Log 'Abriendo Steam (puede tardar un poco)…'
+    Start-Process $exe -ArgumentList '-silent'
+    $fin = (Get-Date).AddSeconds(120)
+    while ((Get-Date) -lt $fin -and -not (Get-Process -Name 'steamwebhelper' -ErrorAction SilentlyContinue)) { Pausa 1 }
+    if (-not (Get-Process -Name 'steamwebhelper' -ErrorAction SilentlyContinue)) { Log 'Steam no terminó de abrirse. Ábrelo tú, inicia sesión y vuelve a pulsar Jugar.' 'aviso'; return $false }
+    Log 'Steam abierto. Esperando a que inicie sesión…'
+    Pausa 20
+    return $true
+}
+
+# Lanza Isaac con REPENTOGON y comprueba que de verdad cargó (ruta ...\Repentogon\isaac-ng.exe) y no la versión normal.
+function Lanzar-Isaac {
+    if (Isaac-Abierto) { Log 'Isaac ya está abierto: ciérralo del todo (si ves «REPENTOGON REQUIRED», es la versión sin REPENTOGON) y vuelve a pulsar Jugar.' 'aviso'; return $false }
+    $lanz = Join-Path $script:Juego 'REPENTOGONLauncher\REPENTOGONLauncher.exe'
+    if (-not (Test-Path $lanz)) { Log 'El lanzador de REPENTOGON no está instalado: pulsa «Instalar / actualizar todo».' 'aviso'; return $false }
+    $ini = Join-Path $env:USERPROFILE 'Documents\My Games\repentogon_launcher.ini'
+    $isaac = Join-Path $script:Juego 'isaac-ng.exe'
+    if (Test-Path $ini) {
+        Start-Process $lanz -ArgumentList ('--stealth-mode --isaac="' + $isaac + '"') -WorkingDirectory (Split-Path $lanz)
+    } else {
+        Log 'Primera vez con el lanzador: puede abrirse su ventana de configuración; acepta lo que propone y pulsa Jugar otra vez.' 'aviso'
+        Start-Process $lanz -WorkingDirectory (Split-Path $lanz)
+        return $true
+    }
+    Log 'Lanzando Isaac con REPENTOGON…'
+    $p = $null
+    $fin = (Get-Date).AddSeconds(60)
+    while ((Get-Date) -lt $fin -and -not $p) { Pausa 1; $p = Get-Process -Name 'isaac-ng' -ErrorAction SilentlyContinue | Select-Object -First 1 }
+    if (-not $p) { Log 'Isaac no llegó a abrirse. Mira el registro del lanzador (REPENTOGONLauncher\launcher.log). Con Smart App Control activo el lanzador no puede arrancar.' 'error'; return $false }
+    Pausa 8   # por si Steam relanza la versión normal
+    $p = Get-Process -Name 'isaac-ng' -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($p -and $p.Path -and $p.Path -like '*\Repentogon\*') { Log 'Isaac abierto con REPENTOGON. ¡A jugar!' 'ok'; return $true }
+    if ($p) { Log 'Se abrió Isaac SIN REPENTOGON. Ciérralo del todo y pulsa Jugar otra vez (con Steam ya abierto).' 'aviso'; return $false }
+    Log 'Isaac se cerró nada más abrirse. Pulsa Jugar otra vez; si se repite, revisa el registro del lanzador.' 'aviso'
+    return $false
 }

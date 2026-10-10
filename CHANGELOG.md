@@ -1,5 +1,13 @@
 # Registro de cambios
 
+## v1.6 — 2026-10-10
+### Añadido
+- **Botón «▶ JUGAR» en la ventana de Windows**: en un clic copia a `mods\` lo que Steam ya descargó (comprobando el nombre de carpeta), aplica tus packs y las órdenes sueltas, fija el español, abre Steam si no está abierto y espera a que cargue, lanza el lanzador de REPENTOGON en modo sin ventana y **comprueba que Isaac cargó de verdad con REPENTOGON** (ruta `...\Repentogon\isaac-ng.exe`) y no la versión normal, avisando si no. Si faltan mods de Workshop pregunta si quieres jugar igualmente.
+### Cambiado
+- Sustituye al botón «Abrir Isaac (REPENTOGON)», que solo abría el lanzador. Primera vez con el lanzador (sin su `repentogon_launcher.ini`): lo abre normal para que pase su configuración.
+### Archivos y pruebas
+- `windows/lib.ps1` (nuevas `Sincronizar-Workshop`, `Asegurar-Steam`, `Lanzar-Isaac`, `Pausa`) y `windows/instalar_gui.ps1`. Con PowerShell 7 en el Mac: los tres `.ps1` pasan el análisis sintáctico y `Sincronizar-Workshop` se probó (copia nombres válidos, rechaza `../evil`, segunda pasada sin cambios). **No probado en Windows**: abrir Steam, lanzar y detectar REPENTOGON; tampoco la ventana. Con Smart App Control activo el lanzador no arranca.
+
 ## v1.5 — 2026-10-10
 ### Añadido
 - **Instalador de Windows con ventana** (`Instalar_Windows.bat` → `windows/instalar_gui.ps1`), tema negro: lista de packs con presets Clean/Completo/Mínimo, lista de mods con casilla por mod, contador de lo descargado y lo que falta, y botones **Instalar / actualizar todo**, **Suscribirme a lo que falta**, **Abrir páginas en Steam**, **Aplicar selección** y **Abrir Isaac (REPENTOGON)**, con un registro de lo que va haciendo. Carga la selección guardada en el panel del juego.
