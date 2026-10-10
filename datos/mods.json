@@ -567,11 +567,12 @@
    "categoria": "Personajes",
    "veredicto": "opcional",
    "descripcion": "Eevee: Reunited (demo): Eevee con todas sus evoluciones, ataques e objetos temáticos Pokémon.",
-   "nota": "Demo; retira el viejo Eevee de AB+.",
+   "nota": "DESACTIVADO (2026-10-10): en tu instalación falla en cada fotograma (15.013 errores en una partida, «MomsHeart» nil en petVee.lua) y provoca lag. Demo; se reactiva quitando disable.it si se corrige.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2653691445",
    "pack": "personajes",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "2955792897",
@@ -1872,5 +1873,5 @@
    "no_suscribir": true
   }
  ],
- "version_pack": "0.8"
+ "version_pack": "0.9"
 }

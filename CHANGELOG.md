@@ -1,5 +1,17 @@
 # Registro de cambios
 
+## v0.9 — 2026-10-10
+### Añadido
+- Comando **`diagnostico`**: lee el `log.txt` del juego y señala mods que fallan en bucle, avisos que se repiten miles de veces y la memoria de Lua.
+### Corregido
+- **Lag extremo en Isaac.** Medido en el log de una partida (137.441 líneas, 9,4 MB): **Eevee: Reunited (demo)** fallaba **15.013 veces** (una por fotograma, error `nil value (field 'MomsHeart')` en `petVee.lua`), cada una con volcado de pila. Desactivado (`disable.it`) y marcado `apagado` en el manifiesto para que ni `sincronizar` ni el instalador de Windows lo reactiven.
+### Pendiente / sin resolver
+- **41.362 avisos «Sound 837/846 has no samples»** desde la sala inicial: no he identificado qué los origina. Hipótesis sin comprobar: el lanzador ejecuta una copia v1.9.7.12 del juego con recursos de la v1.9.7.17.
+- **InvEdit** escupe 1.020 avisos `AnmCache` (herramienta de trucos activa).
+- Memoria Lua normal (57 MB): descartada como causa.
+### Archivos y pruebas
+- `scripts/isaac_pack.py`, `datos/mods.json`. Falta que el usuario juegue un rato y se vuelva a ejecutar `diagnostico` para confirmar la mejora. Sin medir FPS reales.
+
 ## v0.8 — 2026-10-09
 ### Añadido
 - **Instalador de Windows 10/11** (`Instalar_Windows.bat` + `windows/instalar_windows.ps1`), listo para otros equipos: localiza Isaac en Steam (registro y `libraryfolders.vdf`), instala lo que no es de Workshop (lanzador oficial de REPENTOGON con hash verificado y acceso directo en el Escritorio, mod local de traducción), detecta qué mods de Workshop faltan y ofrece suscribirse a todos de golpe (script copiado al portapapeles para la consola de steamcommunity.com) o abrir cada página en la aplicación de Steam, y activa los packs elegidos con `disable.it` (clean, completo o mínimo). Se puede ejecutar varias veces.

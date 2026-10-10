@@ -10,6 +10,7 @@ Uso:
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
+  isaac_pack.py diagnostico               lee log.txt del juego: mods que fallan en bucle, avisos repetidos y memoria Lua
   isaac_pack.py empaquetar                zip con el instalador de Windows 10/11 (dist/)
   isaac_pack.py instalar                  estado + REPENTOGON si falta + español + docs
 Presets: minimo · clean · completo
@@ -493,6 +494,41 @@ footer{{margin-top:24px;color:var(--mut);font-size:.85rem}}
     return 0
 
 
+def diagnostico(_args=None) -> int:
+    """Busca la causa de lag en el log del juego: errores Lua repetidos por mod y avisos que se repiten miles de veces."""
+    log_txt = OPCIONES[0].parent / "log.txt"
+    if not log_txt.exists():
+        print("No encuentro log.txt: abre el juego una vez.")
+        return 1
+    texto = log_txt.read_text(encoding="utf-8", errors="ignore")
+    lineas = texto.splitlines()
+    print(f"log.txt: {len(lineas)} líneas, {log_txt.stat().st_size // 1024} KB")
+    por_mod: dict[str, int] = {}
+    for m in re.finditer(r'Error in "([^"]+)" call from "([^"]+)"', texto):
+        por_mod[m.group(2)] = por_mod.get(m.group(2), 0) + 1
+    graves = {k: v for k, v in por_mod.items() if v >= 50}
+    for mod, n in sorted(graves.items(), key=lambda kv: -kv[1]):
+        print(f"🔴 «{mod}» falla {n} veces: casi seguro causa de lag. Desactívalo (disable.it) o actualízalo.")
+    for mod, n in por_mod.items():
+        if mod not in graves:
+            print(f"🟡 «{mod}» falló {n} vez/veces (no es en bucle).")
+    normal = re.compile(r"\d+(\.\d+)?")
+    cuenta: dict[str, int] = {}
+    for l in lineas:
+        if "[warn]" in l or "Warning" in l:
+            k = normal.sub("N", l)[:120]
+            cuenta[k] = cuenta.get(k, 0) + 1
+    for k, n in sorted(cuenta.items(), key=lambda kv: -kv[1])[:3]:
+        if n >= 500:
+            print(f"🟠 {n} avisos repetidos: {k}")
+    mem = [int(x) for x in re.findall(r"Lua mem usage: (\d+) KB", texto)]
+    if mem:
+        print(f"Memoria Lua: de {mem[0]} KB a {mem[-1]} KB (máx {max(mem)} KB)")
+    if not graves:
+        print("Sin mods fallando en bucle en este log.")
+    return 0
+
+
 def empaquetar(_args=None) -> int:
     """Crea dist/Isaac_Pack_ES_Windows_v<ver>.zip: instalador .bat + .ps1, manifiesto, mod local y lista de suscripción."""
     docs()
@@ -538,6 +574,7 @@ def main() -> int:
     sub.add_parser("respaldo").set_defaults(f=respaldo)
     sub.add_parser("sincronizar").set_defaults(f=sincronizar)
     sub.add_parser("empaquetar").set_defaults(f=empaquetar)
+    sub.add_parser("diagnostico").set_defaults(f=diagnostico)
     sub.add_parser("instalar").set_defaults(f=instalar)
     args = p.parse_args()
     return args.f(args)

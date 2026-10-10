@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v0.8_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v0.9_
 
 ## ⭐ Esencial (4)
 
@@ -72,7 +72,7 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [TimeMachine](https://steamcommunity.com/sharedfiles/filedetails/?id=2617557401) | TimeMachine: tragaperras, adivina, grúa, confesionario y mendigos funcionan como la máquina de donación. | Configurable en tmmc_config.lua. |
 | [Transformer](https://steamcommunity.com/sharedfiles/filedetails/?id=843351279) | Transformer: objeto pasivo que actúa como transformación «en blanco». |  |
 | [Agatha](https://steamcommunity.com/sharedfiles/filedetails/?id=2928402913) | Agatha: personaje mago que ataca con el bastón y lanza hechizos con efectos de estado. | Versión corrupta aún no disponible. |
-| [Eevee: Reunited - Character Demo](https://steamcommunity.com/sharedfiles/filedetails/?id=2653691445) | Eevee: Reunited (demo): Eevee con todas sus evoluciones, ataques e objetos temáticos Pokémon. | Demo; retira el viejo Eevee de AB+. |
+| [Eevee: Reunited - Character Demo](https://steamcommunity.com/sharedfiles/filedetails/?id=2653691445) | Eevee: Reunited (demo): Eevee con todas sus evoluciones, ataques e objetos temáticos Pokémon. | DESACTIVADO (2026-10-10): en tu instalación falla en cada fotograma (15.013 errores en una partida, «MomsHeart» nil en petVee.lua) y provoca lag. Demo; se reactiva quitando disable.it si se corrige. |
 | [Icesaac](https://steamcommunity.com/sharedfiles/filedetails/?id=2955792897) | Icesaac: personaje sin usar del juego, con moscas congeladas y mecánica resbaladiza. |  |
 | [Mei](https://steamcommunity.com/sharedfiles/filedetails/?id=842051906) | Mei: fantasma con poderes telequinéticos y varios anillos orbitales. | Soporta Mod Config Menu. |
 | [Doblaje al Latino](https://steamcommunity.com/sharedfiles/filedetails/?id=3421378018) | Doblaje al Latino: doblaje profesional en español latino de la introducción y escenas. | Es español latino; el resto del juego sigue en español de España. |

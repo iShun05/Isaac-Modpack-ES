@@ -2,7 +2,7 @@
 
 Catálogo, packs, instalador y traducción automática al español de los mods de **Isaac: Repentance+** en macOS (Whisky, botella `steam11`): **115 instalados (10 desactivados a propósito)** y más recomendados, cada uno con ficha en español, agrupados en packs para activar solo lo que quieras.
 
-- **Versión actual:** v0.8
+- **Versión actual:** v0.9
 - **Plataformas:** macOS + Whisky y **Windows 10/11** (instalador en la release). Juego: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3
 - **Estado:** pendiente de pruebas manuales (idioma `Language=2`, mod de traducción, packs y combinaciones). Las pruebas de fiabilidad las hace el usuario más adelante
 
@@ -32,7 +32,7 @@ docs/suscribir.html        lo que falta por suscribir (generada, fondo negro)
 docs/suscribir_todo.js     suscripción en bloque desde steamcommunity.com (generada)
 mods_locales/              mods propios (no de Workshop)
 Instalar_Windows.bat       instalador de Windows (con windows/instalar_windows.ps1)
-scripts/isaac_pack.py      estado · packs · aplicar · guardar · sincronizar · espanol · docs · respaldo · empaquetar · instalar
+scripts/isaac_pack.py      estado · packs · aplicar · guardar · sincronizar · espanol · docs · respaldo · empaquetar · diagnostico · instalar
 scripts/packs_mac.command  doble clic para elegir packs
 scripts/instalar_mac.command   doble clic para instalar
 scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
@@ -55,7 +55,8 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ## Versiones y código fuente
 | Versión | Fecha | Resumen | Código |
 |---|---|---|---|
-| [`v0.8`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.8) **(actual)** | 2026-10-09 | Instalador de Windows 10/11 (con ZIP en la release) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.8) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.8.zip) |
+| [`v0.9`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.9) **(actual)** | 2026-10-10 | Corrige el lag (Eevee fallaba en cada fotograma) y añade `diagnostico` | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.9) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.9.zip) |
+| [`v0.8`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.8) | 2026-10-09 | Instalador de Windows 10/11 (con ZIP en la release) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.8) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.8.zip) |
 | [`v0.7`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.7) | 2026-10-09 | Arreglado el lanzador de REPENTOGON que se cerraba en Wine | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.7) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.7.zip) |
 | [`v0.6`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.6) | 2026-10-09 | Mods de rendimiento suscritos y copiados; docs al día | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.6) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.6.zip) |
 | [`v0.5`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.5) | 2026-10-09 | `disable.it` sin seguir enlaces simbólicos | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.5) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.5.zip) |
@@ -64,7 +65,7 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 | [`v0.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.2) | 2026-10-09 | Packs con valoración y perfiles, 43 mods recomendados, suscripción en bloque y respaldo | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.2.zip) |
 | [`v0.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.1) | 2026-10-09 | Catálogo de 70 mods, instalador, español automático y recomendaciones | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.1.zip) |
 
-Volver a una versión: `git checkout v0.8`.
+Volver a una versión: `git checkout v0.9`.
 
 ## Contacto
 Instagram: [@_shun._05](https://www.instagram.com/_shun._05/)
