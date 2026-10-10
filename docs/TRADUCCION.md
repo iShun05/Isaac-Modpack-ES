@@ -3,7 +3,7 @@
 ## Qué cubre cada capa
 | Capa | Cómo está en español | Se mantiene sola |
 |---|---|---|
-| Juego base (Repentance+ v1.9.7.17.J460) | Traducción oficial (`packed/repentance_es.a`), activada con `Language=2` en `options.ini` | Al ejecutar `espanol` (o con el vigilante opcional) se reaplica si Steam o el juego lo vuelven a inglés |
+| Juego base (Repentance+ v1.9.7.17.J460) | Traducción oficial (`packed/repentance_es.a`), activada con `Language=4` en `options.ini` | Al ejecutar `espanol` (o con el vigilante opcional) se reaplica si Steam o el juego lo vuelven a inglés |
 | Objetos, baratijas, cartas, píldoras (EID) | EID trae `spa`; se fija `Language: spa` y nombres traducidos en `data/external item descriptions/save*.dat` (no en la carpeta de Workshop, que Steam pisa) | Igual que arriba |
 | Mods con textos propios solo en inglés | Mod local **Traducción ES (mods)** (`mods_locales/traduccion_es_mods`): Eevee: Reunited, Icesaac, Mei, Transformer | Detecta mods nuevos y los apunta en `auto_espanol.log`; la traducción de sus textos se añade a la tabla del mod |
 | Descripciones de Workshop (`metadata.xml`) | No se tocan (Steam las sobrescribe y el juego no las muestra); su resumen en español está en `docs/MODS.md` | — |
@@ -25,6 +25,11 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.ishun05.isaac-espano
 launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.ishun05.isaac-espanol.plist && rm ~/Library/LaunchAgents/com.ishun05.isaac-espanol.plist
 ```
 
+## Idioma del juego: cómo se fija de verdad (corregido 2026-10-10)
+- El código de español en `options.ini` es **`Language=4`** (SPANISH, según la documentación oficial de REPENTOGON). En v0.1–v1.3 se escribía `2`, que es **japonés**: era un error mío, copiado de un registro antiguo sin comprobar.
+- El juego vuelve a escribir el idioma según el de **Steam**: en Steam, clic derecho en Isaac → Propiedades → Idioma → Español. Es lo que de verdad lo deja en español en Windows.
+- Con REPENTOGON también se puede elegir en su lanzador: «Change Game Options».
+
 ## Dudas honestas
 - **Comprobado el 2026-10-09:** tras jugar, el juego volvió a escribir `Language=0` en `options.ini`. El valor 2 no se mantiene. El lanzador de REPENTOGON tiene su propio ajuste de idioma («Change Game Options», novedad de REPENTOGON 1.1.2e): úsalo para fijar el español y dime si el juego sale en español.
-- `Language=2` es el índice de español descubierto en `isaac-ng.exe` (registro 2026-09-28). El juego lo había vuelto a `0` tras las últimas sesiones; si tras aplicarlo sigue en inglés, el culpable es el idioma que informa Steam y habrá que revisarlo.
+- `Language=4` es el índice de español descubierto en `isaac-ng.exe` (registro 2026-09-28). El juego lo había vuelto a `0` tras las últimas sesiones; si tras aplicarlo sigue en inglés, el culpable es el idioma que informa Steam y habrá que revisarlo.

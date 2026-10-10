@@ -10,7 +10,7 @@ param([string]$Juego, [switch]$Rapido)
 $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Raiz = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
-$Version = '1.3'
+$Version = '1.4'
 $Estado = Join-Path $env:LOCALAPPDATA 'IsaacPackES'
 New-Item -ItemType Directory -Path $Estado -Force | Out-Null
 $utf8 = New-Object Text.UTF8Encoding($false)   # sin BOM: un BOM al inicio rompe los .lua
@@ -186,6 +186,30 @@ function Escribir-Panel($modsDir, $mods, $instalados, $elegidos) {
     [IO.File]::WriteAllText((Join-Path $dest 'panel_datos.lua'), (($L -join "`n") + "`n"), $utf8)
 }
 
+# Español: fija Language=4 (SPANISH en REPENTOGON) en options.ini y el idioma de EID. El juego puede volver a escribir el
+# idioma según el de Steam, así que también hay que poner Steam > Isaac > Propiedades > Idioma > Español.
+function Fijar-Idioma($juego) {
+    $ini = Join-Path $env:USERPROFILE 'Documents\My Games\Binding of Isaac Repentance+\options.ini'
+    if (Test-Path $ini) {
+        $t = [IO.File]::ReadAllText($ini)
+        $n = [regex]::Replace($t, '(?m)^Language=[^\r\n]*', 'Language=4')
+        if ($n -ne $t) {
+            Copy-Item $ini ($ini + '.bak_es') -Force
+            [IO.File]::WriteAllText($ini, $n, $utf8)
+            Ok 'options.ini: Language=4 (español).'
+        } else { Ok 'options.ini ya está en español.' }
+    } else { Aviso 'Aún no existe options.ini: abre Isaac una vez, ciérralo y vuelve a ejecutar este instalador.' }
+    $eid = Join-Path $juego 'data\external item descriptions'
+    if (Test-Path $eid) {
+        foreach ($f in (Get-ChildItem $eid -Filter 'save*.dat')) {
+            $t = [IO.File]::ReadAllText($f.FullName)
+            $n = [regex]::Replace($t, '"Language":"[^"]*"', '"Language":"spa"')
+            $n = [regex]::Replace($n, '"TranslateItemName":\d', '"TranslateItemName":2')
+            if ($n -ne $t) { [IO.File]::WriteAllText($f.FullName, $n, $utf8); Ok "EID en español ($($f.Name))." }
+        }
+    }
+}
+
 Write-Host ''
 Write-Host "  Isaac Pack ES v$Version · instalador para Windows" -ForegroundColor White
 Write-Host '  The Binding of Isaac: Repentance+ · mods en español' -ForegroundColor DarkGray
@@ -331,7 +355,9 @@ Aviso 'Los mods recién descargados aparecen en la carpeta mods al abrir Isaac p
 
 # ---------------------------------------------------------------- 6. Idioma y panel
 Titulo '6. Español y panel'
-Write-Host '   Steam > Biblioteca > The Binding of Isaac > Propiedades > Idioma > Español.'
+Fijar-Idioma $Juego
+Write-Host '   IMPORTANTE: Steam > Biblioteca > The Binding of Isaac > clic derecho > Propiedades > Idioma > Español.'
+Write-Host '   Si sigue en inglés: abre el lanzador de REPENTOGON, «Change Game Options» y elige el idioma ahí.'
 Write-Host '   Dentro del juego, con REPENTOGON: pulsa ~ y abre «Packs ES», o pulsa F9, para elegir packs y mods.'
 Write-Host '   Después de guardar en el panel, cierra Isaac y ejecuta Aplicar_seleccion.bat.'
 Write-Host ''

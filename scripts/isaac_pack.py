@@ -44,7 +44,7 @@ RESPALDOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/respaldos")
 LOCAL = REPO / "mods_locales"
 PERFILES = REPO / "datos/perfiles.json"
 NOMBRE_SEGURO = re.compile(r"[\w .\-()\[\]'`!+&]+")  # sin barras ni rutas
-IDIOMA_ES = "2"  # índice de español en options.ini (descubierto en isaac-ng.exe, ver CHANGELOG v0.1)
+IDIOMA_ES = "4"  # SPANISH = 4 según la documentación de REPENTOGON (enums/Language.md); el 2 es japonés
 LOG = REPO / "auto_espanol.log"
 VERSION = (REPO / "VERSION").read_text().strip() if (REPO / "VERSION").exists() else "0.2"
 
@@ -353,7 +353,10 @@ def escribir_panel() -> None:
     for e in errores_ultima_sesion()[:30]:
         L.append(f'{{ mod = {lua_str(e["mod"])}, n = {e["n"]}, msg = {lua_str(e["msg"])}, pila = {lua_str(e["pila"])} }},')
     L.append("}, }")
-    (destino / "panel_datos.lua").write_text("\n".join(L) + "\n", encoding="utf-8")
+    salida = destino / "panel_datos.lua"
+    if salida.is_symlink():
+        salida.unlink()  # nunca escribir a través de un enlace simbólico
+    salida.write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
 def preparar(_args=None) -> int:
@@ -442,7 +445,7 @@ def fijar_idioma_opciones(auto: bool) -> None:
         if not f.exists():
             continue
         t = f.read_text(encoding="utf-8")
-        nuevo = re.sub(r"(?m)^Language=.*$", f"Language={IDIOMA_ES}", t)
+        nuevo = re.sub(r"(?m)^Language=[^\r\n]*", f"Language={IDIOMA_ES}", t)
         if nuevo != t:
             shutil.copy2(f, f.with_suffix(".ini.bak_es"))
             f.write_text(nuevo, encoding="utf-8")
@@ -667,7 +670,7 @@ def parches(_args=None) -> int:
     marcar(destino, False)
     datos = JUEGO / "data"
     if (datos / "job").exists() and not (datos / "job_corregido").exists():
-        shutil.copytree(datos / "job", datos / "job_corregido")  # conserva el progreso guardado
+        shutil.copytree(datos / "job", datos / "job_corregido", symlinks=True)  # conserva el progreso guardado
     print("Creado mods/job_corregido y desactivado el Job original. Los cambios se ven al reiniciar Isaac.")
     return 0
 

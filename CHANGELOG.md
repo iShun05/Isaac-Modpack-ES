@@ -1,5 +1,13 @@
 # Registro de cambios
 
+## v1.4 — 2026-10-10
+### Corregido
+- **Idioma: el código de español era el equivocado.** `Language=2` es **japonés**; el español es **`4`** (REPENTOGON, `enums/Language.md`). Corregido en `isaac_pack.py` (Mac) y en el instalador de Windows. Aplicado en el Mac.
+- **Windows seguía en inglés:** el instalador solo imprimía una pista. Ahora fija `Language=4` en `options.ini` y el idioma de EID (`spa`) y explica el ajuste que de verdad manda: Steam → Isaac → Propiedades → Idioma → Español (o «Change Game Options» en el lanzador de REPENTOGON).
+- **Seguridad:** `panel_datos.lua` no se escribe a través de un enlace simbólico y la copia de los datos de Job no sigue enlaces.
+### Archivos y pruebas
+- `scripts/isaac_pack.py`, `windows/instalar_windows.ps1`, `docs/TRADUCCION.md`. Comprobado en el Mac: `options.ini` con `Language=4`. **Sin probar en Windows** ni con el juego abierto en español.
+
 ## v1.3 — 2026-10-10
 ### Añadido
 - **Panel dentro del juego** (`mods_locales/isaac_pack_panel`, requiere REPENTOGON): menú «Packs ES» en la barra de REPENTOGON (`~`) y atajo **F9**. Pestañas Packs (casillas y presets), Mods (activar o desactivar uno suelto) y Errores (errores de la sesión anterior por mod, con botón de copiar al portapapeles). Detalle en `docs/PANEL.md`.

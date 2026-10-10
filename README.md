@@ -2,9 +2,9 @@
 
 Catálogo, packs, instalador y traducción automática al español de los mods de **Isaac: Repentance+** en macOS (Whisky, botella `steam11`): **115 instalados (10 desactivados a propósito)** y más recomendados, cada uno con ficha en español, agrupados en packs para activar solo lo que quieras.
 
-- **Versión actual:** v1.3
+- **Versión actual:** v1.4
 - **Plataformas:** macOS + Whisky y **Windows 10/11** (instalador en la release). Juego: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3
-- **Estado:** pendiente de pruebas manuales (idioma `Language=2`, mod de traducción, packs y combinaciones). Las pruebas de fiabilidad las hace el usuario más adelante
+- **Estado:** pendiente de pruebas manuales (idioma `Language=4`, mod de traducción, packs y combinaciones). Las pruebas de fiabilidad las hace el usuario más adelante
 
 ## Funciones principales
 - **Manifiesto único** (`datos/mods.json`): 113 mods con id de Workshop, pack, descripción en español y veredicto (esencial · recomendado · opcional · herramienta · capricho · quitar).
@@ -56,7 +56,8 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ## Versiones y código fuente
 | Versión | Fecha | Resumen | Código |
 |---|---|---|---|
-| [`v1.3`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.3) **(actual)** | 2026-10-10 | Panel dentro del juego (packs, mods y errores) y paridad Mac/Windows | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.3) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.3.zip) |
+| [`v1.4`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.4) **(actual)** | 2026-10-10 | Corrige el código de idioma (español = 4) y fija el español en Windows | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.4) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.4.zip) |
+| [`v1.3`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.3) | 2026-10-10 | Panel dentro del juego (packs, mods y errores) y paridad Mac/Windows | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.3) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.3.zip) |
 | [`v1.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.2) | 2026-10-10 | Copia corregida de Job (sin el error de arranque) y comando `parches` | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.2.zip) |
 | [`v1.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.1) | 2026-10-10 | REPENTOGON.app no abre un segundo Steam si Isaac ya está abierto | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.1.zip) |
 | [`v1.0`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.0) | 2026-10-10 | REPENTOGON.app abre Steam antes (evita el aviso «REPENTOGON REQUIRED») | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.0) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.0.zip) |
@@ -70,7 +71,7 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 | [`v0.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.2) | 2026-10-09 | Packs con valoración y perfiles, 43 mods recomendados, suscripción en bloque y respaldo | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.2.zip) |
 | [`v0.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.1) | 2026-10-09 | Catálogo de 70 mods, instalador, español automático y recomendaciones | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.1.zip) |
 
-Volver a una versión: `git checkout v1.3`.
+Volver a una versión: `git checkout v1.4`.
 
 ## Contacto
 Instagram: [@_shun._05](https://www.instagram.com/_shun._05/)
