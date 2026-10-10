@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.1_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.2_
 
 ## ⭐ Esencial (4)
 
@@ -101,7 +101,7 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [Jacob's Ladder Synergies](https://steamcommunity.com/sharedfiles/filedetails/?id=1230880928) | Jacob's Ladder Synergies: Jacob's Ladder funciona con Brimstone, Technology y más. | Mod antiguo (2017): comprobar que no falla. |
 | [Totally Unnecessary But Nonetheless Epic Giga Bomb Synergies](https://steamcommunity.com/sharedfiles/filedetails/?id=2978501842) | Giga Bomb Synergies: 12 sinergias entre Giga Bombs y objetos de bombas. |  |
 | [Andromeda (+28 Unlocks)](https://steamcommunity.com/sharedfiles/filedetails/?id=2722017893) | Andromeda (+28 desbloqueos): personaje basado en planetarios, con versión corrupta y desbloqueos completos. |  |
-| [Job 2.5 - Over 25 (+45) New Unlocks!](https://steamcommunity.com/sharedfiles/filedetails/?id=2567634705) | Job 2.5: personaje Job con nueva expansión, más de 25 desbloqueos y versión corrupta. | Actualizado en dic 2025. |
+| [Job 2.5 - Over 25 (+45) New Unlocks!](https://steamcommunity.com/sharedfiles/filedetails/?id=2567634705) | Job 2.5: personaje Job con nueva expansión, más de 25 desbloqueos y versión corrupta. | Sustituido por la copia local «Job (corregido)» (mods/job_corregido, creada con `parches`): el original da un error de require al iniciar. Ambos a la vez duplicarían objetos. |
 | [Animated Items](https://steamcommunity.com/sharedfiles/filedetails/?id=2570913695) | Animated Items: objetos animados, activables uno a uno desde Mod Config Menu. | Necesita Mod Config Menu para elegir. |
 | [Colorful Outlines For Items](https://steamcommunity.com/sharedfiles/filedetails/?id=3783435722) | Colorful Outlines for Items: contornos de color a los objetos (estilo Paper Mario 64). |  |
 | [Door Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3585879877) | Door Overhaul: rehace los sprites de las puertas del juego. ⚙ mejor con REPENTOGON | Compatible con Repentance+; REPENTOGON no es obligatorio. |

@@ -10,6 +10,7 @@ Uso:
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
+  isaac_pack.py parches                   crea copias corregidas de mods ajenos (Job) sin tocar los originales
   isaac_pack.py diagnostico               lee log.txt del juego: mods que fallan en bucle, avisos repetidos y memoria Lua
   isaac_pack.py empaquetar                zip con el instalador de Windows 10/11 (dist/)
   isaac_pack.py instalar                  estado + REPENTOGON si falta + español + docs
@@ -228,7 +229,7 @@ def aplicar(args) -> int:
         d = ins.get(m["id"])
         if not d:
             continue
-        encender = m["pack"] in elegidos
+        encender = m["pack"] in elegidos and not m.get("apagado")  # «apagado» = se activa a mano
         if marcar(d, not encender):
             print(f'{"activado" if encender else "desactivado"}: {m["nombre"]}')
     print(f"\nPacks activos: {', '.join(PACKS[p][0] for p in elegidos)}")
@@ -494,6 +495,44 @@ footer{{margin-top:24px;color:var(--mut);font-size:.85rem}}
     return 0
 
 
+def parches(_args=None) -> int:
+    """Copias corregidas de mods de Workshop (nunca se edita el original, que Steam sobrescribe).
+    Job 2.5: su main.lua hace require() de un archivo de compatibilidad DENTRO de un callback; allí el juego busca en la
+    carpeta del último mod cargado y falla («module job_src.mod_compat.others not found»). Ese archivo solo sirve con
+    Tainted Treasure. La copia lo carga con pcall: sin error y sin cambiar nada más."""
+    orig = instalados().get("2567634705")
+    if not orig:
+        print("Job 2.5 no está instalado: nada que parchear.")
+        return 0
+    main = (orig / "main.lua").read_text(encoding="utf-8")
+    viejo = 'require("job_src.mod_compat.others")'
+    if viejo not in main:
+        print("El main.lua de Job ya no contiene la línea esperada: revisa el parche a mano.")
+        return 1
+    destino = MODS / "job_corregido"
+    if destino.exists():
+        shutil.rmtree(destino)
+    shutil.copytree(orig, destino, symlinks=True, ignore=shutil.ignore_patterns("disable.it"))
+    (destino / "main.lua").write_text(
+        main.replace(viejo, 'pcall(require, "job_src.mod_compat.others") -- parche: require fuera de la carga falla en el juego'),
+        encoding="utf-8",
+    )
+    meta = (destino / "metadata.xml").read_text(encoding="utf-8")
+    meta = re.sub(r"<name>.*?</name>", "<name>Job (corregido)</name>", meta, count=1)
+    meta = re.sub(r"<directory>.*?</directory>", "<directory>job_corregido</directory>", meta, count=1)
+    meta = re.sub(r"\s*<id>.*?</id>", "", meta, count=1)
+    meta = meta.replace("<visibility>Public</visibility>", "<visibility>Private</visibility>")
+    meta = re.sub(r"<description>", "<description>[Copia local corregida de Job 2.5 (Workshop 2567634705): quita el error de require al iniciar. Mod original de AgentCucco y su equipo.] ", meta, count=1)
+    (destino / "metadata.xml").write_text(meta, encoding="utf-8")
+    marcar(orig, True)  # el original se apaga: los dos a la vez registrarían los mismos objetos
+    marcar(destino, False)
+    datos = JUEGO / "data"
+    if (datos / "job").exists() and not (datos / "job_corregido").exists():
+        shutil.copytree(datos / "job", datos / "job_corregido")  # conserva el progreso guardado
+    print("Creado mods/job_corregido y desactivado el Job original. Los cambios se ven al reiniciar Isaac.")
+    return 0
+
+
 def diagnostico(_args=None) -> int:
     """Busca la causa de lag en el log del juego: errores Lua repetidos por mod y avisos que se repiten miles de veces."""
     log_txt = OPCIONES[0].parent / "log.txt"
@@ -575,6 +614,7 @@ def main() -> int:
     sub.add_parser("sincronizar").set_defaults(f=sincronizar)
     sub.add_parser("empaquetar").set_defaults(f=empaquetar)
     sub.add_parser("diagnostico").set_defaults(f=diagnostico)
+    sub.add_parser("parches").set_defaults(f=parches)
     sub.add_parser("instalar").set_defaults(f=instalar)
     args = p.parse_args()
     return args.f(args)

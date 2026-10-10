@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## v1.2 — 2026-10-10
+### Añadido
+- Comando **`parches`**: crea copias corregidas de mods ajenos sin tocar el original (Steam lo sobrescribe). Primer parche: **Job (corregido)** (`mods/job_corregido`).
+### Corregido
+- **Error de Job 2.5 al iniciar** («module job_src.mod_compat.others not found», panel rojo de REPENTOGON): su `main.lua` hacía `require` de un archivo de compatibilidad dentro de un callback, y allí el juego busca en la carpeta del último mod cargado. Ese archivo solo sirve con Tainted Treasure (no instalado). La copia lo carga con `pcall`: sin error y sin más cambios. El Job original queda desactivado (los dos a la vez duplicarían objetos) y el progreso guardado se copia a `data/job_corregido`.
+- `aplicar` ya no enciende mods marcados `apagado` (Eevee, Missing Costumes, Job original).
+### Archivos y pruebas
+- `scripts/isaac_pack.py`, `datos/mods.json`. Comprobado: diferencias de la copia con el original solo en `main.lua` y `metadata.xml`, `disable.it` en el original, progreso copiado. **Sin probar en el juego**: requiere reiniciar Isaac.
+
 ## v1.1 — 2026-10-10
 ### Corregido
 - **«Segundo Steam» al pulsar `REPENTOGON.app` varias veces.** Con un Isaac normal ya abierto, Steam rechaza el segundo arranque (código `0x35`) y relanza `steam://run/250900`. `REPENTOGON.app` ahora avisa y no lanza nada si Isaac ya está abierto. Detalle en `docs/REPENTOGON_LANZADOR.md`.

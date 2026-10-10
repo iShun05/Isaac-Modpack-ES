@@ -1625,13 +1625,14 @@
    "categoria": "Personajes",
    "veredicto": "opcional",
    "descripcion": "Job 2.5: personaje Job con nueva expansión, más de 25 desbloqueos y versión corrupta.",
-   "nota": "Actualizado en dic 2025.",
+   "nota": "Sustituido por la copia local «Job (corregido)» (mods/job_corregido, creada con `parches`): el original da un error de require al iniciar. Ambos a la vez duplicarían objetos.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2567634705",
    "pack": "personajes",
    "rgon": "no",
    "gran": false,
    "suscriptores": 62611,
-   "actualizado": "2025-12-02"
+   "actualizado": "2025-12-02",
+   "apagado": true
   },
   {
    "id": "2570913695",
@@ -1873,5 +1874,5 @@
    "no_suscribir": true
   }
  ],
- "version_pack": "0.9"
+ "version_pack": "1.2"
 }
