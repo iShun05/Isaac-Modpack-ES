@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## v1.1 — 2026-10-10
+### Corregido
+- **«Segundo Steam» al pulsar `REPENTOGON.app` varias veces.** Con un Isaac normal ya abierto, Steam rechaza el segundo arranque (código `0x35`) y relanza `steam://run/250900`. `REPENTOGON.app` ahora avisa y no lanza nada si Isaac ya está abierto. Detalle en `docs/REPENTOGON_LANZADOR.md`.
+### Archivos y pruebas
+- `REPENTOGON.app` (fuera del repo). **Probado** desde un estado limpio: un solo Steam, el lanzador engancha y el juego corre con REPENTOGON (v1.9.7.12.J273). No probado el aviso con Isaac ya abierto (solo sintaxis).
+
 ## v1.0 — 2026-10-10
 ### Corregido
 - **«REPENTOGON REQUIRED» tras abrir con el acceso de REPENTOGON.** Con Steam cerrado, el juego salía con código `0x35` y Steam lo relanzaba sin REPENTOGON. `/Applications/REPENTOGON.app` ahora abre Steam antes y espera (detalle en `docs/REPENTOGON_LANZADOR.md`).

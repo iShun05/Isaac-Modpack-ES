@@ -17,3 +17,9 @@
 **Causa (comprobada en `launcher.log`):** el lanzador arrancó, pero `isaac-ng.exe` salió al instante con código `0x35` porque **Steam estaba cerrado**. Isaac se relanza entonces a través de Steam, y Steam abre la versión normal, sin REPENTOGON.
 **Arreglo:** `/Applications/REPENTOGON.app` ahora abre Steam antes (en silencio), espera a que esté listo y después lanza el lanzador. Copia del script anterior en `Juegos/mods/The_Binding_of_Isaac/respaldos/`.
 **Si usas el acceso anclado dentro de Whisky:** abre Steam primero y espera a que cargue.
+
+## Tercer fallo: «segundo Steam» al pulsar el acceso varias veces (2026-10-10)
+**Síntoma:** cada vez que se pulsa `REPENTOGON.app` aparece otro Steam en el Dock y el juego sale sin REPENTOGON.
+**Causa (comprobada en `launcher.log` y en la lista de procesos):** había un Isaac normal abierto (lanzado por Steam tras el primer `0x35`). Con Isaac ya en marcha, Steam rechaza otro: el juego sale con `0x35`, se relanza `steam.exe steam://run/250900`, y eso es el «segundo Steam». Además, tras cerrar a la fuerza quedaron `steam.exe` colgados que Steam seguía contando como juego en marcha.
+**Arreglo:** `REPENTOGON.app` no hace nada si Isaac ya está abierto (avisa). Probado desde un estado limpio (se paró todo con `kill -9`): un solo Steam (`-silent`), el lanzador engancha, y el juego queda corriendo como `Repentogon\isaac-ng.exe` (v1.9.7.12.J273), sin `0x35`.
+**Regla:** una sola vez por sesión. Si ves el Isaac normal («REPENTOGON REQUIRED»), ciérralo del todo (Cmd+Q) antes de volver a pulsar el acceso. Si Isaac no abre ni así, cierra Steam y vuelve a probar.
