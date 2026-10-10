@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Isaac Pack ES (panel)</name>
+    <directory>isaac_pack_panel</directory>
+    <description>Panel dentro del juego (necesita REPENTOGON): elige packs de mods, activa o desactiva mods sueltos, mira qué tienes puesto y copia los errores de la última sesión. Abre la barra de REPENTOGON con la tecla de consola (~) y entra en «Packs ES», o pulsa F9. Parte de Isaac-Modpack-ES. Contacto: https://www.instagram.com/_shun._05/</description>
+    <version>0.1</version>
+    <visibility>Private</visibility>
+</metadata>

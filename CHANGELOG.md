@@ -1,5 +1,17 @@
 # Registro de cambios
 
+## v1.3 — 2026-10-10
+### Añadido
+- **Panel dentro del juego** (`mods_locales/isaac_pack_panel`, requiere REPENTOGON): menú «Packs ES» en la barra de REPENTOGON (`~`) y atajo **F9**. Pestañas Packs (casillas y presets), Mods (activar o desactivar uno suelto) y Errores (errores de la sesión anterior por mod, con botón de copiar al portapapeles). Detalle en `docs/PANEL.md`.
+- Comando **`preparar`**: copia mods nuevos, aplica parches, aplica la selección guardada en el panel y regenera `panel_datos.lua` (estado real + errores del log anterior). `REPENTOGON.app` lo ejecuta antes de abrir el juego.
+- **Windows:** `Aplicar_seleccion.bat` (`instalar_windows.ps1 -Rapido`), el parche de Job y la generación del panel, con el mismo formato que en Mac.
+- Órdenes sueltas por mod (`on`/`off`) que ganan a las del pack.
+### Corregido
+- `parches` ya no rehace la copia de Job en cada arranque (solo si cambia el original).
+- El instalador de Windows pregunta menos y no pisa nada si Isaac está abierto.
+### Archivos y pruebas
+- Probado: generación de `panel_datos.lua` y sintaxis Lua del panel con `lua-language-server`; sintaxis de Python. **Sin probar en el juego** (el panel) **ni en Windows** (el instalador y `-Rapido`): aquí no hay Windows ni PowerShell.
+
 ## v1.2 — 2026-10-10
 ### Añadido
 - Comando **`parches`**: crea copias corregidas de mods ajenos sin tocar el original (Steam lo sobrescribe). Primer parche: **Job (corregido)** (`mods/job_corregido`).

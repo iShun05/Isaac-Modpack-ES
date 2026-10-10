@@ -1,6 +1,6 @@
 # Packs de mods
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.2_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.3_
 
 Un pack = un tema. `aplicar` deja activos solo los packs que elijas (más **Base**) y desactiva el resto con `disable.it` (reversible). Cambia de pack con el juego cerrado.
 

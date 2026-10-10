@@ -10,6 +10,7 @@ Uso:
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
+  isaac_pack.py preparar                  lo que se hace antes de abrir Isaac: copia mods nuevos, parches, aplica el panel y lo refresca
   isaac_pack.py parches                   crea copias corregidas de mods ajenos (Job) sin tocar los originales
   isaac_pack.py diagnostico               lee log.txt del juego: mods que fallan en bucle, avisos repetidos y memoria Lua
   isaac_pack.py empaquetar                zip con el instalador de Windows 10/11 (dist/)
@@ -19,6 +20,7 @@ Presets: minimo · clean · completo
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -216,11 +218,17 @@ def listar_packs(_args=None) -> int:
     return 0
 
 
-def aplicar(args) -> int:
-    if juego_abierto():
-        print("Cierra Isaac antes de cambiar de pack.")
-        return 1
-    elegidos = resolver(args.packs)
+def _decidir(m: dict, elegidos: list[str], on: set[str], off: set[str]) -> bool:
+    """¿Debe estar activo este mod? Una orden suelta (panel del juego) gana al pack; «apagado» = se activa a mano."""
+    if m["id"] in on:
+        return True
+    if m["id"] in off:
+        return False
+    return m["pack"] in elegidos and not m.get("apagado")
+
+
+def _aplicar(elegidos: list[str], on: set[str] | None = None, off: set[str] | None = None) -> int:
+    on, off = on or set(), off or set()
     mods = cargar()["mods"]
     ins = instalados()
     seleccion = [m for m in mods if m["pack"] in elegidos]
@@ -229,11 +237,11 @@ def aplicar(args) -> int:
         d = ins.get(m["id"])
         if not d:
             continue
-        encender = m["pack"] in elegidos and not m.get("apagado")  # «apagado» = se activa a mano
+        encender = _decidir(m, elegidos, on, off)
         if marcar(d, not encender):
             print(f'{"activado" if encender else "desactivado"}: {m["nombre"]}')
     print(f"\nPacks activos: {', '.join(PACKS[p][0] for p in elegidos)}")
-    activos = [m for m in seleccion if m["id"] in ins]
+    activos = [m for m in mods if m["id"] in ins and _decidir(m, elegidos, on, off)]
     for color, txt in valorar(activos, bool(version_repentogon_instalada())):
         print({"verde": "🟢", "naranja": "🟠", "rojo": "🔴"}[color], txt)
     if faltan:
@@ -241,7 +249,132 @@ def aplicar(args) -> int:
     p = perfiles()
     p["ultimo"] = elegidos
     PERFILES.write_text(json.dumps(p, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("\nAbre Isaac desde Steam. Cambia de pack siempre con el juego cerrado.")
+    return 0
+
+
+def aplicar(args) -> int:
+    if juego_abierto():
+        print("Cierra Isaac antes de cambiar de pack.")
+        return 1
+    rc = _aplicar(resolver(args.packs))
+    print("\nAbre Isaac con REPENTOGON. Cambia de pack siempre con el juego cerrado.")
+    return rc
+
+
+# ---------------------------------------------------------------- panel dentro del juego
+PANEL = "isaac_pack_panel"
+
+
+def lua_str(s: str) -> str:
+    return '"' + str(s).replace("\\", "\\\\").replace('"', '\\"').replace("\r", "").replace("\n", "\\n") + '"'
+
+
+def leer_pendiente() -> dict | None:
+    """Selección guardada desde el panel del juego (data/isaac_pack_panel/save*.dat), si es más nueva que la última aplicada."""
+    carpeta = JUEGO / "data" / PANEL
+    if not carpeta.exists():
+        return None
+    ficheros = sorted(carpeta.glob("save*.dat"), key=lambda f: f.stat().st_mtime, reverse=True)
+    if not ficheros:
+        return None
+    marca = REPO / "datos" / "panel_aplicado.txt"
+    ultimo = float(marca.read_text()) if marca.exists() else 0.0
+    f = ficheros[0]
+    if f.stat().st_mtime <= ultimo:
+        return None
+    try:
+        d = json.loads(f.read_text(encoding="utf-8"))
+    except ValueError:
+        return None
+    d["_mtime"] = f.stat().st_mtime
+    return d
+
+
+def errores_ultima_sesion() -> list[dict]:
+    """Errores Lua del log de la sesión anterior, agrupados por mod: nº de veces, primer mensaje y primera pila."""
+    log_txt = OPCIONES[0].parent / "log.txt"
+    if not log_txt.exists():
+        return []
+    lineas = log_txt.read_text(encoding="utf-8", errors="ignore").splitlines()
+    res: dict[str, dict] = {}
+    for i, l in enumerate(lineas):
+        m = re.search(r'Error in "([^"]+)" call from "([^"]+)": (.*)', l)
+        if not m:
+            continue
+        e = res.setdefault(m.group(2), {"mod": m.group(2), "n": 0, "msg": f'{m.group(1)}: {m.group(3)}'[:400], "pila": ""})
+        e["n"] += 1
+        if e["n"] == 1:
+            pila = []
+            for sig in lineas[i + 1 : i + 14]:
+                if not sig.strip() or sig.startswith("[INFO]"):
+                    break
+                pila.append(sig.strip()[:160])
+            e["pila"] = "\n".join(pila)
+    return sorted(res.values(), key=lambda e: -e["n"])
+
+
+def escribir_panel() -> None:
+    """Genera panel_datos.lua dentro de mods/isaac_pack_panel con el estado real (packs, mods, errores)."""
+    destino = MODS / PANEL
+    if not destino.exists():
+        return
+    d = cargar()
+    ins = instalados()
+    orden = list(PACKS)
+    mods = sorted(d["mods"], key=lambda m: (orden.index(m["pack"]) if m["pack"] in orden else 99, m["nombre"].lower()))
+    activo = {m["id"]: (m["id"] in ins and not (ins[m["id"]] / "disable.it").exists()) for m in mods}
+    L = [f'return {{ version = {lua_str(VERSION)}, generado = {lua_str(datetime.now().strftime("%F %H:%M"))},', "packs = {"]
+    seleccion = []
+    for pid, (nombre, desc) in PACKS.items():
+        if pid == "base":
+            continue
+        g = [m for m in mods if m["pack"] == pid and m["id"] in ins]
+        encendibles = [m for m in g if not m.get("apagado")]
+        act = sum(activo[m["id"]] for m in g)
+        total = len([m for m in mods if m["pack"] == pid])
+        if encendibles and all(activo[m["id"]] for m in encendibles):
+            seleccion.append(pid)
+        L.append(f'{{ k = {lua_str(pid)}, n = {lua_str(nombre)}, d = {lua_str(desc)}, activos = {act}, total = {total} }},')
+    L.append("},")
+    L.append("presets = { " + ", ".join(f'{k} = {{ ' + ", ".join(lua_str(x) for x in v if x != "base") + " }" for k, v in PRESETS.items()) + " },")
+    L.append("seleccion = { " + ", ".join(f"{k} = true" for k in seleccion) + " },")
+    L.append("mods = {")
+    for m in mods:
+        if m["pack"] == "descartado":
+            continue
+        pn = PACKS.get(m["pack"], (m["pack"],))[0]
+        L.append(
+            f'{{ id = {lua_str(m["id"])}, n = {lua_str(m["nombre"])}, p = {lua_str(m["pack"])}, pn = {lua_str(pn)}, v = {lua_str(m["veredicto"])}, '
+            f'i = {"true" if m["id"] in ins else "false"}, a = {"true" if activo[m["id"]] else "false"}, ap = {"true" if m.get("apagado") else "false"}, '
+            f'rg = {lua_str(m.get("rgon", "no"))}, d = {lua_str(m["descripcion"][:200])} }},'
+        )
+    L.append("},")
+    L.append("errores = {")
+    for e in errores_ultima_sesion()[:30]:
+        L.append(f'{{ mod = {lua_str(e["mod"])}, n = {e["n"]}, msg = {lua_str(e["msg"])}, pila = {lua_str(e["pila"])} }},')
+    L.append("}, }")
+    (destino / "panel_datos.lua").write_text("\n".join(L) + "\n", encoding="utf-8")
+
+
+def preparar(_args=None) -> int:
+    """Lo que hay que hacer justo antes de abrir Isaac: copiar mods nuevos, parches, aplicar lo elegido en el panel y refrescar el panel."""
+    if not MODS.exists():
+        print("SanDisk no montado.")
+        return 1
+    if juego_abierto():
+        print("Isaac está abierto: no se prepara nada.")
+        return 1
+    sincronizar()
+    parches()
+    pend = leer_pendiente()
+    if pend:
+        paquetes = [p for p in pend.get("packs", []) if p in PACKS]
+        elegidos = ["base"] + [p for p in paquetes if p != "base"]
+        print("Aplicando la selección guardada en el panel del juego…")
+        _aplicar(elegidos, set(map(str, pend.get("on") or [])), set(map(str, pend.get("off") or [])))
+        (REPO / "datos" / "panel_aplicado.txt").write_text(str(pend["_mtime"]))
+    instalar_mod_local(False)
+    escribir_panel()
     return 0
 
 
@@ -510,9 +643,15 @@ def parches(_args=None) -> int:
         print("El main.lua de Job ya no contiene la línea esperada: revisa el parche a mano.")
         return 1
     destino = MODS / "job_corregido"
+    huella = hashlib.sha256((main + (orig / "metadata.xml").read_text(encoding="utf-8")).encode()).hexdigest()
+    if (destino / ".origen_sha").exists() and (destino / ".origen_sha").read_text() == huella:
+        marcar(orig, True)
+        marcar(destino, False)
+        return 0  # ya está al día con la versión actual de Job
     if destino.exists():
         shutil.rmtree(destino)
     shutil.copytree(orig, destino, symlinks=True, ignore=shutil.ignore_patterns("disable.it"))
+    (destino / ".origen_sha").write_text(huella)
     (destino / "main.lua").write_text(
         main.replace(viejo, 'pcall(require, "job_src.mod_compat.others") -- parche: require fuera de la carga falla en el juego'),
         encoding="utf-8",
@@ -579,11 +718,13 @@ def empaquetar(_args=None) -> int:
         "1. Descomprime este zip ENTERO (no lo abras desde dentro del zip).\r\n"
         "2. Doble clic en Instalar_Windows.bat. Si SmartScreen avisa: Mas informacion > Ejecutar de todas formas.\r\n"
         "3. Elige tu pack y sigue los pasos. Se puede ejecutar varias veces.\r\n"
-        "4. Abre Isaac con el acceso 'Isaac con REPENTOGON' del Escritorio.\r\n\r\n"
+        "4. Abre Isaac con el acceso 'Isaac con REPENTOGON' del Escritorio (con Steam abierto).\r\n"
+        "5. Dentro del juego: pulsa ~ y abre Packs ES (o F9) para elegir packs y mods; luego cierra Isaac y ejecuta Aplicar_seleccion.bat.\r\n\r\n"
         "Contacto: https://www.instagram.com/_shun._05/\r\n"
     )
     with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
         z.write(REPO / "Instalar_Windows.bat", "Instalar_Windows.bat")
+        z.write(REPO / "Aplicar_seleccion.bat", "Aplicar_seleccion.bat")
         z.write(REPO / "windows/instalar_windows.ps1", "windows/instalar_windows.ps1")
         z.write(REPO / "datos/mods.json", "datos/mods.json")
         for f in sorted((LOCAL).rglob("*")):
@@ -615,6 +756,7 @@ def main() -> int:
     sub.add_parser("empaquetar").set_defaults(f=empaquetar)
     sub.add_parser("diagnostico").set_defaults(f=diagnostico)
     sub.add_parser("parches").set_defaults(f=parches)
+    sub.add_parser("preparar").set_defaults(f=preparar)
     sub.add_parser("instalar").set_defaults(f=instalar)
     args = p.parse_args()
     return args.f(args)
