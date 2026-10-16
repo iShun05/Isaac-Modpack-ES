@@ -294,7 +294,7 @@ def leer_pendiente() -> dict | None:
 
 def errores_ultima_sesion() -> list[dict]:
     """Errores Lua del log de la sesión anterior, agrupados por mod: nº de veces, primer mensaje y primera pila."""
-    log_txt = OPCIONES[0].parent / "log.txt"
+    log_txt = log_juego_actual()
     if not log_txt.exists():
         return []
     lineas = log_txt.read_text(encoding="utf-8", errors="ignore").splitlines()
@@ -313,6 +313,13 @@ def errores_ultima_sesion() -> list[dict]:
                 pila.append(sig.strip()[:160])
             e["pila"] = "\n".join(pila)
     return sorted(res.values(), key=lambda e: -e["n"])
+
+
+def log_juego_actual() -> Path:
+    """Devuelve el log de Repentance+ actualizado más recientemente entre los perfiles Wine."""
+    logs = [opcion.parent / "log.txt" for opcion in OPCIONES]
+    existentes = [log for log in logs if log.is_file()]
+    return max(existentes, key=lambda log: log.stat().st_mtime) if existentes else logs[0]
 
 
 def escribir_panel() -> None:
@@ -700,19 +707,19 @@ def parches(_args=None) -> int:
 
 def diagnostico(_args=None) -> int:
     """Busca la causa de lag en el log del juego: errores Lua repetidos por mod y avisos que se repiten miles de veces."""
-    log_txt = OPCIONES[0].parent / "log.txt"
+    log_txt = log_juego_actual()
     if not log_txt.exists():
         print("No encuentro log.txt: abre el juego una vez.")
         return 1
     texto = log_txt.read_text(encoding="utf-8", errors="ignore")
     lineas = texto.splitlines()
-    print(f"log.txt: {len(lineas)} líneas, {log_txt.stat().st_size // 1024} KB")
+    print(f"Log analizado: {log_txt} ({len(lineas)} líneas, {log_txt.stat().st_size // 1024} KB)")
     por_mod: dict[str, int] = {}
     for m in re.finditer(r'Error in "([^"]+)" call from "([^"]+)"', texto):
         por_mod[m.group(2)] = por_mod.get(m.group(2), 0) + 1
     graves = {k: v for k, v in por_mod.items() if v >= 50}
     for mod, n in sorted(graves.items(), key=lambda kv: -kv[1]):
-        print(f"🔴 «{mod}» falla {n} veces: casi seguro causa de lag. Desactívalo (disable.it) o actualízalo.")
+        print(f"🔴 «{mod}» aparece en {n} errores del registro; revisa el mod y su compatibilidad.")
     for mod, n in por_mod.items():
         if mod not in graves:
             print(f"🟡 «{mod}» falló {n} vez/veces (no es en bucle).")
@@ -724,7 +731,7 @@ def diagnostico(_args=None) -> int:
             cuenta[k] = cuenta.get(k, 0) + 1
     for k, n in sorted(cuenta.items(), key=lambda kv: -kv[1])[:3]:
         if n >= 500:
-            print(f"🟠 {n} avisos repetidos: {k}")
+            print(f"🟠 {n} avisos acumulados en el log: {k}")
     medidas = re.findall(r"\[PackScanner\] mod=(.+?) avg_ms=([\d.]+) max_ms=([\d.]+) calls=(\d+) frames=(\d+)", texto)
     if medidas:
         ultimo_frames = medidas[-1][4]
@@ -733,13 +740,13 @@ def diagnostico(_args=None) -> int:
         for nombre, avg, mx, calls, _ in sorted(bloque.values(), key=lambda m: -float(m[1]))[:8]:
             marca = "🔴" if float(avg) > 5 else "🟠" if float(avg) > 2 else "  "
             print(f"  {marca} {nombre}: {float(avg):.2f} ms/fotograma (máx. {float(mx):.1f} ms, {calls} llamadas)")
-    elif OPCIONES[0].parent.exists():
+    elif log_txt.parent.exists():
         print("Escáner por mod sin datos en este log (actívalo con `isaac_pack.py escaner on` o en el panel).")
     mem = [int(x) for x in re.findall(r"Lua mem usage: (\d+) KB", texto)]
     if mem:
         print(f"Memoria Lua: de {mem[0]} KB a {mem[-1]} KB (máx {max(mem)} KB)")
     if not graves:
-        print("Sin mods fallando en bucle en este log.")
+        print("Sin mods con 50 o más errores en este registro.")
     return 0
 
 
