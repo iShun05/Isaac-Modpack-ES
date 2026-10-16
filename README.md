@@ -4,23 +4,23 @@ Catálogo, packs, instalador y traducción automática al español de **Isaac: R
 
 ## Descargar e instalar
 
-Descarga el [instalador de Windows 10/11](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest/download/Isaac_Pack_ES_Windows.zip), descomprímelo y ejecuta `Instalar_Windows.bat`. Elige un perfil y pulsa **JUGAR**; el instalador prepara la ruta del Launcher, abre Steam si hace falta y confirma que Isaac se ejecutó con REPENTOGON.
+Descarga el [instalador de Windows 10/11](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest/download/Isaac_Pack_ES_Windows.zip), descomprímelo y ejecuta `Instalar_Windows.bat`. Elige un perfil y pulsa **JUGAR**. Si falta REPENTOGON, el Launcher se abre para completar la instalación; después el instalador abre Steam si hace falta y verifica desde qué carpeta se inició Isaac.
 
-- **Versión actual:** v1.8
+- **Versión actual:** v1.9
 - **Plataformas:** macOS + Whisky y **Windows 10/11** (instalador en la release). Juego: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3
-- **Estado:** pendiente de pruebas manuales (idioma `Language=4`, mod de traducción, packs y combinaciones). Las pruebas de fiabilidad las hace el usuario más adelante
+- **Verificación:** paquete y manifiesto comprobados en macOS; la ventana, Launcher y juego requieren una prueba en Windows nativo, no disponible durante esta versión.
 
 ## Funciones principales
 - **Manifiesto único** (`datos/mods.json`): catálogo compartido con id de Workshop, pack, descripción en español y veredicto (esencial · recomendado · opcional · herramienta · capricho · quitar).
-- **Packs como en el pack de Balatro:** Base · Calidad de vida · Interfaz · Rendimiento · Sinergias · Contenido grande · Personajes · Visual y audio · Caprichos · Trucos. `aplicar` deja activos solo los que elijas, con **valoración** de la combinación (🟢🟠🔴) y **perfiles guardados**.
+- **Selector de mods:** presets Clean, Completo y Mínimo; packs y mods individuales con descripción, estado de REPENTOGON y filtro de **Contenido grande** para probar las expansiones por separado. En Mac, el mismo manifiesto alimenta `aplicar` y el panel del juego.
 - **Mods nuevos recomendados:** `docs/RECOMENDADOS.md` con el nombre exacto de Workshop, suscriptores y fecha (incluye Lazy MattPack, objetos de calidad 5).
-- **Instalación fácil:** `docs/suscribir.html` abre la página de cada mod para suscribirse con un clic; los mods que no son de Workshop (REPENTOGON, el mod local de traducción) se descargan/copian solos.
+- **Instalación fácil:** `docs/suscribir.html` abre la página de cada mod para suscribirse con un clic; el instalador prepara el Launcher y guía la primera instalación o reparación de REPENTOGON.
 - **Respaldo:** `respaldo` guarda un zip de `mods/` en el SanDisk.
 - **Español automático:** reaplica el idioma del juego y de EID y avisa de mods nuevos sin registrar; a demanda con un comando o solo con el vigilante opcional (ver `docs/TRADUCCION.md`).
 - **Mod local «Traducción ES (mods)»:** nombres y textos en español de Eevee: Reunited, Icesaac, Mei y Transformer.
 
 ## Tecnología
-Python 3 (solo biblioteca estándar), Lua (mod local para EID), `launchd` para el vigilante.
+Python 3 (biblioteca estándar), PowerShell y Windows Forms para el instalador, Lua para el mod local de EID y `launchd` para el vigilante de macOS.
 
 ## Estructura
 ```
@@ -47,8 +47,10 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ## Instalar en Windows 10/11 (otro equipo)
 1. Descarga [Isaac_Pack_ES_Windows.zip](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest/download/Isaac_Pack_ES_Windows.zip) y descomprímelo entero.
 2. Doble clic en **`Instalar_Windows.bat`**: se abre una ventana (si SmartScreen avisa: *Más información → Ejecutar de todas formas*; si no abre, usa `Instalar_Windows_consola.bat`).
-3. Elige Clean, Completo o Mínimo (o marca mods sueltos) y pulsa **Instalar / actualizar todo**: instala REPENTOGON y la traducción, y te ayuda a suscribirte a los mods que falten. Después, el botón **▶ JUGAR** lo hace todo en un clic: aplica tus packs, abre Steam si hace falta y lanza Isaac con REPENTOGON.
-4. Pulsa **▶ JUGAR** en la ventana para abrir Steam e Isaac con REPENTOGON. El instalador comprueba que se esté usando la versión correcta.
+3. Elige Clean, Completo o Mínimo y pulsa **Preparar / actualizar**. Si faltan mods, usa **Suscribirme a lo que falta**.
+4. Si REPENTOGON no está instalado, selecciona `isaac-ng.exe` en la configuración inicial del Launcher y elige **Update/Repair Installation → Re-install/Repair REPENTOGON**.
+5. Pulsa **▶ JUGAR**; el instalador abre Steam si hace falta y verifica que Isaac se inició desde la carpeta de REPENTOGON.
+6. Para elegir mods sueltos, usa el filtro de la lista: **Contenido grande** los separa y la ficha inferior explica cada mod. Prueba una sola expansión grande por vez.
 
 ## Instalar en Mac (Whisky)
 1. Conecta el SanDisk y cierra Isaac.
@@ -61,7 +63,8 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ## Versiones y código fuente
 | Versión | Fecha | Resumen | Código |
 |---|---|---|---|
-| [`v1.8`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.8) **(actual)** | 2026-10-16 | Arregla la ruta y doble instancia de REPENTOGON en Windows; restaura animaciones y efectos originales por defecto | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.8) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.8.zip) |
+| [`v1.9`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.9) **(actual)** | 2026-10-16 | Guía la reparación de REPENTOGON y separa el contenido grande con fichas por mod | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.9) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.9.zip) |
+| [`v1.8`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.8) | 2026-10-16 | Arregla la ruta y doble instancia de REPENTOGON en Windows; restaura animaciones y efectos originales por defecto | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.8) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.8.zip) |
 | [`v1.7`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.7) | 2026-10-10 | Escáner de lag dentro del juego (avisa y señala al mod sospechoso) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.7) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.7.zip) |
 | [`v1.6`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.6) | 2026-10-10 | Botón JUGAR en la ventana de Windows (todo en un clic) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.6) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.6.zip) |
 | [`v1.5`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.5) | 2026-10-10 | Instalador de Windows con ventana oscura | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.5) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.5.zip) |
@@ -80,7 +83,7 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 | [`v0.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.2) | 2026-10-09 | Packs con valoración y perfiles, 43 mods recomendados, suscripción en bloque y respaldo | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.2.zip) |
 | [`v0.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.1) | 2026-10-09 | Catálogo de 70 mods, instalador, español automático y recomendaciones | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.1.zip) |
 
-Volver a una versión: `git checkout v1.7`.
+Volver a una versión: `git checkout v1.9`.
 
 ## Contacto
 Instagram: [@_shun._05](https://www.instagram.com/_shun._05/)

@@ -91,9 +91,18 @@ $pnlIzq.Controls.Add($clbPacks); $pnlIzq.Controls.Add($chkEscaner); $pnlIzq.Cont
 
 $pnlDer = New-Object Windows.Forms.Panel; $pnlDer.Dock = 'Fill'; $pnlDer.Padding = New-Object Windows.Forms.Padding(8, 0, 4, 0)
 $clbMods = Nueva-Lista
-$lblMods = Nueva-Etiqueta 'Mods (avanzado: casilla = activo)' 10 $cTexto $true
+$lblMods = Nueva-Etiqueta 'Mods (marca la casilla para activarlos)' 10 $cTexto $true
 $lblMods.Dock = 'Top'; $lblMods.Height = 26
-$pnlDer.Controls.Add($clbMods); $pnlDer.Controls.Add($lblMods)
+$cbFiltroMods = New-Object Windows.Forms.ComboBox
+$cbFiltroMods.Dock = 'Top'; $cbFiltroMods.DropDownStyle = 'DropDownList'; $cbFiltroMods.BackColor = $cPanel; $cbFiltroMods.ForeColor = $cTexto
+[void]$cbFiltroMods.Items.Add('Todos los mods')
+[void]$cbFiltroMods.Items.Add('Contenido grande · mejor probar por separado')
+$cbFiltroMods.SelectedIndex = 0
+$txtDetalle = New-Object Windows.Forms.TextBox
+$txtDetalle.Dock = 'Bottom'; $txtDetalle.Height = 108; $txtDetalle.Multiline = $true; $txtDetalle.ReadOnly = $true; $txtDetalle.WordWrap = $true
+$txtDetalle.BackColor = $cPanel; $txtDetalle.ForeColor = $cTexto; $txtDetalle.BorderStyle = 'None'; $txtDetalle.ScrollBars = 'Vertical'
+$txtDetalle.Text = 'Selecciona un mod para ver qué añade y si necesita REPENTOGON.'
+$pnlDer.Controls.Add($clbMods); $pnlDer.Controls.Add($txtDetalle); $pnlDer.Controls.Add($cbFiltroMods); $pnlDer.Controls.Add($lblMods)
 $tlp.Controls.Add($pnlIzq, 0, 0); $tlp.Controls.Add($pnlDer, 1, 0)
 
 # botones de acción
@@ -102,7 +111,7 @@ $pnlAcc.Dock = 'Bottom'; $pnlAcc.Height = 132; $pnlAcc.BackColor = $cFondo; $pnl
 $lblEstado = Nueva-Etiqueta '' 9.5 $cMut
 $lblEstado.Dock = 'Top'; $lblEstado.Height = 26
 $flowAcc = New-Object Windows.Forms.FlowLayoutPanel; $flowAcc.Dock = 'Fill'; $flowAcc.BackColor = $cFondo
-$btnInstalar = Nuevo-Boton 'Instalar / actualizar todo' 210 $true
+$btnInstalar = Nuevo-Boton 'Preparar / actualizar' 210 $true
 $btnSuscribir = Nuevo-Boton 'Suscribirme a lo que falta' 200
 $btnSteam = Nuevo-Boton 'Abrir páginas en Steam' 170
 $btnAplicar = Nuevo-Boton 'Aplicar selección' 150
@@ -130,6 +139,7 @@ $script:LogFn = {
 # ---------------------------------------------------------------- estado de la ventana
 $script:PackKeys = @()
 $script:ModItems = @()
+$script:AllModItems = @()
 $script:Ovr = @{}            # id de mod -> true/false (anula lo que diga su pack)
 $script:Actualizando = $false
 $script:Pend = $null
@@ -163,15 +173,35 @@ function Refrescar-Estado {
     $lblEstado.Text = "Mods elegidos: $($nec.Count) · descargados: $($nec.Count - $falt.Count) · faltan: $($falt.Count)" + $(if (Isaac-Abierto) { '   ⚠ Isaac está abierto: ciérralo para aplicar cambios.' } else { '' })
     $btnSuscribir.Enabled = ($falt.Count -gt 0); $btnSteam.Enabled = ($falt.Count -gt 0)
 }
+function Mostrar-Detalle-Mod {
+    $i = $clbMods.SelectedIndex
+    if ($i -lt 0 -or $i -ge $script:ModItems.Count) { $txtDetalle.Text = 'Selecciona un mod para ver qué añade y si necesita REPENTOGON.'; return }
+    $m = $script:ModItems[$i]
+    $lineas = @($m.nombre, [string]$m.descripcion)
+    if ($m.nota) { $lineas += [string]$m.nota }
+    if ($m.gran) { $lineas += 'CONTENIDO GRANDE: cambia mucho la partida; activa una expansión cada vez para probar compatibilidad.' }
+    if ($m.rgon -eq 'requiere') { $lineas += 'Requiere REPENTOGON.' } elseif ($m.rgon -eq 'recomendado') { $lineas += 'Se recomienda REPENTOGON.' }
+    $txtDetalle.Text = $lineas -join "`r`n`r`n"
+}
+function Refrescar-Lista-Mods {
+    if (-not $script:AllModItems.Count) { return }
+    $script:Actualizando = $true
+    $clbMods.BeginUpdate(); $clbMods.Items.Clear()
+    $script:ModItems = if ($cbFiltroMods.SelectedIndex -eq 1) { @($script:AllModItems | Where-Object { $_.gran }) } else { @($script:AllModItems) }
+    foreach ($m in $script:ModItems) {
+        $marca = if ($m.gran) { '  [CONTENIDO GRANDE]' } else { '' }
+        $pack = if ($script:Packs.Contains($m.pack)) { $script:Packs[$m.pack] } else { $m.pack }
+        [void]$clbMods.Items.Add(("{0}{1}   ·   {2} · {3}" -f $m.nombre, $marca, $pack, $m.veredicto))
+    }
+    $clbMods.EndUpdate(); $script:Actualizando = $false
+    Pintar-Mods
+    Mostrar-Detalle-Mod
+}
 function Cargar-Lista {
     $script:PackKeys = @(); $clbPacks.Items.Clear(); $clbMods.Items.Clear(); $script:ModItems = @()
     foreach ($k in $script:Packs.Keys) { if ($k -ne 'base') { $script:PackKeys += $k; [void]$clbPacks.Items.Add($script:Packs[$k]) } }
     $orden = @($script:Packs.Keys)
-    $script:ModItems = @($script:Mods | Where-Object { $_.pack -ne 'descartado' } | Sort-Object @{ Expression = { $orden.IndexOf($_.pack) } }, @{ Expression = { $_.nombre.ToLower() } })
-    foreach ($m in $script:ModItems) {
-        $pn = if ($script:Packs.Contains($m.pack)) { $script:Packs[$m.pack] } else { $m.pack }
-        [void]$clbMods.Items.Add(("{0}   ·   {1} · {2}" -f $m.nombre, $pn, $m.veredicto))
-    }
+    $script:AllModItems = @($script:Mods | Where-Object { $_.pack -ne 'descartado' } | Sort-Object @{ Expression = { $orden.IndexOf($_.pack) } }, @{ Expression = { $_.nombre.ToLower() } })
     $ultimo = Join-Path $script:Estado 'ultimo.txt'
     if (Test-Path $ultimo) { Poner-Packs @((Get-Content $ultimo -Raw).Trim() -split ',') } else { Poner-Packs $script:Presets['clean'] }
     $script:Pend = Leer-Pendiente
@@ -184,7 +214,7 @@ function Cargar-Lista {
     } elseif (Test-Path (Join-Path $script:Estado 'escaner.txt')) {
         $chkEscaner.Checked = ((Get-Content (Join-Path $script:Estado 'escaner.txt') -Raw).Trim() -eq '1')
     }
-    Pintar-Mods
+    Refrescar-Lista-Mods
     Refrescar-Estado
 }
 function Usar-Juego($carpeta) {
@@ -200,9 +230,10 @@ $clbPacks.Add_ItemCheck({
     if ($script:Actualizando) { return }
     $k = $script:PackKeys[$e.Index]; $v = ($e.NewValue -eq 'Checked')
     $script:Actualizando = $true
+    foreach ($m in $script:AllModItems) { if ($m.pack -eq $k) { $script:Ovr.Remove($m.id) } }
     for ($i = 0; $i -lt $script:ModItems.Count; $i++) {
         $m = $script:ModItems[$i]
-        if ($m.pack -eq $k) { $script:Ovr.Remove($m.id); $clbMods.SetItemChecked($i, ($v -and -not $m.apagado)) }
+        if ($m.pack -eq $k) { $clbMods.SetItemChecked($i, ($v -and -not $m.apagado)) }
     }
     $script:Actualizando = $false
 })
@@ -211,10 +242,8 @@ $clbMods.Add_ItemCheck({
     if ($script:Actualizando) { return }
     $script:Ovr[$script:ModItems[$e.Index].id] = ($e.NewValue -eq 'Checked')
 })
-$clbMods.Add_SelectedIndexChanged({
-    $i = $clbMods.SelectedIndex
-    if ($i -ge 0 -and $i -lt $script:ModItems.Count) { $lblEstado.Text = [string]$script:ModItems[$i].descripcion }
-})
+$clbMods.Add_SelectedIndexChanged({ Mostrar-Detalle-Mod })
+$cbFiltroMods.Add_SelectedIndexChanged({ Refrescar-Lista-Mods })
 function Aplicar-Preset($nombre) {
     Poner-Packs $script:Presets[$nombre]
     $script:Ovr = @{}
@@ -246,6 +275,7 @@ $btnInstalar.Add_Click({
         $el = Packs-Elegidos; $o = Ordenes-Sueltas
         Log 'Instalando lo que no es de Workshop…'
         [void](Instalar-Lanzador); Crear-Acceso; Instalar-Locales
+        if (-not (Test-Path (Join-Path $script:Juego 'Repentogon\isaac-ng.exe'))) { [void](Abrir-Reparacion-Repentogon) }
         [void](Leer-Instalados)
         $falt = Mods-Que-Faltan $el $o.on $o.off
         Log "Faltan $($falt.Count) mods de Workshop." $(if ($falt.Count -gt 0) { 'aviso' } else { 'ok' })
@@ -253,7 +283,7 @@ $btnInstalar.Add_Click({
         Fijar-Idioma
         $txt = "Listo.`r`n`r`n"
         if ($falt.Count -gt 0) { $txt += "Faltan $($falt.Count) mods de Workshop: pulsa «Suscribirme a lo que falta» (o «Abrir páginas en Steam»).`r`n`r`n" }
-        $txt += "Después abre Isaac una vez con «Abrir Isaac (REPENTOGON)», ciérralo y pulsa «Aplicar selección» para activar solo tus packs.`r`n`r`nIMPORTANTE: Steam > Isaac > Propiedades > Idioma > Español."
+        $txt += "Si se ha abierto el Launcher, completa la configuración inicial y pulsa Update/Repair Installation > Re-install/Repair REPENTOGON. Después cierra el Launcher y pulsa JUGAR.`r`n`r`nIMPORTANTE: Steam > Isaac > Propiedades > Idioma > Español."
         [void][Windows.Forms.MessageBox]::Show($txt, 'Isaac Pack ES', 'OK', 'Information')
     }
 })
@@ -329,7 +359,7 @@ $f.Add_Shown({
     try {
         if (-not $Juego) { $script:J0 = Buscar-Juego } else { $script:J0 = $Juego }
         if ($script:J0 -and (Usar-Juego $script:J0)) {
-            Log 'Isaac encontrado. Elige tus packs y pulsa «Instalar / actualizar todo».' 'ok'
+            Log 'Isaac encontrado. Elige un perfil o ajusta los mods; pulsa Preparar / actualizar y después JUGAR.' 'ok'
         } else {
             $lblJuego.Text = 'No encuentro Isaac: pulsa «Cambiar carpeta…».'
             foreach ($c in $flowAcc.Controls) { $c.Enabled = $false }

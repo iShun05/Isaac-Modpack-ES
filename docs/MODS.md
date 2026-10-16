@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.8_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.9_
 
 ## ⭐ Esencial (4)
 
@@ -50,7 +50,7 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [Book of Belial Synergies!](https://steamcommunity.com/sharedfiles/filedetails/?id=2910123966) | Book of Belial Synergies: sinergias para Book of Belial y el Birthright de Judas. |  |
 | [Car Battery Synergies](https://steamcommunity.com/sharedfiles/filedetails/?id=2916599212) | Car Battery Synergies: Car Battery pasa a hacer efecto con 26 activos más (casi todos con efecto propio, no solo repetir). |  |
 | [Epic Fetus Synergies](https://steamcommunity.com/sharedfiles/filedetails/?id=2897480136) | Epic Fetus Synergies: sinergias nuevas para Epic Fetus con Azazel, Brimstone y más. |  |
-| [Lazy MattPack](https://steamcommunity.com/sharedfiles/filedetails/?id=3408993906) | Lazy MattPack: los objetos encargados por Lazy Mattman, muchos de calidad 5 (nivel máximo) con sinergias entre sí. ⚙ REPENTOGON | Es lo más parecido a «mods de tier 5». Requiere REPENTOGON. Contenido nuevo, no solo sinergias. |
+| [Lazy MattPack](https://steamcommunity.com/sharedfiles/filedetails/?id=3408993906) | Lazy MattPack: mod de contenido grande con muchos objetos nuevos encargados por Lazy Mattman; muchos son de calidad 5 y tienen sinergias propias. ⚙ REPENTOGON | Requiere REPENTOGON. Se separa de las sinergias pequeñas porque añade bastante contenido y cambia más las partidas. |
 | [Monstro's Lung Synergies!](https://steamcommunity.com/sharedfiles/filedetails/?id=2996716893) | Monstro's Lung Synergies: sinergias nuevas para Monstro's Lung. |  |
 | [Neptunus Synergies](https://steamcommunity.com/sharedfiles/filedetails/?id=2965292371) | Neptunus Synergies: Neptunus pasa a funcionar con modificadores de lágrimas; con REPENTOGON hay sinergias extra. | Actualizado en ago 2026. |
 | [Smart Culling](https://steamcommunity.com/sharedfiles/filedetails/?id=3726132245) | Smart Culling: limita y fusiona proyectiles redundantes antes de que el motor se desborde (tirones y lágrimas borradas), pasando el daño al resto. | No necesita REPENTOGON. Elige este o FPS Enhancer, no los dos (hacen lo mismo). |

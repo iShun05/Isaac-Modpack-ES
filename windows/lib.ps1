@@ -183,6 +183,24 @@ function Configurar-Ruta-Lanzador {
     return $ini
 }
 
+function Abrir-Reparacion-Repentogon {
+    $lanz = Join-Path $script:Juego 'REPENTOGONLauncher\REPENTOGONLauncher.exe'
+    if (-not (Test-Path $lanz)) { Log 'Falta REPENTOGONLauncher.exe. Pulsa «Preparar / actualizar» para descargar el Launcher oficial.' 'error'; return $false }
+    $ini = Ruta-Ini-Lanzador
+    $configurado = Test-Path $ini
+    if ($configurado) { [void](Configurar-Ruta-Lanzador) }
+    $activo = Get-Process -Name 'REPENTOGONLauncher' -ErrorAction SilentlyContinue | Where-Object { $_.Path -and $_.Path -ieq $lanz }
+    if (-not $activo) { Start-Process $lanz -WorkingDirectory (Split-Path $lanz) }
+    if ($configurado) {
+        Log 'REPENTOGON no está instalado. En el Launcher, pulsa Update/Repair Installation > Re-install/Repair REPENTOGON.' 'aviso'
+    } else {
+        Log 'Completa la configuración inicial del Launcher seleccionando la carpeta que contiene isaac-ng.exe.' 'aviso'
+        Log 'Después, en el Launcher, pulsa Update/Repair Installation > Re-install/Repair REPENTOGON.' 'aviso'
+    }
+    Log 'Cuando termine la instalación o reparación, cierra el Launcher y pulsa JUGAR.' 'aviso'
+    return $false
+}
+
 function Instalar-Locales {
     $local = Join-Path $script:Raiz 'mods_locales'
     if (-not (Test-Path $local)) { return }
@@ -419,7 +437,9 @@ function Asegurar-Steam {
 function Lanzar-Isaac {
     if (Isaac-Abierto) { Log 'Isaac ya está abierto: ciérralo del todo (si ves «REPENTOGON REQUIRED», es la versión sin REPENTOGON) y vuelve a pulsar Jugar.' 'aviso'; return $false }
     $lanz = Join-Path $script:Juego 'REPENTOGONLauncher\REPENTOGONLauncher.exe'
-    if (-not (Test-Path $lanz)) { Log 'El lanzador de REPENTOGON no está instalado: pulsa «Instalar / actualizar todo».' 'aviso'; return $false }
+    if (-not (Test-Path $lanz)) { Log 'El lanzador de REPENTOGON no está instalado: pulsa «Preparar / actualizar».' 'aviso'; return $false }
+    $repentogon = Join-Path $script:Juego 'Repentogon\isaac-ng.exe'
+    if (-not (Test-Path $repentogon)) { [void](Abrir-Reparacion-Repentogon); return $false }
     if (Get-Process -Name 'REPENTOGONLauncher' -ErrorAction SilentlyContinue | Where-Object { $_.Path -and $_.Path -ieq $lanz }) { Log 'El lanzador de REPENTOGON ya está abierto. Espera a que termine antes de volver a pulsar Jugar.' 'aviso'; return $false }
     $ini = Ruta-Ini-Lanzador
     if (Test-Path $ini) {

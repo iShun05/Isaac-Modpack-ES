@@ -1,5 +1,20 @@
 # Registro de cambios
 
+## v1.9 — 2026-10-16
+### Añadido
+- **Ficha de cada mod en Windows:** muestra su descripción, notas y requisito de REPENTOGON en un panel permanente.
+- **Filtro «Contenido grande»:** agrupa las expansiones y mods que cambian bastante la partida, aunque antes estuvieran en otro pack.
+### Mejorado
+- **Selección más clara:** la lista identifica los mods grandes y recomienda probar una expansión por vez; Lazy MattPack pasa al pack «Contenido grande» y queda fuera de Clean/Mínimo por defecto.
+### Cambiado
+- **Preparación inicial de REPENTOGON:** el botón ahora se llama «Preparar / actualizar». Si falta el ejecutable de REPENTOGON, abre el Launcher visible para completar la instalación o reparación oficial.
+### Corregido
+- **Launcher indica que no encuentra una instalación válida y luego el juego termina con 0xc0000005:** el botón JUGAR deja de iniciar el juego en modo oculto cuando falta `Repentogon\isaac-ng.exe` y da los pasos de reparación.
+- **Diagnóstico del cierre:** el aviso `no animation named Idle` y los dos últimos mods cargados aparecen cerca del cierre, pero el fragmento no permite demostrar cuál lo causa. La ficha permite desactivarlos individualmente para aislarlo.
+### Archivos y pruebas
+- `windows/lib.ps1`, `windows/instalar_gui.ps1`, `windows/instalar_windows.ps1`, `datos/mods.json`, documentación y paquete Windows.
+- Se comprobó que el manifiesto tiene IDs únicos, que los 7 mods grandes están en el pack Contenido grande y la integridad del ZIP. No se dispone de Windows nativo en esta sesión; el filtro, la ventana y la reparación se deben confirmar allí.
+
 ## v1.8 — 2026-10-16
 ### Añadido
 - **Protección contra doble inicio del Launcher** en el botón JUGAR de Windows: si ya está abierto desde la misma instalación, muestra que se espere en lugar de abrir otra instancia.

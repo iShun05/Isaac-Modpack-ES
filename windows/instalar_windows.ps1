@@ -94,9 +94,10 @@ Log 'Los mods recién descargados aparecen en la carpeta mods al abrir Isaac por
 
 Titulo '6. Español y panel'
 Fijar-Idioma
+if (-not (Test-Path (Join-Path $script:Juego 'Repentogon\isaac-ng.exe'))) { [void](Abrir-Reparacion-Repentogon) }
 Write-Host '   IMPORTANTE: Steam > Biblioteca > The Binding of Isaac > clic derecho > Propiedades > Idioma > Español.'
 Write-Host '   Si sigue en inglés: abre el lanzador de REPENTOGON, «Change Game Options» y elige el idioma ahí.'
 Write-Host '   Dentro del juego, con REPENTOGON: pulsa ~ y abre «Packs ES», o pulsa F9, para elegir packs y mods.'
 Write-Host '   Después de guardar en el panel, cierra Isaac y ejecuta Aplicar_seleccion.bat.'
 Write-Host ''
-Write-Host '   Listo. Abre Isaac con «Isaac con REPENTOGON» (Escritorio), con Steam abierto.' -ForegroundColor Green
+Write-Host '   Cuando termine la instalación o reparación, abre Isaac con «Isaac con REPENTOGON» (Escritorio), con Steam abierto.' -ForegroundColor Green
