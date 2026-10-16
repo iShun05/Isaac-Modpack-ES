@@ -1,6 +1,6 @@
 # Packs de mods
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.7_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.8_
 
 Un pack = un tema. `aplicar` deja activos solo los packs que elijas (más **Base**) y desactiva el resto con `disable.it` (reversible). Cambia de pack con el juego cerrado.
 
@@ -22,6 +22,10 @@ Un pack = un tema. `aplicar` deja activos solo los packs que elijas (más **Base
 - `minimo`: Base, Calidad de vida, Interfaz e información, Rendimiento y estabilidad
 - `clean`: Base, Calidad de vida, Interfaz e información, Rendimiento y estabilidad, Sinergias y jugabilidad, Visual y audio
 - `completo`: Base, Calidad de vida, Interfaz e información, Rendimiento y estabilidad, Sinergias y jugabilidad, Contenido grande, Personajes, Visual y audio, Caprichos, Trucos y herramientas
+
+## Efectos y animaciones originales
+
+`Faster Animations` y `NGR remastered` (antes catalogado como Potato Cup; mismo ID de Workshop) quedan apagados por defecto al aplicar cualquier pack para conservar el ritmo, las explosiones y los fuegos originales. Se pueden activar manualmente desde el panel o la selección de mods.
 
 ## Valoración de combinaciones (orientativa, sin probar en el juego)
 - 🔴 Epiphany con cualquier otra expansión grande · 3 o más expansiones grandes · mods que requieren REPENTOGON sin REPENTOGON.

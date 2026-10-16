@@ -1,13 +1,17 @@
 # The Binding of Isaac · Pack de mods en español
 
-Catálogo, packs, instalador y traducción automática al español de los mods de **Isaac: Repentance+** en macOS (Whisky, botella `steam11`): **115 instalados (10 desactivados a propósito)** y más recomendados, cada uno con ficha en español, agrupados en packs para activar solo lo que quieras.
+Catálogo, packs, instalador y traducción automática al español de **Isaac: Repentance+** para macOS con Whisky y Windows 10/11. El manifiesto y los perfiles de mods son compartidos entre plataformas; los pasos propios de Whisky se limitan al sistema gráfico y al entorno Wine.
 
-- **Versión actual:** v1.7
+## Descargar e instalar
+
+Descarga el [instalador de Windows 10/11](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest/download/Isaac_Pack_ES_Windows.zip), descomprímelo y ejecuta `Instalar_Windows.bat`. Elige un perfil y pulsa **JUGAR**; el instalador prepara la ruta del Launcher, abre Steam si hace falta y confirma que Isaac se ejecutó con REPENTOGON.
+
+- **Versión actual:** v1.8
 - **Plataformas:** macOS + Whisky y **Windows 10/11** (instalador en la release). Juego: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3
 - **Estado:** pendiente de pruebas manuales (idioma `Language=4`, mod de traducción, packs y combinaciones). Las pruebas de fiabilidad las hace el usuario más adelante
 
 ## Funciones principales
-- **Manifiesto único** (`datos/mods.json`): 113 mods con id de Workshop, pack, descripción en español y veredicto (esencial · recomendado · opcional · herramienta · capricho · quitar).
+- **Manifiesto único** (`datos/mods.json`): catálogo compartido con id de Workshop, pack, descripción en español y veredicto (esencial · recomendado · opcional · herramienta · capricho · quitar).
 - **Packs como en el pack de Balatro:** Base · Calidad de vida · Interfaz · Rendimiento · Sinergias · Contenido grande · Personajes · Visual y audio · Caprichos · Trucos. `aplicar` deja activos solo los que elijas, con **valoración** de la combinación (🟢🟠🔴) y **perfiles guardados**.
 - **Mods nuevos recomendados:** `docs/RECOMENDADOS.md` con el nombre exacto de Workshop, suscriptores y fecha (incluye Lazy MattPack, objetos de calidad 5).
 - **Instalación fácil:** `docs/suscribir.html` abre la página de cada mod para suscribirse con un clic; los mods que no son de Workshop (REPENTOGON, el mod local de traducción) se descargan/copian solos.
@@ -41,10 +45,10 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ```
 
 ## Instalar en Windows 10/11 (otro equipo)
-1. Descarga `Isaac_Pack_ES_Windows_vX.X.zip` de la [última release](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest) y descomprímelo entero.
+1. Descarga [Isaac_Pack_ES_Windows.zip](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest/download/Isaac_Pack_ES_Windows.zip) y descomprímelo entero.
 2. Doble clic en **`Instalar_Windows.bat`**: se abre una ventana (si SmartScreen avisa: *Más información → Ejecutar de todas formas*; si no abre, usa `Instalar_Windows_consola.bat`).
 3. Elige Clean, Completo o Mínimo (o marca mods sueltos) y pulsa **Instalar / actualizar todo**: instala REPENTOGON y la traducción, y te ayuda a suscribirte a los mods que falten. Después, el botón **▶ JUGAR** lo hace todo en un clic: aplica tus packs, abre Steam si hace falta y lanza Isaac con REPENTOGON.
-4. Abre Isaac con el acceso **«Isaac con REPENTOGON»** del Escritorio. Tras la primera carga, vuelve a ejecutar el instalador para activar solo tus packs.
+4. Pulsa **▶ JUGAR** en la ventana para abrir Steam e Isaac con REPENTOGON. El instalador comprueba que se esté usando la versión correcta.
 
 ## Instalar en Mac (Whisky)
 1. Conecta el SanDisk y cierra Isaac.
@@ -57,7 +61,8 @@ scripts/com.ishun05.isaac-espanol.plist   vigilante de launchd
 ## Versiones y código fuente
 | Versión | Fecha | Resumen | Código |
 |---|---|---|---|
-| [`v1.7`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.7) **(actual)** | 2026-10-10 | Escáner de lag dentro del juego (avisa y señala al mod sospechoso) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.7) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.7.zip) |
+| [`v1.8`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.8) **(actual)** | 2026-10-16 | Arregla la ruta y doble instancia de REPENTOGON en Windows; restaura animaciones y efectos originales por defecto | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.8) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.8.zip) |
+| [`v1.7`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.7) | 2026-10-10 | Escáner de lag dentro del juego (avisa y señala al mod sospechoso) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.7) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.7.zip) |
 | [`v1.6`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.6) | 2026-10-10 | Botón JUGAR en la ventana de Windows (todo en un clic) | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.6) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.6.zip) |
 | [`v1.5`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.5) | 2026-10-10 | Instalador de Windows con ventana oscura | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.5) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.5.zip) |
 | [`v1.4`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.4) | 2026-10-10 | Corrige el código de idioma (español = 4) y fija el español en Windows | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.4) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.4.zip) |

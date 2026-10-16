@@ -1,5 +1,20 @@
 # Registro de cambios
 
+## v1.8 — 2026-10-16
+### Añadido
+- **Protección contra doble inicio del Launcher** en el botón JUGAR de Windows: si ya está abierto desde la misma instalación, muestra que se espere en lugar de abrir otra instancia.
+### Mejorado
+- La versión visible en la interfaz de Windows y el número del ZIP salen del archivo `VERSION` común, incluido en el instalador.
+### Cambiado
+- El ID de Workshop `2902768955` aparece con su nombre instalado actual, **NGR remastered** (antes figuraba como Potato Cup); no se crea una entrada duplicada.
+- Los perfiles Clean, Mínimo y Completo conservan por defecto el ritmo y los efectos originales; ambos mods siguen activables a mano.
+### Corregido
+- **REPENTOGON no encuentra Isaac en algunas instalaciones Windows o Wine:** el botón JUGAR ya no pasa `--isaac` con una ruta entrecomillada propensa a alterarse. Actualiza `IsaacExecutable` en el ini de Documentos y lanza con `--stealth-mode`.
+- **Animaciones y efectos simplificados al aplicar packs:** Faster Animations y NGR remastered quedan apagados por defecto; NGR reemplaza explosiones y fuegos. Se pueden activar manualmente.
+### Archivos y pruebas
+- `windows/lib.ps1`, `scripts/isaac_pack.py`, `datos/mods.json`, `VERSION`, documentación y paquete Windows.
+- Revisados el flujo de lanzamiento, la ruta del ini de REPENTOGON y los marcadores de activación compartidos por macOS/Windows. **No probado en una instalación nativa de Windows**; hace falta verificar allí el ciclo Steam, Launcher y juego.
+
 ## v1.7 — 2026-10-10
 ### Añadido
 - **Escáner de lag dentro del juego** (panel `Packs ES` → pestaña **Escáner**): FPS medios, peor fotograma, tirones, entidades en pantalla y recomendaciones; **avisa con una notificación** si el juego va lento de forma sostenida y señala al mod sospechoso.

@@ -4,7 +4,7 @@
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $script:Raiz = $Raiz
-$script:Version = '1.5'
+$script:Version = (Get-Content -Path (Join-Path $script:Raiz 'VERSION') -Raw -Encoding UTF8 -ErrorAction Stop).Trim()
 $script:Estado = Join-Path $env:LOCALAPPDATA 'IsaacPackES'
 New-Item -ItemType Directory -Path $script:Estado -Force | Out-Null
 $script:utf8 = New-Object Text.UTF8Encoding($false)   # sin BOM: un BOM al inicio rompe los .lua
@@ -155,6 +155,32 @@ function Crear-Acceso {
     $s.WorkingDirectory = $lanz
     $s.Save()
     Log 'Acceso directo creado en el Escritorio: «Isaac con REPENTOGON».' 'ok'
+}
+
+function Ruta-Ini-Lanzador { Join-Path ([Environment]::GetFolderPath([Environment+SpecialFolder]::MyDocuments)) 'My Games\repentogon_launcher.ini' }
+
+function Configurar-Ruta-Lanzador {
+    $ini = Ruta-Ini-Lanzador
+    $carpeta = Split-Path $ini
+    if (-not (Test-Path $carpeta)) { New-Item -ItemType Directory -Path $carpeta -Force | Out-Null }
+    $linea = 'IsaacExecutable = ' + (Join-Path $script:Juego 'isaac-ng.exe')
+    $salto = "`r`n"
+    if (Test-Path $ini) {
+        $texto = [IO.File]::ReadAllText($ini)
+        if ($texto.Contains("`n") -and -not $texto.Contains("`r`n")) { $salto = "`n" }
+        $reemplazo = $linea.Replace('$', '$$')
+        if ([regex]::IsMatch($texto, '(?im)^\s*IsaacExecutable\s*=.*$')) {
+            $texto = [regex]::Replace($texto, '(?im)^\s*IsaacExecutable\s*=.*$', $reemplazo, 1)
+        } elseif ([regex]::IsMatch($texto, '(?im)^\s*\[General\]\s*$')) {
+            $texto = [regex]::Replace($texto, '(?im)^\s*\[General\]\s*$', ('$0' + $salto + $reemplazo), 1)
+        } else {
+            $texto = $texto.TrimEnd("`r", "`n") + $salto + '[General]' + $salto + $linea + $salto
+        }
+    } else {
+        $texto = '[General]' + $salto + $linea + $salto
+    }
+    [IO.File]::WriteAllText($ini, $texto, (New-Object Text.UTF8Encoding($false)))
+    return $ini
 }
 
 function Instalar-Locales {
@@ -394,10 +420,11 @@ function Lanzar-Isaac {
     if (Isaac-Abierto) { Log 'Isaac ya está abierto: ciérralo del todo (si ves «REPENTOGON REQUIRED», es la versión sin REPENTOGON) y vuelve a pulsar Jugar.' 'aviso'; return $false }
     $lanz = Join-Path $script:Juego 'REPENTOGONLauncher\REPENTOGONLauncher.exe'
     if (-not (Test-Path $lanz)) { Log 'El lanzador de REPENTOGON no está instalado: pulsa «Instalar / actualizar todo».' 'aviso'; return $false }
-    $ini = Join-Path $env:USERPROFILE 'Documents\My Games\repentogon_launcher.ini'
-    $isaac = Join-Path $script:Juego 'isaac-ng.exe'
+    if (Get-Process -Name 'REPENTOGONLauncher' -ErrorAction SilentlyContinue | Where-Object { $_.Path -and $_.Path -ieq $lanz }) { Log 'El lanzador de REPENTOGON ya está abierto. Espera a que termine antes de volver a pulsar Jugar.' 'aviso'; return $false }
+    $ini = Ruta-Ini-Lanzador
     if (Test-Path $ini) {
-        Start-Process $lanz -ArgumentList ('--stealth-mode --isaac="' + $isaac + '"') -WorkingDirectory (Split-Path $lanz)
+        [void](Configurar-Ruta-Lanzador)
+        Start-Process $lanz -ArgumentList '--stealth-mode' -WorkingDirectory (Split-Path $lanz)
     } else {
         Log 'Primera vez con el lanzador: puede abrirse su ventana de configuración; acepta lo que propone y pulsa Jugar otra vez.' 'aviso'
         Start-Process $lanz -WorkingDirectory (Split-Path $lanz)

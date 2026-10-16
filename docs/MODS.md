@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.7_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v1.8_
 
 ## ⭐ Esencial (4)
 
@@ -108,7 +108,7 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [Items Drop on Death - Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=3599747427) | Items Drop on Death - Animation: animación al morir en la que los objetos caen al suelo (solo visual). |  |
 | [Soundtrack Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=1933285222) | Soundtrack Menu: cambia la banda sonora desde Mod Config Menu. ⚙ REPENTOGON | Requiere REPENTOGON (o Music Mod Callback, no ambos). |
 | [Voiding effect](https://steamcommunity.com/sharedfiles/filedetails/?id=3363277114) | Voiding Effect: efecto de absorción para Void, Abyss y Black Rune. ⚙ mejor con REPENTOGON | Mejor con REPENTOGON. |
-| [Potato Cup](https://steamcommunity.com/sharedfiles/filedetails/?id=2902768955) | Potato Cup: menos tirones; quita o simplifica efectos como restos y partículas. | Mod de 2023. Resta detalle visual a cambio de fluidez. |
+| [NGR remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2902768955) | NGR remastered: reduce o elimina efectos gráficos para aligerar el juego; sustituye recursos de explosiones y fuegos por versiones simplificadas. | Desactivado por defecto para conservar los efectos y animaciones originales. Actívalo manualmente si priorizas aligerar los efectos. |
 | ['Clear Tears' (Antilag) Buttons](https://steamcommunity.com/sharedfiles/filedetails/?id=2758700407) | Clear Tears (Antilag): un botón que borra todas las lágrimas, cuchillos, bombas y láseres de la pantalla. | Mod de 2022. Se configura desde Mod Config Menu. |
 
 ## 🛠 Herramienta (5)

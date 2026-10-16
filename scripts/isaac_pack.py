@@ -582,7 +582,9 @@ def docs(_args=None) -> int:
         g = [m for m in mods if m["pack"] == pid]
         L.append(f"| **{nombre}** (`{pid}`) | {desc} | {sum(m['id'] in ins for m in g)} / {len(g)} |")
     L += ["", "## Presets", ""] + [f"- `{k}`: {', '.join(PACKS[p][0] for p in v)}" for k, v in PRESETS.items()]
-    L += ["", "## Valoración de combinaciones (orientativa, sin probar en el juego)",
+    L += ["", "## Efectos y animaciones originales", "",
+          "`Faster Animations` y `NGR remastered` (antes catalogado como Potato Cup; mismo ID de Workshop) quedan apagados por defecto al aplicar cualquier pack para conservar el ritmo, las explosiones y los fuegos originales. Se pueden activar manualmente desde el panel o la selección de mods.",
+          "", "## Valoración de combinaciones (orientativa, sin probar en el juego)",
           "- 🔴 Epiphany con cualquier otra expansión grande · 3 o más expansiones grandes · mods que requieren REPENTOGON sin REPENTOGON.",
           "- 🟠 Dos expansiones grandes · 4 o más personajes · más de 60 mods activos.",
           "- 🟢 Cualquier otra combinación.", "",
@@ -752,8 +754,8 @@ def empaquetar(_args=None) -> int:
         "1. Descomprime este zip ENTERO (no lo abras desde dentro del zip).\r\n"
         "2. Doble clic en Instalar_Windows.bat (abre una ventana). Si SmartScreen avisa: Mas informacion > Ejecutar de todas formas. Si la ventana no abre, usa Instalar_Windows_consola.bat.\r\n"
         "3. Elige tu pack y sigue los pasos. Se puede ejecutar varias veces.\r\n"
-        "4. Abre Isaac con el acceso 'Isaac con REPENTOGON' del Escritorio (con Steam abierto).\r\n"
-        "5. Dentro del juego: pulsa ~ y abre Packs ES (o F9) para elegir packs y mods; luego cierra Isaac y ejecuta Aplicar_seleccion.bat.\r\n\r\n"
+        "4. Pulsa JUGAR en la ventana: abre Steam si hace falta, aplica la ruta de Isaac y lo lanza con REPENTOGON.\r\n"
+        "5. Dentro del juego: pulsa ~ y abre Packs ES (o F9) para cambiar los packs y los mods.\r\n\r\n"
         "Contacto: https://www.instagram.com/_shun._05/\r\n"
     )
     with zipfile.ZipFile(destino, "w", zipfile.ZIP_DEFLATED) as z:
@@ -761,6 +763,7 @@ def empaquetar(_args=None) -> int:
         z.write(REPO / "Aplicar_seleccion.bat", "Aplicar_seleccion.bat")
         for nombre in ("lib.ps1", "instalar_gui.ps1", "instalar_windows.ps1"):
             z.write(REPO / "windows" / nombre, f"windows/{nombre}")
+        z.write(REPO / "VERSION", "VERSION")
         z.write(REPO / "Instalar_Windows_consola.bat", "Instalar_Windows_consola.bat")
         z.write(REPO / "datos/mods.json", "datos/mods.json")
         for f in sorted((LOCAL).rglob("*")):

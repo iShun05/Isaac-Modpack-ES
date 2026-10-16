@@ -18,6 +18,16 @@
 **Arreglo:** `/Applications/REPENTOGON.app` ahora abre Steam antes (en silencio), espera a que esté listo y después lanza el lanzador. Copia del script anterior en `Juegos/mods/The_Binding_of_Isaac/respaldos/`.
 **Si usas el acceso anclado dentro de Whisky:** abre Steam primero y espera a que cargue.
 
+## Error de ruta al pulsar JUGAR desde Whisky o Windows (2026-10-16)
+
+**Síntoma:** REPENTOGON informa que no encuentra una instalación válida de Isaac. Si se vuelve a pulsar el acceso mientras el Launcher sigue abierto, también puede avisar que ya hay otra instancia.
+
+**Causa observada en Whisky:** el perfil de la tarjeta pasaba `--isaac="C:\\Program Files ..."`; Whisky/Wine entregaba una ruta deformada (`C:\\Programm Files ...isaac-ng.exe"`). La instalación y el ejecutable sí estaban presentes.
+
+**Corrección en Isaac Pack ES v1.8:** el botón JUGAR guarda la ruta verificada en `Documents\\My Games\\repentogon_launcher.ini` y arranca el Launcher con `--stealth-mode`, sin pasar `--isaac` con espacios. También evita iniciar otra instancia del mismo Launcher. El instalador de Windows incluye este flujo. En Whisky se corrigieron los perfiles de la botella a `--stealth-mode`; ese ajuste local no forma parte del paquete Windows.
+
+**Verificación disponible:** en la botella se validaron los ejecutables vanilla y REPENTOGON y el registro confirmó la creación y reanudación del proceso. El flujo nativo de Windows no se ha probado en un PC Windows.
+
 ## Tercer fallo: «segundo Steam» al pulsar el acceso varias veces (2026-10-10)
 **Síntoma:** cada vez que se pulsa `REPENTOGON.app` aparece otro Steam en el Dock y el juego sale sin REPENTOGON.
 **Causa (comprobada en `launcher.log` y en la lista de procesos):** había un Isaac normal abierto (lanzado por Steam tras el primer `0x35`). Con Isaac ya en marcha, Steam rechaza otro: el juego sale con `0x35`, se relanza `steam.exe steam://run/250900`, y eso es el «segundo Steam». Además, tras cerrar a la fuerza quedaron `steam.exe` colgados que Steam seguía contando como juego en marcha.
