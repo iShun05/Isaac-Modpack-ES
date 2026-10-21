@@ -1,5 +1,21 @@
 # Registro de cambios
 
+## v2.0 — 2026-10-21
+### Añadido
+- **Comando `jugar`** (`python3 scripts/isaac_pack.py jugar`) y **`scripts/jugar_mac.command`** (doble clic): preparan los mods (copia de nuevos, parches y lo elegido en el panel) y abren Isaac con REPENTOGON mediante `/Applications/Sikarugir/Isaac.app`.
+- **Variable `ISAAC_PACK_BOTELLA`** para usar otra ruta de botella sin editar el script.
+- **Guía de Mac con Sikarugir** al principio de `docs/REPENTOGON_LANZADOR.md`: motor de Steam, opción de lanzamiento de Isaac, `Isaac.app` y cómo comprobar que cargó REPENTOGON.
+### Cambiado
+- **Mac pasa de Whisky a Sikarugir.** Antes: botella `steam11` de Whisky en el SanDisk. Ahora: envoltorio `/Applications/Sikarugir/Steam Windows 11.app` en el disco interno. Cambian la ruta del juego, de los mods y de Workshop en `isaac_pack.py`, el vigilante de español (`com.ishun05.isaac-espanol.plist`), `restaurar_slot3.sh`, el README y `DECISION_WORKSHOP.md`.
+- **Mensajes sin «SanDisk no montado»:** el juego ya no está en el SanDisk; ahora indican la botella de Sikarugir que no se encuentra.
+- Las notas de Whisky de `REPENTOGON_LANZADOR.md` pasan a una sección de **historial**.
+### Eliminado
+- Usuario `crossover` de las rutas de `options.ini`: era propio de Whisky; Sikarugir usa `david`.
+### Archivos y pruebas
+- `scripts/isaac_pack.py`, `scripts/jugar_mac.command` (nuevo), `scripts/com.ishun05.isaac-espanol.plist`, `scripts/restaurar_slot3.sh`, `docs/REPENTOGON_LANZADOR.md`, `docs/DECISION_WORKSHOP.md`, `README.md`, `VERSION` y documentación regenerada.
+- **Windows:** sin cambios en el instalador (el ZIP se regenera con la versión 2.0).
+- Probado en macOS con Sikarugir: `estado` y `diagnostico` leen la botella nueva, `plutil -lint` del vigilante y `bash -n` de los scripts correctos; Isaac abre con REPENTOGON 1.1.3 desde `Isaac.app`.
+
 ## v1.9 — 2026-10-16
 ### Añadido
 - **Ficha de cada mod en Windows:** muestra su descripción, notas y requisito de REPENTOGON en un panel permanente.

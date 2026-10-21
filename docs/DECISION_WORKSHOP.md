@@ -16,7 +16,7 @@ Es la mezcla que ya tienes, y es la mejor para una experiencia sin problemas.
 ## Cómo suscribirte a todo de una vez
 1. Abre `steamcommunity.com` con tu sesión iniciada.
 2. Abre la consola del navegador y pega `docs/suscribir_todo.js` (hace lo mismo que pulsar «Suscribirse», mod a mod).
-3. Abre Steam (en Whisky) y deja que descargue. Luego `python3 scripts/isaac_pack.py estado`.
+3. Abre Steam (en Sikarugir: `/Applications/Sikarugir/Steam Windows 11.app`) y deja que descargue. Luego `python3 scripts/isaac_pack.py estado`.
 
 > No he podido suscribirte yo: requiere tu sesión de Steam y no tengo acceso a ella. El script usa la petición `/sharedfiles/subscribe` de la web de Steam y **no está probado**; si falla, usa `docs/suscribir.html` (un clic por mod).
 

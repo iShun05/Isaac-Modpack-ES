@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Isaac Pack ES: packs de mods, instalación, español automático y documentación (Whisky, botella steam11).
+"""Isaac Pack ES: packs de mods, instalación, español automático y documentación (macOS: envoltorio «Steam Windows 11» de Sikarugir).
 
 Uso:
   isaac_pack.py estado                    qué hay instalado, qué falta por pack y novedades
@@ -16,11 +16,13 @@ Uso:
   isaac_pack.py diagnostico               lee log.txt del juego: mods que fallan en bucle, avisos repetidos y memoria Lua
   isaac_pack.py empaquetar                zip con el instalador de Windows 10/11 (dist/)
   isaac_pack.py instalar                  estado + REPENTOGON si falta + español + docs
+  isaac_pack.py jugar                     prepara los mods y abre Isaac con REPENTOGON (Isaac.app de Sikarugir)
 Presets: minimo · clean · completo
 """
 from __future__ import annotations
 
 import argparse
+import os
 import hashlib
 import html
 import json
@@ -34,12 +36,15 @@ from datetime import datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-BOTELLA = Path("/Volumes/SanDisk/Juegos/whisky/steam11/drive_c")
+# Botella de Wine con Steam: el envoltorio de Sikarugir en el disco interno (se puede cambiar con ISAAC_PACK_BOTELLA)
+ENVOLTORIO = Path("/Applications/Sikarugir/Steam Windows 11.app")
+LANZADOR_ISAAC = Path("/Applications/Sikarugir/Isaac.app")  # abre Steam y lanza Isaac con REPENTOGON (-applaunch 250900)
+BOTELLA = Path(os.environ.get("ISAAC_PACK_BOTELLA", ENVOLTORIO / "Contents/SharedSupport/prefix/drive_c"))
 JUEGO = BOTELLA / "Program Files (x86)/Steam/steamapps/common/The Binding of Isaac Rebirth"
 MODS = JUEGO / "mods"
 WORKSHOP = BOTELLA / "Program Files (x86)/Steam/steamapps/workshop/content/250900"
 DATOS_EID = JUEGO / "data/external item descriptions"
-OPCIONES = [BOTELLA / f"users/{u}/Documents/My Games/Binding of Isaac Repentance+/options.ini" for u in ("david", "crossover")]
+OPCIONES = [BOTELLA / f"users/{u}/Documents/My Games/Binding of Isaac Repentance+/options.ini" for u in ("david",)]
 EXTERNOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/externos")
 RESPALDOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/respaldos")
 LOCAL = REPO / "mods_locales"
@@ -129,7 +134,7 @@ def ultima_repentogon() -> tuple[str, str]:
 # ---------------------------------------------------------------- estado
 def estado(_args=None, auto: bool = False) -> int:
     if not MODS.exists():
-        log("SanDisk no montado o botella no encontrada: conecta el disco y reintenta.", auto)
+        log(f"No encuentro Isaac en la botella de Sikarugir ({BOTELLA}).", auto)
         return 1
     mods = cargar()["mods"]
     man = {m["id"]: m for m in mods}
@@ -388,7 +393,7 @@ def escaner(args) -> int:
 def preparar(_args=None) -> int:
     """Lo que hay que hacer justo antes de abrir Isaac: copiar mods nuevos, parches, aplicar lo elegido en el panel y refrescar el panel."""
     if not MODS.exists():
-        print("SanDisk no montado.")
+        print(f"No encuentro Isaac en la botella de Sikarugir ({BOTELLA}).")
         return 1
     if juego_abierto():
         print("Isaac está abierto: no se prepara nada.")
@@ -494,7 +499,7 @@ def fijar_idioma_eid(auto: bool) -> None:
 def espanol(args=None, auto: bool = False) -> int:
     auto = auto or bool(args and args.auto)
     if not MODS.exists():
-        log("SanDisk no montado: no se hace nada.", auto)
+        log(f"No encuentro Isaac en la botella de Sikarugir ({BOTELLA}): no se hace nada.", auto)
         return 1
     instalar_mod_local(auto)
     if juego_abierto():
@@ -781,6 +786,19 @@ def empaquetar(_args=None) -> int:
     return 0
 
 
+def jugar(_args=None) -> int:
+    """Prepara los mods y abre Isaac con REPENTOGON mediante Isaac.app (Sikarugir)."""
+    if not LANZADOR_ISAAC.exists():
+        print(f"Falta {LANZADOR_ISAAC}: crea el acceso de Isaac en Sikarugir (ver docs/REPENTOGON_LANZADOR.md).")
+        return 1
+    rc = preparar()
+    if rc:
+        return rc
+    subprocess.run(["open", str(LANZADOR_ISAAC)], check=False)
+    print("Abriendo Isaac con REPENTOGON…")
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -807,6 +825,7 @@ def main() -> int:
     es.add_argument("estado", choices=["on", "off"])
     es.set_defaults(f=escaner)
     sub.add_parser("instalar").set_defaults(f=instalar)
+    sub.add_parser("jugar").set_defaults(f=jugar)
     args = p.parse_args()
     return args.f(args)
 

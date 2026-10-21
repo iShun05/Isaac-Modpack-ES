@@ -1,9 +1,9 @@
 #!/bin/bash
 # Devuelve el slot 3 de Isaac a la plantilla Dead God (INFINITY %). Solo toca el slot 3.
-# Requisitos: Steam e Isaac de Whisky CERRADOS. Hay copia previa en respaldos/saves_2026-10-09/.
+# Requisitos: Steam e Isaac de Sikarugir CERRADOS (Steam → Salir). Hay copia previa en respaldos/saves_2026-10-09/.
 set -euo pipefail
-if pgrep -f 'steam.exe|isaac-ng' >/dev/null; then echo "Cierra Steam e Isaac en Whisky primero."; exit 1; fi
-B=/Volumes/SanDisk/Juegos/whisky/steam11/drive_c
+if pgrep -f 'steam.exe|isaac-ng' >/dev/null; then echo "Cierra Steam (Steam → Salir) e Isaac de Sikarugir primero."; exit 1; fi
+B="/Applications/Sikarugir/Steam Windows 11.app/Contents/SharedSupport/prefix/drive_c"
 U="$B/Program Files (x86)/Steam/userdata/1053668664/250900"; R="$U/remote"
 D="$B/users/david/Documents/My Games/Binding of Isaac Repentance+"; TPL="$D/rep+persistentgamedata1.dat"
 [ "$(md5 -q "$TPL")" = "7605ab6c23a73237eb41866e1339cf6f" ] || { echo "La plantilla no es la esperada: no toco nada."; exit 1; }

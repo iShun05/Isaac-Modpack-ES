@@ -13,8 +13,8 @@
   <!-- Se ejecuta al cambiar la carpeta de mods, el manifiesto de Steam o las opciones, y cada hora como red de seguridad -->
   <key>WatchPaths</key>
   <array>
-    <string>/Volumes/SanDisk/Juegos/whisky/steam11/drive_c/Program Files (x86)/Steam/steamapps/common/The Binding of Isaac Rebirth/mods</string>
-    <string>/Volumes/SanDisk/Juegos/whisky/steam11/drive_c/Program Files (x86)/Steam/steamapps/appmanifest_250900.acf</string>
+    <string>/Applications/Sikarugir/Steam Windows 11.app/Contents/SharedSupport/prefix/drive_c/Program Files (x86)/Steam/steamapps/common/The Binding of Isaac Rebirth/mods</string>
+    <string>/Applications/Sikarugir/Steam Windows 11.app/Contents/SharedSupport/prefix/drive_c/Program Files (x86)/Steam/steamapps/appmanifest_250900.acf</string>
   </array>
   <key>StartInterval</key><integer>3600</integer>
   <key>ThrottleInterval</key><integer>60</integer>
