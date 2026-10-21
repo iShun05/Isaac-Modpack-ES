@@ -6,7 +6,7 @@
   <key>ProgramArguments</key>
   <array>
     <string>/usr/bin/python3</string>
-    <string>/Volumes/SanDisk/Juegos/mods/Isaac_Pack_ES/scripts/isaac_pack.py</string>
+    <string>/Users/david/Documents/Juegos.nosync/mods/Isaac_Pack_ES/scripts/isaac_pack.py</string>
     <string>espanol</string>
     <string>--auto</string>
   </array>

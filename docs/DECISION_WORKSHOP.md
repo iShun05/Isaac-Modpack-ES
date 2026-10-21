@@ -9,7 +9,7 @@ Es la mezcla que ya tienes, y es la mejor para una experiencia sin problemas.
 | Duplicados y guardados | Riesgo real: ya pasó con Fiend Folio (versión manual + Workshop = guardado corrupto) y se purgó el 2026-09-27 | Una sola copia por mod |
 | Descarga automática | Steam no deja bajar mods de Workshop sin tu sesión; habría que re-publicar copias ajenas | Una suscripción por mod (o `suscribir_todo.js`) |
 | Dependencias | Hay que mantener el orden y las versiones a mano | Steam las resuelve |
-| Copia de seguridad | La copia es el propio mod | `isaac_pack.py respaldo` guarda un zip de `mods/` en el SanDisk |
+| Copia de seguridad | La copia es el propio mod | `isaac_pack.py respaldo` guarda un zip de `mods/` en `mods/The_Binding_of_Isaac/respaldos/` |
 
 **Fuera de Workshop solo van:** REPENTOGON (no es un mod normal; el script lo descarga de GitHub) y el mod local «Traducción ES (mods)». Los mods que no existan en Workshop se meterían en `mods_locales/` y el script los instalaría; hoy no hay ninguno que lo necesite.
 

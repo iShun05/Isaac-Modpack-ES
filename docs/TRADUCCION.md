@@ -17,7 +17,7 @@
 > La traducción de **textos nuevos** no puede hacerla un script sin un traductor: el script detecta y avisa, y la traducción la hace Claude con ese aviso.
 
 ## Instalar/quitar el vigilante (NO instalado: necesita un permiso tuyo)
-macOS bloquea que un proceso de `launchd` lea el SanDisk (`Operation not permitted`, comprobado el 2026-10-09). Para activarlo, una sola vez: *Ajustes del Sistema → Privacidad y seguridad → Acceso total al disco* → añade `/usr/bin/python3` (o `python3` de Xcode) y luego ejecuta los comandos de abajo. Mientras tanto, el mismo trabajo se hace a demanda con `scripts/instalar_mac.command` o `python3 scripts/isaac_pack.py espanol`.
+macOS bloquea que un proceso de `launchd` lea carpetas protegidas: el SanDisk (`Operation not permitted`, comprobado el 2026-10-09) y también Documentos, donde vive ahora este repositorio (`~/Documents/Juegos.nosync/mods/Isaac_Pack_ES`). Para activarlo, una sola vez: *Ajustes del Sistema → Privacidad y seguridad → Acceso total al disco* → añade `/usr/bin/python3` (o `python3` de Xcode) y luego ejecuta los comandos de abajo. Mientras tanto, el mismo trabajo se hace a demanda con `scripts/instalar_mac.command` o `python3 scripts/isaac_pack.py espanol`.
 ```bash
 cp scripts/com.ishun05.isaac-espanol.plist ~/Library/LaunchAgents/
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.ishun05.isaac-espanol.plist

@@ -9,7 +9,7 @@ Uso:
   isaac_pack.py sincronizar               copia a mods/ lo ya descargado por Steam (el lanzador REPENTOGON tiene SkipUpdateMods=1)
   isaac_pack.py espanol [--auto]          aplica el español (opciones, EID, mod de traducción)
   isaac_pack.py docs                      regenera docs/ (MODS, RECOMENDADOS, PACKS, suscribir.html, suscribir_todo.js)
-  isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en el SanDisk
+  isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en The_Binding_of_Isaac/respaldos
   isaac_pack.py escaner on|off            activa/desactiva el escáner por mod (mide ms por fotograma de cada mod; se ve en el panel)
   isaac_pack.py preparar                  lo que se hace antes de abrir Isaac: copia mods nuevos, parches, aplica el panel y lo refresca
   isaac_pack.py parches                   crea copias corregidas de mods ajenos (Job) sin tocar los originales
@@ -45,8 +45,10 @@ MODS = JUEGO / "mods"
 WORKSHOP = BOTELLA / "Program Files (x86)/Steam/steamapps/workshop/content/250900"
 DATOS_EID = JUEGO / "data/external item descriptions"
 OPCIONES = [BOTELLA / f"users/{u}/Documents/My Games/Binding of Isaac Repentance+/options.ini" for u in ("david",)]
-EXTERNOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/externos")
-RESPALDOS = Path("/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/respaldos")
+# Carpeta hermana del repositorio dentro de mods/ (Documentos/Juegos.nosync/mods/The_Binding_of_Isaac)
+CARPETA_ISAAC = REPO.parent / "The_Binding_of_Isaac"
+EXTERNOS = CARPETA_ISAAC / "externos"
+RESPALDOS = CARPETA_ISAAC / "respaldos"
 LOCAL = REPO / "mods_locales"
 PERFILES = REPO / "datos/perfiles.json"
 NOMBRE_SEGURO = re.compile(r"[\w .\-()\[\]'`!+&]+")  # sin barras ni rutas

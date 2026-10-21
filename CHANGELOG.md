@@ -1,5 +1,16 @@
 # Registro de cambios
 
+## v2.1 — 2026-10-21
+### Cambiado
+- **El repositorio y los mods pasan del SanDisk a `~/Documents/Juegos.nosync/mods/`** (el SanDisk queda solo para máquinas virtuales). La carpeta termina en `.nosync` para que iCloud no la suba ni la deje «solo en la nube».
+- **Respaldos y descargas de REPENTOGON** (`respaldo`, `instalar`): antes en `/Volumes/SanDisk/Juegos/mods/The_Binding_of_Isaac/`; ahora en la carpeta hermana `mods/The_Binding_of_Isaac/`, calculada desde el propio repositorio (sin rutas de disco fijas).
+- **Vigilante de español** (`com.ishun05.isaac-espanol.plist`): apunta al script en su nueva ruta. `docs/TRADUCCION.md` explica que Documentos también necesita Acceso total al disco para `launchd`.
+- README y `DECISION_WORKSHOP.md`: el respaldo ya no se guarda «en el SanDisk».
+### Archivos y pruebas
+- `scripts/isaac_pack.py`, `scripts/com.ishun05.isaac-espanol.plist`, `docs/TRADUCCION.md`, `docs/DECISION_WORKSHOP.md`, `README.md`, `VERSION` y documentación regenerada.
+- **Windows:** sin cambios en el instalador (el ZIP se regenera con la versión 2.1).
+- Probado en macOS: `estado` lee la botella de Sikarugir desde la nueva ubicación (115/118 mods), `py_compile` y `plutil -lint` correctos.
+
 ## v2.0 — 2026-10-21
 ### Añadido
 - **Comando `jugar`** (`python3 scripts/isaac_pack.py jugar`) y **`scripts/jugar_mac.command`** (doble clic): preparan los mods (copia de nuevos, parches y lo elegido en el panel) y abren Isaac con REPENTOGON mediante `/Applications/Sikarugir/Isaac.app`.
