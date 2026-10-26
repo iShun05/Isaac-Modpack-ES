@@ -34,6 +34,7 @@ docs/RECOMENDACIONES.md    qué quitar, qué dejar y qué añadir
 docs/WEBS.md               webs de mods y herramientas
 docs/TRADUCCION.md         cómo funciona el español automático
 docs/PANEL.md              panel dentro del juego y cómo se aplica
+docs/PUBLICAR.md           pasos para publicar una versión (main, etiqueta, release y ZIP)
 docs/suscribir.html        lo que falta por suscribir (generada, fondo negro)
 docs/suscribir_todo.js     suscripción en bloque desde steamcommunity.com (generada)
 mods_locales/              mods propios (no de Workshop)

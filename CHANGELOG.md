@@ -11,8 +11,10 @@
 ### Cambiado
 - **Copias corregidas de mods en un archivo común:** `datos/parches.json` describe cada copia (Job 2.5 y Angels Drop Items) y lo usan igual `isaac_pack.py` (Mac) y `windows/lib.ps1` (Windows). Se regeneran solas si el mod de Workshop se actualiza; si cambia la línea que corrigen, avisan en vez de romper nada.
 - **Traducción ES (mods) v1.0:** reescrito. Registra las descripciones en `spa` al cargar y al empezar partida (unos 12 ms por pasada; nada por fotograma) y nunca pisa una traducción española que traiga el propio mod.
+### Documentación
+- **`docs/PUBLICAR.md` (nuevo):** pasos para publicar una versión de este pack (qué va en el commit, merge a `main`, etiqueta, release y los dos ZIP adjuntos) y por qué el empaquetado se hace en el Mac. La norma general está en `agent-rules` → *Versiones y GitHub*.
 ### Archivos y pruebas
-- `datos/parches.json` (nuevo), `datos/mods.json`, `scripts/isaac_pack.py`, `windows/lib.ps1`, `mods_locales/traduccion_es_mods/` (`main.lua`, `datos_es.lua` nuevo, `metadata.xml`), `mods_locales/!!!isaac_pack_scanner/` (`main.lua`, `metadata.xml`), `scripts/traduccion_eid/` (nuevo), `README.md`, `docs/TRADUCCION.md`, `VERSION`.
+- `docs/PUBLICAR.md` (nuevo), `datos/parches.json` (nuevo), `datos/mods.json`, `scripts/isaac_pack.py`, `windows/lib.ps1`, `mods_locales/traduccion_es_mods/` (`main.lua`, `datos_es.lua` nuevo, `metadata.xml`), `mods_locales/!!!isaac_pack_scanner/` (`main.lua`, `metadata.xml`), `scripts/traduccion_eid/` (nuevo), `README.md`, `docs/TRADUCCION.md`, `VERSION`.
 - **Windows:** el instalador aplica las copias corregidas desde `datos/parches.json` (incluido en el ZIP). Probado con PowerShell 7.4 sobre una carpeta de mods de prueba: crea la copia, desactiva el original, copia sus datos y una segunda ejecución no cambia nada.
 - **Mac:** probado sobre una carpeta de prueba igual; la copia de Angels Drop Items, el mod de traducción y el escáner están desplegados en la botella de Sikarugir.
 - `check.py` sin diferencias de iconos ni números en las 2696 frases; prueba del mod con Lua 5.3 (`test_mod.py`): 1246 entradas registradas, sin tokens sin resolver, respeta traducciones propias; prueba del escáner: relanza el error igual y lo anota (197 veces en el caso de Angels).
