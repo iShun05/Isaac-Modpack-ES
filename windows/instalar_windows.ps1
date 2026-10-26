@@ -44,7 +44,7 @@ if ($pend) {
     Log ('Repitiendo tu última elección: ' + (($elegidos | ForEach-Object { $script:Packs[$_] }) -join ', ')) 'ok'
 } else {
     Write-Host '   1) Clean (recomendado): calidad de vida, interfaz, rendimiento, sinergias y visual'
-    Write-Host '   2) Completo: todo, también expansiones grandes, caprichos y trucos (puede dar choques)'
+    Write-Host '   2) Completo: juego base + expansiones grandes y personajes (los modos como gacha, caprichos y trucos se activan a mano)'
     Write-Host '   3) Mínimo: solo calidad de vida, interfaz y rendimiento'
     $op = Read-Host '   Elige 1, 2 o 3 [1]'
     $nombre = @{ '1' = 'clean'; '2' = 'completo'; '3' = 'minimo' }[$op]

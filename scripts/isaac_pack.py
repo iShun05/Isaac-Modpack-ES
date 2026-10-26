@@ -72,7 +72,8 @@ PACKS = {
 PRESETS = {
     "minimo": ["base", "qol", "interfaz", "rendimiento"],
     "clean": ["base", "qol", "interfaz", "rendimiento", "sinergias", "visual"],
-    "completo": list(PACKS),
+    # «Completo» = juego base + expansiones; los caprichos y los trucos se activan a mano (cambian la experiencia).
+    "completo": ["base", "qol", "interfaz", "rendimiento", "sinergias", "contenido", "personajes", "visual"],
 }
 VEREDICTOS = {"esencial": "⭐ Esencial", "recomendado": "✅ Recomendado", "opcional": "◻️ Opcional", "herramienta": "🛠 Herramienta", "capricho": "🎭 Capricho", "quitar": "🗑 Quitar"}
 

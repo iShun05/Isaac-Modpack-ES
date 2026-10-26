@@ -763,11 +763,12 @@
    "categoria": "Herramienta",
    "veredicto": "herramienta",
    "descripcion": "Da Rules: menú sandbox para toquetear casi todo el juego (monstruos, reglas, objetos).",
-   "nota": "Trucos: desactívalo para partidas serias.",
+   "nota": "Menú de trucos. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Trucos: desactívalo para partidas serias.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2403871374",
    "pack": "trucos",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "1630477831",
@@ -778,11 +779,12 @@
    "categoria": "Herramienta",
    "veredicto": "herramienta",
    "descripcion": "GoodTrip: viaja a cualquier sala limpia con Tab + clic en el minimapa.",
-   "nota": "Atajo de movimiento: quita tensión a la exploración.",
+   "nota": "Atajo para viajar entre salas (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Atajo de movimiento: quita tensión a la exploración.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1630477831",
    "pack": "trucos",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "913577712",
@@ -793,11 +795,12 @@
    "categoria": "Herramienta",
    "veredicto": "herramienta",
    "descripcion": "InvEdit: edita tus objetos con una interfaz gráfica.",
-   "nota": "Trucos.",
+   "nota": "Editor de objetos (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Trucos.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=913577712",
    "pack": "trucos",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "918510405",
@@ -808,11 +811,12 @@
    "categoria": "Herramienta",
    "veredicto": "herramienta",
    "descripcion": "InvEdit Cursor Trigger: activa el cursor dentro de InvEdit.",
-   "nota": "Solo con InvEdit.",
+   "nota": "Complemento de InvEdit (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Solo con InvEdit.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=918510405",
    "pack": "trucos",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "918170746",
@@ -823,11 +827,12 @@
    "categoria": "Herramienta",
    "veredicto": "herramienta",
    "descripcion": "NO CURSES: desactiva las maldiciones que elijas.",
-   "nota": "Es un truco: quita parte del desafío.",
+   "nota": "Quita maldiciones (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Es un truco: quita parte del desafío.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=918170746",
    "pack": "trucos",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "3805268235",
@@ -958,11 +963,12 @@
    "categoria": "Jugabilidad",
    "veredicto": "capricho",
    "descripcion": "energypills: las píldoras aleatorias se vuelven peligrosas.",
-   "nota": "Cambia el equilibrio: solo si te apetece el riesgo.",
+   "nota": "Cambia las píldoras por versiones peligrosas. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Cambia el equilibrio: solo si te apetece el riesgo.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3739714190",
    "pack": "capricho",
    "rgon": "no",
-   "gran": false
+   "gran": false,
+   "apagado": true
   },
   {
    "id": "3739872352",
@@ -1746,13 +1752,14 @@
    "categoria": "Capricho",
    "veredicto": "capricho",
    "descripcion": "Every Item Stacks!: más de 30 objetos que antes no se acumulaban ahora sí.",
-   "nota": "Requiere REPENTOGON. Rompe el equilibrio: solo para partidas de caos.",
+   "nota": "Cambia las reglas de acumulación de objetos. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Requiere REPENTOGON. Rompe el equilibrio: solo para partidas de caos.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778307529",
    "pack": "capricho",
    "rgon": "requiere",
    "gran": false,
    "suscriptores": 41696,
-   "actualizado": "2026-08-06"
+   "actualizado": "2026-08-06",
+   "apagado": true
   },
   {
    "id": "3622418481",
@@ -1763,11 +1770,12 @@
    "categoria": "Capricho",
    "veredicto": "capricho",
    "descripcion": "Just Gambling!: sistema gacha con pools, pity y probabilidades públicas.",
-   "nota": "",
+   "nota": "Convierte la partida en un gacha. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. En partida, el comando de consola «Gambling» lo enciende o apaga. Steam lo ha retirado del Workshop.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622418481",
    "pack": "capricho",
    "rgon": "no",
    "gran": false,
+   "apagado": true,
    "suscriptores": 58036,
    "actualizado": "2026-03-20"
   },
@@ -1780,13 +1788,14 @@
    "categoria": "Capricho",
    "veredicto": "capricho",
    "descripcion": "Passive Skill Trees: sistema RPG con experiencia, niveles y árbol de habilidades pasivas.",
-   "nota": "Cambia mucho la partida; actualizado en oct 2026.",
+   "nota": "Convierte la partida en un RPG con niveles y árbol de habilidades. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Cambia mucho la partida; actualizado en oct 2026.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3305869734",
    "pack": "capricho",
    "rgon": "no",
    "gran": false,
    "suscriptores": 94193,
-   "actualizado": "2026-10-06"
+   "actualizado": "2026-10-06",
+   "apagado": true
   },
   {
    "id": "3726132245",
@@ -1866,14 +1875,15 @@
    "categoria": "Capricho",
    "veredicto": "capricho",
    "descripcion": "[Q5] Golden Brimstone: objeto que duplica todas las mejoras futuras pero reinicia tus estadísticas, y sustituye los objetos y pickups futuros por objetos de calidad 5.",
-   "nota": "Modo caos de 2023. No suscrito: lo decides tú.",
+   "nota": "Modo caos: reinicia tus estadísticas y duplica las mejoras. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Modo caos de 2023. No suscrito: lo decides tú.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3007108843",
    "pack": "capricho",
    "rgon": "no",
    "gran": false,
    "suscriptores": 7129,
    "actualizado": "2023-07-20",
-   "no_suscribir": true
+   "no_suscribir": true,
+   "apagado": true
   }
  ],
  "version_pack": "1.2"

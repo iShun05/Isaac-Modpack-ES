@@ -1,5 +1,16 @@
 # Registro de cambios
 
+## v2.3 — 2026-10-26
+### Cambiado
+- **Por defecto, la experiencia del juego base:** el perfil **Completo** ya no activa los caprichos ni los trucos. Antes los activaba todos, y en Windows encendía Just Gambling (todo pasaba a ser un gacha). Ahora Completo = base, calidad de vida, interfaz, rendimiento, sinergias, expansiones, personajes y visual. Igual en Mac (`isaac_pack.py`) y en Windows (`lib.ps1`).
+- **Los modos que cambian las reglas entran apagados aunque marques su pack:** Just Gambling (gacha), Passive Skill Trees (RPG), Every Item Stacks!, [Q5] Golden Brimstone, energypills y los trucos (Da Rules, InvEdit, GoodTrip, NO CURSES). Se activan solo si los marcas tú, uno a uno, en el panel **Packs ES → Mods** o en la lista del instalador. Las skins y memes del pack Caprichos siguen activándose con su pack.
+### Añadido
+- Nota en la ficha de Just Gambling: en partida se enciende o apaga con el comando de consola `Gambling`; Steam lo ha retirado del Workshop.
+### Archivos y pruebas
+- `datos/mods.json` (10 mods con `apagado`), `scripts/isaac_pack.py`, `windows/lib.ps1`, `windows/instalar_windows.ps1`, `README.md`, `docs/PANEL.md`, `VERSION`.
+- **Mac y Windows dan el mismo resultado** (`_decidir` en Python y `Debe-Estar-Activo` en PowerShell 7.4): Completo activa 89 mods sin ningún modo; con el pack Caprichos marcado, el gacha sigue apagado; una casilla marcada a mano lo enciende.
+- Al volver a aplicar la selección (JUGAR en Mac, `Aplicar_seleccion.bat` en Windows) se apagan los modos que estuvieran encendidos por el perfil anterior.
+
 ## v2.2 — 2026-10-26
 ### Añadido
 - **Descripciones de EID en español para los objetos de los mods:** 1287 textos (objetos, baratijas, cartas, píldoras, birthrights e información de personaje) de Fiend Folio (1101), Revelations (74), Andromeda (34), Job (30), MattPack (20), Repentance+ (18 que no traía en español), Passive Skill Trees (6), Icesaac (3) y Agatha (1). Antes solo se traducía el nombre y la descripción seguía en inglés.
