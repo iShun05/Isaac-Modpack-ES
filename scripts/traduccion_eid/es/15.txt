@@ -1,0 +1,160 @@
+0	El desconocido te da el consumible del que tienes menos
+1	{{Coin}} Gasta 5 monedas para obtener una leche de estadística aleatoria
+2	{{Collectible291}} 10% de probabilidad de usar Flush! cuando lo golpea una lágrima enemiga
+3	{{Heart}} Sirve para escribir una carta a Papá Noel
+4	Cuando Isaac termina la carta, aparecen tres rocas de Golem
+5	{{Warning}} Impide que se ejecute todo el código de mods {{Warning}}
+6	Hace falta reiniciar el juego por completo para arreglarlo
+7	↓ -0.4 Lágrimas
+8	↑ +0.75 Alcance
+9	Hace a Isaac un 50% más alto y un 25% más delgado
+10	↑ +0.01 de daño durante la sala al pisar una baldosa nueva
+11	16% de probabilidad de generar una bomba trampa al pisar una baldosa nueva
+12	No genera bombas trampa ni da daño en baldosas ya pisadas
+13	{{Shop}} Repone la tienda actual si se usa dentro de una tienda
+14	También repone los {{DevilRoom}} tratos con el diablo y las tiendas de {{Collectible586}} Stairway
+15	{{Chargeable}} Disparar carga una ráfaga radial que congela enemigos y destruye proyectiles
+16	Los recolectables, las tragaperras y los enemigos pueden aparecer con un sombrero de Steven encima
+17	Estos sombreros disparan lágrimas teledirigidas a los enemigos cercanos
+18	Genera un pequeño familiar jinete moderno que genera pulgas
+19	El jinete y su pulga cambian cada 10 segundos
+20	{{Card1}} Teletransporta a Isaac a la primera sala del piso
+21	↓ -0.3 Lágrimas
+22	Las lágrimas dejan un rastro que daña a todos los enemigos cercanos
+23	{{ffCopperBomb}} Genera 3 bombas de cobre y las hace un 20% más comunes
+24	{{ffCopperBomb}} Las bombas de cobre fallidas se convierten en {{Collectible629}} Copper Bot Flies que disparan lágrimas escudo a los proyectiles enemigos
+25	{{Collectible629}} Las Copper Bot Flies se activan a los 60 segundos,
+26	{{Collectible313}} lo que les permite evitar un golpe antes de explotar
+27	{{Warning}} Las Bot Flies activadas pueden acabar rompiéndose
+28	{{ffAfterImage}} 15% de probabilidad de disparar una lágrima que hace que los enemigos dejen imágenes residuales
+29	{{Luck}} 50% de probabilidad con 17 de suerte
+30	Puedes atacar las imágenes residuales para dañar al enemigo
+31	{{Trinket}} Genera una baratija de Golem
+32	Recoge y guarda una baratija, y da su efecto con el doble de poder
+33	Suelta la baratija que lleva al recibir una bomba
+34	{{Warning}} Ignora baratijas con modificadores especiales
+35	{{ffObject}} Genera 1 objeto consumible
+36	↑ Abrir un cofre da +0.1 de suerte
+37	{{ffMorbidHeart}} Convierte dos corazones rojos completos en un corazón mórbido completo
+38	{{Poison}} Por cada corazón podrido que tengas, +17% de probabilidad de disparar lágrimas venenosas
+39	{{RottenHeart}} 12% de probabilidad de sustituir corazones rojos por corazones podridos
+40	Genera un familiar que orbita el centro de la sala
+41	Los enemigos cerca de este familiar lo atacan y reciben daño con el tiempo
+42	Guarda las baratijas de penique que coja Isaac
+43	{{Trinket}} Aumenta la aparición de baratijas de penique
+44	{{ffPennyPress}} Genera una Penny Press al empezar cada piso
+45	Usar el objeto suelta todas las baratijas de penique
+46	Inflige daño falso a Isaac 9 veces al cogerlo
+47	{{Collectible114}} Al usarlo, el siguiente disparo de Isaac se sustituye por 3 proyectiles de Mom's Knife
+48	10% de probabilidad de disparar una lágrima aberrante que teletransporta a los enemigos a la sala anterior
+49	Genera una mini Level 0 Fly cada vez que se teletransporta a un enemigo
+50	Genera 3 bolas de fuego orbitales
+51	Pulsa dos veces disparar para lanzar una bola de fuego
+52	{{Collectible⟨c:Malice⟩}} Transforma a Isaac en una bola de Malice
+53	{{HalfBlackHeart}} Los enemigos muertos pueden soltar medios corazones negros
+54	Lanza 3 bolas de fuego verdes en direcciones perpendiculares lejos de Isaac
+55	Las bolas de fuego invocan Hollow Minions al impactar
+56	{{Charm}} Genera un Psi Hunter aliado
+57	{{RottenHeart}} +5 corazones podridos
+58	Primero llena los contenedores vacíos y luego sustituye corazones existentes
+59	{{Charm}} Genera un monstruo aliado de Fiend Folio
+60	{{Bomb}} Convierte rocas bomba, bombas trampa y enemigos explosivos en bombas recolectables
+61	Genera 2 cartas aleatorias
+62	{{Collectible512}} Permite a Isaac lanzar un agujero negro que lo absorbe todo
+63	{{Collectible665}} Da a Isaac Guppy's Eye durante una sala, que revela el contenido de cofres, sacos, tenderos y hogueras
+64	{{Warning}} Isaac se toma una píldora mortal de cianuro
+65	{{Timer}} Mientras está activo:
+66	↑ +0.62 Alcance
+67	Mucha probabilidad de que aparezcan píldoras al limpiar salas
+68	{{Warning}} Mata a Isaac a los 60 segundos
+69	{{Pill}} Se puede evitar la muerte tomando una píldora
+70	Hace que todos los enemigos de la sala se vuelvan glitch
+71	{{Collectible422}} Devuelve a Isaac a la sala anterior y revierte todo lo hecho en la sala donde se usó
+72	Genera un balón de fútbol que se puede golpear para dañar enemigos
+73	Cubre el suelo de la sala con un tipo de charco aleatorio
+74	{{Freezing}} Congela a todos los enemigos de la sala
+75	Invoca un Gish aliado que cae sobre un enemigo y lanza un disparo de alquitrán antes de irse
+76	Crea un glifo enorme en el suelo durante la sala
+77	{{Collectible584}} Matar enemigos dentro del glifo da a Isaac un familiar fuego fatuo orbital
+78	{{Collectible⟨c:Friend's Fireball Formula⟩}} Da Friend's Fireball Formula durante una sala
+79	{{Timer}} Transforma a Isaac en Goby durante 30 segundos
+80	Goby tiene vuelo y puede generar Escarabajos azules que te protegen al dañar enemigos
+81	Imita todos los objetos activos de la sala
+82	Da copias temporales de todos los objetos pasivos de la sala
+83	Los pasivos temporales se quitan al pasar al siguiente piso
+84	{{Card}} Genera 2 cartas aleatorias
+85	{{Heart}} Cura 1 corazón rojo y medio
+86	{{Battery}} Carga el activo de Isaac en 2
+87	{{Collectible⟨c:Executioner⟩}} Mata a un enemigo aleatorio de la sala y marca a otro para morir en 3 segundos
+88	Si apunta a un jefe, le quita un 20% de su vida
+89	Inflige daño moderado a todos los enemigos de una sala
+90	El daño escala según el piso
+91	Los enemigos muertos por este efecto sueltan un recolectable aleatorio
+92	{{Charm}} Al usarlo, cada enemigo no jefe que muera en una sala activa genera una copia aliada temporal
+93	{{Warning}} Isaac recibe 3 de daño no letal
+94	{{HalfHeart}} Al final de las 3 siguientes salas, cura medio corazón y da una carta aleatoria
+95	{{HalfSoulHeart}} Si los corazones rojos están llenos, da medio corazón de alma
+96	Genera 2 moscas hada medianas y 2 moscas azules
+97	{{Collectible248}} Las arañas y moscas azules infligen el doble de daño durante una sala
+98	{{Trinket}} Funde una baratija aleatoria en Isaac
+99	Al usarlo, tu activo principal se sustituye por otro activo aleatorio durante el resto del piso
+100	Cambiar tu objeto mientras su efecto está activo no evita que se sustituya
+101	Recuperas tu activo al empezar el siguiente piso
+102	!!! No hace nada si no tienes un objeto activo
+103	{{Battery}} Durante el resto del piso, TODOS los activos que se cargan al limpiar salas y no están en la ranura de bolsillo tienen carga máxima 1
+104	!!! Estos activos se quitan al empezar el siguiente piso
+105	{{Collectible577}} Obtienes el efecto de Damocles durante el resto del piso actual
+106	{{HalfHeart}} Inflige medio corazón de daño a Isaac
+107	Suelta 2 corazones mórbidos pero Isaac pierde la mitad de su vida roja
+108	Hace reaparecer a todos los enemigos de la sala, pero cada uno tiene un 50% de probabilidad de ser aliado
+109	Genera 3 dianas en el suelo que Isaac puede controlar
+110	Tras un breve retraso, caen 4 misiles en cada una
+111	Llena las ranuras vacías de consumibles y baratijas de Isaac
+112	Revela las salas secretas y supersecretas y abre las salas rojas adyacentes
+113	Isaac cura medio corazón rojo cada 15 segundos, hasta 6 corazones en total
+114	Los personajes de corazones de alma obtienen 2 corazones de alma en total
+115	{{ArcadeRoom}} Teletransporta a Isaac a una sala recreativa especial
+116	{{ffBerserk}} Enfurece a todos los enemigos de la sala durante 15 segundos
+117	El efecto se mantiene en varias salas
+118	{{Poison}} Envenena a todos los enemigos de la sala
+119	{{Burning}} Quema a todos los enemigos de la sala
+120	Hace que todos los enemigos de la sala disparen lágrimas de vez en cuando
+121	{{ffOverloaded}} Sobrecarga a todos los enemigos de la sala
+122	{{ffOverloaded}} Los enemigos sobrecargados hacen cortocircuito y lanzan láseres de corto alcance a su alrededor
+123	Los enemigos alcanzados por los láseres pueden quedar sobrecargados
+124	{{ffBruise}} Magulla a todos los enemigos de la sala
+125	{{ffBruise}} Los enemigos magullados reciben daño extra por cada carga aplicada
+126	{{Confusion}} Confunde a todos los enemigos de la sala
+127	{{ffMultieuclidean}} Aplica Multieuclídeo a todos los enemigos de la sala
+128	{{Fear}} Asusta a todos los enemigos de la sala
+129	{{ffHemorrhage}} Aplica hemorragia a todos los enemigos de la sala
+130	{{ffHemorrhage}} Los enemigos con hemorragia reciben daño constante y sueltan charcos y lágrimas de sangre
+131	{{Charm}} Encanta a todos los enemigos de la sala
+132	Activa dos cartas de energía aleatorias
+133	Usar la carta la lanza en la dirección a la que mira Isaac
+134	{{Charm}} Encanta al instante a todos los enemigos y jefes que toca
+135	{{ffLilPenny}} Atraca a todos los enemigos de la sala
+136	{{Timer}} Recibes durante la sala:
+137	Da el doble de daño si has recibido daño en esta sala
+138	Genera 2 cartas aleatorias de 100% Orange Juice
+139	Inflige daño a un enemigo o jugador aleatorio de la sala
+140	{{Collectible486}} Los jugadores reciben daño falso en su lugar
+141	{{Collectible47}} Lanza 4 cohetes de poco daño a enemigos aleatorios
+142	Pacifica a todos los enemigos de la sala
+143	{{ffPacified}} Los enemigos pacificados no pueden dañar a Isaac
+144	{{Collectible⟨c:100% Orange Juice⟩}} Si hay menos de 3 baldosas de Orange Juice, genera hasta 3
+145	También cambia las baldosas de Orange Juice de la sala
+146	Teletransporta a Isaac junto a un enemigo y explota, volviéndose invulnerable un rato
+147	↑ +0.15 de velocidad durante la sala
+148	{{Collectible108}} Todo el daño se reduce a medio corazón
+149	↑ Mejora de todas las estadísticas durante la sala
+150	{{Collectible105}} Activa el efecto del D6 y cambia los objetos de pedestal de la sala
+151	{{Collectible284}} Activa el efecto del D4 y cambia los objetos pasivos de Isaac
+152	{{Collectible406}} Activa el efecto del D8 y cambia las estadísticas de Isaac
+153	{{Collectible283}} Activa el efecto del D100, que activa a la vez los efectos de D1, D4, D6, D7, D8, D10, D12 y D20
+154	{{Collectible285}} Activa el efecto del D10 y degrada a todos los enemigos de la sala
+155	{{Collectible166}} Activa el efecto del D20 y cambia todos los recolectables de la sala
+156	{{Collectible386}} Activa el efecto del D12 y cambia todos los obstáculos de la sala
+157	{{Collectible723}} Activa el efecto del Spindown Dice y cambia todos los objetos de la sala restando uno a su ID interno
+158	{{Collectible⟨c:Azurite Spindown⟩}} Activa el efecto del Azurite Spindown Dice y cambia todas las baratijas de la sala restando uno a su ID interno
+159	{{Collectible⟨c:D2⟩}} Activa el efecto del D2 y lo lanza temporalmente al suelo

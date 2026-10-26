@@ -1,0 +1,160 @@
+0	También genera un corazón de alma
+1	{{Coin}} 15% de probabilidad de que los enemigos suelten una moneda de piedra al morir
+2	Las monedas de piedra desaparecen a los 2.5 segundos
+3	{{Coin}} Coger una moneda tiene un 50% de probabilidad de sumar otra moneda al contador
+4	3% de probabilidad de convertir las rocas normales en rocas de oro falso
+5	↓ -0.15 Velocidad
+6	Da daño y probabilidad de evitar daño según lo lento que vaya Isaac
+7	Lanza cada cierto tiempo un pulso que {{Fear}} asusta, {{Poison}} envenena o {{Confusion}} confunde a los enemigos cercanos
+8	{{Timer}} {{Collectible118}} Otorga Azufre al empezar cada 4ª sala
+9	Un poquito de troleo
+10	Cada 1.67 segundos lanza una piedra a un enemigo cercano que escala con el daño de Isaac
+11	Activa un efecto beneficioso aleatorio cada vez que se usa una carta
+12	↑ +0.45 Lágrimas
+13	↓ -0.35 Daño
+14	{{Magnetize}} 10% de probabilidad de disparar lágrimas magnéticas
+15	{{Luck}} 50% de probabilidad con 20 de suerte
+16	↑ Aumento temporal de daño al coger corazones
+17	{{Heart}} Los corazones se pueden consumir con la vida llena para aumentar el daño
+18	Algunos tipos de corazón tienen efectos extra al consumirse
+19	{{Battery}} Romper rocas tiene un 5% de probabilidad de añadir 1 carga al objeto activo
+20	{{Luck}} 25% de probabilidad con 20 de suerte
+21	Genera un familiar ojo que rebota por la sala, inflige daño por contacto y bloquea disparos
+22	El ojo rebota hacia los enemigos más cercanos
+23	Inflige 0.66x el daño de Isaac
+24	Cada vez que se destruye una roca tintada:
+25	↑ +0.33 Daño
+26	↓ -0.06 Velocidad
+27	{{Coin}} Coger monedas da a Isaac un aumento de lágrimas y velocidad
+28	{{Damage}} Llenar esta barra acumula un aumento de hasta +1.8 de daño por cada corazón llenado
+29	Cuando se llenan todos los corazones, se funden todas las baratijas que lleves
+30	↑ +0.4 Daño
+31	Otorga durante el piso el efecto de una baratija gusano aleatoria al empezarlo
+32	Supuestamente imposible de conseguir, pero no cuesta tanto
+33	10% de probabilidad cada 3 segundos de transformar a un enemigo de la sala en un Bony
+34	Obtienes un fusil de asalto con munición limitada al entrar en una sala que tiene:
+35	↑ 0.5x multiplicador de cadencia
+36	↑ +6.25 Alcance
+37	↑ +1.0 Velocidad de tiro
+38	Lágrimas perforantes
+39	{{Confusion}} Entrar y luego salir de la línea de visión de un enemigo por primera vez lo confunde 2.67 segundos
+40	10% de probabilidad de disparar una lágrima cohete que persigue a los enemigos
+41	{{Luck}} 25% de probabilidad con 10 de suerte
+42	Los cohetes disparan lágrimas de poco daño cerca de los enemigos
+43	Los cohetes estallan en un patrón de lágrimas al impactar, según su color
+44	Genera dos agujeros de gusano
+45	Las lágrimas y proyectiles que entran en un portal salen por el otro
+46	Las lágrimas disparadas a través de portales apuntan a los enemigos y tienen efectos extra
+47	Los agujeros de gusano estallan en lágrimas de vez en cuando y cambian de posición
+48	25% de probabilidad de que caiga una roca sobre los enemigos
+49	{{Luck}} 50% de probabilidad con 3 de suerte
+50	{{Slow}} La roca ralentiza a los enemigos y puede matar al instante con el tiempo a los que no son jefes
+51	Las arañas azules se sustituyen por arañas de roca aliadas
+52	Pueden ser arañas de roca tintada o de carbón
+53	15% de probabilidad de disparar lágrimas en llamas que queman
+54	{{Luck}} 50% de probabilidad con 35 de suerte
+55	Los enemigos femeninos tienen un 10% de probabilidad de enfurecerse al azar
+56	{{Collectible⟨c:Peppermint⟩}} 20% de probabilidad de disparar un fuego que daña y congela a los enemigos
+57	{{Luck}} 50% de probabilidad con 30 de suerte
+58	Los enemigos femeninos tienen un 15% de probabilidad de enfurecerse al azar
+59	Genera un familiar Gaper de piedra que empuja a los enemigos y bloquea disparos
+60	{{Heart}} Al morir, Isaac reaparece en la sala actual con 6 corazones añadidos a su barra de vida
+61	Al limpiar la sala aparecen 1-3 moscas hada
+62	Las moscas hada infligen daño por contacto a los enemigos y mueren al cabo de un rato
+63	Las moscas hada tienen tres tamaños distintos, cada uno con efectos diferentes
+64	Los nombres de las moscas hada se ven al abrir el mapa
+65	Al entrar en una sala con enemigos, Isaac juega un minijuego de ritmo
+66	Disparar lágrimas a tiempo daña a todos los enemigos de la sala
+67	{{Damage}} Cuantas más notas aciertes, más daño hace
+68	↑ +0.14 Lágrimas
+69	↑ +0.5 Velocidad de tiro
+70	↓ Impide que suban las estadísticas mientras la llevas
+71	15% de probabilidad de disparar una lágrima gris que deja un rastro de charco ralentizador
+72	{{Luck}} 45% de probabilidad con 20 de suerte
+73	Genera familiares Brickmin que se pueden apuntar y lanzar cuando están cerca
+74	Hay 3 Brickmin distintos con efectos y comportamientos diferentes
+75	Ganas un Brickmin cada 4 salas limpiadas
+76	Permite abrir cofres a golpes sin pagar nada
+77	{{Trinket⟨t:Pocket Sand⟩}} 10% de probabilidad de romperse en Arena de bolsillo tras 5 usos
+78	Dispara cada cierto tiempo lágrimas onduladas a enemigos aleatorios
+79	{{Confusion}} 20% de probabilidad de que estas lágrimas confundan
+80	Moler otras rocas que lleves en la Máquina minera da una pequeña mejora de estadísticas
+81	Isaac puede recibir mejoras hasta 20 veces
+82	{{ColorTransform}}{{ffCrush}} Efecto al triturar
+83	Moler o triturar otras rocas que lleves da un ataque de lluvia de rocas
+84	El ataque de lluvia de rocas se acumula con cada roca triturada o molida
+85	La lluvia de rocas se reinicia en cada piso
+86	{{Coin}} Comprar un objeto en la tienda te devuelve el 25% de su coste
+87	En una sala sin limpiar, 0.3% de probabilidad en cada tic de que brille un enemigo aleatorio
+88	{{Damage}} Mientras miras a un enemigo brillante:
+89	↑ x1.5 Daño
+90	↑ x0.85 Cadencia
+91	↑ +3 Suerte
+92	{{Collectible494}} 20% de probabilidad de disparar lágrimas eléctricas que sueltan una chispa al impactar
+93	{{Luck}} 50% de probabilidad con 25 de suerte
+94	Moler esta roca en la Máquina minera sobrecarga todos los activos que lleves
+95	{{Collectible289}} 6% de probabilidad de disparar un fuego rojo que bloquea disparos enemigos e inflige daño por contacto
+96	{{Luck}} 50% de probabilidad con 16 de suerte
+97	Los enemigos campeones reciben 1.5x de daño
+98	{{BlackHeart}} 60% de probabilidad de que los corazones de alma se vuelvan corazones negros
+99	{{SoulHeart}} 20% de probabilidad de que los corazones rojos se vuelvan corazones de alma
+100	!!! Los corazones rojos desaparecen si no se convierten
+101	35% de probabilidad de generar una mosca azul al romper una roca
+102	35% de probabilidad de duplicar cualquier mosca azul generada
+103	↑ +0.02 Daño cada vez que Isaac mata a un enemigo
+104	Recibir daño hace desaparecer la roca
+105	Fundir la roca evita que desaparezca, pero también que siga ganando daño
+106	↑ Da una mejora de estadística aleatoria en cada sala
+107	{{Chargeable}} Obtienes un ataque cargado que dispara 2 balas al enemigo más cercano
+108	Mientras Isaac tenga un corazón eterno:
+109	↑ +0.5 Lágrimas
+110	{{EternalHeart}} Genera un corazón eterno al empezar cada dos pisos
+111	Cada 3º golpe a un enemigo, 33% de probabilidad de generar 3 lágrimas giratorias a su alrededor que infligen 1.33x el daño de Isaac
+112	{{Timer}} Al entrar en una sala, durante los primeros 4 segundos Isaac tiene:
+113	↑ +0.55 Lágrimas
+114	↑ +2 Velocidad
+115	{{CurseMazeSmall}} Garantiza la Maldición del laberinto en el siguiente piso
+116	Cuando la Maldición del laberinto mueve a Isaac, gana:
+117	↑ +0.4 Daño durante el piso
+118	↑ +0.4 Lágrimas durante la sala
+119	{{Damage}} El bonus de daño se multiplica por 2 durante la sala
+120	Una moneda, bomba, llave o medio corazón rojo si Isaac puede curarse
+121	Inflige 40 de daño a todos los enemigos al soltarla
+122	Tiene un 66% de probabilidad de romperse al soltarla y generar un corazón negro
+123	↑ +0.3 Daño durante la sala al destruir una roca
+124	Las rocas se rompen en lágrimas de roca de corto alcance al destruirse
+125	Recibir daño tiene un 25% de probabilidad de soltar un corazón temporal
+126	{{ffRadiation}} Más resistencia a la radiación
+127	Soltar la baratija crea un aura blanca
+128	Dentro del aura:
+129	↑ x2.5 multiplicador de cadencia
+130	↑ x1.2 multiplicador de daño
+131	Lágrimas teledirigidas
+132	Probabilidad de bloquear daño
+133	Al molerla en la Máquina minera siempre genera una baratija rara
+134	{{Speed}} Se funde sola si Isaac tiene 1.6 de velocidad o más
+135	Ignora las penalizaciones por fundir
+136	{{ffFossil}} {{ColorTransform}}Baratija de roca (Fósil)
+137	↑ +1 vida al triturarla el Mendigo de bismuto
+138	{{GrabBag}} 10% de probabilidad de que los recolectables aleatorios se vuelvan sacos
+139	{{GrabBag}} Genera un saco al triturarla el Mendigo de bismuto
+140	Genera 1 mosca azul por cada sala nueva en la que entras
+141	Genera 12 moscas azules al triturarla el Mendigo de bismuto
+142	Cada lágrima disparada lanza otra más débil que se reparte alrededor de Isaac
+143	Esta lágrima inflige 0.3x el daño de Isaac
+144	Las lágrimas extra salen girando en sentido horario cada vez que Isaac dispara
+145	{{Charm}} Genera un enemigo Beeter aliado al triturarla el Mendigo de bismuto
+146	Genera una Langosta del hambre por cada sala nueva en la que entras
+147	Da una Mosca bonita al triturarla el Mendigo de bismuto
+148	{{Pill}} Isaac se ve obligado a tomar 2 píldoras aleatorias tras vencer a un jefe
+149	{{Pill}} Toma 3 píldoras aleatorias al triturarla el Mendigo de bismuto
+150	↑ +0.20 Velocidad de tiro
+151	Al triturarla el Mendigo de bismuto, ganas para siempre el 50% de las estadísticas del Fósil espada
+152	{{SoulHeart}} Genera un corazón de alma extra y muestra 3 predicciones aleatorias al triturarla el Mendigo de bismuto
+153	{{Collectible317}} 7% de probabilidad de disparar una pequeña ráfaga de lágrimas de Líquido misterioso
+154	Da las rocas iniciales de Golem al triturarla ({{Trinket⟨t:Dirt Clump⟩}} + {{Trinket⟨t:Rolling Rock⟩}}) el Mendigo de bismuto
+155	10% de probabilidad de disparar una lágrima dado que cambia a los enemigos
+156	Genera 3 Dados de cristal aleatorios al triturarla el Mendigo de bismuto
+157	Los efectos al triturar fósiles se activan dos veces
+158	Activa el efecto de otro fósil que lleves al triturarla el Mendigo de bismuto
+159	Recibir daño genera de 1 a 4 moscas azules

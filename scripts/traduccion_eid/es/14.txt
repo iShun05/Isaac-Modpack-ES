@@ -1,0 +1,160 @@
+0	{{ffShieldHeart}} Los corazones eternos también dan un corazón escudo de 3 golpes al completarse
+1	Orbital que suena un rato al recibir golpes de enemigos
+2	Mientras suena, asusta a los enemigos cercanos y aparta a enemigos y balas
+3	↑ +1.6 Daño
+4	Elimina todas las maldiciones naturales
+5	!!! Cada cuarto de las salas del piso limpiadas se apaga una llama, lo que reduce el bonus de daño
+6	La primera llama revela al jefe, la segunda la sala del tesoro y la tercera añade 2 maldiciones aleatorias
+7	↓ x0.66 Daño
+8	Al disparar, lanzas un láser de pantalla completa perpendicular a tus lágrimas donde caerían
+9	Cada lágrima de Isaac tiene 3 efectos aleatorios distintos
+10	Orbital
+11	!!! Se aleja y se acerca a Isaac
+12	Inflige 225 de daño por contacto por segundo
+13	Al usarlo, usa un objeto activo lanzable aleatorio
+14	Cada 3ª lágrima se divide en 6 lágrimas de la mitad de daño al golpear cualquier cosa
+15	{{Timer}} Durante la sala actual:
+16	{{Burning}} Genera un familiar sol en la parte superior de la sala que atrae enemigos y recolectables y quema a los enemigos cercanos
+17	{{ffGleaming}} 10% de probabilidad de disparar lágrimas que hacen brillar a los enemigos
+18	Las auras de brillo pueden asustar, encantar, ralentizar o magullar
+19	{{ffGleaming}}  Los enemigos brillantes tienen un aura que aplica otros estados a los enemigos cercanos
+20	Las auras de brillo queman
+21	Mientras disparas, tus lágrimas se vuelven intangibles un momento y no pueden golpear a enemigos
+22	Los enemigos reciben daño con el tiempo mientras disparas
+23	{{ffCursedPenny}} Genera un Cursed Penny al usarlo
+24	{{Battery}} Al usarlo, tus activos se sustituyen por otro activo aleatorio durante el resto del piso
+25	Cambiar este objeto mientras su efecto está activo no evita que se sustituya tu activo
+26	No afecta a los activos de bolsillo
+27	Los enemigos con poca vida máxima mueren al instante
+28	El umbral de vida máxima escala con el piso en el que está Isaac
+29	Cada segundo en combate:
+30	↓ -0.04 Velocidad
+31	Se reinicia fuera de combate
+32	Este objeto no bajará tu velocidad de 0.6
+33	{{CurseBlind}} No se puede cargar en pisos sin maldiciones
+34	↓ x0.8 Lágrimas si no se usa en este piso
+35	↓ -0.2 Velocidad si no se usa en este piso
+36	↑ +0.1 de daño, más +0.3 de daño por cada {{SecretRoom}} sala secreta encontrada en este piso
+37	{{SecretRoom}} Revela y abre todas las salas secretas del piso
+38	!!! Garantiza una maldición en el siguiente piso
+39	↑ +0.1 de daño por cada Embryo aliado
+40	{{Charm}} Probabilidad de generar una variante aleatoria de Embryo aliado al matar a un enemigo
+41	Garantizado al matar a un jefe
+42	La probabilidad escala con la suerte
+43	Excomulga a todos los enemigos salvo al que tenga más vida
+44	Excomulga a los enemigos en el área
+45	+2 corazones con fugas
+46	Los corazones con fugas se vacían poco a poco y dejan charco rojo en el suelo
+47	{{AngelDevilChance}} El daño a corazones que se vacían no afecta a la probabilidad de trato con el diablo
+48	↑ x1.35 multiplicador de daño
+49	↓ x0.8 multiplicador de alcance
+50	Las lágrimas de Isaac vuelan en arco y explotan en un pedo
+51	Llevar distintas judías da distintos efectos de pedo
+52	Aplica 3 cargas de magulladura a los enemigos en el área
+53	Pacifica durante 6 segundos a todos los enemigos de un tipo aleatorio de la sala
+54	Las bombas se colocan junto a una copia intangible en posición reflejada
+55	Las bombas reflejadas infligen el 50% del daño de la original
+56	Limpia la sala de obstáculos, recolectables y enemigos
+57	Te da dos copias de un familiar aleatorio que tengas
+58	Al levantarlo, Isaac puede apuntar un láser a un punto concreto
+59	El láser sigue apuntando a su último punto tras guardar el objeto
+60	El daño del láser escala con el daño de Isaac
+61	Los enemigos cercanos atacan al láser mientras Isaac lo mueve
+62	{{SoulHeart}} Si Es Martes, +3 Corazones De Alma
+63	↑ +0.3 De Daño O ↓ -0.5 De Alcance Al Azar
+64	↑ +3 De Daño En Corpse I, Ashpit II Y La Persecución Del Trozo De Cuchillo 2
+65	↑ +0.66 De Lágrimas Si El Filtro Está Activado
+66	Al Morir, Los Enemigos Sueltan Bolas Que Botan Arriba Y Abajo
+67	Las Bolas No Tienen Ningún Efecto Sobre Nada
+68	+20% De Probabilidad De Planetario Si Pulsas G
+69	{{Pill}} Los Jefes De Scarred Womb II Solo Mueren Si Usas 10 Píldoras En Ese Piso, Pero Aparecen Píldoras Constantemente En Ese Piso
+70	{{Damage}} Los Objetos De Misión No Se Pueden Coger; +7 De Daño Al Intentar Coger Uno
+71	{{Bomb}} Se Traga Una De Tus Bombas
+72	{{Warning}} Ahora Es Un Objeto
+73	↑ +0.025 de daño al limpiar una sala activa
+74	Genera una bomba trampa en una posición aleatoria de la sala
+75	Isaac dispara lágrimas de espuma de jabón que convierten a los enemigos campeones en normales y les hacen soltar su botín de campeón
+76	Tiene una rabieta tras absorber 10 lágrimas enemigas
+77	Durante la rabieta, desvía lágrimas enemigas, aparta a los enemigos y pacifica a los cercanos
+78	Las lágrimas de Isaac se convierten en gomas de borrar que matan a los enemigos al instante
+79	Los enemigos borrados dejan de aparecer durante el resto de la partida
+80	20% de probabilidad de disparar una lágrima que suelta un anillo de lágrimas perforantes y rebotadoras al impactar
+81	{{Luck}} 100% de probabilidad con 8 de suerte
+82	{{Collectible289}} Al morir, Isaac revive, explota, quema a los enemigos cercanos y suelta un anillo de fuegos
+83	{{Heart}} Tras revivir, cura medio corazón una vez por sala si tiene menos de 2 corazones rojos
+84	{{Burning}} Tras revivir, +1 de daño y lágrimas que queman con 1 corazón rojo o menos
+85	Las lágrimas alternan entre varios efectos de lágrima
+86	29% de probabilidad de que las lágrimas apliquen estados
+87	{{Luck}} 100% de probabilidad con 7 de suerte
+88	Al usarlo, destruye todas las lágrimas enemigas e impide un momento que aparezcan nuevas
+89	Familiar orbital que bloquea proyectiles
+90	{{Freezing}} Dispara lágrimas de hielo de 3.5 de daño en direcciones cardinales, alejándose del jugador
+91	Al disparar, se alinea con las direcciones cardinales en su órbita
+92	Aumenta la distancia de órbita de todos los orbitales
+93	33% de probabilidad de disparar 3 lágrimas muy juntas
+94	Cada lágrima inflige el 65% del daño de Isaac
+95	Genera puertas en salas limpias que conectan salas saltándose huecos del mapa
+96	Revela en el mapa las salas conectadas
+97	Atacar a los enemigos marcados redirige hacia ellos todas las lágrimas del jugador y de los enemigos de la sala
+98	Busca a los enemigos cercanos y les dispara lágrimas rápidamente
+99	Inflige 0.66 de daño por lágrima
+100	Dispara láseres que infligen 3.5 de daño
+101	33% de probabilidad de cargar un láser grueso al bloquear proyectiles
+102	Dispara lágrimas espectrales hacia atrás al moverse
+103	Inflige 2 de daño por lágrima
+104	{{Luck}} Sube la suerte a 4 la primera vez que lo coges
+105	Si tienes más de 0 de suerte al recibir daño mortal, pierdes 4 de suerte para destruir todas las lágrimas enemigas, impedir un momento que aparezcan nuevas y seguir luchando con medio corazón
+106	Recuperas 1 de la suerte perdida en cada sala
+107	Las bombas de Isaac explotan más rápido
+108	Las bombas de Isaac ya no le hacen daño
+109	Las bombas destruyen todas las lágrimas enemigas al explotar e impiden un momento que aparezcan nuevas
+110	10% de probabilidad al disparar de dejar caer una roca sobre el enemigo más cercano alineado con la dirección de tiro
+111	{{Luck}} 20% de probabilidad con 15 de suerte
+112	Al impactar inflige daño en un radio que escala con el daño de Isaac
+113	Mientras lo llevas, da un familiar satélite
+114	Los satélites escalan con los efectos de lágrima y el daño
+115	Al usarlo, hace girar los satélites alrededor de Isaac, que lanzan lágrimas hacia fuera
+116	{{Key}} Genera una llave
+117	Descripción provisional
+118	Da a Isaac el efecto de una carta aleatoria de 100% Orange Juice
+119	{{BossRoom}}{{MiniBoss}} Se obtiene al coger un objeto en la sala de jefe o de minijefe
+120	{{ffBruise}} Las lágrimas magullan a los enemigos
+121	↑ +0.5 Cadencia
+122	{{Library}} Se obtiene al coger un objeto en una biblioteca
+123	25% de probabilidad de disparar 2 lágrimas a la vez
+124	Las lágrimas giran 90 grados para ir a por los enemigos que han fallado
+125	Inflige 3 de daño por lágrima
+126	{{Planetarium}} Se obtiene al coger un objeto en un Planetario
+127	Las lágrimas del perro orbitan a su alrededor mientras dispara
+128	{{Timer}} Matar enemigos tiene un 10% de probabilidad de dar el efecto de un objeto aleatorio de Onion durante 30 segundos
+129	↑ +1.5 Suerte
+130	{{Collectible1}} 3% de probabilidad de cambiar los objetos de pedestal por objetos de Onion al entrar en una sala
+131	Cada 7ª lágrima, puede salir una bala explosiva por la izquierda o la derecha de la pantalla
+132	La bala escala con el daño de Isaac y sale por el lado de la pantalla más lejano a Isaac
+133	{{Warning}} La bala puede chocar con Isaac y dañarle
+134	Familiar que se teletransporta y falla gráficamente por la sala
+135	Cuando choca con enemigos, inflige una cantidad aleatoria de daño y aplica un estado aleatorio
+136	Dispara lágrimas desde satélites de ojo que infligen 1.25 de daño
+137	Sube de nivel con orbes de residuo de ansiedad que aparecen al matar enemigos
+138	Subir de nivel da al familiar más satélites de ojo
+139	↑ +40 Daño
+140	↓ x0.33 multiplicador de cadencia
+141	↓ x0.8 multiplicador de velocidad de tiro
+142	Las lágrimas de Isaac se disparan bajo tierra y en ángulo de bombeo
+143	Las lágrimas explotan y envenenan a los enemigos donde caen
+144	El objetito especial de Image
+145	Cuídalo bien, por favor
+146	Suerte en este desafío
+147	{{Heart}} Te quiero
+148	{{Burning}} Crea un anillo de fuego que bloquea proyectiles, inflige daño y quema a los enemigos
+149	↑ +7 Lágrimas que se desvanecen
+150	{{ffStevenHeart}} +3 corazones de Steven
+151	{{ffStevenHeart}} +1 corazón de Steven
+152	↑ +1.5 Velocidad de tiro
+153	Teledirigido débil
+154	Va hacia los enemigos cercanos y les extrae el alma
+155	{{Slow}} Los enemigos a los que se les extrae el alma quedan ralentizados
+156	Invoca efectos variados cada 3-5 almas extraídas
+157	20% de probabilidad de que aparezca un misterioso desconocido en una sala
+158	El desconocido dispara 6 tiros con una pistola que infligen 20 de daño
+159	Al desaparecer, deja una bomba, una llave o una moneda

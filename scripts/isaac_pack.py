@@ -12,7 +12,7 @@ Uso:
   isaac_pack.py respaldo                  copia comprimida de la carpeta mods/ en The_Binding_of_Isaac/respaldos
   isaac_pack.py escaner on|off            activa/desactiva el escáner por mod (mide ms por fotograma de cada mod; se ve en el panel)
   isaac_pack.py preparar                  lo que se hace antes de abrir Isaac: copia mods nuevos, parches, aplica el panel y lo refresca
-  isaac_pack.py parches                   crea copias corregidas de mods ajenos (Job) sin tocar los originales
+  isaac_pack.py parches                   crea copias corregidas de mods ajenos (Job, Angels Drop Items) sin tocar los originales
   isaac_pack.py diagnostico               lee log.txt del juego: mods que fallan en bucle, avisos repetidos y memoria Lua
   isaac_pack.py empaquetar                zip con el instalador de Windows 10/11 (dist/)
   isaac_pack.py instalar                  estado + REPENTOGON si falta + español + docs
@@ -241,10 +241,11 @@ def _aplicar(elegidos: list[str], on: set[str] | None = None, off: set[str] | No
     ins = instalados()
     seleccion = [m for m in mods if m["pack"] in elegidos]
     faltan = [m for m in seleccion if m["id"] not in ins]
+    corregidos = {c["id"] for c in cargar_copias()}
     for m in mods:
         d = ins.get(m["id"])
-        if not d:
-            continue
+        if not d or m["id"] in corregidos:
+            continue  # un original con copia corregida queda apagado: lo gestiona parches()
         encender = _decidir(m, elegidos, on, off)
         if marcar(d, not encender):
             print(f'{"activado" if encender else "desactivado"}: {m["nombre"]}')
@@ -668,48 +669,54 @@ footer{{margin-top:24px;color:var(--mut);font-size:.85rem}}
     return 0
 
 
-def parches(_args=None) -> int:
-    """Copias corregidas de mods de Workshop (nunca se edita el original, que Steam sobrescribe).
-    Job 2.5: su main.lua hace require() de un archivo de compatibilidad DENTRO de un callback; allí el juego busca en la
-    carpeta del último mod cargado y falla («module job_src.mod_compat.others not found»). Ese archivo solo sirve con
-    Tainted Treasure. La copia lo carga con pcall: sin error y sin cambiar nada más."""
-    orig = instalados().get("2567634705")
+# Copias corregidas de mods de Workshop (datos/parches.json, compartido con Windows): nunca se edita el original,
+# que Steam sobrescribe al actualizar. Hoy: Job 2.5 (require al iniciar) y Angels Drop Items (main.lua:325 con salas nuevas).
+def cargar_copias() -> list[dict]:
+    return json.loads((REPO / "datos/parches.json").read_text(encoding="utf-8"))["copias"]
+
+
+def copia_corregida(cfg: dict) -> int:
+    orig = instalados().get(cfg["id"])
     if not orig:
-        print("Job 2.5 no está instalado: nada que parchear.")
         return 0
     main = (orig / "main.lua").read_text(encoding="utf-8")
-    viejo = 'require("job_src.mod_compat.others")'
-    if viejo not in main:
-        print("El main.lua de Job ya no contiene la línea esperada: revisa el parche a mano.")
+    faltan = [r["viejo"] for r in cfg["obligatorio"] if r["viejo"] not in main]
+    if faltan:
+        print(f"{cfg['nombre']}: el main.lua ya no contiene la línea esperada; revisa el parche a mano.")
         return 1
-    destino = MODS / "job_corregido"
-    huella = hashlib.sha256((main + (orig / "metadata.xml").read_text(encoding="utf-8")).encode()).hexdigest()
+    destino = MODS / cfg["carpeta"]
+    huella = hashlib.sha256((main + (orig / "metadata.xml").read_text(encoding="utf-8")
+                             + json.dumps(cfg, sort_keys=True)).encode()).hexdigest()
     if (destino / ".origen_sha").exists() and (destino / ".origen_sha").read_text() == huella:
         marcar(orig, True)
         marcar(destino, False)
-        return 0  # ya está al día con la versión actual de Job
+        return 0  # ya está al día con la versión actual del original
     if destino.exists():
         shutil.rmtree(destino)
     shutil.copytree(orig, destino, symlinks=True, ignore=shutil.ignore_patterns("disable.it"))
     (destino / ".origen_sha").write_text(huella)
-    (destino / "main.lua").write_text(
-        main.replace(viejo, 'pcall(require, "job_src.mod_compat.others") -- parche: require fuera de la carga falla en el juego'),
-        encoding="utf-8",
-    )
+    for r in cfg["obligatorio"] + cfg["opcional"]:
+        main = main.replace(r["viejo"], r["nuevo"])
+    (destino / "main.lua").write_text(main, encoding="utf-8")
     meta = (destino / "metadata.xml").read_text(encoding="utf-8")
-    meta = re.sub(r"<name>.*?</name>", "<name>Job (corregido)</name>", meta, count=1)
-    meta = re.sub(r"<directory>.*?</directory>", "<directory>job_corregido</directory>", meta, count=1)
+    meta = re.sub(r"<name>.*?</name>", f"<name>{cfg['nombre']}</name>", meta, count=1)
+    meta = re.sub(r"<directory>.*?</directory>", f"<directory>{cfg['carpeta']}</directory>", meta, count=1)
     meta = re.sub(r"\s*<id>.*?</id>", "", meta, count=1)
     meta = meta.replace("<visibility>Public</visibility>", "<visibility>Private</visibility>")
-    meta = re.sub(r"<description>", "<description>[Copia local corregida de Job 2.5 (Workshop 2567634705): quita el error de require al iniciar. Mod original de AgentCucco y su equipo.] ", meta, count=1)
+    meta = re.sub(r"<description>", f"<description>[{cfg['nota']}] ", meta, count=1)
     (destino / "metadata.xml").write_text(meta, encoding="utf-8")
-    marcar(orig, True)  # el original se apaga: los dos a la vez registrarían los mismos objetos
+    marcar(orig, True)  # el original se apaga: los dos a la vez registrarían lo mismo dos veces
     marcar(destino, False)
     datos = JUEGO / "data"
-    if (datos / "job").exists() and not (datos / "job_corregido").exists():
-        shutil.copytree(datos / "job", datos / "job_corregido", symlinks=True)  # conserva el progreso guardado
-    print("Creado mods/job_corregido y desactivado el Job original. Los cambios se ven al reiniciar Isaac.")
+    if (datos / cfg["datos"]).exists() and not (datos / cfg["carpeta"]).exists():
+        shutil.copytree(datos / cfg["datos"], datos / cfg["carpeta"], symlinks=True)  # conserva ajustes y progreso
+    print(f"Creado mods/{cfg['carpeta']} y desactivado el original. Los cambios se ven al reiniciar Isaac.")
     return 0
+
+
+def parches(_args=None) -> int:
+    """Crea o actualiza las copias corregidas de datos/parches.json (Job 2.5 y Angels Drop Items)."""
+    return max([copia_corregida(c) for c in cargar_copias()] or [0])
 
 
 def diagnostico(_args=None) -> int:
@@ -724,6 +731,9 @@ def diagnostico(_args=None) -> int:
     por_mod: dict[str, int] = {}
     for m in re.finditer(r'Error in "([^"]+)" call from "([^"]+)"', texto):
         por_mod[m.group(2)] = por_mod.get(m.group(2), 0) + 1
+    # formato de REPENTOGON: "MC_PRE_ENTITY_SPAWN" from "angel-drop-items" failed: ... (xN)
+    for m in re.finditer(r'"(MC_\w+)" from "([^"]+)" failed[^\n]*?(?:\(x(\d+)\))?$', texto, re.M):
+        por_mod[m.group(2)] = por_mod.get(m.group(2), 0) + int(m.group(3) or 1)
     graves = {k: v for k, v in por_mod.items() if v >= 50}
     for mod, n in sorted(graves.items(), key=lambda kv: -kv[1]):
         print(f"🔴 «{mod}» aparece en {n} errores del registro; revisa el mod y su compatibilidad.")
@@ -749,6 +759,14 @@ def diagnostico(_args=None) -> int:
             print(f"  {marca} {nombre}: {float(avg):.2f} ms/fotograma (máx. {float(mx):.1f} ms, {calls} llamadas)")
     elif log_txt.parent.exists():
         print("Escáner por mod sin datos en este log (actívalo con `isaac_pack.py escaner on` o en el panel).")
+    informe = JUEGO / "data" / ESCANER / "save1.dat"
+    if informe.is_file():
+        try:
+            rep = json.loads(informe.read_text(encoding="utf-8", errors="ignore"))
+        except ValueError:
+            rep = {}
+        for e in rep.get("errores", [])[:10]:
+            print(f"🔴 Escáner: «{e.get('mod')}» falló {e.get('n')} vez/veces en {e.get('cb')}: {e.get('msg')}")
     mem = [int(x) for x in re.findall(r"Lua mem usage: (\d+) KB", texto)]
     if mem:
         print(f"Memoria Lua: de {mem[0]} KB a {mem[-1]} KB (máx {max(mem)} KB)")
@@ -780,6 +798,7 @@ def empaquetar(_args=None) -> int:
         z.write(REPO / "VERSION", "VERSION")
         z.write(REPO / "Instalar_Windows_consola.bat", "Instalar_Windows_consola.bat")
         z.write(REPO / "datos/mods.json", "datos/mods.json")
+        z.write(REPO / "datos/parches.json", "datos/parches.json")
         for f in sorted((LOCAL).rglob("*")):
             if f.is_file():
                 z.write(f, "mods_locales/" + str(f.relative_to(LOCAL)))

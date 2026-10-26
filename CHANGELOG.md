@@ -1,5 +1,22 @@
 # Registro de cambios
 
+## v2.2 — 2026-10-26
+### Añadido
+- **Descripciones de EID en español para los objetos de los mods:** 1287 textos (objetos, baratijas, cartas, píldoras, birthrights e información de personaje) de Fiend Folio (1101), Revelations (74), Andromeda (34), Job (30), MattPack (20), Repentance+ (18 que no traía en español), Passive Skill Trees (6), Icesaac (3) y Agatha (1). Antes solo se traducía el nombre y la descripción seguía en inglés.
+- **Herramienta `scripts/traduccion_eid/`:** extrae los textos EID en inglés ejecutando el Lua de cada mod con *stubs*, comprueba que cada traducción conserva iconos y números y genera `datos_es.lua`. Ver su `LEEME.md`.
+- **Escáner v0.2:** además de medir el tiempo de cada mod, anota sus errores Lua (callback, veces y mensaje) y guarda el informe en `data/!!!isaac_pack_scanner/save1.dat`, legible sin abrir el juego.
+### Corregido
+- **Angels Drop Items: `"MC_PRE_ENTITY_SPAWN" ... main.lua:325: attempt to compare number with nil`.** En las salas que añadió Repentance el mod no tenía configuración y fallaba en cada entidad creada (cada lágrima), lo que también provocaba tirones al disparar. Se usa una copia corregida (`angels_drop_items_corregido`) con su menú de Mod Config Menu en español; el original de Workshop queda desactivado y sin tocar.
+- **`diagnostico` no detectaba los errores con el formato de REPENTOGON** (`"MC_…" from "mod" failed … (xN)`); ahora los cuenta y muestra los errores del escáner.
+### Cambiado
+- **Copias corregidas de mods en un archivo común:** `datos/parches.json` describe cada copia (Job 2.5 y Angels Drop Items) y lo usan igual `isaac_pack.py` (Mac) y `windows/lib.ps1` (Windows). Se regeneran solas si el mod de Workshop se actualiza; si cambia la línea que corrigen, avisan en vez de romper nada.
+- **Traducción ES (mods) v1.0:** reescrito. Registra las descripciones en `spa` al cargar y al empezar partida (unos 12 ms por pasada; nada por fotograma) y nunca pisa una traducción española que traiga el propio mod.
+### Archivos y pruebas
+- `datos/parches.json` (nuevo), `datos/mods.json`, `scripts/isaac_pack.py`, `windows/lib.ps1`, `mods_locales/traduccion_es_mods/` (`main.lua`, `datos_es.lua` nuevo, `metadata.xml`), `mods_locales/!!!isaac_pack_scanner/` (`main.lua`, `metadata.xml`), `scripts/traduccion_eid/` (nuevo), `README.md`, `docs/TRADUCCION.md`, `VERSION`.
+- **Windows:** el instalador aplica las copias corregidas desde `datos/parches.json` (incluido en el ZIP). Probado con PowerShell 7.4 sobre una carpeta de mods de prueba: crea la copia, desactiva el original, copia sus datos y una segunda ejecución no cambia nada.
+- **Mac:** probado sobre una carpeta de prueba igual; la copia de Angels Drop Items, el mod de traducción y el escáner están desplegados en la botella de Sikarugir.
+- `check.py` sin diferencias de iconos ni números en las 2696 frases; prueba del mod con Lua 5.3 (`test_mod.py`): 1246 entradas registradas, sin tokens sin resolver, respeta traducciones propias; prueba del escáner: relanza el error igual y lo anota (197 veces en el caso de Angels).
+
 ## v2.1 — 2026-10-21
 ### Cambiado
 - **El repositorio y los mods pasan del SanDisk a `~/Documents/Juegos.nosync/mods/`** (el SanDisk queda solo para máquinas virtuales). La carpeta termina en `.nosync` para que iCloud no la suba ni la deje «solo en la nube».

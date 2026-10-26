@@ -1,0 +1,160 @@
+0	{{Collectible434}} Moscas actuales (redondeado hacia abajo)
+1	{{Heart}} Contenedores de corazón (redondeado hacia abajo)
+2	{{Heart}} Vida (redondeado hacia abajo)
+3	{{SoulHeart}} Vida de alma (redondeado hacia abajo)
+4	{{GoldenHeart}} Vida dorada (redondeado hacia abajo)
+5	{{ffWitherSkull}} Probabilidad de soltar Wither Skull
+6	{{Player⟨pl:Golem⟩}} Teletransporta a Isaac a un sótano con todas las rocas de Golem del juego
+7	Elegir tres rocas las funde en Isaac y lo devuelve a la sala de la que vino
+8	↑ +125 Vida
+9	{{HealingRed}} Vida completa
+10	{{Timer}} Da a Isaac una minigun gigante con la que dispara balas rápidamente hasta 9 segundos
+11	Las balas infligen x2 el daño de Isaac y rompen rocas y puertas
+12	Isaac puede dejar de disparar cuando quiera
+13	La munición de la minigun se repone en cada piso
+14	Isaac deja un rastro de charco morado que no daña a los enemigos
+15	Al usar el objeto, Isaac dispara un anillo de charco morado
+16	Tras usar el objeto, salen del charco morado pinchos largos que dañan a los enemigos
+17	Los pinchos copian los efectos de lágrima de Isaac
+18	Las bombas de Isaac tienen tres efectos distintos al colocarlas
+19	Estos efectos cambian al azar en cada piso
+20	Aparecen dos dianas de vez en cuando en las salas activas
+21	Pisar una diana hace que Isaac dispare un patrón radial de balas
+22	{{ffMorbidHeart}} Sustituye todos los corazones de alma y negros por corazones mórbidos
+23	Los trozos mórbidos generan 1-3 moscas azules al destruirse
+24	{{SoulHeart}} No hay sustitución en personajes que solo usan corazones de alma
+25	Da un cañón de riel de un solo disparo al empezar cada sala que lanza un tiro perforante
+26	Si el tiro golpea una pared que da a una sala contigua, continúa también en esa sala
+27	El daño del tiro escala con el daño de Isaac
+28	{{UltraSecretRoom}} Se obtiene al coger un objeto en una sala ultrasecreta
+29	Probabilidad de disparar efectos de lágrima rojos aleatorios
+30	Pulsar ALT abre una rueda de emoticonos
+31	Pulsar ALT otra vez hace que Isaac haga el gesto
+32	{{Damage}} Probabilidad de que los enemigos generen un aura sangrienta que da daño mientras Isaac esté dentro
+33	{{HalfHeart}} Si el aura caduca con Isaac dentro, cura medio corazón rojo una vez por sala
+34	Cuenta cada monstruo que mata Isaac
+35	↑ +0.1 de daño para el ojo izquierdo si tienes 0 muertes
+36	{{Damage}} El daño aumenta cuantos más enemigos mata Isaac
+37	{{Luck}} Probabilidad de disparar una lágrima crítica morada que inflige x5 de daño
+38	La probabilidad de crítico aumenta cuantos más enemigos mata Isaac
+39	{{Warning}} El contador de muertes no se reinicia en nuevas partidas
+40	Da un familiar Snagger que recoge monedas, llaves y bombas cercanas
+41	Los recolectables se encogen y se lanzan a los enemigos cercanos
+42	{{Heart}} Puede recoger corazones y lanzárselos a Isaac si necesita curarse
+43	Solo puede llevar cierta cantidad de cada recolectable a la vez
+44	Ejecuta a los enemigos suficientemente dañados tras 4 segundos en una sala
+45	Los jefes se ejecutan por debajo del 35% de vida y los enemigos normales por debajo del 75%
+46	Vuelo solo en salas limpias
+47	{{Battery}} 66% de probabilidad de usar un activo 1-2 veces más al usarlo
+48	{{Battery}} Supercarga cada X usos de un activo, donde X es el número de cargas del activo
+49	Con la mejora, el activo se usa 3 veces más
+50	{{Battery}} Los activos devuelven el 50% de su carga si se usan en los 5 segundos tras cargarse
+51	Da a Isaac una bola de plasma que puede hacer rodar
+52	Tocar la bola electrocuta a los enemigos cercanos con el daño de Isaac
+53	La bola electrocuta a veces a los enemigos cercanos de forma pasiva
+54	En cada sala, una roca aleatoria se convierte en una estatua angelical
+55	Esta estatua emite un aura
+56	Dentro del aura de la estatua:
+57	↑ {{Tears}} x2.5 multiplicador de cadencia
+58	↑ {{Damage}} x1.2 multiplicador de daño
+59	Se carga cogiendo cartas
+60	{{Card}} Usar el objeto mientras Isaac sostiene una carta sobre la cabeza la guarda
+61	Al usarlo activa todas las cartas guardadas
+62	{{Luck}} 15% de probabilidad de que los enemigos suelten al morir cartas de efectos ofensivos
+63	{{Timer}} Las cartas soltadas por enemigos desaparecen rápido
+64	{{Battery}} Cada 2 usos del activo, reduce su carga máxima durante el piso actual
+65	No puede bajar de 1 carga o 1 segundo
+66	Los activos temporizados reinician su carga máxima en cada sala nueva
+67	↓ x0.46 multiplicador de cadencia
+68	Isaac dispara 1-6 lágrimas a la vez
+69	{{SacrificeRoom}} Entrar por primera vez en la sala de sacrificio activa los pinchos 4 veces gratis
+70	{{SacrificeRoom}} 33% de probabilidad de generar una sala de sacrificio al entrar en un piso, si no hay ya una
+71	Las lágrimas que golpean a enemigos lanzan un rayo teledirigido hacia Isaac que inflige x0.25 de su daño
+72	{{Charm}} Genera 2 Goats aliados, Bonies, un Fishface aliado y 1 Bloomer encantado durante la sala
+73	Las lágrimas que golpean a enemigos se disparan otra vez desde donde salieron y siguiendo el mismo camino
+74	↓ x0.85 Daño
+75	Las lágrimas lanzan lágrimas espectrales orbitales extra al golpear cualquier cosa
+76	Isaac dispara una ráfaga de 4 lágrimas estáticas cada 5 disparos
+77	Si las lágrimas estáticas están cerca de otras lágrimas, orbitan a su alrededor y buscan a los enemigos
+78	{{Collectible118}} Al morir, los enemigos tienen un 13% de probabilidad de seguir vivos un segundo más y luego lanzar 4 láseres de azufre en las direcciones cardinales
+79	Carga hacia delante y luego de lado en la dirección en la que dispara Isaac
+80	Inflige 52.5 de daño por contacto por segundo
+81	Genera tres mini familiares Whisper que orbitan alrededor de Isaac cuando dispara
+82	Inflige 75 de daño por contacto por segundo
+83	{{Coin}} Suelta 4 peniques
+84	Aparece otro Dark Bargain al empezar cada piso como trato con el diablo y obliga a Isaac a cogerlo
+85	{{Warning}} Dark Bargain no puede matar a Isaac
+86	Por cada {{SoulHeart}} corazón de alma, {{BlackHeart}} corazón negro o {{ffImmoralHeart}} corazón inmoral, obtienes un orbital de largo alcance
+87	Bloquea disparos enemigos
+88	Los orbitales infligen 30 de daño por contacto por segundo
+89	{{Trinket}} Funde 4 baratijas aleatorias en Isaac
+90	{{AngelRoom}} Al cogerlo, garantiza una sala del ángel tras el siguiente jefe válido
+91	{{Burning}} Genera un familiar sol en la parte superior de cada sala que atrae enemigos y recolectables y quema a los enemigos cercanos
+92	↑ 0.7 Lágrimas
+93	25% de probabilidad de disparar una gran estrella que se divide en 7 estrellas pequeñas
+94	Estas estrellas llueven sobre los enemigos e infligen el 33% del daño de Isaac
+95	{{Luck}} 40% de probabilidad con 16 de suerte
+96	Una sala especial aleatoria del piso queda bloqueada al empezar el piso, salvo {{BossRoom}} salas de jefe y {{TreasureRoom}} salas del tesoro
+97	↑ x1.2 Lágrimas
+98	{{UltraSecretRoom}} Añade una sala ultrasecreta extra en cada piso
+99	{{Card78}} Genera 1-3 Cracked Keys
+100	↑ +5% de daño permanente al usarlo
+101	!!! No se carga al limpiar salas, solo con baterías, objetos o métodos parecidos
+102	Aumenta la probabilidad de que aparezcan Potato Sacks
+103	{{Beggar}} Dáselo a los mendigos a cambio de los ahorros de su vida
+104	{{Shop}} Una vez entregado, varias tiendas intentarán vendértelo de nuevo a precio inflado
+105	{{Damage}} Se convierte en un multiplicador de daño según las monedas que gastaste en comprarlo
+106	↑ Coger un objeto da el efecto de un objeto aleatorio
+107	!!! Recibir daño quita el efecto más antiguo dado por Dis
+108	{{Timer}} Matar enemigos tiene probabilidad de dar el efecto de un objeto aleatorio de {{DevilRoom}} sala del diablo durante 90 segundos
+109	La probabilidad escala con la vida del enemigo
+110	{{Timer}} Recibes durante la sala actual:
+111	{{Collectible149}} ↑ {{Damage}} +40 Daño
+112	↓ {{Tears}} x0.33 multiplicador de cadencia
+113	↓ {{Range}} x0.8 multiplicador de alcance
+114	↓ {{Shotspeed}} x0.8 multiplicador de velocidad de tiro
+115	Las lágrimas de Isaac salen en arco
+116	{{Poison}} Las lágrimas explotan y envenenan a los enemigos donde caen
+117	En combate, aparecen lágrimas a tu alrededor que buscan a los enemigos cercanos
+118	Las lágrimas infligen 13 de daño
+119	Familiar orbital que copia los efectos de lágrima
+120	Inflige x1.5 el daño de Isaac por contacto
+121	{{Chargeable}} Nube nimbo cargable que puede disparar junto a las lágrimas
+122	Las nubes nimbo escalan con los efectos de lágrima y el daño
+123	¡Es hora de arrepentirse! Isaac se une a la línea Nendoroid, listo para escapar de las terribles garras de la ira de su madre. ¡Resérvalo ya y recibe una hoja de fondo exclusiva GSUS y las cartas de The Binding of Isaac: Four Souls! Tienda: https://s.goodsmile.link/jU8
+124	Goodsmile
+125	Mientras lo llevas, genera de vez en cuando "Baldosas glitch" que destruyen rocas, bloquean proyectiles e infligen 60 de daño a los enemigos
+126	!!! Mientras lo llevas, cada minuto y medio otro objeto aleatorio que tengas se convierte en GLITCHCITY
+127	9% de probabilidad de que las rocas se conviertan en rocas doradas con pinchos al entrar en la sala por primera vez
+128	Las rocas doradas con pinchos sueltan 1-3 monedas al destruirse
+129	!!! Las rocas doradas con pinchos dañan a Isaac al tocarlas
+130	↑ +1 Suerte
+131	↑ +0.1 Velocidad
+132	Al cogerlo, cambia todos los objetos de pedestal del piso
+133	{{AngelDevilChanceSmall}} No afecta a la sala del diablo/ángel ni a los {{Crawlspace}} sótanos
+134	Da invulnerabilidad a Isaac durante 90 segundos al cogerlo
+135	Se mantiene entre salas
+136	Da 36 segundos más de invulnerabilidad al entrar en un piso nuevo
+137	{{AngelDevilChance}} +10% de probabilidad de trato con el diablo
+138	Al usarlo, reaparecen todos los familiares temporales que murieron en este piso (moscas azules, arañas azules, etc.)
+139	No cuenta los familiares generados por este objeto
+140	Genera un Escarabajo azul si no se generó ningún familiar
+141	Dispara lágrimas que atracan
+142	Inflige 3.5 de daño por lágrima
+143	Dispara lágrimas que excomulgan a los enemigos
+144	Dispara lágrimas que sobrecargan a los enemigos
+145	{{Collectible⟨c:WNIC⟩}} Dispara lágrimas que se lanzan otra vez por el mismo camino si golpean a un enemigo
+146	{{Burning}} Isaac deja fuegos detrás al moverse
+147	{{Burning}} Cargar contra enemigos crea un anillo de chorros de fuego
+148	10% de probabilidad de disparar fuegos que explotan al contacto
+149	{{Luck}} 50% de probabilidad con 8 de suerte
+150	{{Warning}} La explosión puede dañar a Isaac
+151	Entrar en {{BossRoom}} salas de jefe genera un Minisaac único que bloquea todo el daño que recibiría Isaac
+152	El daño que recibe Isaac se transfiere al Minisaac
+153	Los Minisaacs persiguen y disparan a los enemigos cercanos
+154	7.5% de probabilidad de aplicar Amamantar a los enemigos al entrar en salas
+155	{{Luck}} 15% de probabilidad con 20 de suerte
+156	1% de probabilidad de disparar lágrimas que aplican Amamantar
+157	{{Luck}} 5% de probabilidad con 20 de suerte
+158	{{ffNursing}}  Los enemigos con Amamantar curan a Isaac cuando normalmente le harían daño
+159	Da un corazón eterno al empezar cada piso

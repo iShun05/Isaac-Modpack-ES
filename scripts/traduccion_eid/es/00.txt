@@ -1,0 +1,160 @@
+0	Otorga la {{Spode}}{{ColorTransform}} transformación Spode{{ColorEIDText}} si aún no la tienes
+1	{{AbPlanetarium}} Mejora mucho la distribución de los Planetarios abandonados
+2	Cada lágrima disparada crea otra lágrima que sale de lejos y es atraída hacia el agujero negro
+3	Los enemigos también pueden ser atraídos
+4	Al usarlo, genera un recolectable o cofre aleatorio
+5	Todos los tipos de recolectable y de cofre tienen la misma probabilidad de aparecer
+6	10% de probabilidad de generar en su lugar un objeto de un pool aleatorio
+7	{{Warneeng}} {{ColorYellow}}Solo se carga recogiendo recolectables y usando consumibles
+8	Al usarlo, todas las lágrimas y proyectiles se detienen en el aire y caen al cabo de un rato
+9	Los proyectiles enemigos detenidos no te dañan y pueden dañar a otros enemigos
+10	Al usarlo, caen meteoritos del cielo mientras dure la sala actual
+11	Los meteoritos explotan al impactar, pueden quemar a los enemigos y su daño varía
+12	Los meteoritos y sus explosiones no te dañan
+13	Otorga el efecto de un objeto del Zodiaco o de Planetario aleatorio durante la sala
+14	También otorga el efecto de la transformación Spode durante la sala
+15	Genera durante la sala un bebé cooperativo aleatorio con un efecto de lágrima aleatorio
+16	Probabilidad de disparar una ráfaga de 5 lágrimas
+17	{{HalfSoulHeart}} Los enemigos que mata la ráfaga tienen un 5% de probabilidad de soltar medio corazón de alma
+18	+1 moneda, bomba y llave
+19	Los recolectables tienen un 20% de probabilidad de mejorar a una variante superior
+20	{{Collectible313}} Probabilidad de obtener un escudo de Manto sagrado al recibir daño, según el total de recolectables que tengas
+21	↑ Más daño por cada sala nueva explorada
+22	Las salas especiales dan más daño
+23	El bonus de daño se reinicia al pasar al siguiente piso
+24	{{CurseLost}} Inmunidad a la Maldición de lo perdido
+25	{{SoulHeart}} +1 corazón de alma
+26	{{Charm}} Los enemigos tienen probabilidad de revivir al morir como aliados encantados para siempre
+27	{{Charm}} Probabilidad de disparar lágrimas que encantan
+28	{{Burning}} Cada 10 segundos salen de ti chorros de fuego que infligen tu daño + 10 y queman a los enemigos
+29	Cuantos más enemigos haya en la sala, más a menudo salen las llamas
+30	Inmunidad al fuego
+31	{{EmptyHeart}} +1 contenedor de corazón vacío
+32	5% de probabilidad de curarte el doble del daño recibido
+33	Cada golpe aumenta la probabilidad de curación, que después se reinicia
+34	{{SoulHeart}} También cura corazones de alma
+35	{{AngelDevilChance}} Recibir daño en corazones rojos ya no reduce la probabilidad de trato de ángel/diablo
+36	Familiar orbital que bloquea los proyectiles enemigos
+37	{{Collectible233}} Dispara lágrimas de Planeta diminuto que infligen 2 de daño
+38	Tiene una interacción única con una piedra peculiar
+39	Familiar que orbita a tu alrededor y dispara lágrimas de {{Collectible233}} Planeta diminuto
+40	También puede disparar lágrimas de roca
+41	Bloquea los proyectiles enemigos
+42	De forma pasiva aumenta la probabilidad de encontrar runas y piedras del alma
+43	Familiar que orbita a tu alrededor y dispara lágrimas de {{Collectible233}} Planeta diminuto y de {{Collectible592}} Terra
+44	De forma pasiva aumenta la probabilidad de encontrar runas y piedras del alma
+45	Cada lágrima disparada crea 4 lágrimas más que salen de lejos y convergen hacia ti
+46	Esas lágrimas infligen 1/4 de tu daño pero heredan tus efectos de lágrima
+47	Otorga 4 estrellas orbitales
+48	Las lágrimas que atraviesan una estrella obtienen un efecto aleatorio según su color
+49	El color de cada estrella cambia en cada sala
+50	Otorga un sol que aparece en el centro de cada sala
+51	Mientras haya enemigos en la sala, puede disparar una potente llamarada solar en una dirección aleatoria
+52	{{Burning}} Los enemigos que se acercan al sol se queman
+53	Probabilidad de disparar una lágrima que estalla en pequeñas estrellas dañinas al golpear a un enemigo u obstáculo
+54	Matar a un enemigo puede darte un fuego fatuo azul
+55	{{Shop}} Se puede vender a buen precio
+56	En las salas sin limpiar caen meteoritos del cielo de forma pasiva
+57	Cada meteorito cae en un punto aleatorio de la sala, explota al impactar, puede quemar a los enemigos y su daño varía
+58	↑ +0.35 Lágrimas por cada objeto astrológico que tengas
+59	{{Rune}} Probabilidad de soltar una runa o piedra del alma extra al abrir cofres, volar rocas tintadas y destruir máquinas tragaperras
+60	{{Rune}} Garantiza una runa o piedra del alma en los {{Planetarium}} Planetarios y en los {{AbPlanetarium}} Planetarios abandonados
+61	Tiene una interacción única con cierto objeto
+62	{{Room}} Entrar en una sala nueva puede revelar más salas cercanas en el mapa
+63	{{Planetarium}} Muestra dónde está el Planetario del piso, si lo hay
+64	Llevar esta baratija cuando el temporizador llega a 16 minutos provoca lo siguiente:
+65	{{Collectible483}} Crea una explosión de Mama Mega en la sala
+66	↑ Aumenta todas las estadísticas
+67	!!! Destruye la baratija
+68	Los enemigos pueden ser abducidos por alienígenas
+69	Si no aparece sala de trato tras vencer al jefe del piso, el objeto del jefe se convierte en un objeto de ángel a la venta o en un trato con el diablo
+70	Coger así un objeto del diablo no te bloquea los tratos con el diablo
+71	{{TreasureRoom}} Las salas del tesoro se convierten en Planetarios abandonados
+72	{{AbPlanetarium}} Los Planetarios abandonados pueden tener objetos del Zodiaco u otras recompensas
+73	↑ +20% de probabilidad de {{Planetarium}}Planetario en el siguiente piso cuando una sala del tesoro se convierte en Planetario abandonado
+74	{{AbPlanetarium}} Te teletransporta a un Planetario abandonado
+75	{{Card}} Activa el efecto de una carta del tarot aleatoria, normal o invertida
+76	{{Collectible483}} Crea una explosión de Mama Mega en la sala actual
+77	{{Battery}} Sobrecarga todos tus objetos activos
+78	Consume todos los objetos y recolectables de la sala
+79	Cada recolectable tiene un 50% de probabilidad de convertirse en un fuego fatuo aleatorio
+80	Los objetos de pedestal dan un fuego fatuo único y permanente según la calidad del objeto consumido
+81	Inmoviliza a la Aparición embrujada, como {{Collectible722}} Ánima Sola.
+82	Las rocas tienen ahora un 7.5% de probabilidad de convertirse en un fuego de cualquier tipo.
+83	Destruir un fuego te da un fuego fatuo del color de ese fuego.
+84	Dispara un chorro constante de lágrimas de caca débiles en sentido contrario al que disparas, además del ataque principal.
+85	Esas lágrimas infligen el 15% de tu daño y tienen la cadencia de Leche de soja.
+86	{{ArrowUp}} Al empezar el piso obtienes +175% de lágrimas.
+87	El aumento de lágrimas se reduce poco a poco a lo largo de 90 segundos.
+88	{{Warning}} Se puede usar sin estar cargado del todo.
+89	{{ArrowUp}} Evita el daño por contacto de las invocaciones.
+90	Se carga mordiendo invocaciones.
+91	Al usarlo, dispara un racimo de vísceras según tu carga que inflige 2x tu daño.
+92	{{Warning}} Todos los enemigos pueden invocar moscas.
+93	{{Warning}} Aplica estos efectos en las salas del jefe:
+94	{{ArrowUp}} 20/20.
+95	{{ArrowUp}} +0.10 Velocidad.
+96	{{ArrowUp}} x0.95 retardo de lágrimas.
+97	{{ArrowUp}} +1.5 Suerte.
+98	{{ArrowDown}} No puedes usar objetos activos ni cartas mientras estés en la sala.
+99	{{Warning}} Te da 1 corazón roto.
+100	Da una mejora permanente de 1.15x a una estadística aleatoria entre lágrimas y daño.
+101	{{Warning}} Aplica un filtro de pantalla antigua.
+102	Los enemigos tienen un 20% de probabilidad de aparecer como alucinaciones, que no pueden dañar a Isaac de ninguna forma.
+103	Al empezar cada sala obtienes el efecto de un objeto aleatorio.
+104	{{Warning}} Te da 2 corazones rotos.
+105	Duplica todos los objetos de la sala, como Diplopía.
+106	{{Warning}} Solo gasta 2 cargas por uso.
+107	Genera un mazo que crea una gran onda expansiva hacia donde disparas, rompiendo rocas y dañando enemigos.
+108	Genera a la esposa de Job y 3 familiares que la orbitan de cerca.
+109	Esposa: escala con tu daño.
+110	Junior: poco daño, puede envenenar.
+111	Chico: dispara lágrimas espectrales y perforantes.
+112	Chica: puede disparar dientes.
+113	Genera un familiar que alterna entre 4 formas.
+114	Avaricia: roba a los enemigos.
+115	Soberbia: golpea rápido a los enemigos invocados.
+116	Ira: da puñetazos y hace retroceder a los enemigos.
+117	Gula: se come a los enemigos y dispara un racimo de vísceras.
+118	Caen rocas al azar sobre los enemigos que infligen 3.5 de daño.
+119	{{Warning}} El Fragmento antiguo tendrá un 40% de probabilidad de sustituir a otros consumibles y un 4% de sustituir llaves y bombas. El Fragmento antiguo potencia las rocas pero debilita a tu personaje.
+120	Duplica todos los familiares que tienes.
+121	Los familiares que consigas después de coger el objeto también se duplican.
+122	{{ArrowUp}} Cura todos tus corazones rotos {{BrokenHeart}}.
+123	{{ArrowDown}} Pierdes objetos por cada corazón roto {{BrokenHeart}} que cures.
+124	{{Warning}} Cuantos más corazones rotos {{BrokenHeart}} cures a la vez, menos objetos pierdes.
+125	{{ArrowDown}} Te da un {{BrokenHeart}}.
+126	Te da un duplicado invisible, permanente e imposible de cambiar del objeto más cercano.
+127	Genera un familiar Teléfono móvil que puedes patear por la sala.
+128	El familiar inflige 2/3 de tu daño a los enemigos que haya entre tú y el teléfono.
+129	{{ArrowUp}} Aumenta las lágrimas un 50%.
+130	{{Warning}} Si tienes Rosario {{Collectible72}}, las aumenta un 90%.
+131	{{ArrowUp}} Aumenta las lágrimas un 115% mientras está activo.
+132	{{ArrowDown}} Te da un {{BrokenHeart}} si te dañan con el libro activo.
+133	{{ArrowUp}} +0.30 Velocidad.
+134	{{ArrowUp}} x2 Lágrimas.
+135	{{ArrowUp}} x1.5 Daño.
+136	{{ArrowUp}} +2.5 Suerte.
+137	{{ArrowDown}} Cada vez que te golpean pierdes el 20% de la mejora.
+138	{{Warning}} El daño autoinfligido, como el de las salas de maldición o los mendigos del diablo, no reduce la mejora.
+139	{{Warning}} Los jefes se vuelven más agresivos y tienen 1.5x más vida.
+140	{{ArrowUp}} Genera un objeto extra de la sala del jefe al derrotarlo.
+141	Las máquinas tragaperras {{Slotmachine}} tienen ahora un 75% de probabilidad de no explotar con bombas.
+142	Cura un corazón roto al empezar cada piso.
+143	Cuando compras todos los objetos de un trato con el diablo {{DevilRoom}}, la estatua de Satán se convierte en una estatua de Ángel caído.
+144	Volar esta estatua genera un Ángel caído muy hostil.
+145	Al derrotarlo suelta un objeto aleatorio de la sala del diablo {{DevilRoom}}.
+146	{{ArrowDown}} Reduce una estadística aleatoria entre velocidad, lágrimas, daño, velocidad de tiro y suerte.
+147	{{ArrowUp}} Aumenta el daño y la frecuencia de las rocas que caen.
+148	{{Warning}} Aumenta la probabilidad de que los Fragmentos antiguos sustituyan a otros recolectables.
+149	{{Warning}} Añade un corazón roto y quita un objeto aleatorio de tu inventario.
+150	{{ArrowUp}} Genera 4 objetos aleatorios del pool de la sala actual.
+151	Solo se pueden coger 2 de ellos.
+152	Si solo tienes 1 objeto, aparecen solo 2.
+153	{{ArrowUp}} Cada contenedor de corazón {{Heart}} vacío da a Job +7.5% de lágrimas.
+154	{{ArrowUp}} Los objetos generan una tercera copia.
+155	{{ArrowUp}} El número de objetos que conservas ahora se redondea hacia arriba en lugar de hacia abajo.
+156	{{ArrowDown}} Job contaminado perderá el 62.5 de sus objetos cada piso, en lugar del 40%.
+157	↑ {{Damage}} +6 Daño
+158	↑ {{Damage}} x3 multiplicador de daño
+159	↓ {{Tears}} -0.42 Cadencia

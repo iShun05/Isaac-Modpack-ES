@@ -1,0 +1,160 @@
+0	{{Warning}} Solo chicas
+1	Al morir, los enemigos sueltan huesos y más vísceras
+2	Matar enemigos empuja a los demás enemigos
+3	Aparecen farolillos bombilla en las salas con enemigos
+4	{{Battery}} Coger farolillos y dañar enemigos llena la barra de carga
+5	Al usarlo, Craig puede disparar un gran láser
+6	El tamaño del láser depende de la carga que tenga el objeto
+7	Necesita como mínimo 1/3 de carga para usarse
+8	{{Warning}} Explota si se sobrecarga del todo
+9	{{Battery}} Tras usar un activo, Isaac recupera un 0-50% de su carga
+10	↑ Menos tamaño
+11	Usar el objeto y disparar en una dirección lanza una lágrima eléctrica gigante y perforante
+12	Las descargas de la lágrima eléctrica infligen 1.8 de daño
+13	Isaac puede controlar esta lágrima
+14	Cuanto más cambies su dirección, más rápida se vuelve
+15	↑ +3 Alcance
+16	El siguiente objeto que coja Isaac se sustituirá por un perro familiar
+17	El perro depende del tipo de sala en la que cojas el objeto
+18	Inflige 3.5 de daño por lágrima
+19	{{TreasureRoom}} Se obtiene al coger un objeto en salas del tesoro y {{BossRoom}} salas de jefe
+20	Inflige 6.66 de daño por lágrima
+21	{{DevilRoom}} Se obtiene al coger un objeto en salas del diablo
+22	{{ffDoom}} Las lágrimas condenan a los enemigos
+23	Inflige 5 de daño por lágrima
+24	{{AngelRoom}} Se obtiene al coger un objeto en salas del ángel
+25	Inflige 4 de daño por lágrima
+26	{{Collectible453}} Las lágrimas se rompen en 1-3 astillas de hueso al golpear cualquier cosa
+27	{{SecretRoom}} {{SuperSecretRoom}} Se obtiene al coger un objeto en salas secretas
+28	Genera un surtido aleatorio de bombas, monedas y llaves
+29	{{Shop}} Los objetos de la tienda cuestan un 25% menos
+30	{{Shop}} Se obtiene al coger un objeto en tiendas
+31	Inflige 7 de daño por lágrima
+32	{{Petrify}} 30% de probabilidad de petrificar a los enemigos
+33	{{CursedRoom}} Se obtiene al coger un objeto en salas malditas
+34	Genera 5 perros de la carpeta de perros
+35	Las lágrimas de los perros tienen efectos distintos
+36	{{ErrorRoom}} Se obtiene al coger un objeto en salas de error
+37	{{Coin}} Si Isaac no tiene bombas, puede poner una a cambio de 3 monedas
+38	{{ffLilPenny}} Las bombas explotan en una ráfaga radial de lil' pennies dañinas
+39	↓ x0.5 multiplicador de cadencia
+40	Al disparar aparecen muchas lágrimas alrededor de Isaac que van hacia los enemigos
+41	{{Burning}} 5% de probabilidad de disparar una lágrima morada que quema a los enemigos
+42	Los enemigos quemados estallan en chorros de llama morada al morir
+43	{{Luck}} 100% de probabilidad con 20 de suerte
+44	En una sala activa, aparece un bocadillo de pensamiento junto a Isaac cada 15-30 segundos
+45	Los bocadillos tienen dos opciones con tiempo que eliges con arriba y abajo
+46	Pulsar soltar ({{ButtonRT}}) termina la elección antes y te da la recompensa
+47	Al usarlo:
+48	↑ +0.25 Velocidad
+49	{{Damage}} Los familiares de combate infligen x3 de daño
+50	{{Battery}} Desactivarlo supone 15 segundos de recarga
+51	↓ Recibir daño en estado de frenesí lo cancela, duplica el daño recibido y mata a todos los familiares enfurecidos
+52	{{Collectible11}} Un familiar muerto revive en cada sala
+53	{{Collectible8}} Invoca un familiar estilo Brother Bobby si Isaac no tiene familiares de combate permanentes
+54	Las bombas aplican Descarga fallida a todos los enemigos de la sala al explotar
+55	{{ffOverloaded}} 5% de probabilidad de sobrecargar en su lugar
+56	{{Heart}} Convierte la vida de Isaac en corazones de munición, que bajan al disparar y se recargan al no hacerlo
+57	↑ +0.8 Daño
+58	{{Damage}} +0.8 de daño con munición por encima de cero
+59	↑ +0.3 de velocidad de tiro con munición por encima de cero
+60	↓ -0.3 de lágrimas con la munición a cero
+61	{{Timer}} Cada 20 segundos en una sala sin limpiar:
+62	Isaac tiene un 100% de probabilidad de disparar lágrimas críticas rojas que infligen x5 de daño durante 3 segundos
+63	63% de probabilidad de dar una recompensa al limpiar salas sin recibir daño
+64	De vez en cuando en salas activas, Isaac hace caca 3-7 veces seguidas
+65	Estas cacas tienen un 50% de probabilidad de llevar bolsitas de droga
+66	↓ {{Collectible582}} Distorsión de pantalla tipo Wavy Cap
+67	Genera una máquina expendedora en la sala
+68	{{Coin}} Esta máquina siempre contiene un objeto activo y cuesta entre 0 y 10 monedas
+69	5% de probabilidad de disparar una lágrima de protección
+70	{{Luck}} 20% de probabilidad con 7 de suerte
+71	Las lágrimas de protección atrapan a los enemigos en un anillo de estrellas durante 10 segundos
+72	Cualquier otro enemigo que entre en el anillo también queda atrapado
+73	{{Bomb}} Al usarlo, genera 3 bombas rojas lanzables
+74	Te teletransporta a una sala especial con 8 objetos de pools seleccionados
+75	{{Warning}} Coger {{ColorRed}}CUALQUIER {{ColorWhite}}objeto hace que estas salas especiales dejen de generarse en la partida:
+76	{{TreasureRoom}} Salas del tesoro
+77	{{Shop}} Tiendas
+78	{{Library}} Bibliotecas
+79	{{DevilRoom}} Tratos con el diablo
+80	{{AngelRoom}} Tratos con el ángel
+81	{{Planetarium}} Planetarios
+82	{{UltraSecretRoom}} Salas ultrasecretas
+83	↑ Multiplicadores de x1.09 para:
+84	{{Tears}} Lágrimas
+85	{{Damage}} Daño
+86	{{Speed}} Velocidad
+87	{{Luck}} Suerte
+88	{{Shotspeed}} Velocidad de tiro
+89	{{Range}} Alcance
+90	{{Range}} Altura de lágrima
+91	{{DevilChance}} Probabilidad de trato diablo/ángel
+92	{{PlanetariumChance}} Probabilidad de Planetario
+93	{{Collectible11}} Vidas extra
+94	{{Heart}} Límite de contenedores de corazón
+95	{{Coin}} Monedas actuales
+96	{{Coin}} Capacidad de monedas
+97	{{Bomb}} Bombas actuales
+98	{{Bomb}} Capacidad de bombas
+99	{{Key}} Llaves actuales
+100	{{Key}} Capacidad de llaves
+101	{{Trinket81}} Duración de la invulnerabilidad
+102	{{Collectible58}} Duración del escudo
+103	{{Collectible308}} Duración de los charcos del jugador
+104	{{Battery}} Velocidad de carga de activos temporizados
+105	{{Speed}} Fricción del jugador
+106	{{ffHitbox}} Tamaño de la hitbox del jugador
+107	{{Trinket⟨t:Heavy Metal⟩}} Masa de colisión del jugador
+108	{{Collectible300}} Daño por contacto del jugador
+109	{{Bomb}} Ritmo de colocación de bombas
+110	{{Bomb}} Daño de bombas
+111	{{Tearsize}} Tamaño de lágrima
+112	{{Trinket45}} Probabilidades de Poker Table
+113	{{BlackHeart}} Daño de corazón negro
+114	{{Player18}} Carga del medidor de almas
+115	{{Player36}} Carga del medidor de sangre
+116	{{Player25}} Maná actual
+117	{{Player⟨pl:Golem⟩}} Poder de las rocas
+118	{{Collectible⟨c:Pyromancy⟩}} Ritmo de generación de bolas de fuego
+119	{{Collectible412}} Ritmo de gestación de Cambion
+120	{{Collectible413}} Ritmo de gestación de Immaculate
+121	{{Collectible206}} Velocidad de órbita de cabezas
+122	{{Collectible206}} Distancia de órbita de cabezas
+123	{{Collectible725}} Velocidad de carga de IBS
+124	{{Collectible441}} Duración de Mega Blast
+125	{{Collectible621}} Duración del aumento de daño
+126	{{Collectible625}} Duración de Mega Mush
+127	{{Collectible674}} Duración de la cámara lenta
+128	{{Collectible77}} Duración de la invencibilidad
+129	{{Collectible497}} Duración de la mejora de estadísticas
+130	{{Collectible295}} Daño de Magic Fingers
+131	{{Collectible507}} Daño de Sharp Straw
+132	{{Collectible136}} Daño de Best Friend
+133	{{Collectible37}} Daño de Mr. Boom
+134	{{Collectible103}} Probabilidad de veneno de Common Cold
+135	{{Collectible257}} Probabilidad de quemar de Fire Mind
+136	{{Collectible496}} Probabilidad de aguja de Euthanasia
+137	{{Collectible398}} Probabilidad de encoger de God's Flesh
+138	{{Collectible150}} Probabilidad de diente de Tough Love
+139	{{Collectible443}} Probabilidad de cuchilla de Apple!
+140	{{Collectible553}} Probabilidad de lágrima de Mucormycosis
+141	{{Collectible459}} Probabilidad de Sinus Infection
+142	{{Trinket98}} Probabilidad de Nose Goblin
+143	{{Collectible637}} Probabilidad de puño de Knockout Drops
+144	{{Collectible618}} Probabilidad de cebo de Rotten Tomato
+145	{{Collectible617}} Probabilidad magnética de Lodestone
+146	{{Collectible461}} Probabilidad de lágrima huevo de Parasitoid
+147	{{Collectible200}} Probabilidad de Mom's Eyeshadow
+148	{{Collectible460}} Probabilidad de confusión de Glaucoma
+149	{{Collectible259}} Probabilidad de miedo de Dark Matter
+150	{{Collectible228}} Probabilidad de miedo de Mom's Perfume
+151	{{Collectible393}} Probabilidad de Serpent's Kiss
+152	{{Trinket30}} Probabilidad de veneno de Pinky Eye
+153	{{Collectible231}} Probabilidad de ralentizar de Ball of Tar
+154	{{Collectible89}} Probabilidad de ralentizar de Spider Bite
+155	{{Trinket130}} Probabilidad de ralentizar de Chewed Pen
+156	{{Collectible⟨c:Strange Matter⟩}} Probabilidad de Strange Matter
+157	{{Collectible⟨c:Imp Soda⟩}} Tasa de críticos de Imp Soda
+158	{{Guppy}} Probabilidad de mosca de Guppy
+159	{{Collectible640}} Almas actuales (redondeado hacia abajo)

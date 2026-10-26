@@ -72,7 +72,7 @@
    "categoria": "Calidad de vida",
    "veredicto": "recomendado",
    "descripcion": "Angels Drop Items: si ya tienes las dos mitades de llave, Uriel y Gabriel sueltan objetos al morir.",
-   "nota": "",
+   "nota": "Sustituido por la copia local «Angels Drop Items (corregido)» (mods/angels_drop_items_corregido, creada con `parches`): el original falla en main.lua:325 en las salas que añadió Repentance. La copia además traduce su menú al español.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=840107435",
    "pack": "qol",
    "rgon": "no",

@@ -1,0 +1,160 @@
+0	El aura escala con el daño y la cadencia de Isaac
+1	Los enemigos muertos por la cruz no generan otra cruz
+2	{{ffObject}} Genera 1 objeto consumible al cogerlo
+3	{{ffObject}} Activa el efecto del objeto consumible que lleve Isaac sin gastarlo
+4	Da un fuego fatuo aleatorio
+5	Cada vez que se destruye uno de estos fuegos fatuos, te da otro aleatorio
+6	Las bombas rellenan los pozos al explotar
+7	25% de probabilidad de disparar lágrimas que causan hemorragia
+8	{{Luck}} 100% de probabilidad con 15 de suerte
+9	20% de probabilidad de disparar lágrimas que condenan a los enemigos
+10	{{Luck}} 100% de probabilidad con 34 de suerte
+11	20% de probabilidad de disparar lágrimas que adormecen a los enemigos
+12	{{Luck}} 33% de probabilidad con 10 de suerte
+13	{{Bomb}} +3 bombas
+14	Las bombas generan tres langostas aleatorias al explotar
+15	Los enemigos que no matan las langostas tienen una probabilidad según la suerte de generar una langosta aleatoria al morir
+16	{{Luck}} 100% de probabilidad con 113 de suerte
+17	↑ x2 Velocidad de tiro
+18	Al dispararlas, las lágrimas aceleran desde parado hasta su velocidad normal
+19	{{Damage}} Las lágrimas infligen daño extra según su velocidad al impactar
+20	Dispara lágrimas normales
+21	Inflige 4.75 de daño por lágrima
+22	{{Warning}} UN SOLO USO {{Warning}}
+23	Al usarlo, te teletransporta a un piso aleatorio
+24	Familiar con un 35% de probabilidad de soltar un recolectable al limpiar una sala
+25	Tras recibir suficientes proyectiles, Greg puede agrietarse y generar otro familiar
+26	{{Warning}} Greg desaparece de tu inventario al agrietarse
+27	Familiar mosca bomba orbital que inflige 30 de daño por segundo
+28	Explota y reaparece más tarde si pasa bastante tiempo cerca de los enemigos
+29	{{Charm}} La explosión suelta 10 lágrimas que encantan e infligen 3.5 de daño
+30	{{Charm}} Puede encantar moscas
+31	{{Planetarium}} Te da el efecto de un objeto de Planetario aleatorio en cada piso
+32	Ahora pueden aparecer a menudo píldoras de cianuro junto a los recolectables
+33	{{Warning}} Las píldoras de cianuro dan una gran mejora de estadísticas, pero pueden matar a Isaac a los 60 segundos
+34	{{Pill}} Genera una píldora de cianuro
+35	{{Timer}} Invoca un Bebé Ciruela dorado aliado en la sala durante 10 segundos
+36	5% de probabilidad de generar skuzzes azules al disparar lágrimas
+37	{{Luck}} 100% de probabilidad con 10 de suerte
+38	Los skuzzes azules son criaturas aliadas que saltan hacia los enemigos cercanos e infligen x3 el daño de Isaac
+39	{{ffMorbidHeart}} Los corazones mórbidos tienen algo más de probabilidad de aparecer
+40	{{Battery}} Al usarlos, los objetos activos disparan fuegos artificiales según su carga
+41	{{HalfBlackHeart}} +1 medio corazón negro
+42	{{ffSpicyKey}} Suelta una llave picante
+43	{{Charm}} Genera 3 Arañas de carbón aliadas al cogerlo
+44	Cambia los enemigos de la sala actual
+45	Los enemigos tienen un 33% de probabilidad de desaparecer
+46	Crea un flash de cámara que destruye proyectiles y aturde a los enemigos
+47	{{Tears}} Da un aumento temporal de lágrimas al hacerte una foto
+48	Si capturas suficientes enemigos, genera una Foto chula
+49	Lanza cada cierto tiempo un hacha perforante hacia el enemigo más cercano
+50	El hacha vuelve como un bumerán poco después
+51	Hace que todos los enemigos defequen violentamente, confundiéndolos y alejándolos de Isaac
+52	{{Collectible576}} Al usarlo, genera familiares Dip aliados
+53	Algunos enemigos tienen interacciones únicas al usar el Cuerno marrón
+54	{{Coin}} Genera una baratija moneda, una moneda dorada y 4 monedas aleatorias
+55	Aumenta la probabilidad de que {{ffCursedPenny}} monedas, {{ffSpicyKey}} llaves, {{ffCopperBomb}} bombas, {{ffImmoralHeart}} corazones, {{ffCursedBattery}} baterías y {{ffDireChest}} cofres sean de su variante maldita
+56	{{ffCursedPenny}} Genera 6 monedas malditas
+57	Familiar Slammer que salta sobre los enemigos y los aplasta
+58	50% de probabilidad de cambiar tu personaje por otro
+59	Quita el último objeto que hayas cogido
+60	Familiar que se mueve en diagonal hacia donde te mueves
+61	Puede bloquear proyectiles y, al chocar con un enemigo, dispara 8 láseres de 3.5 de daño a su alrededor
+62	Provoca un terremoto que lanza la mayoría de elementos y obstáculos a un punto cercano aleatorio
+63	Otorga 3 gemas teledirigidas que se lanzan al atacar, se pegan a los enemigos y los dañan y magullan
+64	Una diana te sigue con retraso
+65	Al colocar una bomba, Isaac se teletransporta a la marca y la bomba explota al instante
+66	Genera 3 objetos consumibles aleatorios al cogerlo
+67	Genera 1 objeto consumible al empezar cada piso
+68	{{ffObject}} Los objetos consumibles son recolectables distintos de las píldoras, cartas y runas
+69	Al usarlo, Isaac coge una bomba cereza que puede lanzar para herir a los enemigos
+70	Las bombas no rompen rocas ni dañan a Isaac
+71	Al usarlo, destruye la roca más cercana y la convierte en un gran fantasma
+72	Volver a usar el activo hace detonar todos los grandes fantasmas de la sala
+73	{{ffDisc}} Genera 3 Discos
+74	{{Timer}} Los Discos dan durante 1 minuto los efectos de algunos objetos pasivos aleatorios
+75	{{BossRoom}} Genera un Disco al entrar en una sala del jefe
+76	{{Trinket}} Cambia todas las baratijas de la sala bajando en uno su número de ID interno
+77	Otorga el efecto de 1 baratija gusano aleatoria durante la sala actual
+78	Isaac dispara dagas junto con sus lágrimas
+79	Los enemigos sueltan al morir gemas que potencian las dagas de Isaac
+80	El poder de las dagas se reinicia al entrar en un piso nuevo
+81	↑ +0.05 Velocidad
+82	Familiar orbital que cambia las lágrimas
+83	{{Warning}} Disparatado
+84	Las lágrimas de Isaac se convierten en emojis, cada uno con un efecto único
+85	{{ffSpicyKey}} Genera un juego de llaves picantes cada 7 salas
+86	{{Heart}} Curarte de más carga una barra de vida secundaria
+87	{{EmptyHeart}} Llenar esta barra da un contenedor de corazón vacío
+88	El número de huecos de la barra secundaria escala con tus contenedores de corazón
+89	{{Damage}} Cuenta con tus lágrimas para ganar cada vez más daño y lágrimas durante la sala
+90	{{Coin}} Gasta 5 monedas para convertir a un enemigo en una Tragaperras dorada de un solo uso
+91	Al sostenerlo sobre la cabeza de Isaac aparece un cono oscuro de visión
+92	{{Petrify}} Los enemigos dentro del cono se petrifican y reciben un poco de daño
+93	{{Petrify}} Los enemigos que mueren petrificados estallan en lágrimas
+94	{{Coin}} +10 monedas
+95	{{Key}} +10 llaves
+96	{{Heart}} +10 corazones
+97	{{Battery}} +10 puntos de carga
+98	{{Collectible⟨c:Glizzy⟩}} +10 Glizzies
+99	Pulsa dos veces para enlazarte a un enemigo
+100	Los enemigos enlazados se sobrecargan y explotan
+101	{{ffOverloaded}}  Los enemigos sobrecargados hacen cortocircuito y disparan láseres cortos a su alrededor
+102	{{ffOverloaded}}  Los enemigos alcanzados por esos láseres pueden sobrecargarse
+103	{{Warning}} Si se usa en una sala con su creador visible, se eliminan de la partida todas las salas futuras de esa persona, recompensas incluidas
+104	Los nombres de las salas y su creador se ven en la parte inferior si la opción está activada en el menú Dead Sea Scrolls
+105	{{Tears}} Sirve para cambiar a un modo de lágrima único con ventajas e inconvenientes
+106	Reinicia el retardo de lágrimas al usarlo
+107	↑ x1.3 multiplicador de cadencia
+108	Las lágrimas de Isaac se disparan en una secuencia cíclica de 3 pasos
+109	↑ x2 multiplicador de daño
+110	↓ x0.18 multiplicador de cadencia
+111	Isaac puede disparar 4 lágrimas espectrales
+112	↓ x0.2 multiplicador de daño
+113	↑ x4.4 multiplicador de cadencia
+114	Isaac dispara una ráfaga de 10 lágrimas, para y luego sigue
+115	{{BrokenHeart}} Cura 1 corazón roto
+116	{{Player⟨pl:China⟩}} Solo se obtiene con el derecho de nacimiento de China
+117	{{Collectible56}} Un Percance de limón lanzable
+118	Derrama un charco
+119	El charco inflige 24 de daño por contacto por segundo
+120	El charco dura hasta que sales de la sala
+121	Invoca 3-5 bloques de mimo en la sala que los enemigos no pueden atravesar
+122	Toca un bloque para moverlo
+123	Al recibir un golpe, Isaac tira para obtener un efecto único
+124	{{Luck}} 100% de probabilidad de sacar tres símbolos iguales con 10 de suerte
+125	Atrapa a los enemigos cercanos con cuerdas de espagueti para inmovilizarlos
+126	Sacar el espagueti hace que los enemigos tengan glitches que desactivan su IA a ratos
+127	Familiar que posee a Isaac de vez en cuando
+128	Mientras está poseído, Isaac puede disparar una lágrima explosiva teledirigida que escala con su daño
+129	{{Warning}} Las rocas brillan a veces en morado y al destruirse lanzan fuego que daña a Isaac
+130	Familiar Grudge que se mueve como un Poky
+131	Embiste con doble pulsación
+132	Genera 3-9 skuzzes azules
+133	{{Luck}} +1 Suerte
+134	Genera un recolectable dorado aleatorio
+135	25% de probabilidad de disparar lágrimas multieuclidianas
+136	{{ffMultieuclidean}}  Se puede disparar a través de los enemigos multieuclidianos, lo que duplica las lágrimas y las hace teledirigidas
+137	25% de probabilidad de tomar una píldora aleatoria al matar a un enemigo
+138	Objeto activo personalizable
+139	Hace varios efectos según lo que elijas
+140	Puede generar un Bobby frágil al limpiar la sala
+141	{{ffPuzzlePiece}} Genera una Pieza de puzle
+142	{{ffObject}} Genera un objeto consumible aleatorio
+143	Los corazones mórbidos aguantan 3 golpes antes de agotarse
+144	Al agotarse, los corazones mórbidos generan un familiar orbital temporal
+145	Los enemigos sufren más retroceso cuanta menos vida tienen
+146	{{Trinket}} Consume la baratija de Isaac y da sus efectos para siempre
+147	{{Pill}} Genera una píldora
+148	Usarlo vacío guarda dentro la próxima caca
+149	Usarlo con una caca dentro usa esa caca
+150	Crea una pequeña onda expansiva alrededor de Isaac que aparta a los enemigos cercanos
+151	{{Warning}} No aparta los proyectiles enemigos
+152	Destruye todos los pedestales de la sala y los convierte en recolectables aleatorios
+153	Los recolectables generados dependen de la sala actual
+154	Los objetos que Isaac sostenga sobre la cabeza también se destruyen
+155	{{Trinket}} Las baratijas que Isaac sostenga sobre la cabeza se pueden destruir
+156	Las rocas tintadas tienen un aspecto fuera de lugar y aparecen más a menudo
+157	Romper rocas tintadas genera medio corazón y da un aumento de daño que se desvanece
+158	{{BrokenHeart}} Romper rocas tintadas también tiene un 50% de probabilidad de quitar un corazón roto
+159	{{Warning}} Ganas un corazón roto en cada piso

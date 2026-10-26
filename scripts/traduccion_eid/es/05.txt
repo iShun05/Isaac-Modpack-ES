@@ -1,0 +1,160 @@
+0	{{Damage}} Cuenta con tus lágrimas para ganar cada vez más daño y lágrimas
+1	{{Tears}} Contar consiste en disparar cierta cantidad de lágrimas y parar
+2	El aumento de daño y lágrimas se detiene si no cuentas bien
+3	Isaac puede hacer un disparo cuádruple una vez por sala
+4	{{Damage}} El daño aumenta 0.1x la suerte de Isaac
+5	Durante el día (6:00 a 18:00):
+6	↑ +0.6 Lágrimas
+7	↑ +0.2 Velocidad
+8	Durante la noche (18:00 a 6:00):
+9	↑ +0.6 Daño
+10	↑ +0.1 Velocidad
+11	↑ +0.4 Cadencia
+12	↑ +0.3 Daño
+13	↑ +1.25 Alcance
+14	El dinero que te sobre al final de la partida se añade a la máquina de donaciones
+15	Los recolectables dorados pierden sus efectos especiales y dan el recolectable normal
+16	{{Coin}} Los recolectables dorados también dan +9 monedas
+17	{{Collectible108}} Reduce casi todo el daño recibido a medio corazón cuando Isaac tiene 3 corazones o menos
+18	{{Pill}} Reduce casi todo el daño recibido a medio corazón al tomar una píldora
+19	{{Rune}} 18% de probabilidad de generar una runa aleatoria al recibir daño
+20	{{AngelDevilChance}} Convierte todas las puertas a salas del diablo y del ángel en puertas a la sala de error
+21	{{Trinket113}} Las moscas azules tienen un 20% de probabilidad de convertirse en Langostas de la guerra al aparecer
+22	{{Collectible462}} 20% de probabilidad de disparar una lágrima perforante de Ojo de Belial
+23	Al golpear a un enemigo, la lágrima se vuelve teledirigida y duplica su daño
+24	{{Battery}} Las baterías dan +0.9 de daño durante el piso actual
+25	Las baterías se pueden coger con el activo cargado del todo o sin objeto activo
+26	Al golpear, los enemigos cercanos quedan pacificados durante 4 segundos
+27	{{HalfSoulHeart}} Los enemigos pacificados tienen un 20% de probabilidad de soltar medio corazón de alma
+28	{{ffPacified}}  Los enemigos pacificados no pueden dañar a Isaac
+29	{{Warning}} {{Bomb}} ¡Ahora es un objeto! {{Bomb}} {{Warning}}
+30	30% de probabilidad de disparar lágrimas que sueltan una lágrima perforante y teledirigida al impactar
+31	{{Luck}} 75% de probabilidad con 6 de suerte
+32	Convierte los próximos 3 objetos de efecto de lágrima que recojas en familiares que disparan con ese efecto
+33	Convierte los próximos 2 objetos de efecto de lágrima que recojas en familiares que disparan con ese efecto
+34	Convierte el próximo objeto de efecto de lágrima que recojas en un familiar que dispara con ese efecto
+35	Los jefes por debajo del 30% de vida reciben un 30% más de daño
+36	{{Heart}} Al limpiar una sala del jefe, cura 1 corazón
+37	7% de probabilidad de disparar lágrimas que enfurecen a los enemigos
+38	{{Luck}} 20% de probabilidad con 16 de suerte
+39	{{ffBerserk}}  Los enemigos enfurecidos cambian de objetivo, infligen daño extra, se mueven más rápido y no pueden morir
+40	5% de probabilidad de que la recompensa de la sala sea una piedra del alma
+41	Se consume al usar una piedra del alma y le da a Isaac una resurrección como el personaje correspondiente
+42	{{Collectible313}} Anula 6 golpes antes de romperse
+43	25% de probabilidad de obtener el efecto de un objeto Tecnología aleatorio en cada sala
+44	Pone ojos saltones a la mayoría de los familiares que no disparan, para que puedan disparar lágrimas
+45	Las lágrimas infligen 3.5 de daño
+46	17% de probabilidad de disparar una bala de Corazón munición
+47	Los Corazones munición dependen del tipo de vida que tenga Isaac
+48	{{Luck}} 100% de probabilidad de disparar con 20 de suerte
+49	Al disparar, Isaac lanza un martillo en curva que inflige 15 en área y 35 de daño con impacto directo
+50	Si el martillo roza a los enemigos, inflige 2 de daño
+51	Se puede lanzar cada 9 segundos
+52	20% de probabilidad de vaciar la sala de enemigos y recolectables, que aparecen en la siguiente sala
+53	{{Damage}} Las balas de corazón de Steven infligen 2x de daño
+54	{{ffStevenHeart}} 10% de probabilidad de que la recompensa de la sala sea un corazón de Steven
+55	Los corazones tienen una rara probabilidad de sustituirse por corazones de Steven
+56	Los corazones de Steven se colocan por encima de los demás y disparan a los enemigos desde el HUD
+57	Las caras de las cartas se ven aunque estén en el suelo
+58	{{Damage}} Coger una moneda da +0.3 de daño fijo que se desvanece durante 30 segundos
+59	{{Tears}} Coger una moneda da +0.2 de lágrimas fijas que se desvanecen durante 30 segundos
+60	{{Luck}} Coger una moneda da +0.5 de suerte que se desvanece durante 30 segundos
+61	{{Planetarium}} Coger una moneda da +0.4% de probabilidad de Planetario
+62	{{Collectible⟨c:Snooze Button⟩}} 33% de probabilidad de vaciar la sala de obstáculos, recolectables y enemigos
+63	{{Friendly}} 50% de probabilidad de volver aliados a los enemigos cuando Isaac recibe daño por contacto con ellos
+64	{{Charm}} 50% de probabilidad de encantar a los jefes cuando Isaac recibe daño por contacto con ellos
+65	{{Bomb}} 50% de probabilidad de que los enemigos dejen una bomba al morir
+66	El tamaño de la bomba escala con el tamaño del enemigo
+67	{{Heart}} Los corazones rojos desaparecen tras un par de segundos, según su valor
+68	85% de probabilidad de generar medio corazón rojo en algún punto de la sala al coger un corazón rojo
+69	{{Warning}} Las monedas que coges no se suman a tu contador: las guarda esta baratija
+70	{{Coin}} Tras reunir al menos 10 céntimos en monedas, esta baratija duplica su valor y las suma a tu contador
+71	{{Collectible631}} 15% de probabilidad de dividir a los enemigos al golpearlos en 2 versiones más pequeñas con un 40% de vida
+72	{{Collectible65}} Cada vez que Isaac usa un objeto activo con cargas, aparecen bombas trampa cerca del centro de la sala
+73	{{Battery}} La cantidad de bombas trampa escala con las cargas máximas del activo
+74	Cuando un enemigo sufre un efecto de estado, recibe un arañazo que inflige 2x el daño de Isaac
+75	{{DevilChance}} Coger un corazón rojo da un 1.5% de probabilidad de trato con el diablo durante el piso, hasta un 15%
+76	Coger una moneda tiene un 50% de probabilidad de duplicar su valor o de no dar ningún céntimo
+77	Coger una moneda tiene un 50% de probabilidad de generar una bomba trampa cerca de los enemigos
+78	Coger una moneda empuja a Isaac hacia atrás
+79	Coger una moneda tiene un 15% de probabilidad de reducir el tamaño de Isaac
+80	Coger una moneda tiene un 33% de probabilidad de revelar una sala aleatoria en el mapa
+81	Las monedas de más valor revelan más salas
+82	Coger una moneda tiene un 33% de probabilidad de generar una Mosca hada
+83	Coger una moneda tiene un 15% de probabilidad de darte un familiar aleatorio durante el piso
+84	Coger una moneda tiene un 50% de probabilidad de añadir su valor a la máquina de donaciones
+85	Coger una moneda tiene un 50% de probabilidad de generar un corazón inmoral, una llave picante, una bomba de cobre o una moneda maldita
+86	{{Collectible⟨c:A.V.G.M.⟩}} Coger una moneda usa A.V.G.M
+87	Coger una moneda tiene un 50% de probabilidad de generar un familiar Dip aleatorio
+88	Coger una moneda hace que Isaac suelte una llave o una bomba, si tiene
+89	Coger una moneda aumenta su valor según el tipo de cambio canadiense
+90	{{Collectible⟨c:Alpha Coin⟩}} Coger una moneda tiene un 20% de probabilidad de usar la Moneda alfa
+91	Coger una moneda destruye un obstáculo aleatorio de la sala
+92	Las monedas de más valor rompen más obstáculos
+93	Coger una moneda tiene un 20% de probabilidad de abrir una sala roja adyacente aleatoria
+94	Tocar monedas en salas activas las desliza y hace que inflijan el daño de Isaac a los enemigos
+95	Coger una moneda tiene un 50% de probabilidad de generar un Fragmento de prisma que mejora temporalmente una estadística
+96	Coger una moneda tiene un 50% de probabilidad de generar una Baya que da un único disparo de Ipecac
+97	Coger una moneda genera esquirlas de hueso y tiene un 40% de probabilidad de dar un hueso orbital
+98	Coger una moneda tiene un 15% de probabilidad de revelar la próxima roca tintada que encuentres
+99	Hay otro 50% de probabilidad de generar un perro decorativo
+100	{{Collectible‹CollectibleType.COLLECTIBLE_DADS_LOST_COIN›}} Coger una moneda da +1 de suerte y +2.5 de alcance durante la sala
+101	{{Collectible⟨c:Imp Soda⟩}} Coger una moneda hace que la siguiente lágrima inflija x3 de daño
+102	Coger una moneda reduce 2 segundos el temporizador de puntuación
+103	Los segundos restados escalan con el valor de la moneda
+104	Coger una moneda hace explotar a Isaac
+105	Coger una moneda tiene un 75% de probabilidad de generar 3 balones de fútbol durante un rato
+106	Otorga la Maldición del velo
+107	{{ffRock}} {{ColorTransform}}Baratija de roca (Roca)
+108	{{ffGrind}} {{ColorTransform}}Efecto al moler
+109	Se puede moler gratis en la Máquina minera
+110	↑ +0.05 Velocidad al limpiar una sala sin recibir daño
+111	Recibir daño reinicia este bonus
+112	No hace nada
+113	Moler esta roca en la Máquina minera da una baratija de roca más rara
+114	Cada 4ª lágrima disparada es una lágrima de sangre con el doble de daño
+115	Daña a Isaac al cogerla por primera vez
+116	{{Warning}} Este daño no puede matar a Isaac
+117	Bloquea el daño de los pinchos y de los cofres con pinchos
+118	↑ +0.15 Velocidad
+119	Menos fricción
+120	5% de probabilidad de que las lágrimas se vuelvan disparos teledirigidos de mucho daño
+121	{{Luck}} 20% de probabilidad con 8 de suerte
+122	Al empujar contra una roca:
+123	↑ +1.5 Daño
+124	↑ +0.72 Lágrimas
+125	↑ +4 Suerte
+126	Genera una onda expansiva radial al recibir daño
+127	{{Collectible422}} Al recibir un golpe, devuelve a Isaac a la sala anterior y revierte todo lo hecho en la sala
+128	Si te golpean de nuevo en la misma sala, la baratija de roca no se activa
+129	↑ +0.36 Lágrimas
+130	Las estadísticas se duplican si llevas otra baratija de roca
+131	Cada 10 lágrimas disparadas cambia la otra baratija de roca que lleves, si la hay
+132	{{Trinket⟨t:Pocket Sand⟩}} 15% de probabilidad de que la otra baratija se convierta en Arena de bolsillo
+133	3% de probabilidad de disparar una lágrima espectral amarilla que deja un aura sagrada en el suelo
+134	Cuando un enemigo toca el aura, 9 rayos de luz lo dañan
+135	{{Damage}} Los rayos infligen 2.5 de daño por golpe
+136	{{Luck}} 40% de probabilidad con 37 de suerte
+137	{{Timer}} Quedarte quieto junto a un recolectable lo cambia cada 3 segundos
+138	Cada recolectable solo se puede cambiar hasta 3 veces
+139	Otorga 2 anillos de láser en la posición de Isaac
+140	El anillo interior inflige 0.1x el daño de Isaac
+141	El anillo exterior inflige 0.25x el daño de Isaac
+142	Isaac deja un rastro de lágrimas inmóviles al moverse
+143	25% de probabilidad de convertir los recolectables en su versión doble
+144	{{Luck}} 100% de probabilidad con 30 de suerte
+145	15% de probabilidad de duplicar las recompensas de la sala
+146	{{Luck}} 100% de probabilidad con 57 de suerte
+147	Genera 7 burbujas al entrar en una sala
+148	Recibir daño genera 10 burbujas más
+149	{{HalfHeart}} Las rocas tienen un 2.5% de probabilidad de soltar medio corazón al romperse
+150	{{HalfSoulHeart}} Las rocas tintadas tienen un 25% de probabilidad de soltar medio corazón de alma extra
+151	{{EmptyBoneHeart}} Da un corazón de hueso al cogerla por primera vez
+152	{{BoneHeart}} Los aumentos de vida dan corazones de hueso en lugar de contenedores
+153	Genera 4 Esbirros de Fiend de amatista al entrar en una sala sin limpiar
+154	{{SoulHeart}} +1 corazón de alma al entrar en un piso nuevo
+155	Al cogerla, Isaac puede disparar una lágrima ladrillo de 15 de daño
+156	Isaac puede recogerla tras dispararla y volver a lanzarla
+157	{{Charm}} Encanta a los enemigos femeninos
+158	{{Freezing}} 8% de probabilidad de disparar lágrimas que ralentizan y congelan
+159	{{Luck}} 33% de probabilidad con 8 de suerte

@@ -1,0 +1,160 @@
+0	↑ x3.33 Daño
+1	↑ x1.5 multiplicador de cadencia
+2	Las lágrimas dejan un rastro de charco dañino y un Esbirro de Fiend al impactar
+3	Cambia los objetos de pedestal de la sala por copias de objetos que ya tienes
+4	Prioriza los objetos que no sean inútiles al acumularse
+5	{{Collectible721}} Al morir, Isaac revive con algunos de sus objetos sustituidos por objetos glitch
+6	↑ +0.02 Velocidad
+7	{{Battery}} Permite usar tu activo sin carga suficiente, dejándolo con carga negativa
+8	↓ La carga negativa reduce tu velocidad y velocidad de tiro, y se mantiene aunque cambies de activo
+9	{{HalfHeart}} Inflige medio corazón rojo de daño a Isaac
+10	Da una de estas recompensas:
+11	Una predicción malvada
+12	{{BlackHeart}} Un corazón negro
+13	{{Card}} Una carta del tarot invertida
+14	{{Trinket}} Una baratija de temática malvada
+15	10% de probabilidad de activar un dado (D6, D20, etc.) al matar a un enemigo
+16	{{Luck}} 100% de probabilidad con 36 de suerte
+17	{{ffStud}} Genera un Separador de ladrillos y 4 Studs
+18	{{Coin}} Las monedas tienen un 20% de probabilidad de convertirse en Studs
+19	{{Speed}} En las salas limpias aumenta a +0.85 de velocidad y +0.4 de velocidad de tiro
+20	50% de probabilidad de que brille un enemigo de la sala
+21	{{Damage}} Mirar a un enemigo brillante te da x1.5 de daño, x0.85 de cadencia y +3 de suerte
+22	Al cabo de un rato, el brillo salta de Isaac a un enemigo aleatorio
+23	Cambia todos los enemigos de la sala por otros de cualquier parte del juego
+24	Intenta cambiarlos por enemigos con una vida máxima parecida
+25	{{ffToken}} Genera 1 Ficha cada 10 salas
+26	Las fichas imitan el último recolectable que cogió Isaac
+27	↑ +0.7 Daño
+28	{{SoulHeart}} Genera un corazón de alma
+29	Al empezar cada piso, se abre una caja de pizza que genera un corazón aleatorio
+30	Al usarlo, el tipo de enemigo con menos vida máxima de la sala explota en una lluvia de proyectiles
+31	Al usarlo, aparecen rodillos de tragaperras sobre la cabeza de Isaac
+32	Usar el objeto fija un número y acelera
+33	Da a Isaac el objeto cuyo ID interno coincide con el número obtenido
+34	Los ID no válidos teletransportan a Isaac a la sala de error
+35	↑ Da mejoras según las letras de la semilla de la partida
+36	{{Damage}} Si una letra pertenece a una palabra de estadística como DAMAGE, da esa estadística
+37	Lo mismo ocurre con los recolectables
+38	↓ Los números dan una pequeña bajada de todas las estadísticas
+39	Genera un bloque de piedra que Isaac puede romper
+40	Los bloques de piedra totalmente cincelados producen un aura que aplica estados a los enemigos y mejoras a Isaac
+41	Las puertas de salas especiales alternan entre 3 tipos aleatorios hasta que se abren o se entra
+42	↑ Pequeñísima mejora de todas las estadísticas y aumento moderado de una aleatoria
+43	Si está vacío, Isaac puede balancear el tarro para meter a un enemigo dentro
+44	Si hay un enemigo dentro, Isaac puede lanzarlo como proyectil que inflige daño igual a su vida
+45	También puede activar los efectos al morir del enemigo
+46	No se pueden meter jefes en el tarro
+47	Cada 7ª lágrima excomulga a los enemigos
+48	{{ffExCommunicated}}  Los enemigos excomulgados se teletransportan lejos durante un momento
+49	{{ffExCommunicated}}  Al volver, ellos y los enemigos cercanos reciben daño
+50	{{Heart}} Mucha probabilidad de que los enemigos suelten corazones rojos
+51	{{Warning}} Recibir daño hace salir volando 1-3 corazones rojos extra
+52	Se pueden volver a recoger, pero desaparecen si no los coges
+53	Al desaparecer, los corazones sueltan una explosión de sangre muy dañina
+54	{{Chargeable}} Disparar carga una ráfaga larga de lágrimas
+55	{{ffRadiation}} Al final de la ráfaga, Isaac lanza 3 grandes disparos radiactivos que dejan un aura que daña tanto a ti como a los enemigos
+56	{{Warning}} Quedarte mucho tiempo en la radiación hace que Isaac suelte corazones
+57	{{ffBerserk}} Enfurece a todos los enemigos
+58	Condena a todos los enemigos
+59	16% de probabilidad de disparar lágrimas que sobrecargan a los enemigos
+60	{{Luck}} 33% de probabilidad con 12 de suerte
+61	Cose a los enemigos en un radio pequeño alrededor de Isaac
+62	Descripción provisional
+63	3% de probabilidad de disparar una lágrima de muerte instantánea que deja un charco de líquido misterioso al matar
+64	{{Luck}} 25% de probabilidad con 13 de suerte
+65	Familiar que se coloca alineado en horizontal con Isaac al otro lado de la sala
+66	Dispara lágrimas espectrales perforantes que infligen 3.5 de daño
+67	Cuando las lágrimas de antisaac chocan con las de Isaac, explotan
+68	El daño de la explosión escala con el daño de Isaac
+69	{{Warning}} Las lágrimas que explotan no dañan a Isaac
+70	{{Trinket}} Duplica el poder de las rocas que lleves y quita la penalización de las rocas fundidas durante 20 segundos
+71	{{Trinket}} Suelta un guijarro o guijarro mixto aleatorio al cogerlo
+72	Lanza cada cierto tiempo 3 cuchillas perforantes hacia enemigos aleatorios que los dañan y causan hemorragia
+73	Si una cuchilla golpea a Isaac, estalla en lágrimas de sangre en la misma dirección
+74	Otorga rocas orbitales que bloquean disparos al infligir daño y limpiar salas
+75	Las rocas orbitales se rompen tras recibir suficiente daño
+76	Las rocas orbitales se pueden lanzar con doble pulsación de dirección para limpiar proyectiles a su paso, dañar y confundir enemigos
+77	{{Chargeable}} Los enemigos sueltan bayas que dan a Isaac una lágrima de Ipecac cargable
+78	Las salas pueden soltar racimos de bayas que, al juntar suficientes, mejoran la lágrima de Ipecac con efectos extra
+79	{{Charm}} Hace que el enemigo más cercano sea aliado para siempre y quede atado a Isaac
+80	El objeto se recarga al morir el enemigo atado
+81	{{Heart}} Recuperar vida también cura del todo a los enemigos atados
+82	↑ +1.2 de lágrimas fijas al disparar a izquierda o derecha
+83	Probabilidad de soltar periódicamente un pedo de feromonas
+84	Al empezar cada piso, Isaac se tira 53 pedos y genera 100 gusanos decorativos
+85	Cada vez que un Esbirro de Fiend aparece o mata a un enemigo, genera una espora shiitake aliada con más vida y daño
+86	{{Planetarium}} +10% de probabilidad de Planetario
+87	50% de probabilidad de obtener inmunidad a estados durante 3 minutos
+88	Cada 2 segundos, la siguiente lágrima de Isaac sale de color y deja un charco al impactar
+89	El color del charco determina sus efectos
+90	Los enemigos dormidos tienen un contador que baja con el tiempo
+91	Al llegar a cero, el enemigo recibe una gran cantidad de daño
+92	{{HalfHeart}} 25% de probabilidad de generar 5 Esbirros de Fiend y perder medio corazón al entrar en una sala de combate
+93	{{ffHalfImmoralHeart}} Uno de estos esbirros puede soltar medio corazón inmoral
+94	Gasta primero corazones rojos y luego de alma
+95	Los enemigos pueden ganar x1.5 de vida y crecer, o perder la mitad de vida y encoger
+96	{{ffCopperBomb}} Más probabilidad de que las bombas y bombas trampa sean de cobre
+97	Con 6 corazones o menos, los enemigos reciben daño extra de todas las fuentes
+98	{{Damage}} El multiplicador de daño aumenta a medida que baja la vida de Isaac
+99	{{Chargeable}} Otorga una barra de carga de 3 fases que coloca una estatua que aplica penalizaciones en un aura
+100	Fase 1: encanta, enfurece o confunde
+101	Fase 2: petrifica
+102	Fase 3: petrifica e inflige mucho daño en un radio al terminar
+103	{{Warning}} La fase 3 solo se puede usar una vez por sala
+104	{{Chargeable}} Moverte carga un impulso invencible que se activa al pararte
+105	Sobrecargar la barra aumenta el daño y la duración del impulso
+106	El impulso se puede cancelar manteniendo una dirección mientras lo usas
+107	{{ffLilPenny}} Da a Isaac una lil' penny cada 4 segundos
+108	25% de probabilidad de disparar lágrimas que atracan a los enemigos
+109	{{Luck}} 100% de probabilidad con 25 de suerte
+110	{{ffMugged}}  Los enemigos atracados sueltan lil' pennies
+111	↓ -0.4 Velocidad
+112	↑ +1.4 Lágrimas
+113	↓ -0.4 Velocidad de tiro
+114	↑ +0.4 Lágrimas
+115	↑ +0.4 Velocidad de tiro
+116	↑ +0.4 Velocidad
+117	Permite a Isaac rodar para esquivar y moverse rápido
+118	{{Coin}} Genera 5 monedas aleatorias
+119	Genera un papel de la fortuna
+120	{{Damage}} Convierte los huesos orbitales en daño
+121	Cuantos más huesos orbitales tengas, más daño recibes
+122	{{Timer}} El daño de los huesos orbitales se desvanece con el tiempo
+123	↑ +1 Lágrimas
+124	↓ Menos precisión de las lágrimas
+125	↑ +3 vida
+126	{{HealingRed}} Vida completa
+127	{{Warning}} Convierte en corazones rojos todos los corazones que caigan en la partida
+128	{{Poison}} Lanza una llama verde venenosa
+129	La llama deja un rastro de gas venenoso, bloquea proyectiles y desaparece a los 2 segundos o tras dañar a un enemigo
+130	↑ x2 Daño
+131	Más tamaño
+132	Más verde
+133	{{Warning}} Objeto real
+134	{{Warning}} Convierte en otros corazones todos los corazones negros que caigan en la partida
+135	Hace aparecer en las salas baldosas de colores que Isaac puede pisar
+136	Las baldosas hacen cosas distintas según su color
+137	{{Tears}} Aumento fijo de lágrimas, más fuerte cuanta menos vida tengas
+138	{{Warning}} Isaac explota y muere si recibe daño con 2 corazones o menos
+139	Friend lanza un fuego morado al que se puede disparar para hacer explotar a los enemigos
+140	{{Burning}} La llama quema a los enemigos e inflige el doble de tu daño
+141	{{HalfHeart}} 30% de probabilidad de que los enemigos muertos por la explosión de Hot Shot suelten medios corazones rojos
+142	{{Warning}} La explosión de la llama morada puede dañarte
+143	Genera un skuzz azul tras caminar 50 pasos
+144	Genera un Escarabajo azul tras infligir 50 de daño
+145	Genera un cuervo con un regalo al empezar cada dos pisos
+146	Tocar el regalo lo abre y genera 2-4 consumibles aleatorios
+147	Dispara balas con su pistola que infligen 4.9 de daño
+148	Solo puede disparar 6 balas antes de recargar
+149	Persigue a los enemigos
+150	{{Key}} Todos los candados de color se abren gratis
+151	Puede sustituir al azar rocas de la sala por un candado de color
+152	Dado que se puede coger y lanzar
+153	Al caer, hace un efecto según la cara que salga
+154	Teletransporta a Isaac a un punto aleatorio de la sala
+155	Teletransportarse justo encima de un enemigo inflige 50 de daño
+156	15% de probabilidad de disparar lágrimas que dejan un rastro de charco verde dañino
+157	{{Coin}} Genera 7 monedas aleatorias
+158	Matar a un enemigo genera una obra de arte abstracta que no inflige daño por contacto
+159	Destruir la obra de arte suelta una ráfaga de lágrimas de colores que escalan con tu daño

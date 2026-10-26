@@ -2,7 +2,7 @@
 <metadata>
     <name>Isaac Pack ES (escáner)</name>
     <directory>!!!isaac_pack_scanner</directory>
-    <description>Mide cuánto tarda cada mod en sus callbacks (ms por fotograma) para encontrar qué mod causa lag. Se carga el primero y solo mide si el escáner está activado (config.lua, lo escribe el instalador o isaac_pack.py escaner on). Los resultados se ven en el panel «Packs ES» → Escáner y se anotan en log.txt. Parte de Isaac-Modpack-ES. Contacto: https://www.instagram.com/_shun._05/</description>
-    <version>0.1</version>
+    <description>Mide cuánto tarda cada mod en sus callbacks (ms por fotograma) para encontrar qué mod causa lag. Se carga el primero y solo mide si el escáner está activado (config.lua, lo escribe el instalador o isaac_pack.py escaner on). Los resultados se ven en el panel «Packs ES» → Escáner y se anotan en log.txt y en data/!!!isaac_pack_scanner/save1.dat, junto con los errores Lua de cada mod. Parte de Isaac-Modpack-ES. Contacto: https://www.instagram.com/_shun._05/</description>
+    <version>0.2</version>
     <visibility>Private</visibility>
 </metadata>
