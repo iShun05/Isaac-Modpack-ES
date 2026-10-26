@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v2.2_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v2.3_
 
 ## ⭐ Esencial (4)
 
@@ -115,11 +115,11 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 
 | Mod | Qué hace | Nota |
 |---|---|---|
-| [Da Rules](https://steamcommunity.com/sharedfiles/filedetails/?id=2403871374) | Da Rules: menú sandbox para toquetear casi todo el juego (monstruos, reglas, objetos). | Trucos: desactívalo para partidas serias. |
-| [GoodTrip](https://steamcommunity.com/sharedfiles/filedetails/?id=1630477831) | GoodTrip: viaja a cualquier sala limpia con Tab + clic en el minimapa. | Atajo de movimiento: quita tensión a la exploración. |
-| [InvEdit](https://steamcommunity.com/sharedfiles/filedetails/?id=913577712) | InvEdit: edita tus objetos con una interfaz gráfica. | Trucos. |
-| [InvEdit Cursor Trigger](https://steamcommunity.com/sharedfiles/filedetails/?id=918510405) | InvEdit Cursor Trigger: activa el cursor dentro de InvEdit. | Solo con InvEdit. |
-| [NO CURSES](https://steamcommunity.com/sharedfiles/filedetails/?id=918170746) | NO CURSES: desactiva las maldiciones que elijas. | Es un truco: quita parte del desafío. |
+| [Da Rules](https://steamcommunity.com/sharedfiles/filedetails/?id=2403871374) | Da Rules: menú sandbox para toquetear casi todo el juego (monstruos, reglas, objetos). | Menú de trucos. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Trucos: desactívalo para partidas serias. |
+| [GoodTrip](https://steamcommunity.com/sharedfiles/filedetails/?id=1630477831) | GoodTrip: viaja a cualquier sala limpia con Tab + clic en el minimapa. | Atajo para viajar entre salas (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Atajo de movimiento: quita tensión a la exploración. |
+| [InvEdit](https://steamcommunity.com/sharedfiles/filedetails/?id=913577712) | InvEdit: edita tus objetos con una interfaz gráfica. | Editor de objetos (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Trucos. |
+| [InvEdit Cursor Trigger](https://steamcommunity.com/sharedfiles/filedetails/?id=918510405) | InvEdit Cursor Trigger: activa el cursor dentro de InvEdit. | Complemento de InvEdit (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Solo con InvEdit. |
+| [NO CURSES](https://steamcommunity.com/sharedfiles/filedetails/?id=918170746) | NO CURSES: desactiva las maldiciones que elijas. | Quita maldiciones (trucos). Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Es un truco: quita parte del desafío. |
 
 ## 🎭 Capricho (16)
 
@@ -133,11 +133,11 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | [POG for Good Items](https://steamcommunity.com/sharedfiles/filedetails/?id=2490515687) | POG for Good Items: Isaac hace «pog» al ver un objeto bueno. |  |
 | [teto_over_eve](https://steamcommunity.com/sharedfiles/filedetails/?id=3801903560) | Teto sobre Eve: sustituye a Eve por Teto. |  |
 | [The Specialist for Good Items](https://steamcommunity.com/sharedfiles/filedetails/?id=2575911103) | The Specialist for Good Items: Isaac baila The Specialist con objetos de calidad 4. |  |
-| [energypills](https://steamcommunity.com/sharedfiles/filedetails/?id=3739714190) | energypills: las píldoras aleatorias se vuelven peligrosas. | Cambia el equilibrio: solo si te apetece el riesgo. |
+| [energypills](https://steamcommunity.com/sharedfiles/filedetails/?id=3739714190) | energypills: las píldoras aleatorias se vuelven peligrosas. | Cambia las píldoras por versiones peligrosas. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Cambia el equilibrio: solo si te apetece el riesgo. |
 | [Schrödinger's Cat over T.Lazarus](https://steamcommunity.com/sharedfiles/filedetails/?id=3739872352) | Schrödinger's Cat sobre T. Lazarus: cambia el aspecto de Lazarus Contaminado. | Modifica players.xml: puede chocar con otros mods de Lazarus. |
 | [Squigly 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=3772543243) | Squigly 2.0: personaje basado en Squigly (Skullgirls). |  |
 | [Garry's Mod Death Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2788453409) | Garry's Mod Death Animation: cambia la animación y el sonido de muerte de los personajes. |  |
 | [Slime Rancher Slimes Instead of Bloodclots](https://steamcommunity.com/sharedfiles/filedetails/?id=3783134747) | Slime Rancher: tus bloodclots pasan a ser slimes de Slime Rancher. |  |
-| [Every Item Stacks!](https://steamcommunity.com/sharedfiles/filedetails/?id=3778307529) | Every Item Stacks!: más de 30 objetos que antes no se acumulaban ahora sí. ⚙ REPENTOGON | Requiere REPENTOGON. Rompe el equilibrio: solo para partidas de caos. |
-| [Just Gambling](https://steamcommunity.com/sharedfiles/filedetails/?id=3622418481) | Just Gambling!: sistema gacha con pools, pity y probabilidades públicas. |  |
-| [Passive Skill Trees (Rep+)](https://steamcommunity.com/sharedfiles/filedetails/?id=3305869734) | Passive Skill Trees: sistema RPG con experiencia, niveles y árbol de habilidades pasivas. | Cambia mucho la partida; actualizado en oct 2026. |
+| [Every Item Stacks!](https://steamcommunity.com/sharedfiles/filedetails/?id=3778307529) | Every Item Stacks!: más de 30 objetos que antes no se acumulaban ahora sí. ⚙ REPENTOGON | Cambia las reglas de acumulación de objetos. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Requiere REPENTOGON. Rompe el equilibrio: solo para partidas de caos. |
+| [Just Gambling](https://steamcommunity.com/sharedfiles/filedetails/?id=3622418481) | Just Gambling!: sistema gacha con pools, pity y probabilidades públicas. | Convierte la partida en un gacha. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. En partida, el comando de consola «Gambling» lo enciende o apaga. Steam lo ha retirado del Workshop. |
+| [Passive Skill Trees (Rep+)](https://steamcommunity.com/sharedfiles/filedetails/?id=3305869734) | Passive Skill Trees: sistema RPG con experiencia, niveles y árbol de habilidades pasivas. | Convierte la partida en un RPG con niveles y árbol de habilidades. Entra apagado aunque marques su pack: el pack da por defecto la experiencia del juego base y este modo se activa solo si lo marcas tú. Cambia mucho la partida; actualizado en oct 2026. |
