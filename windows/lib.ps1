@@ -36,7 +36,7 @@ $script:PackDesc = @{
 }
 $script:Presets = [ordered]@{
     clean    = @('base', 'qol', 'interfaz', 'rendimiento', 'sinergias', 'visual')
-    completo = @('base', 'qol', 'interfaz', 'rendimiento', 'sinergias', 'contenido', 'personajes', 'visual', 'capricho', 'trucos')
+    completo = @('base', 'qol', 'interfaz', 'rendimiento', 'sinergias', 'contenido', 'personajes', 'visual')  # caprichos y trucos: a mano
     minimo   = @('base', 'qol', 'interfaz', 'rendimiento')
 }
 

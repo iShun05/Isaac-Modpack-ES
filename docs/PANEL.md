@@ -19,7 +19,7 @@ Un mod no puede crear los archivos `disable.it` desde dentro del juego, así que
 - **Mac:** `REPENTOGON.app` ejecuta `isaac_pack.py preparar` antes de abrir: copia mods nuevos, aplica el parche de Job, aplica tu selección y refresca el panel con el estado real y los errores del log anterior.
 - **Windows:** cierra Isaac y ejecuta `Aplicar_seleccion.bat` (hace lo mismo con `instalar_windows.ps1 -Rapido`).
 
-> Cierra Isaac del todo antes de aplicar. Las órdenes sueltas por mod ganan a las del pack; los mods marcados «apagado» (Eevee, Missing Costumes, Job original) solo se encienden si los marcas tú.
+> Cierra Isaac del todo antes de aplicar. Las órdenes sueltas por mod ganan a las del pack; los mods marcados «apagado» solo se encienden si los marcas tú. Son los que cambian la experiencia del juego base: Just Gambling (gacha), Passive Skill Trees, Every Item Stacks!, Golden Brimstone, energypills y los trucos, además de Eevee, Missing Costumes y el Job original.
 
 ## Lo mismo en los dos ordenadores
 - Las **suscripciones de Workshop son de tu cuenta**: los dos PC tienen los mismos mods descargados.

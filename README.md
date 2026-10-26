@@ -6,13 +6,13 @@ Catálogo, packs, instalador y traducción automática al español de **Isaac: R
 
 Descarga el [instalador de Windows 10/11](https://github.com/iShun05/Isaac-Modpack-ES/releases/latest/download/Isaac_Pack_ES_Windows.zip), descomprímelo y ejecuta `Instalar_Windows.bat`. Elige un perfil y pulsa **JUGAR**. Si falta REPENTOGON, el Launcher se abre para completar la instalación; después el instalador abre Steam si hace falta y verifica desde qué carpeta se inició Isaac.
 
-- **Versión actual:** v2.2
+- **Versión actual:** v2.3
 - **Plataformas:** macOS + Sikarugir y **Windows 10/11** (instalador en la release). Juego: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3
 - **Verificación:** en macOS con Sikarugir, Isaac abre con REPENTOGON 1.1.3 desde `Isaac.app`. En v2.2 el instalador de Windows aplica los mismos parches que el Mac (`datos/parches.json`), probado con PowerShell 7 sobre una carpeta de prueba.
 
 ## Funciones principales
 - **Manifiesto único** (`datos/mods.json`): catálogo compartido con id de Workshop, pack, descripción en español y veredicto (esencial · recomendado · opcional · herramienta · capricho · quitar).
-- **Selector de mods:** presets Clean, Completo y Mínimo; packs y mods individuales con descripción, estado de REPENTOGON y filtro de **Contenido grande** para probar las expansiones por separado. En Mac, el mismo manifiesto alimenta `aplicar` y el panel del juego.
+- **Selector de mods:** presets Clean, Completo y Mínimo (ninguno activa modos que cambien las reglas, como el gacha, el RPG o los trucos: esos se marcan a mano); packs y mods individuales con descripción, estado de REPENTOGON y filtro de **Contenido grande** para probar las expansiones por separado. En Mac, el mismo manifiesto alimenta `aplicar` y el panel del juego.
 - **Mods nuevos recomendados:** `docs/RECOMENDADOS.md` con el nombre exacto de Workshop, suscriptores y fecha (incluye Lazy MattPack, objetos de calidad 5).
 - **Instalación fácil:** `docs/suscribir.html` abre la página de cada mod para suscribirse con un clic; el instalador prepara el Launcher y guía la primera instalación o reparación de REPENTOGON.
 - **Respaldo:** `respaldo` guarda un zip de `mods/` en `mods/The_Binding_of_Isaac/respaldos/` (Documentos/Juegos.nosync).
@@ -67,7 +67,8 @@ Requisitos: [Sikarugir](https://github.com/Sikarugir-App/Sikarugir) con el envol
 ## Versiones y código fuente
 | Versión | Fecha | Resumen | Código |
 |---|---|---|---|
-| [`v2.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v2.2) **(actual)** | 2026-10-26 | Corrige Angels Drop Items (error y tirones al disparar), traduce 1287 descripciones de mods y el escáner guarda errores por mod | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v2.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v2.2.zip) |
+| [`v2.3`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v2.3) **(actual)** | 2026-10-26 | Por defecto, experiencia del juego base: Completo ya no activa caprichos ni trucos, y los modos (gacha, RPG, trucos) se activan a mano | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v2.3) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v2.3.zip) |
+| [`v2.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v2.2) | 2026-10-26 | Corrige Angels Drop Items (error y tirones al disparar), traduce 1287 descripciones de mods y el escáner guarda errores por mod | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v2.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v2.2.zip) |
 | [`v2.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v2.1) | 2026-10-21 | Repositorio y mods pasan del SanDisk a Documentos (`Juegos.nosync`); respaldos con rutas relativas | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v2.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v2.1.zip) |
 | [`v2.0`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v2.0) | 2026-10-21 | En Mac pasa de Whisky a Sikarugir y añade `jugar` para abrir Isaac con REPENTOGON | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v2.0) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v2.0.zip) |
 | [`v1.9`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v1.9) | 2026-10-16 | Guía la reparación de REPENTOGON y separa el contenido grande con fichas por mod | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v1.9) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v1.9.zip) |
@@ -90,7 +91,7 @@ Requisitos: [Sikarugir](https://github.com/Sikarugir-App/Sikarugir) con el envol
 | [`v0.2`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.2) | 2026-10-09 | Packs con valoración y perfiles, 43 mods recomendados, suscripción en bloque y respaldo | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.2) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.2.zip) |
 | [`v0.1`](https://github.com/iShun05/Isaac-Modpack-ES/releases/tag/v0.1) | 2026-10-09 | Catálogo de 70 mods, instalador, español automático y recomendaciones | [Ver código](https://github.com/iShun05/Isaac-Modpack-ES/tree/v0.1) · [ZIP](https://github.com/iShun05/Isaac-Modpack-ES/archive/refs/tags/v0.1.zip) |
 
-Volver a una versión: `git checkout v2.2`.
+Volver a una versión: `git checkout v2.3`.
 
 ## Contacto
 Instagram: [@_shun._05](https://www.instagram.com/_shun._05/)
