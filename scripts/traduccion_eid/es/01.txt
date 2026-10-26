@@ -1,0 +1,160 @@
+0	↓ {{Tears}} x0.125 multiplicador de cadencia
+1	Las lágrimas atraviesan hasta 5 enemigos; cada vez pierden un 20% de daño y pasan a un nuevo efecto de Jinete
+2	{{1}} Hambre: ralentiza
+3	{{2}} Pestilencia: veneno
+4	{{3}} Guerra: explosión de fuego
+5	{{4}} Muerte: 2x daño base
+6	{{5}} Conquista: luz sagrada
+7	{{Warning}} Objeto extra, puede tener fallos
+8	Todos los cambios de estadísticas posteriores a coger este objeto se revierten
+9	Todos los cambios negativos de estadísticas posteriores a coger este objeto se revierten
+10	El efecto se aplica tras calcular el daño, así que la mejora siempre es proporcional a cuánto bajarían tus estadísticas por debajo de las base
+11	Cuelga un yoyó con cuchillas sobre la cabeza de Isaac que triplica todos los objetos de pedestal
+12	{{Warning}} En cada fotograma tiene una pequeña probabilidad de acelerar y cortar a Isaac una y otra vez, dejándolo en medio corazón
+13	↓ {{Tears}} x0.75 multiplicador de cadencia
+14	↓ {{ShotSpeed}} x0.75 multiplicador de velocidad de tiro
+15	{{Collectible‹CollectibleType.COLLECTIBLE_SPOON_BENDER›}} Las lágrimas atraen los proyectiles enemigos y los absorben al tocarlos
+16	Al absorber un proyectil, la lágrima hereda parte de su daño, sus efectos aplicables y un pequeño aumento de alcance.
+17	En lugar de lágrimas, Isaac dispara un láser ancho, continuo y de poco daño
+18	Los enemigos alcanzados por tus láseres aumentan su «carga tecnológica»
+19	Cuando la carga tecnológica de un enemigo se llena, salen de él 4 láseres de alcance limitado y medio daño en forma de X
+20	{{MegaArrowUp}} x2 a todas las estadísticas, incluida la probabilidad de trato y de planetario
+21	Las estadísticas multiplicadas pueden superar sus límites habituales
+22	{{Heart}} Duplica el máximo de contenedores de corazón
+23	{{Warning}} Aumenta la velocidad de todos los enemigos y proyectiles
+24	Los efectos temporales, como los de activos, baratijas y consumibles, nunca terminan
+25	Solo se excluyen la invencibilidad y los efectos de resurrección
+26	Los efectos de los objetos nunca se quitan
+27	No se quita al cambiarse a sí mismo
+28	↑ {{Tears}} x1.25 multiplicador de cadencia
+29	↓ {{Damage}} x0.85 multiplicador de daño
+30	Cada cuarto disparo es cuádruple
+31	{{Collectible‹CollectibleType.COLLECTIBLE_SPOON_BENDER›}} Lágrimas teledirigidas potentes
+32	Las lágrimas teledirigidas tienen alcance infinito mientras las atraiga un enemigo
+33	Si la atraen dos enemigos a la vez, la lágrima se divide en dos de x0.66 de daño que persiguen a cada enemigo por separado
+34	Se carga recogiendo corazones negros
+35	{{HalfBlackHeart}} Mientras el cuchillo no está cargado del todo, aparecen corazones negros temporales más a menudo
+36	Al usarlo, Isaac clava un cuchillo en el suelo y lanza una enorme fuente de luz al cielo
+37	Mientras está activa, la fuente daña y repele a los enemigos, repele proyectiles y rompe rocas
+38	A mitad de su duración, el daño de la fuente se duplica
+39	Al moverse, Isaac dispara sin parar un láser en la dirección en la que camina
+40	El láser gana alcance, anchura y daño cuanto más camina Isaac en línea recta, y lo pierde rápido al girar
+41	El daño del láser va de .5x a 5x el daño de Isaac
+42	El láser repele levemente los proyectiles enemigos
+43	Las lágrimas se dividen en 4 al impactar
+44	Las lágrimas divididas infligen la mitad de daño que la original y tienen la mitad de alcance
+45	Las lágrimas divididas se vuelven a dividir en 4, con menos daño y alcance, hasta agotar su alcance
+46	↑ x1.66 multiplicador de daño
+47	10% de probabilidad de que cada disparo lleve uno de tres efectos gatunos
+48	{{Luck}} 50% de probabilidad con 10 de suerte
+49	{{Collectible‹CollectibleType.COLLECTIBLE_GUPPYS_HEAD›}} Dispara 3 langostas del Abismo temporales con medio daño
+50	{{Collectible‹CollectibleType.COLLECTIBLE_TAMMYS_HEAD›}} Dispara 9 lágrimas más en círculo alrededor de Isaac
+51	{{Collectible‹CollectibleType.COLLECTIBLE_CRICKETS_HEAD›}} Las lágrimas reciben el
+52	{{Blank}} efecto de {{Collectible⟨c:Bloated Body⟩}} Cuerpo hinchado: se dividen en 4 hasta agotar su alcance
+53	↑ {{Damage}} x1.5 multiplicador de daño
+54	↓ {{Tears}} x0.66 multiplicador de cadencia
+55	↓ {{Shotspeed}} x0.5 multiplicador de velocidad de tiro
+56	Lágrimas perforantes y espectrales
+57	Las lágrimas dejan un leve rastro por donde pasan
+58	Al desaparecer la lágrima, surge un rayo de luz a lo largo del rastro que inflige hasta 3.75x tu daño por segundo
+59	↓ {{Heart}} -1 vida
+60	↓ {{Damage}} -0.4 Daño
+61	↑ {{Tears}} x2.3 multiplicador de lágrimas
+62	↑ {{Tears}} +1 Lágrimas
+63	↑ {{Shotspeed}} +0.25 Velocidad de tiro
+64	{{EmptyHeart}} Se vacía toda la vida roja
+65	Los enemigos y recolectables son atraídos por las lágrimas
+66	Cuando muere un enemigo, aparece un pequeño familiar que copia tus lágrimas y orbita a Isaac el resto del piso
+67	Las lágrimas de estos familiares infligen 1/12 del daño de Isaac
+68	Los enemigos generados por otros enemigos no dan familiares
+69	↑ {{Tears}} +0.1 de cadencia por cada {{Coin}} moneda que tenga Isaac
+70	Las lágrimas frenan poco a poco en el aire y, casi paradas, disparan un láser al enemigo más cercano a su alcance
+71	Los láseres de las lágrimas infligen 1.5x el daño de la lágrima
+72	Persigue y desvía proyectiles enemigos sin tiempo de recarga
+73	{{Collectible‹CollectibleType.COLLECTIBLE_PSY_FLY›}} Al bloquear un proyectil, genera una mini Mosca psíquica temporal que orbita a los enemigos y bloquea 3 proyectiles antes de morir
+74	Inflige 15 de daño por contacto por segundo
+75	Reduce tu fricción
+76	Emite un aura gélida que ralentiza a enemigos y proyectiles
+77	Los enemigos que entran en el aura se congelan al morir
+78	Orbital grande
+79	Dispara 3 lágrimas teledirigidas tras bloquear un proyectil
+80	Inflige 6 de daño por disparo
+81	???
+82	Sortea modificadores que afectan a la fuerza de los monstruos en la partida.
+83	Al cogerlo se añade sin identificar al inventario del Árbol de estrellas.
+84	Sortea modificadores que afectan a la defensa de los monstruos en la partida.
+85	Sortea modificadores que pueden afectar directamente a la partida.
+86	Puede incluir modificadores únicos de partida, al estilo de los desafíos.
+87	Encanta a todos los monstruos de la sala durante 10 segundos.
+88	Durante los próximos 60 segundos, obtienes 3 bebés familiares aleatorios, un Collar de la amistad fundido y encantas a todos los monstruos durante 10 segundos al entrar en una sala.
+89	Crea una sombra marcada en tu posición actual.
+90	Volver a usar Fusión sombría hace que adoptes el rostro de la Sirena para hundirte en las sombras y reaparecer en la marca.
+91	No puedes recibir daño mientras te hundes ni durante los 0.5 segundos siguientes.
+92	Pulsa la tecla de soltar para quitar las marcas.
+93	Los enemigos fuera de tu línea de visión quedan paralizados, no pueden atacarte de ninguna forma y no pueden recibir daño
+94	{{Confusion}} Confunde periódicamente a jefes y minijefes
+95	{{Heart}} Mismo efecto que {{Collectible⟨c:Book of Leviathan⟩}}, pero necesita vida roja para usarse
+96	{{Warning}} ¡Cambia de estado tras varios usos!
+97	Mismo efecto que {{Collectible⟨c:Book of Leviathan⟩}}, pero se puede usar libremente
+98	Genera 2 Helicópteros de juguete que vuelan por la sala y atacan a los enemigos que tienen a la vista
+99	Verde: dispara muy rápido balas débiles a los enemigos y se mueve más deprisa
+100	Rojo: pide ataques aéreos sobre la posición de los enemigos y se mueve más despacio
+101	{{SoulHeart}} Triplica la probabilidad de que un corazón de alma se convierta en corazón encadenado
+102	Los corazones encadenados se pueden coger aunque tengas la vida de alma llena
+103	Los fantasmas encadenados obtienen lágrimas teledirigidas
+104	{{SacrificeRoom}} Hacer un sacrificio tiene un 50% de probabilidad de generar un fantasma orbital aliado
+105	{{EternalHeart}} Los fantasmas sueltan ahora corazones eternos al morir en lugar de medios corazones de alma
+106	Al usarlo te da una Joya del pecado aleatoria
+107	Genera de forma pasiva un montículo de tierra especial en cada sala secreta
+108	{{Key}} Si se usa en otro lugar, entierra todas las llaves de la sala
+109	{{Card78}} Si se usa sobre ese montículo, desentierra todas las llaves enterradas como Llaves agrietadas
+110	Familiar lanzable: el cuerpo de The Forgotten
+111	Dispara huesos en círculo a su alrededor si choca con una pared
+112	Familiar mosca orbital
+113	Bloquea tanto los proyectiles enemigos como las lágrimas de Isaac
+114	Inflige más daño por contacto cuantas más lágrimas absorbe en la sala actual
+115	Al entrar en una sala nueva, un enemigo aleatorio queda lisiado
+116	Genera un fantasma orbital permanente que dispara lágrimas espectrales y puede bloquear proyectiles enemigos
+117	Abre la puerta de Mega Satán aunque no tengas las mitades de llave
+118	{{Collectible585}} Mejora la recompensa de la Caja de alabastro aunque hayas cogido un trato con el diablo
+119	Elimina el efecto negativo de usar una Joya pecaminosa, si lo tiene
+120	Genera un Cofre negro
+121	{{BlackHeart}} +1 corazón negro
+122	Lisia a todos los enemigos de la sala
+123	Activa una carta del tarot aleatoria al usarlo
+124	{{Warning}} Tiene un 20% de probabilidad de desaparecer
+125	No puede usar {{Card46}} Rey suicida, {{Card48}} Carta ?, {{Card80}} Comodín ni {{Card53}} Recuerdo ancestral
+126	Suelta tu objeto activo actual como objeto de pedestal
+127	Da un efecto aleatorio en cada piso:
+128	Todas las salas secretas tienen objetos
+129	Destruir máquinas siempre suelta objetos
+130	Destruir máquinas siempre suelta monedas de diez
+131	3 pedestales a elegir tras los jefes; solo si no recibes daño
+132	Al morir, revives como ??? (Blue Baby)
+133	Siempre hay un sótano bajo el tendero
+134	Las lágrimas ralentizan a los enemigos
+135	Los enemigos alcanzados cinco veces seguidas se congelan
+136	Controles de disparo invertidos
+137	↑ {{Damage}} +50% multiplicador de daño
+138	↑ {{Damage}} +1.5 Daño
+139	↓ {{Range}} -25% multiplicador de alcance
+140	↓ {{Shotspeed}} -25% multiplicador de velocidad de tiro
+141	Marca a los enemigos como objetivo
+142	Ralentiza a los enemigos marcados
+143	Si matas a los enemigos marcados en orden, suelta una carta
+144	Otorga un escudo que bloquea los disparos por la espalda
+145	Suelta un recolectable que le falte a Isaac
+146	Si la Vela de cumpleaños no tiene nada que dar, aumenta todas las estadísticas
+147	Ataque cargado que libera rayos de energía en direcciones aleatorias
+148	Lanzallamas. Lanza llamas.
+149	Los corazones negros se convierten en demonios al recibir daño
+150	En las salas del ángel aparece un ángel de alas rotas
+151	Los corazones negros se pueden cambiar por recompensas
+152	Dispara cubitos de hielo que se deslizan por el suelo
+153	Los cubitos dejan un charco
+154	Las lágrimas eliminan los charcos enemigos
+155	↑ {{Tears}} +1 Cadencia
+156	{{Bomb}} +5 bombas
+157	Las bombas absorben lágrimas
+158	Las bombas ganan daño al absorber lágrimas
+159	Quedarte quieto dispara un láser azul que apunta a los enemigos

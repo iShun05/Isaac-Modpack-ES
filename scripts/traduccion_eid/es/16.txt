@@ -1,0 +1,136 @@
+0	Cualquier recolectable, enemigo o lágrima que lo toque cambia al azar
+1	{{Collectible⟨c:The D3⟩}} Activa el efecto del D3 durante la sala y genera un familiar orbital que cambia lágrimas
+2	{{Collectible⟨c:The D5⟩}} Activa el efecto del D5 durante la sala y genera un dado que se puede lanzar
+3	{{Collectible285}} Activa los efectos del D10 y D12: cambia los obstáculos y degrada a los enemigos de la sala
+4	{{Collectible609}} Activa los efectos del Eternal D6, D10 y D12, que cambian todos los pedestales, enemigos y obstáculos de la sala
+5	Hay un 50% de probabilidad de borrarlos en su lugar
+6	{{Collectible284}} Activa los efectos del D4 y D8: cambia las estadísticas y los pasivos de Isaac
+7	Quita de la sala todos los enemigos y recolectables y hace que aparezcan en la siguiente
+8	Divide a todos los enemigos de la sala en 2 versiones más pequeñas con menos vida
+9	Lágrimas perforantes durante la sala
+10	Completa 1/3 de una fortuna puzle
+11	Al completar la fortuna, aparece una recompensa
+12	El premio está relacionado con la fortuna creada
+13	{{Coin}} Genera 1-2 monedas
+14	El siguiente botón que pulse Isaac dará una mejora de estadística:
+15	Este efecto termina al salir del piso
+16	Invoca un cofre de tienda abierto
+17	{{Collectible515}} Convierte los objetos de pedestal en Mystery Gift
+18	{{ffStud}} Genera un penique Stud en el suelo
+19	{{Coin}} Los peniques Stud valen 1 moneda e infligen daño por contacto a los enemigos
+20	{{Collectible486}} Los peniques Stud infligen daño falso a Isaac al cogerlos
+21	Se pueden apilar hasta 6 Studs en la misma ranura de carta
+22	Explota sin hacerte daño
+23	¡Cuenta un chiste buenísimo!
+24	Un enemigo de cada una de las 4 siguientes salas queda pacificado mucho tiempo
+25	↑ +1 Velocidad
+26	El bonus de velocidad baja 0.15 al limpiar una sala
+27	↑ +7.77 Suerte
+28	↓ x0.8 multiplicador de daño
+29	{{Collectible245}} Isaac dispara 2 lágrimas a la vez
+30	Genera 3 arañas azules, 3 moscas azules, 3 skuzz azules, 3 escarabajos azules y 3 arañitas azules
+31	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de sala del tesoro
+32	{{Timer}} Estos objetos duran 60 segundos
+33	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de tienda
+34	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de sala de jefe
+35	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de sala secreta
+36	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de sala del diablo
+37	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de sala del ángel
+38	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de Planetario
+39	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios
+40	{{ffDisc}} Isaac recibe 3-5 copias de un mismo objeto aleatorio
+41	{{ffDisc}} Isaac recibe 3-5 objetos aleatorios de sala del tesoro contaminada
+42	{{GoldenBomb}} Genera una bomba trampa dorada
+43	{{Bomb}} Convierte todas las bombas de la sala en bombas trampa
+44	{{Bomb}} Duplica el número de bombas de Isaac
+45	{{ffCopperBomb}} Convierte todas las bombas que llevas en bombas de cobre
+46	{{Trinket}} Genera 3 baratijas de penique
+47	Al coger una, las demás desaparecen
+48	{{Coin}} Genera 3 monedas aleatorias
+49	{{Bomb}} Genera 3 bombas aleatorias
+50	{{Key}} Genera 3 llaves aleatorias
+51	{{Heart}} Genera 3 corazones aleatorios
+52	{{ffCursedPenny}} Genera 2-4 peniques malditos
+53	Convierte todas las monedas de la sala en peniques malditos
+54	{{ffCopperBomb}} Genera 2-3 bombas de cobre
+55	Convierte todas las bombas de la sala en bombas de cobre
+56	{{ffSpicyKey}} Genera 1-2 llaves picantes
+57	Convierte todas las llaves de la sala en llaves picantes
+58	{{ffImmoralHeart}} Convierte todos los corazones de alma de Isaac en corazones inmorales
+59	{{ffImmoralHeart}} Convierte todos los corazones de la sala en corazones inmorales
+60	Genera un corazón inmoral si Isaac no tiene ninguno
+61	{{Coin}} Convierte todos los obstáculos de la sala en monedas
+62	{{Timer}} Las monedas generadas así desaparecen a los 5 segundos
+63	{{Collectible52}} Da Dr. Fetus durante la sala, que sustituye las lágrimas de Isaac por bombas
+64	{{Key}} Genera 1-10 llaves
+65	{{Collectible202}} Convierte a todos los enemigos de la sala en estatuas de oro
+66	Convierte el 25% de las rocas de la sala en rocas de oro falso
+67	{{GigaBomb}} Genera una Giga Bomba recolectable sin activar
+68	{{Key}} +1 Llave
+69	{{Collectible623}} Las lágrimas del jugador se convierten en lágrimas de Sharp Key durante la sala
+70	!!! Si no tienes llaves, las lágrimas no se convierten
+71	{{Battery}} Convierte todos los recolectables, cofres y enemigos no jefe en baterías aleatorias
+72	!!! Las baterías desaparecen a los 2 segundos
+73	{{Battery}} Duplica la carga actual de los activos de Isaac
+74	{{Collectible63}} Puede sobrecargar objetos activos
+75	{{Battery}} Genera 3 baterías aleatorias
+76	!!! Las baterías desaparecen a los 3 segundos
+77	{{Battery}} Mejora las baterías de la sala a su siguiente nivel
+78	{{Trinket}} Convierte todos los recolectables, cofres y enemigos no jefe en baratijas
+79	{{Trinket}} Duplica todas las baratijas que lleva Isaac
+80	Genera una baratija aleatoria si no llevas ninguna
+81	!!! No duplica las baratijas fundidas
+82	{{Trinket}} Genera 3 baratijas aleatorias
+83	{{Trinket}} Convierte en doradas todas las baratijas de la sala y las que lleva Isaac
+84	!!! No afecta a las baratijas fundidas
+85	{{Trinket}} Convierte en baratijas de roca todas las baratijas de la sala y las que lleva Isaac
+86	{{Trinket}} Convierte en baratijas blasfemas todas las baratijas de la sala y las que lleva Isaac
+87	{{Damage}} Las baratijas blasfemas dan +1 de daño si las llevas o las fundes
+88	Convierte todos los recolectables, cofres y enemigos no jefe en moscas, arañas, skuzz, dips, escarabajos, minisaacs, fragile bobbies, arañitas azules, mariquitas, moscas hada y mini Level 0 Flies aliados
+89	Duplica todas las moscas, arañas, skuzz, dips aliados y escarabajos azules de la sala
+90	{{Collectible357}} Activa Box of Friends
+91	Genera 3 moscas azules, langostas, arañas azules, skuzz azules, pulgas, escarabajos azules, dips, minisaacs, fragile bobbies, arañitas azules, mariquitas, moscas hada o mini Level 0 Flies aleatorios
+92	{{Collectible247}} Da los efectos de BFFS! durante el resto del piso
+93	{{Pill}} Convierte todos los recolectables, cofres y enemigos no jefe en píldoras
+94	{{Pill}} Duplica todas las píldoras de la sala y las que lleva Isaac
+95	Genera 2 píldoras aleatorias si Isaac no lleva ninguna
+96	{{Pill}} Genera 3 píldoras aleatorias
+97	Estas píldoras tienen un 50% de probabilidad de ser píldoras de caballo
+98	{{Pill}} Convierte en píldoras de caballo todas las píldoras de la sala y las que lleva Isaac
+99	Cambia los objetos de la sala por objetos del diablo o del ángel
+100	{{Warning}} Tiene una pequeña probabilidad de convertir los objetos de la sala en corazones o cofres de temática santa o diabólica
+101	{{Collectible721}} Genera un objeto glitch
+102	{{GigaBomb}} Provoca una explosión de Giga Bomba encima de Isaac
+103	{{ffImmoralHeart}} Genera un corazón inmoral
+104	{{ffCopperBomb}} Genera una bomba de cobre
+105	{{ffSpicyKey}} Genera un par de llaves picantes
+106	{{ffCursedPenny}} Genera un penique maldito
+107	{{Timer}} Efecto de mapa completo durante el piso.
+108	Genera 5-8 Esbirros de Fiend y 0-2 Esbirros de corazón negro
+109	{{Trinket}} Genera 3 baratijas de Golem
+110	Activa el efecto de una piedra del alma aleatoria
+111	{{Battery}} Sobrecarga el activo de Isaac hasta dos cargas completas
+112	{{Collectible⟨c:Excelsior⟩}} Usar tu activo lanza fuegos artificiales según la carga del objeto
+113	{{Collectible584}} Usar tu activo activa Book of Virtues
+114	Activa el modo Migraña, que da a Isaac dos satélites Inaba
+115	{{Battery}} Guarda la carga del activo de Isaac
+116	Úsalo otra vez para recargar el activo
+117	{{Card⟨k:Corroded Battery⟩}} Se corroe al empezar el piso
+118	{{Card⟨k:Corroded Battery (1)⟩}} Se corroe al empezar el piso
+119	{{Card⟨k:Corroded Battery (2)⟩}} Se corroe al empezar el piso
+120	{{Card⟨k:Corroded Battery (Full)⟩}} Se corroe al empezar el piso
+121	!!! Tras recargar los activos, explota al poco tiempo
+122	Da a Isaac un arma aleatoria con munición limitada
+123	El arma dispara junto con las lágrimas de Isaac
+124	Adormece a los enemigos
+125	Genera una caca sagrada
+126	Genera una caca roja
+127	Aumenta el tamaño de las lágrimas
+128	Reduce el tamaño de las lágrimas
+129	Reduce los fotogramas de invencibilidad al recibir golpes
+130	Quita las maldiciones del piso
+131	{{Collectible287}} Activa Book of Secrets al usarlo
+132	Genera 2 arañas azules y 10 arañitas azules
+133	Genera 1 Fragile Bobby
+134	{{Collectible118}} ¡¡¡Te da Brimstone para siempre!!!! XD
+135	{{Collectible⟨c:Sertraline Pack⟩}} Destruye todas las lágrimas enemigas e impide un momento que aparezcan nuevas

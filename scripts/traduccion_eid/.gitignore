@@ -1,0 +1,4 @@
+src/
+cap_*.json
+captura_main.json
+__pycache__/

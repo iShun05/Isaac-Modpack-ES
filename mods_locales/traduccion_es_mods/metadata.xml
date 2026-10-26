@@ -2,7 +2,7 @@
 <metadata>
     <name>Traducción ES (mods)</name>
     <directory>traduccion_es_mods</directory>
-    <description>Nombres y textos en español de los objetos, cartas y baratijas de mods que solo vienen en inglés (Eevee: Reunited, Icesaac, Mei, Transformer). Se muestra con External Item Descriptions. Parte de Isaac-Modpack-ES. Contacto: https://www.instagram.com/_shun._05/</description>
-    <version>0.1</version>
+    <description>Descripciones en español (External Item Descriptions) de los objetos, baratijas, cartas, píldoras y personajes de los mods que solo las traen en inglés: Fiend Folio, Revelations, Andromeda, Job, MattPack, Repentance+, Passive Skill Trees, Icesaac, Agatha, Eevee: Reunited, Mei y Transformer. Respeta las traducciones que ya traiga cada mod. Parte de Isaac-Modpack-ES. Contacto: https://www.instagram.com/_shun._05/</description>
+    <version>1.0</version>
     <visibility>Private</visibility>
 </metadata>

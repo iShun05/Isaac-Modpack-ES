@@ -212,33 +212,48 @@ function Instalar-Locales {
     }
 }
 
-# Copia corregida de Job 2.5: su main.lua hace require() dentro de un callback y falla («module job_src.mod_compat.others not found»).
-function Parche-Job {
-    $orig = Get-ChildItem $script:ModsDir -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '_2567634705$' } | Select-Object -First 1
-    if (-not $orig) { return }
-    $dest = Join-Path $script:ModsDir 'job_corregido'
-    $mainTxt = [IO.File]::ReadAllText((Join-Path $orig.FullName 'main.lua'))
-    $viejo = 'require("job_src.mod_compat.others")'
-    if (-not $mainTxt.Contains($viejo)) { Log 'Job: el main.lua ya no tiene la línea esperada; revisa el parche a mano.' 'aviso'; return }
-    $huella = (Get-FileHash (Join-Path $orig.FullName 'main.lua') -Algorithm SHA256).Hash
-    $marca = Join-Path $dest '.origen_sha'
-    if (-not ((Test-Path $marca) -and ((Get-Content $marca -Raw).Trim() -eq $huella))) {
-        if (Test-Path $dest) { Remove-Item $dest -Recurse -Force }
-        New-Item -ItemType Directory -Path $dest | Out-Null
-        Copy-Item (Join-Path $orig.FullName '*') $dest -Recurse -Force -Exclude 'disable.it'
-        [IO.File]::WriteAllText((Join-Path $dest 'main.lua'), $mainTxt.Replace($viejo, 'pcall(require, "job_src.mod_compat.others")'), $script:utf8)
-        $meta = [IO.File]::ReadAllText((Join-Path $dest 'metadata.xml'))
-        $meta = [regex]::Replace($meta, '<name>.*?</name>', '<name>Job (corregido)</name>', 'Singleline')
-        $meta = [regex]::Replace($meta, '<directory>.*?</directory>', '<directory>job_corregido</directory>', 'Singleline')
-        $meta = [regex]::Replace($meta, '\s*<id>.*?</id>', '', 'Singleline')
-        [IO.File]::WriteAllText((Join-Path $dest 'metadata.xml'), $meta, $script:utf8)
-        [IO.File]::WriteAllText($marca, $huella, $script:utf8)
-        $datosJob = Join-Path $script:Juego 'data\job'
-        if ((Test-Path $datosJob) -and -not (Test-Path (Join-Path $script:Juego 'data\job_corregido'))) { Copy-Item $datosJob (Join-Path $script:Juego 'data\job_corregido') -Recurse }
-        Log 'Job: copia corregida creada (mods\job_corregido).' 'ok'
+# Copias corregidas de mods de Workshop (datos\parches.json, el mismo archivo que usa el Mac): Job 2.5 (require al iniciar)
+# y Angels Drop Items (main.lua:325 «attempt to compare number with nil» en salas de Repentance). El original nunca se edita.
+function Leer-Copias {
+    $f = Join-Path $script:Raiz 'datos\parches.json'
+    if (-not (Test-Path $f)) { return @() }
+    return @(([IO.File]::ReadAllText($f, $script:utf8) | ConvertFrom-Json).copias)
+}
+
+function Parche-Copias {
+    foreach ($c in (Leer-Copias)) {
+        $orig = Get-ChildItem $script:ModsDir -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match ('_' + $c.id + '$') } | Select-Object -First 1
+        if (-not $orig) { continue }
+        $dest = Join-Path $script:ModsDir $c.carpeta
+        $mainTxt = [IO.File]::ReadAllText((Join-Path $orig.FullName 'main.lua'))
+        $faltan = @($c.obligatorio | Where-Object { -not $mainTxt.Contains($_.viejo) })
+        if ($faltan.Count -gt 0) { Log "$($c.nombre): el main.lua ya no tiene la línea esperada; revisa el parche a mano." 'aviso'; continue }
+        $sha = [Security.Cryptography.SHA256]::Create()
+        $bytes = $script:utf8.GetBytes($mainTxt + ($c | ConvertTo-Json -Depth 5 -Compress))
+        $huella = ([BitConverter]::ToString($sha.ComputeHash($bytes))).Replace('-', '')
+        $marca = Join-Path $dest '.origen_sha'
+        if (-not ((Test-Path $marca) -and ((Get-Content $marca -Raw).Trim() -eq $huella))) {
+            if (Test-Path $dest) { Remove-Item $dest -Recurse -Force }
+            New-Item -ItemType Directory -Path $dest | Out-Null
+            Copy-Item (Join-Path $orig.FullName '*') $dest -Recurse -Force -Exclude 'disable.it'
+            foreach ($r in @($c.obligatorio) + @($c.opcional)) { if ($r) { $mainTxt = $mainTxt.Replace($r.viejo, $r.nuevo) } }
+            [IO.File]::WriteAllText((Join-Path $dest 'main.lua'), $mainTxt, $script:utf8)
+            $meta = [IO.File]::ReadAllText((Join-Path $dest 'metadata.xml'))
+            $meta = [regex]::Replace($meta, '<name>.*?</name>', ('<name>' + $c.nombre + '</name>'), 'Singleline')
+            $meta = [regex]::Replace($meta, '<directory>.*?</directory>', ('<directory>' + $c.carpeta + '</directory>'), 'Singleline')
+            $meta = [regex]::Replace($meta, '\s*<id>.*?</id>', '', 'Singleline')
+            $meta = $meta.Replace('<visibility>Public</visibility>', '<visibility>Private</visibility>')
+            $meta = ([regex]'<description>').Replace($meta, ('<description>[' + $c.nota.Replace('$', '$$') + '] '), 1)
+            [IO.File]::WriteAllText((Join-Path $dest 'metadata.xml'), $meta, $script:utf8)
+            [IO.File]::WriteAllText($marca, $huella, $script:utf8)
+            $datosOrig = Join-Path $script:Juego ('data\' + $c.datos)
+            $datosCopia = Join-Path $script:Juego ('data\' + $c.carpeta)
+            if ((Test-Path $datosOrig) -and -not (Test-Path $datosCopia)) { Copy-Item $datosOrig $datosCopia -Recurse }  # conserva ajustes y progreso
+            Log "$($c.nombre): copia corregida creada (mods\$($c.carpeta))." 'ok'
+        }
+        Poner-Marca $orig.FullName      # el original se apaga: los dos a la vez registrarían lo mismo dos veces
+        Quitar-Marca $dest
     }
-    Poner-Marca $orig.FullName      # el original se apaga: los dos a la vez duplicarían objetos
-    Quitar-Marca $dest
 }
 
 # ---------------------------------------------------------------- Panel y errores
@@ -330,15 +345,16 @@ function Escribir-Config-Escaner($activo) {
 }
 
 # ---------------------------------------------------------------- Aplicar packs
-# Activa/desactiva los mods según los packs (y órdenes sueltas), aplica el parche de Job y refresca el panel.
+# Activa/desactiva los mods según los packs (y órdenes sueltas), aplica las copias corregidas y refresca el panel.
 function Aplicar-Packs($elegidos, $on = @(), $off = @(), $ticksPendiente = $null, $scanner = $null) {
-    Parche-Job
+    Parche-Copias
+    $corregidos = @((Leer-Copias) | ForEach-Object { [string]$_.id })
     $n = 0
     foreach ($m in $script:Mods) {
         if (-not $script:Instalados.ContainsKey($m.id)) { continue }
         $carpeta = $script:Instalados[$m.id]
         if (En-Workshop $carpeta) { continue }   # aún no copiado a mods\: se aplica en la próxima ejecución
-        if ($m.id -eq '2567634705') { continue } # Job original: lo gestiona Parche-Job
+        if ($corregidos -contains [string]$m.id) { continue } # original con copia corregida: lo gestiona Parche-Copias
         if (Debe-Estar-Activo $m $elegidos $on $off) { Quitar-Marca $carpeta } else { Poner-Marca $carpeta }
         $n++
     }

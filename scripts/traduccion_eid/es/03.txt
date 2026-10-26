@@ -1,0 +1,160 @@
+0	Los enemigos sueltan orbes de Residuo de ansiedad que Inaba puede recoger
+1	Inaba sube de nivel recogiendo orbes
+2	Recibir suficiente daño le baja el nivel
+3	Inaba gana más satélites oculares con cada nivel
+4	Infligir y recibir daño acumula migraña
+5	Cuando su barra de migraña se llena, obtiene una breve mejora de estadísticas
+6	No puede disparar lágrimas
+7	Su satélite ocular dispara por ella
+8	Mantener soltar ({{ButtonRT}}) deja su ojo quieto en el sitio
+9	Al dejar de pulsar soltar, lanza un tajo que potencia su activo de bolsillo
+10	Se mueve sin parar
+11	Dispara 3 lágrimas a la vez
+12	{{Collectible⟨c:Golden Frog Head⟩}} Usar la Cabeza de rana dorada le impide moverse
+13	{{BrokenHeart}} Recibir daño y tocar cualquier obstáculo sólido, como paredes o rocas, da +1 corazón roto
+14	{{Warning}} Si China supera los 12 corazones rotos, muere
+15	{{Collectible⟨c:Horse Paste⟩}} Completar una sala tiene un 15% de probabilidad de generar un Polo de caballo que puede curar a China
+16	{{DevilRoom}} Puede coger gratis un trato con el diablo por sala
+17	{{Collectible68}} Láseres tecnológicos de corto alcance en lugar de lágrimas
+18	Genera esbirros al recibir daño en una sala sin limpiar
+19	{{Collectible⟨c:Deal of the Demons⟩}} Lágrimas teledirigidas
+20	Recibe a la fuerza muchos objetos que le provocan sobrecarga sensorial
+21	Cuantos más pisos recorre Image, más objetos la inundan
+22	{{Wrning}} {{Warning}} ¡Socorro! ¡Me han atrapado en The Binding of Isaac: Repentance+ {{Collectible⟨c:Repentance+⟩}} mod Fiend Folio: Reloaded y me obligan a describir personajes! ¡Ayuda, por favor! ¡¡¡Ayuda!!! Duele muchísimo... Por favor...
+23	{{EmptyBoneHeart}} Solo puede tener corazones de hueso vacíos
+24	{{EmptyBoneHeart}} Los aumentos de vida dan corazones de hueso vacíos
+25	Genera huesos de fuego que dan huesos orbitales al matar enemigos
+26	Deja fuegos detrás al moverse
+27	{{Collectible⟨c:Fend's Mop⟩}} Tienes un ataque cuerpo a cuerpo que se puede cargar para un giro + un disparo
+28	El ataque cuerpo a cuerpo puede desviar proyectiles enemigos
+29	{{Poison}} Lágrimas venenosas
+30	En una sala activa suda lágrimas que dejan un charco verde venenoso
+31	{{Confusion}} Lágrimas que aturden
+32	Hierba
+33	En una sala activa, las lágrimas que caen al suelo dejan un Esbirro de Fiend al impactar
+34	Cuando se llena la barra de carga de Freezer Jr, puede colgar la sala entera
+35	Hoy en día parece que solo ves
+36	violencia en el cine y sexo en la tele
+37	Pero ¿dónde están esos buenos valores de antes
+38	en los que solíamos confiar?
+39	Menos mal que hay un padre de familia
+40	Menos mal que hay un hombre que sin duda puede hacer
+41	todas esas cosas que nos hacen
+42	reír y llorar
+43	Es un padre de familia
+44	Las bolas de fuego de Fiend persiguen mejor a los enemigos
+45	Las bolas de fuego pueden generar Esbirros de Fiend que desaparecen al limpiar la sala
+46	Aumenta la probabilidad de que los enemigos muertos por Malicia suelten medios corazones negros
+47	Al dividirse, los esbirros de Fiend contaminado reciben sombreros al azar que dan distintas estadísticas a quien los lleva
+48	↑ +2 Suerte
+49	Las rocas tintadas sueltan ahora baratijas de roca y corazones de alma
+50	{{Collectible⟨c:Overclock⟩}} Overclock invoca ahora el Garrote de Golem
+51	Lanza el Garrote de Golem para dañar enemigos y romper rocas
+52	Las rocas rotas con el Garrote de Golem tienen una pequeña probabilidad de soltar baratijas de roca
+53	{{Collectible⟨c:Hot Shot⟩}} La bola de fuego de Hot Shot se puede disparar tres veces antes de desaparecer
+54	La bola de fuego también dura más en movimiento y rebota en las paredes
+55	Inmunidad a las explosiones de Hot Shot
+56	65% de probabilidad de que los enemigos pistoleros suelten su pistola como recolectable
+57	Las pistolas de los pistoleros tienen munición limitada y disparan junto a Friend contaminada
+58	Desaparecen al quedarse sin munición
+59	La barra de migraña de Inaba se llena antes, se vacía más despacio y puede llenarse en modo Migraña
+60	{{Collectible313}} En modo Migraña, Inaba obtiene un escudo de Manto sagrado
+61	El escudo anula el primer golpe recibido una vez por sala
+62	Mantener el botón de soltar ({{ButtonRT}}) el tiempo suficiente llena otra barra de carga
+63	Al soltar el botón se coloca un satélite de sombra
+64	El satélite de sombra no se mueve, solo dispara cuando Inaba dispara y apunta a los enemigos cercanos
+65	{{Collectible⟨c:Golden Frog Head⟩}} Slippy genera ahora nubes de gas venenoso persistentes al usar la Cabeza de rana dorada
+66	{{Collectible⟨c:Horse Paste⟩}} China puede usar la Pasta de caballo
+67	{{BrokenHeart}} Al usarla, la Pasta de caballo cura un corazón roto
+68	{{Collectible⟨c:Craig's Battery⟩}} Aparecen más farolillos de bombilla en las salas con enemigos
+69	Aparece un esbirro corazón extra cuando Classic Fiend recibe daño
+70	Aumenta muchísimo la sobrecarga sensorial
+71	{{Damage}} Las burlas infligen el daño de The Skeletal Fiend a los enemigos
+72	↑ Aumenta la libido de Fend
+73	En una sala activa, Frond escupe más lágrimas que dejan charco
+74	Los enemigos sueltan bolsitas de droga al morir
+75	Las bolsitas de droga dan:
+76	↑ +2 Lágrimas
+77	↑ +0.8 Velocidad
+78	{{Collectible582}} Una distorsión de pantalla ondulante de Seta ondulada
+79	¡¡¡Las lágrimas de Mi generan amigos!!!!!!!!
+80	{{Warning}} El cuelgue de Freezer Jr puede afectar a objetos de la capa superior
+81	Aparece el caballo de Peat
+82	Peat puede montar el caballo y cargar en combate, infligiendo 100 de daño a los enemigos
+83	Curarte de más carga una barra de vida secundaria
+84	{{Damage}} Llenar esta barra acumula un aumento de hasta +1.5 de daño por cada corazón llenado
+85	Se funde sola cuando la barra se llena del todo
+86	Esta barra de vida se ve al abrir el mapa
+87	Revela la {{BossRoom}} sala del jefe en el mapa
+88	Tras limpiar la sala, la puerta de salida de la sala del jefe se sustituye por una puerta a la {{TreasureRoom}} sala del tesoro o al {{Planetarium}} Planetario
+89	↑ +0.2 Velocidad de tiro
+90	1% de probabilidad de disparar una lágrima gusano de la fortuna que inflige x1.05 de daño
+91	{{Luck}} 33% de probabilidad con 18 de suerte
+92	{{ffCursedPenny}} 7% de probabilidad de que caigan monedas malditas al limpiar la sala
+93	{{Luck}} 100% de probabilidad con 14 de suerte
+94	{{EmptyHeart}} Guarda un corazón extra
+95	{{DevilChance}} No cuenta en contra de la probabilidad de trato con el diablo
+96	{{HalfHeart}} Guarda un corazón extra
+97	{{Heart}} Guarda un corazón extra
+98	{{ffSpicyKey}} Las llaves se convierten en llaves picantes
+99	{{Warning}} Las llaves picantes valen doble, pero dañan a Isaac
+100	Coger una moneda tiene un 5% de probabilidad de consumir una píldora
+101	{{Luck}} 100% de probabilidad con 95 de suerte
+102	Coger una moneda tiene un 2% de probabilidad de fundir una baratija
+103	{{Luck}} 100% de probabilidad con 196 de suerte
+104	Isaac ya no tiene inercia al moverse
+105	{{HolyChestRoomIcon}} Los cofres tienen un 33% de probabilidad de convertirse en cofres eternos
+106	{{ffFullEternalHeart}} Los medios corazones eternos pasan a ser corazones eternos enteros
+107	Entrar en una sala hostil genera un Skuzz naranja
+108	{{Burning}} Este skuzz inflige 3x el daño de Isaac y prende fuego a los enemigos
+109	Entrar en una sala hostil genera un Skuzz cian
+110	Este skuzz inflige 3x el daño de Isaac y deja un charco dañino
+111	Entrar en una sala hostil genera un Skuzz morado
+112	{{Slow}} Este skuzz inflige 3x el daño de Isaac y ralentiza a los enemigos
+113	Entrar en una sala hostil genera un Skuzz beis
+114	{{Charm}} Este skuzz inflige 3x el daño de Isaac y encanta a los enemigos
+115	Coger una moneda genera un Skuzz azul
+116	Genera 3 Blots aliados al entrar en una sala con enemigos
+117	↑ +1 Suerte
+118	Todos los mendigos y máquinas tragaperras muestran una predicción junto a sus posibles premios
+119	{{ffPuzzlePiece}} Una sola vez, suelta una Pieza de puzle al empezar el siguiente piso
+120	20% de probabilidad de sustituir cartas por una Pieza de puzle si se ha usado una
+121	{{Warning}} Esta baratija se pierde cada vez que se completa un puzle
+122	17% de probabilidad de disparar una lágrima teledirigida que inflige x1.25 tu daño
+123	{{Luck}} 64% de probabilidad con 7 de suerte
+124	Al recibir un golpe, Isaac saca una M90: su siguiente disparo es una bala rápida y perforante que inflige x3.50 de daño con retroceso propio
+125	↑ +0.4 Lágrimas
+126	↑ +12.5 Alcance
+127	Lágrimas espectrales
+128	Las lágrimas se mueven en un patrón de trinidad sagrada
+129	15% de probabilidad de soltar una baratija al limpiar la sala
+130	{{Luck}} 90% de probabilidad con 30 de suerte
+131	{{Trinket}} Si la llevas al terminar la partida, genera una baratija aleatoria al empezar la siguiente
+132	{{Heart}} Los tenderos volados sueltan corazones rojos y, rara vez, de hueso en lugar de monedas
+133	La probabilidad de corazones mejores aumenta con la calidad de las monedas sustituidas
+134	{{Timer}} Usar una carta da un aumento de daño que escala con el número de la carta, si lo tiene
+135	20% de probabilidad de generar una Pulga aliada aleatoria al matar a un enemigo
+136	Coger una moneda tiene un 17% de probabilidad de herir a Isaac sin quitarle vida
+137	Los jefes y minijefes de la {{BossRoom}} sala del jefe empiezan con un 10% más de vida
+138	{{Heart}} Los jefes y minijefes de la {{BossRoom}} también sueltan corazones extra al morir
+139	{{Battery}} Los objetos activos se activan 4-6 veces, pero tienen 1/2 de probabilidad de desaparecer al usarlos
+140	Suelta 2 Dados de cristal aleatorios y una moneda al empezar cada piso
+141	↑ +0.35 Lágrimas
+142	↑ +0.35 Daño
+143	↑ +1 Alcance
+144	↑ +0.16 Velocidad de tiro
+145	Coger llaves tiene un 25% de probabilidad de destruir la baratija y gastar una llave
+146	{{Warning}} No se puede soltar
+147	Muestra el daño de las lágrimas y las barras de vida de todos los enemigos
+148	{{Shop}}{{DevilChance}} Aleatoriza los precios de la tienda y de los tratos con el diablo
+149	20% de probabilidad de que los objetos de la tienda y del diablo cambien de precio sin parar
+150	Al entrar en una sala, Isaac recibe un efecto aleatorio de una lista rotatoria que puede ser perjudicial o beneficioso
+151	20% de probabilidad de que las cacas se sustituyan por champú
+152	Romper champús da mejores recompensas
+153	Familiar de baba que imita los movimientos de Isaac
+154	Copia los efectos de lágrima y la cadencia de Isaac con un 40% de daño
+155	{{Slow}} Sus lágrimas también ralentizan
+156	Se puede lanzar como proyectil perforante con doble pulsación, aplicando también los efectos de lágrima
+157	{{Timer}} Reaparece al cabo de un segundo
+158	↑ +1 vida
+159	{{Player⟨pl:Slippy⟩}} Al morir, Isaac revive como Slippy

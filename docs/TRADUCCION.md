@@ -5,14 +5,14 @@
 |---|---|---|
 | Juego base (Repentance+ v1.9.7.17.J460) | Traducción oficial (`packed/repentance_es.a`), activada con `Language=4` en `options.ini` | Al ejecutar `espanol` (o con el vigilante opcional) se reaplica si Steam o el juego lo vuelven a inglés |
 | Objetos, baratijas, cartas, píldoras (EID) | EID trae `spa`; se fija `Language: spa` y nombres traducidos en `data/external item descriptions/save*.dat` (no en la carpeta de Workshop, que Steam pisa) | Igual que arriba |
-| Mods con textos propios solo en inglés | Mod local **Traducción ES (mods)** (`mods_locales/traduccion_es_mods`): Eevee: Reunited, Icesaac, Mei, Transformer | Detecta mods nuevos y los apunta en `auto_espanol.log`; la traducción de sus textos se añade a la tabla del mod |
+| Mods con textos propios solo en inglés | Mod local **Traducción ES (mods)** (`mods_locales/traduccion_es_mods`): 1287 descripciones de EID (Fiend Folio, Revelations, Andromeda, Job, MattPack, Repentance+, Passive Skill Trees, Icesaac, Agatha) en `datos_es.lua`, más Eevee: Reunited, Mei y Transformer en `main.lua`. Si un mod trae ya su propio español, se respeta | Detecta mods nuevos y los apunta en `auto_espanol.log`. Si un mod actualiza sus textos, se regeneran con `scripts/traduccion_eid/` (ver su `LEEME.md`) |
 | Descripciones de Workshop (`metadata.xml`) | No se tocan (Steam las sobrescribe y el juego no las muestra); su resumen en español está en `docs/MODS.md` | — |
 
 ## Qué pasa cuando se añade un mod nuevo
 1. (Con el vigilante activado) Un `LaunchAgent` (`com.ishun05.isaac-espanol`) vigila la carpeta `mods/` y `appmanifest_250900.acf`, y cada hora ejecuta `isaac_pack.py espanol --auto`.
 2. El script reaplica el idioma, actualiza el mod de traducción y compara con `datos/mods.json`.
 3. Si hay mods sin registrar, los apunta en `auto_espanol.log` («Mods nuevos sin registrar/traducir»).
-4. Pídele a Claude «traduce los mods nuevos de Isaac»: añade su ficha a `mods.json`, sus nombres a la tabla del mod local y regenera `docs/`.
+4. Pídele a Claude «traduce los mods nuevos de Isaac»: añade su ficha a `mods.json`, extrae y traduce sus descripciones de EID con `scripts/traduccion_eid/` y regenera `docs/`.
 
 > La traducción de **textos nuevos** no puede hacerla un script sin un traductor: el script detecta y avisa, y la traducción la hace Claude con ese aviso.
 

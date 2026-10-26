@@ -1,0 +1,160 @@
+0	Genera 1 Dado de cristal cada 8 salas
+1	Los Dados de cristal imitan a un dado y se rompen tras usarlos
+2	Vuela en diagonal por la sala
+3	Puede soltar un Esbirro de Fiend al chocar con un enemigo o una lágrima
+4	Los esbirros atacan a los enemigos y desaparecen al limpiar la sala
+5	{{Chargeable}} Mientras disparas, Bebé Cráter crea un círculo de lágrimas
+6	Las lágrimas salen cuando Isaac deja de disparar
+7	3.5 de daño por lágrima
+8	Spooter de tono azul que persigue a los enemigos
+9	Dispara lágrimas a sus objetivos cada cierto tiempo
+10	Familiar caracol que se esconde en su concha al recibir un proyectil
+11	Randy puede rebotar por la sala al chocar repetidamente con proyectiles
+12	Nv1: orbital ondulante
+13	Nv2: orbital que dispara explosiones débiles
+14	Nv3: familiar que se teletransporta y persigue a los enemigos
+15	Nv4: familiar que se teletransporta y dispara maíz explosivo
+16	{{Warning}} Isaac queda inmovilizado y debe tomar 7 píldoras aleatorias
+17	{{Heart}} +1 vida
+18	{{Coin}} +6 monedas
+19	{{Speed}} Caminar cerca de monedas aumenta la velocidad
+20	Recoger monedas daña a todos los enemigos de la sala
+21	{{Warning}} Al entrar en una sala ocupada, te quitan 3 céntimos y los esparcen por la sala
+22	Los enemigos tienen un 5% de probabilidad de soltar un Esbirro de Fiend al morir
+23	{{Luck}} 20% de probabilidad con 14 de suerte
+24	Los esbirros atacan a los enemigos y desaparecen al limpiar la sala
+25	{{ffImmoralHeart}} Se suma una probabilidad extra por cada corazón inmoral que tengas
+26	Sirve para cambiar un objeto de una {{TreasureRoom}} sala del tesoro por otro de mayor calidad
+27	Para ello hay que recorrer una Zona psiónica única y luchar contra el minijefe Ermitaño
+28	{{Warning}} Solo se puede usar en las {{TreasureRoom}} salas del tesoro
+29	{{EmptyBoneHeart}} +1 corazón de hueso
+30	Recibir daño puede lanzar costillas en círculo a tu alrededor
+31	Las costillas vuelven a quien las lanzó y solo se destruyen al tocarlo
+32	Las costillas pueden destruir proyectiles enemigos
+33	↑ +0.15 Velocidad de tiro
+34	!!! Te quita un corazón rojo, pero no te mata
+35	{{HalfSoulHeart}} +1 medio corazón de alma
+36	20% de probabilidad de disparar una ráfaga de lágrimas débiles que dejan charco amarillo
+37	Las bombas generan un familiar Pooter al explotar
+38	Cada lágrima disparada lanza 3 lágrimas más débiles repartidas alrededor de Isaac
+39	Estas lágrimas hacen el 30% de tu daño
+40	Cada vez que se activa, el ángulo de todas las lágrimas gira en sentido horario
+41	{{Warning}} No te da vuelo
+42	{{Coin}} 25% de probabilidad de generar una moneda
+43	{{Card}} {{Pill}}25% de generar una carta o píldora
+44	Varios efectos según la sala actual y la exploración
+45	{{Warning}} ¡Reúne los 6 para una sorpresa!
+46	Mueve todas las entidades a la parte inferior de la sala
+47	Genera una baratija de Golem al cogerlo
+48	{{Trinket}} Al usarlo, muele tu baratija actual y la convierte en baratija de roca
+49	{{Trinket}} Si llevas una baratija de roca, al usarlo la cambia por otra
+50	Otorga lágrimas aguja que perforan y {{ffSew}} cosen a los enemigos
+51	{{ffSew}}  Los enemigos cosidos reflejan el daño recibido a todos los demás enemigos cosidos
+52	{{Chargeable}} Familiar que se carga para lanzar tiros explosivos
+53	Cuando dañan a Isaac, puede caer al suelo y apuntar solo a los enemigos
+54	{{Warning}} Los tiros de Ipecac pueden dañar a Isaac
+55	Gancho lanzable para desplazarse rápido
+56	Sirve para subirse a las rocas
+57	{{Warning}} Isaac puede recibir daño al caer en pozos
+58	Familiar basado en Grabber, del exitoso videojuego Grabber
+59	Imita tus movimientos y agarra lo que tiene delante
+60	Inflige 5 de daño por segundo
+61	{{Coin}} Puedes comprar objetos y recolectables aunque no te llegue el dinero
+62	↓ Si Isaac compra algo que no puede pagar, sufre una bajada temporal multiplicativa de daño
+63	El daño vuelve a la normalidad cuando Isaac salda su deuda
+64	↑ +5 Suerte
+65	↓ -0.5 de suerte por cada piso que avanza Isaac, hasta un mínimo de 0.5 de suerte
+66	{{ffHitbox}} La hitbox se reduce y se indica con un marcador
+67	{{Damage}} Esquivar un proyectil por los pelos da +0.2 de daño durante la sala, hasta +3 de daño
+68	{{Poison}} Los enemigos pueden soltar una nube venenosa persistente al morir
+69	{{Luck}} La probabilidad escala con la suerte y con la vida máxima del enemigo
+70	{{Bomb}} Las bombas sueltan una nube venenosa persistente al explotar
+71	{{Luck}} Isaac late en rojo y, cerca de los enemigos, tiene una probabilidad según la suerte de tirarse un pedo
+72	20% de probabilidad de un pedito
+73	{{Confusion}} 40% de probabilidad de un pedo normal que confunde a los enemigos
+74	{{Poison}} 38% de probabilidad de un pedo con nube venenosa
+75	{{Poison}} 2% de probabilidad de varios pedos venenosos
+76	{{Damage}} El aumento de daño escala con los récords actuales de los canales de contar del Discord de la comunidad de Fiend Folio
+77	{{SoulHeart}} +1 corazón de alma
+78	↑ +0.9 Daño
+79	Al entrar en una sala, todos los enemigos se congelan 0.9 segundos
+80	↑ +0.23 Velocidad de tiro
+81	{{SoulHeart}} +2 corazones de alma
+82	↑ +1 vida
+83	{{HealingRed}} Cura 1 corazón
+84	↑ x1.5 multiplicador de daño
+85	↑ x1.1 multiplicador de cadencia
+86	20% de probabilidad de disparar una lágrima gusano de la fortuna que inflige x1.05 de daño
+87	{{Luck}} 33% de probabilidad con 2 de suerte
+88	{{Slow}} Las lágrimas dejan al impactar un charco de aceite ralentizador
+89	Pasar por encima del aceite lo prende
+90	Las llamas pueden prender otros charcos de aceite cercanos
+91	Mantener el botón USAR ({{ButtonLT}}) te obliga a quedarte quieto
+92	Al soltar USAR ({{ButtonLT}}), Isaac se tira un pedo, más potente cuanto más tiempo lo mantengas
+93	Gancho lanzable que atrae enemigos y recolectables
+94	Los enemigos enganchados quedan magullados y, al soltarlos, sufren hemorragia
+95	{{ffHemorrhage}}  Los enemigos con hemorragia reciben daño sin parar y escupen charcos de sangre y lágrimas
+96	Familiar Wall Creep que intenta alinearse con los enemigos y dispara ráfagas de lágrimas
+97	Dispara una ráfaga de 4 lágrimas de 2 de daño cada una
+98	Familiar inmóvil que aparece en el centro de la sala
+99	Si hay enemigos en la sala, Gorgoneion los mira y los petrifica
+100	{{Damage}} Da cada vez más daño y lágrimas si se usa varias veces
+101	{{Tears}} El daño y las lágrimas desaparecen poco a poco si no se usa
+102	{{Coin}} Da premios en monedas tras un número creciente de usos
+103	Tras suficientes usos alcanzas el prestigio y A.V.G.M genera un pedestal con un objeto
+104	Familiar serpiente ondulante que persigue a los enemigos, los envenena y los daña al contacto
+105	{{Poison}} Persigue primero a los enemigos que no están envenenados
+106	Escupe muchas lágrimas que dejan charco cuando Isaac recibe daño
+107	Familiar que engancha enemigos y recolectables
+108	Úsalo para convertirte en una bola de fuego maliciosa que embiste por la sala
+109	{{HalfBlackHeart}} Si eres Fiend contaminado, los enemigos muertos en este estado tienen un 35% de probabilidad de soltar medios corazones negros
+110	Familiar roca mascota que se puede empujar y bloquea disparos
+111	Rellena los pozos al empujarla dentro
+112	{{Collectible515}} Sustituye todos los objetos encontrados por Regalo misterioso
+113	No afecta a los objetos de la historia, recompensas especiales ni objetos generados por Regalo misterioso
+114	¡Mejor guárdalo bien!
+115	{{Warning}} He oído que un tipo turbio del siguiente piso lo anda buscando...
+116	{{BlackHeart}} +1 corazón negro
+117	Garantiza una maldición en cada piso
+118	{{ffCursesBlackLantern}} Sustituye las maldiciones por nuevos tipos especiales que pueden ser beneficiosos
+119	El próximo objeto activo que cojas va a tu ranura de activo de bolsillo
+120	Los enemigos muertos por lágrimas se vuelven Mártires
+121	{{ffMartyr}}  Los enemigos mártires dejan un fantasma breve con un aura
+122	{{ffMartyr}}  Estar dentro del aura da lágrimas, daño, lágrimas teledirigidas y un 50% de probabilidad de bloquear daño
+123	Adormece a todos los enemigos durante 6 segundos
+124	Otorga lágrimas multicolor con distintos efectos de Fiend Folio
+125	↑ +1 vida
+126	{{Player⟨pl:Fiend⟩}} Al morir, Isaac reaparece como Fiend en la sala anterior
+127	Alterna entre dos modos
+128	Alta probabilidad de cambiar los elementos del suelo y baja de borrarlos
+129	{{ffBruise}} 20% de probabilidad de disparar lágrimas bala que magullan a los enemigos
+130	{{ffMorbidHeart}} +1 corazón mórbido
+131	{{GoldenHeart}} +1 corazón dorado
+132	{{EternalHeart}} +1 corazón eterno
+133	Familiar que embiste a los enemigos
+134	{{ffBerserk}} Pulsar dos veces disparar posee al enemigo más cercano y lo enfurece
+135	Pulsar dos veces de nuevo hace que el familiar salga del enemigo disparando lágrimas
+136	{{ffImmoralHeart}} +1 corazón inmoral
+137	↑ +1.4 Daño
+138	{{ffImmoralHeart}} Convierte todos los corazones de alma y negros en corazones inmorales
+139	{{Heart}} Sustituye todos los corazones rojos por corazones inmorales
+140	{{EmptyHeart}} Al usarlo, convierte la mitad de tu vida en Esbirros de Fiend
+141	Genera un conjunto aleatorio de recolectables
+142	Al empezar la siguiente partida, genera el consumible que lleve Isaac y el 10% de tus recolectables al final de esta
+143	{{HalfHeart}} +1 contenedor de corazón medio lleno
+144	↑ +0.1 Alcance
+145	↑ +0.1 Velocidad de tiro
+146	↑ +0.1 Suerte
+147	{{Coin}} +0.1 monedas
+148	{{ffImmoralHeart}} +3 corazones inmorales
+149	{{ffImmoralHeart}} +2 corazones inmorales
+150	{{RottenHeart}} +1 corazón podrido
+151	↑ +2.5 Alcance
+152	↑ +0.2 Daño
+153	↑ +0.2 Lágrimas
+154	↑ +0.7 Lágrimas
+155	↓ -0.2 Velocidad de tiro
+156	Al usarlo, dispara 5 llamas en anillo a tu alrededor
+157	{{Freezing}} 8% de probabilidad de disparar un fuego helado que bloquea disparos enemigos e inflige daño por contacto
+158	Los fuegos desaparecen tras bloquear 4 disparos, infligir daño 4 veces o a los 10 segundos
+159	Al morir, los enemigos generan una cruz que daña a los enemigos en un área

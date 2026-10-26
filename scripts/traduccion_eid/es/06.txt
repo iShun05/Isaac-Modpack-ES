@@ -1,0 +1,160 @@
+0	Genera un charco de sangre cuando Isaac recibe daño
+1	{{BleedingOut}} 10% de probabilidad de disparar lágrimas que causan sangrado
+2	{{Charm}} Encanta a los enemigos en un radio corto alrededor de Isaac
+3	{{Slotmachine}} 25% de probabilidad de que las máquinas tragaperras sean gratis
+4	{{Luck}} 66% de probabilidad con 17 de suerte
+5	{{Heart}} 20% de probabilidad de soltar un corazón rojo al recibir daño
+6	Al recibir daño explosivo, 35% de probabilidad de soltar:
+7	{{SoulHeart}} Corazón de alma
+8	{{Bomb}} Bomba
+9	{{Key}} Llave
+10	{{Chest}} Cofre
+11	Recibir daño da un escudo temporal de 6 segundos que bloquea un proyectil
+12	Recibir daño por contacto renueva la duración
+13	{{Slow}} Los enemigos cercanos a Isaac se ralentizan
+14	{{Freezing}} Los enemigos en un radio corto de Isaac se congelan al morir
+15	{{Charm}} Genera Esporas shiitake aliadas en las salas sin limpiar, con un máximo de 3 a la vez
+16	{{Coin}} Soltar la baratija en una {{Shop}} tienda la cambia por 10-20 monedas
+17	{{Trinket}} Aumenta un 30% el poder de las baratijas de roca que lleves
+18	Repele enemigos y proyectiles cercanos, pero pierde poder poco a poco
+19	{{Battery}} Se puede recargar con baterías
+20	Se recarga en cada piso nuevo
+21	{{Burning}} 2% de probabilidad de quemar a los enemigos cercanos en cada fotograma
+22	Al molerla en la Máquina minera, funde la otra baratija que lleves
+23	En cada sala hay un 6% de probabilidad de que el Huevo de trueno se abra y dé una roca de mayor calidad
+24	La probabilidad aumenta en cada sala, hasta un 50%
+25	Totalmente imposible de conseguir, ¡ni lo intentes!
+26	{{Confusion}} 20% de probabilidad de disparar una roca que confunde e inflige x4 de daño, pero encoge con el tiempo
+27	{{Luck}} 100% de probabilidad con 27 de suerte
+28	{{Trinket⟨t:Pocket Sand⟩}} Se convierte en Arena de bolsillo al recibir daño explosivo
+29	{{Key}} Genera una llave al cogerla
+30	Si hay una puerta cerrada con llave en la sala, la primera roca rota suelta una llave
+31	20% de probabilidad de disparar una salpicadura de lágrimas de corto alcance
+32	{{Luck}} 50% de probabilidad con 15 de suerte
+33	Con enemigos cerca, pequeña probabilidad de crear un charco
+34	↑ +0.2 Daño por cada enemigo muerto en la sala
+35	↑ +1 Daño al recibir daño
+36	Los bonus de daño se desvanecen con el tiempo
+37	{{Collectible149}} Isaac puede disparar un tiro de Ipecac cada 15 segundos
+38	Moler esta roca en la Máquina minera da dos rocas comunes o raras
+39	20% de probabilidad de aplicar Condena a 3 enemigos al empezar la sala
+40	{{ffDoom}}  Los enemigos condenados tienen un contador que baja cada vez que reciben daño
+41	{{ffDoom}}  Al llegar a cero, el enemigo recibe una gran cantidad de daño
+42	↑ +0.27 Lágrimas
+43	Se suelta a la fuerza al recibir daño
+44	Se rompe si recibes daño estando vacía
+45	↑ +0.8 Lágrimas
+46	Isaac nunca deja de disparar
+47	Da a Isaac 2 láseres giratorios de corto alcance que causan efectos de estado aleatorios
+48	15% de probabilidad de disparar una lágrima de cristal que encanta e inflige x1.5 de daño
+49	{{HalfHeart}} Los enemigos tienen un 15% de probabilidad de soltar al morir medio corazón rojo rosa que desaparece a los 2 segundos
+50	{{Luck}} 40% de probabilidad con 25 de suerte
+51	{{Key}} Cada vez que Isaac usa una llave:
+52	↑ +0.1 Lágrimas
+53	Las estadísticas desaparecen al entrar en un piso nuevo
+54	{{ffGrind}} La Máquina minera cuesta 1 céntimo menos
+55	Isaac suda sin parar lágrimas en arco
+56	{{Heart}} El sudor aumenta cuanto menos vida tenga Isaac
+57	7% de probabilidad de disparar una lágrima que frena y adormece
+58	{{Luck}} 100% de probabilidad con 47 de suerte
+59	Recibir daño aparta a los enemigos cercanos e inflige 2x el daño de Isaac
+60	Los enemigos apartados también quedan magullados
+61	{{ffBruise}}  Los enemigos magullados reciben daño extra por cada acumulación
+62	Al molerla en la Máquina minera siempre genera una baratija dorada rara o mejor
+63	33% de probabilidad de que aparezca una cama al empezar cada piso
+64	{{Heart}} Cura 2 corazones al empezar cada piso
+65	{{SoulHeart}} Dormir en una cama da 2 corazones de alma extra
+66	Genera un familiar bebé Golem
+67	Inflige 5 de daño por lágrima
+68	{{Confusion}} Estas lágrimas tienen más retroceso y un 20% de probabilidad de confundir
+69	Dispara lágrimas a los enemigos cercanos
+70	Las lágrimas infligen el daño de Isaac
+71	Sigue disparando aunque esté en el suelo
+72	Dispara potentes tiros explosivos a los enemigos cercanos que infligen 10 + el daño de Isaac
+73	Los tiros explosivos no dañan a Isaac
+74	Genera de forma pasiva pequeñas burbujas que bloquean proyectiles
+75	Las burbujas infligen 2.62 de daño
+76	Sigue soltando burbujas aunque esté en el suelo
+77	Dispara sin parar lágrimas en una dirección cardinal aleatoria que infligen el daño de Isaac
+78	Atrae a todos los enemigos hacia Isaac cada 2 segundos
+79	Sigue atrayendo aunque esté en el suelo
+80	Dispara cada cierto tiempo rayos de azufre en una dirección cardinal aleatoria que infligen 0.66x el daño de Isaac
+81	Sigue disparando rayos aunque esté en el suelo
+82	Dispara sin parar lágrimas en forma de + y x que infligen el daño de Isaac
+83	Dispara sin parar un láser giratorio que inflige 0.66x el daño de Isaac
+84	Sigue disparando láseres aunque esté en el suelo
+85	{{Charm}} Genera una copia aliada de un enemigo de la sala
+86	Las copias desaparecen al salir de la sala
+87	Sigue generando copias aunque esté en el suelo
+88	Atrae los recolectables sin parar
+89	Sigue atrayendo recolectables aunque esté en el suelo
+90	Dispara un triple disparo a los enemigos cercanos que inflige el daño de Isaac
+91	Caminar en una dirección hace que la gárgola dispare hacia allí
+92	Las lágrimas escalan con el daño de Isaac
+93	Los enemigos a menos de {{ColorYellow}} 2.5 casillas {{ColorWhite}}reciben un{{ColorYellow}} 20%{{ColorWhite}} más de daño {{ColorGray}}(+20% por acumulación)
+94	Empiezas cada combate con {{ColorCyan}}1{{CR}} de {{ColorYellow}}Destreza{{CR}}
+95	{{Heart}} Todos los corazones rojos curan medio corazón adicional
+96	Al entrar en cualquier tipo de {{SecretRoom}} sala secreta, Isaac gana al azar uno de estos:
+97	↑ +0.3 Lágrimas
+98	↑ +0.38 Alcance
+99	↑ +0.3 Velocidad de tiro
+100	Deja un rastro de charco de lima que inflige 0.5x el daño de Isaac
+101	Encanta para siempre a los enemigos relacionados con cítricos
+102	33% de probabilidad de que los enemigos Sourpatch se sustituyan por Limepatches
+103	↑ Ganas daño y velocidad cuanto más cerca esté Isaac de los enemigos
+104	{{Heart}} 25% de probabilidad de bloquear el daño a corazones rojos
+105	{{HalfHeart}} El daño a corazones rojos es siempre de medio corazón
+106	↓ -100 Suerte
+107	Distorsiona la pantalla y la música
+108	{{Slow}} Ralentiza a los enemigos en un radio pequeño alrededor de Golem
+109	Las explosiones hacen caer rocas del techo
+110	Las rocas del techo infligen 2x el daño de Isaac
+111	Evita el daño de los proyectiles que caen
+112	Otorga una gema teledirigida que se lanza al atacar, se pega a los enemigos y los daña y magulla
+113	{{Collectible722}} Encadena 7 segundos al enemigo con más vida al empezar cada sala
+114	Los enemigos encadenados no pueden moverse ni atacar
+115	{{Timer}} Recibir daño da un aumento temporal de velocidad y confunde a los enemigos cercanos durante 7 segundos
+116	Moler esta roca en la Máquina minera da una geoda común o rara
+117	Moler otras rocas en la Máquina minera cura medio corazón rojo
+118	15% de probabilidad de disparar una lágrima muy lenta que inflige más daño cuanto más lejos llega
+119	{{Luck}} 50% de probabilidad con 43 de suerte
+120	↑ +0.3 Velocidad
+121	↑ +0.15 Lágrimas
+122	↑ +0.75 Alcance
+123	↑ +0.18 Velocidad de tiro
+124	↑ +0.5 Daño
+125	Los enemigos obtienen un punto débil aleatorio orientado hacia una dirección aleatoria
+126	Si se les daña desde esa dirección, reciben x1.5 de daño
+127	Usar un objeto activo electrocuta a los enemigos cercanos
+128	El daño escala con la cantidad de carga y el daño de Isaac
+129	Los efectos varían según el objeto activo de Isaac
+130	{{SoulHeart}} Si Isaac pierde todos sus corazones de alma:
+131	{{Collectible313}} Obtiene un escudo de Manto sagrado
+132	{{Timer}} Se vuelve invencible durante 10 segundos
+133	La primera compra en una {{Shop}} tienda tiene un gran descuento
+134	Tras comprar un objeto, desaparece y aparece en el siguiente piso
+135	Genera un familiar orbital tambaleante que apunta al enemigo o proyectil más cercano
+136	Bloquea disparos e inflige 0.5x el daño de Isaac
+137	Recibir daño genera uno de estos:
+138	{{Collectible634}} Un fantasma teledirigido que explota
+139	{{Collectible684}} Un fantasma que persigue a los enemigos, inflige daño por contacto y explota a los 3 segundos
+140	15% de probabilidad de que aparezca cualquiera de los fantasmas al destruir rocas
+141	{{Trinket⟨t:Pocket Sand⟩}} Anula 3 golpes antes de convertirse en Arena de bolsillo
+142	{{Trinket⟨t:Pocket Sand⟩}} Anula 2 golpes antes de convertirse en Arena de bolsillo
+143	{{Trinket⟨t:Pocket Sand⟩}} Anula 1 golpe antes de convertirse en Arena de bolsillo
+144	30% de probabilidad de obtener al recibir daño un escudo que dura una sala y bloquea un golpe
+145	{{Luck}} 100% de probabilidad con 35 de suerte
+146	Los enemigos salen despedidos al romperse el escudo
+147	↑ +5 Suerte
+148	↓ Al recibir daño, Isaac pierde 1 de suerte durante el piso
+149	{{Poison}} Las rocas tienen un 10% de probabilidad de soltar gas venenoso cada 4 segundos
+150	35% de probabilidad de que las rocas suelten grandes nubes de gas venenoso al romperse
+151	{{Luck}} 100% de probabilidad con 65 de suerte
+152	El gas venenoso no daña a Isaac
+153	Elimina todos los proyectiles al limpiar la sala y al recibir daño
+154	Genera 3 burbujas al recibir daño
+155	Genera 3 fuegos fatuos al entrar en una sala de {{BossRoom}} jefe o de {{MiniBoss}} minijefe
+156	Genera 3 fuegos fatuos al empezar una {{ChallengeRoom}} sala de desafío
+157	Genera en cada sala un órgano orbital aleatorio que inflige 0.5x el daño de Isaac y bloquea disparos
+158	Los órganos tienen efectos especiales al recibir proyectiles
+159	Al recibir daño mortal, Isaac tritura otra baratija de roca que lleve para evitar la muerte

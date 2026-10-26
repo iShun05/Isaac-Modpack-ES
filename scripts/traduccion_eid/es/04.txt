@@ -1,0 +1,160 @@
+0	↑ x0.75 multiplicador de cadencia
+1	{{Player⟨pl:China⟩}} Al morir, Isaac revive como China
+2	{{Warning}} Soltar o hacer explotar la baratija la rompe
+3	↑ x0.9 multiplicador de cadencia
+4	{{Player⟨pl:Craig⟩}} Al morir, Isaac revive como Craig
+5	{{MiniBoss}} En cada piso se genera 1 sala de minijefe adicional
+6	{{Collectible638}} Una vez por piso, se borra un enemigo aleatorio
+7	{{Key}} Todas las llaves tienen la misma probabilidad de ser de cualquier tipo posible
+8	Los tenderos de las salas secretas se sustituyen por cúmulos de runas
+9	{{Rune}} Volar un cúmulo de runas suelta:
+10	1-3 fragmentos de runa
+11	Una o dos runas aleatorias
+12	{{BrokenHeart}} Se anula todo el daño recibido y, en su lugar, ganas +1 corazón roto al recibir daño
+13	Genera 2 familiares Mano roja que llegan volando desde fuera de la pantalla
+14	Estos familiares arrastran a Isaac, a los recolectables y a los enemigos
+15	50% de probabilidad de que cualquier {{Chest}} cofre o {{GoldenChest}} cofre dorado se sustituya por un {{ffDireChest}} cofre funesto
+16	5% de probabilidad de soltar un pedo aleatorio cerca de los enemigos
+17	{{Luck}} 100% de probabilidad con 48 de suerte
+18	{{Bomb}} 40% de que las bombas aleatorias se sustituyan por bombas de cobre
+19	{{ffCopperBomb}} 5% de probabilidad de soltar una bomba de cobre al limpiar la sala
+20	5% de probabilidad de soltar una carta de energía al limpiar la sala
+21	Usar una carta de energía tiene un 33% de probabilidad de generar otra carta de energía aleatoria
+22	30% de probabilidad de que los pedestales nuevos se sustituyan por un objeto pasivo que ya tienes
+23	No te dará duplicados inútiles
+24	{{Collectible572}} 5% de probabilidad de disparar una lágrima metálica de Ojo del ocultismo con más alcance y el doble de daño
+25	{{Luck}} 50% de probabilidad con 9 de suerte
+26	{{Beggar}} 80% de probabilidad de que aparezca otro mendigo más pequeño al volar un mendigo
+27	Coger una moneda tiene un 17% de probabilidad de generar un Bobby frágil
+28	{{Collectible8}} Los Bobbies frágiles son como Hermano Bobby, pero pueden morir
+29	{{HalfHeart}} La vida sobrante de los corazones recogidos se queda en el suelo para usarla después
+30	↑ +0.25 Daño
+31	{{Damage}} +0.1 de daño por cada objeto de referencia que tenga Isaac
+32	{{Damage}} Las baratijas dan +0.25 de daño
+33	{{Damage}} Los objetos activos dan +0.5 de daño
+34	Las referencias vagas solo dan la mitad del daño correspondiente
+35	{{ffCopperBomb}} Todas las bombas que coloca Isaac se vuelven bombas de cobre
+36	{{Bomb}} Aumenta en 50 el daño fijo de las bombas que genera Isaac
+37	{{Collectible52}} Da un multiplicador de daño de 1.25x a las bombas de Dr. Fetus
+38	10% de probabilidad de que los enemigos aparezcan con el estado Glitch
+39	{{Card⟨k:Download Failure⟩}} Los enemigos con glitch se deslizan por la sala
+40	Los enemigos con glitch generan 3 bichos azules al morir
+41	Tras 2.5 segundos sin disparar, el siguiente disparo inflige el doble de daño y va más rápido
+42	Ese disparo inflige el daño base en un pequeño radio a su alrededor al impactar
+43	Usar una carta da 4-5 huesos orbitales
+44	Coger una moneda genera un Escarabajo azul
+45	Los Escarabajos azules son criaturas aliadas que protegen a Isaac de ataques y proyectiles
+46	{{ffLilPenny}} Coger una moneda genera 1-4 Lil' Pennies
+47	25% de probabilidad de disparar lágrimas aguja que perforan y cosen a los enemigos
+48	{{Luck}} 100% de probabilidad con 6 de suerte
+49	{{ffSew}} Los enemigos cosidos reflejan el daño recibido a todos los demás enemigos cosidos
+50	Ya no aparecen los enemigos de la oleada 2
+51	No afecta a las salas de varias oleadas como el {{BossRushRoom}} Boss Rush o las {{ChallengeRoom}} salas de desafío
+52	{{Bomb}} Colocar una bomba también coloca una bomba trampa en la sala
+53	Las bombas trampa evitan a Isaac y van a por los enemigos
+54	{{Bomb}} Convierte todas las cartas de palo en cartas de tréboles, si es posible
+55	{{Key}} Convierte todas las cartas de palo en cartas de picas, si es posible
+56	{{Coin}} Convierte todas las cartas de palo en cartas de diamantes, si es posible
+57	{{Heart}} Convierte todas las cartas de palo en cartas de corazones, si es posible
+58	↑ Gran aumento de todas las estadísticas
+59	↓ El aumento se reduce con cada objeto que tengas, hasta 0 con 10 objetos
+60	15% de probabilidad de disparar lágrimas que adormecen a los enemigos
+61	{{Luck}} 30% de probabilidad con 25 de suerte
+62	{{ffSleeping}}  Los enemigos adormecidos se ralentizan y acaban durmiéndose
+63	{{ffSleeping}}  Los enemigos dormidos reciben el doble de daño
+64	{{Chargeable}} Obtienes un ataque cargado que crea pinchos de roca en las cuatro direcciones
+65	El ataque de pinchos de roca escala con el daño de Isaac
+66	{{HalfHeart}} 50% de probabilidad de curar medio corazón si no aparece recompensa al limpiar la sala
+67	Soltar esta baratija en una sala sin limpiar hace crecer una enredadera que atrapa a los enemigos cercanos
+68	Recibir daño suelta la baratija automáticamente
+69	{{Battery}} Todas las baterías se sustituyen por baterías virtuosas, malditas o de fuegos artificiales
+70	{{Coin}} 50% de probabilidad de sustituir las cartas de las tiendas por baterías
+71	{{BlackHeart}} ↑ Aumenta el daño cada vez que se agota un corazón negro
+72	Los corazones negros ya no dañan a los enemigos
+73	25% de probabilidad de disparar en forma de cruz
+74	{{Luck}} 45% de probabilidad con 15 de suerte
+75	{{Charm}} En el suelo actúa como un Muslito aliado
+76	Es un proyectil
+77	No deberías tener esto
+78	Puede aparecer a menudo una bola de fuego orbital alrededor de Isaac
+79	{{Collectible⟨c:Pyromancy⟩}} Genera bolas de fuego 3x más despacio que Piromancia
+80	{{Collectible331}} 10% de probabilidad de disparar una lágrima de Godhead
+81	{{Luck}} 40% de probabilidad con 8 de suerte
+82	Coger una moneda genera una bola de fuego orbital
+83	↑ +18 Alcance
+84	Las lágrimas de Isaac se mueven en onda tangente
+85	Quita todos los mensajes de la fortuna
+86	Avisa a Isaac cuando bloquea un mensaje
+87	↑ +0.1 Daño
+88	Hace comentarios perspicaces sobre muchas cosas
+89	Señala las rocas tintadas que se te han pasado
+90	Usa automáticamente tu objeto activo y los consumibles que lleves
+91	Empieza a usar tu objeto activo automáticamente al entrar en la sala
+92	Los objetos sin carga se usan automáticamente
+93	Coger una moneda tiene un 8% de probabilidad de generar una baratija moneda
+94	Impide que aparezcan objetos de referencia
+95	Todos los fuegos se sustituyen por fuegos campeones
+96	7% de probabilidad de que los elementos del suelo se conviertan en fuegos campeones
+97	Los fuegos campeones tienen efectos como los de los enemigos campeones al destruirse
+98	Se saltan todas las {{BossRoom}} salas del jefe que no son de la historia: no dan recompensa y el jefe se borra al instante
+99	Isaac empieza cada piso en una sala especial aleatoria
+100	↑ +2.5 Daño
+101	Recibir daño reduce poco a poco este bonus de daño
+102	{{Heart}} 10% de probabilidad de generar un corazón de tipo aleatorio al coger un corazón
+103	Todas las {{SecretRoom}} salas secretas se sustituyen por {{SuperSecretRoom}} salas supersecretas
+104	Las bombas y llaves del suelo se intercambian entre sí cada cierto tiempo
+105	Revela las salas en un radio de 5x5 al empezar un piso nuevo
+106	{{Heart}} Cura 1 corazón al empezar un piso nuevo
+107	Isaac inflige 40 de daño a todos los enemigos en la primera 1 sala en la que entra en cada piso
+108	{{ffHoney}} Coger una moneda tiene un 50% de probabilidad de dar un rastro y lágrimas que ralentizan durante un tiempo
+109	20% de probabilidad al entrar en una sala nueva de paralizar a todos los enemigos hasta que Isaac ataque o pase suficiente tiempo
+110	{{ffToken}} Genera una Ficha en el siguiente piso
+111	Las fichas imitan el efecto del último recolectable que cogiste
+112	La baratija se destruye en el siguiente piso
+113	Matar a un enemigo genera una Araña bebé azul
+114	{{TreasureRoom}} Si te saltas la sala del tesoro de un piso:
+115	↑ +1 Daño
+116	↑ +0.1 Daño al primer recolectable
+117	↑ +0.33 Daño al entrar en un piso nuevo
+118	Solo pueden aparecer los pisos clásicos (Sótano, Cuevas, Profundidades, Útero)
+119	No hace nada más allá del Útero
+120	No hace nada en la ruta alternativa (Diluvio, Escoria, Minas, Pozo de ceniza, Mausoleo, Gehena, Cadáver)
+121	{{Luck}} 10% de probabilidad de disparar 1 disparo cuádruple
+122	{{Damage}} Las lágrimas del disparo cuádruple infligen x0.7 de daño cada una
+123	{{Collectible‹CollectibleType.COLLECTIBLE_PAUSE›}} Recibir daño paraliza a todos los enemigos de la sala hasta 5 segundos
+124	Atacar rompe la pausa antes de tiempo
+125	50% de probabilidad de que los mendigos se sustituyan por mendigos falsos
+126	La próxima vez que fueras a perder un objeto por cualquier motivo, se pierde el Cordero de peluche en su lugar
+127	{{Collectible‹CollectibleType.COLLECTIBLE_STEAM_SALE›}} Durante hasta 2 minutos tras entrar en un piso, algunos objetos de la tienda cuestan la mitad
+128	Entrar en una sala hostil genera un Escarabajo morado
+129	Este escarabajo refleja proyectiles con un 50% de probabilidad de que inflijan 5x de daño
+130	Entrar en una sala hostil genera un Escarabajo negro
+131	{{Slow}} Este escarabajo refleja proyectiles que ralentizan a los enemigos y dejan un charco ralentizador al impactar
+132	Entrar en una sala hostil genera un Escarabajo rojo
+133	Este escarabajo refleja proyectiles que infligen 1.5x de daño y hacen que los enemigos suelten corazones temporales al morir
+134	Entrar en una sala hostil genera un Escarabajo gris
+135	Este escarabajo refleja proyectiles que se dividen en dos lágrimas de hueso al impactar
+136	20% de probabilidad de generar una Mariquita aleatoria al matar a un enemigo
+137	Las moscas, arañas, skuzzes y escarabajos azules se convierten en otro tipo al aparecer
+138	Ganar corazones negros también convierte hasta 2 corazones de alma en corazones negros
+139	Otorga un familiar bombilla que ataca a los enemigos después de que Isaac use un objeto activo
+140	El familiar bombilla inflige 2.75 de daño
+141	El tiempo activo escala con la carga del activo
+142	25% de probabilidad de curar 1 corazón dañado tras limpiar una sala
+143	{{Key}} Coger llaves no te da una llave, sino un fuego fatuo llave gris
+144	Los fuegos fatuos llave se gastan solos para abrir lo más cercano a Isaac
+145	Coger una llave tiene un 25% de probabilidad de generar dos fuegos fatuos llave grises
+146	↓ -0.1 Velocidad
+147	Da a Isaac una roca grande que puede empujar
+148	La roca inflige 60 de daño por segundo y puede bloquear disparos
+149	{{Damage}} La roca se vuelve más poderosa cuantas más muertes consigas con ella
+150	{{Speed}} Cuantas más muertes consiga Isaac con la roca, más despacio se mueve
+151	Se salta automáticamente el primer piso de los 4 primeros capítulos
+152	Genera 1 mini Mosca nivel 0 al entrar en una sala sin limpiar
+153	{{Collectible285}} La mini Mosca nivel 0 hace involucionar a los enemigos que toca
+154	{{Collectible⟨c:Lil Fiend⟩}} Otorga Lil Fiend o Lil Friend
+155	{{Collectible⟨c:Lil Friend⟩}} Cambia en cada sala
+156	Una vez por piso, se marca a un enemigo
+157	{{ffMarked}} Los enemigos marcados son más grandes, tienen más vida y escupen lágrimas
+158	{{Coin}} Matar a un enemigo marcado suelta 1 níquel
+159	Genera un Esbirro de Fiend permanente que te ayuda en la siguiente sala a la que vaya Isaac

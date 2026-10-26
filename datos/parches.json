@@ -1,0 +1,112 @@
+{
+ "_info": "Copias corregidas de mods de Workshop (las usan isaac_pack.py en Mac y windows/lib.ps1 en Windows). El original nunca se edita: Steam lo sobrescribe. «obligatorio»: si falta el texto, no se crea la copia. «opcional»: traducciones de menús, se omiten si el autor cambia el texto.",
+ "copias": [
+  {
+   "id": "2567634705",
+   "carpeta": "job_corregido",
+   "nombre": "Job (corregido)",
+   "datos": "job",
+   "nota": "Copia local corregida de Job 2.5 (Workshop 2567634705): quita el error de require al iniciar. Mod original de AgentCucco y su equipo.",
+   "motivo": "Job 2.5 hace require() de un archivo de compatibilidad DENTRO de un callback; allí el juego busca en la carpeta del último mod cargado y falla («module job_src.mod_compat.others not found»). Ese archivo solo sirve con Tainted Treasure.",
+   "obligatorio": [
+    {
+     "viejo": "require(\"job_src.mod_compat.others\")",
+     "nuevo": "pcall(require, \"job_src.mod_compat.others\") -- parche: require fuera de la carga falla en el juego"
+    }
+   ],
+   "opcional": []
+  },
+  {
+   "id": "840107435",
+   "carpeta": "angels_drop_items_corregido",
+   "nombre": "Angels Drop Items (corregido)",
+   "datos": "angels-drop-items",
+   "nota": "Copia local corregida de Angels Drop Items 1.7 (Workshop 840107435): admite los tipos de sala de Repentance y traduce su menú. Mod original de Sokyran.",
+   "motivo": "El mod (2017) solo conoce los tipos de sala de Afterbirth+. En una sala de tipo nuevo de Repentance/Repentance+ configData[key] es nil, roomState queda nil y MC_PRE_ENTITY_SPAWN falla en cada aparición: «main.lua:325: attempt to compare number with nil». Un tipo desconocido pasa a valer 0 («Nunca»), como los demás.",
+   "obligatorio": [
+    {
+     "viejo": "roomState = configData[key]",
+     "nuevo": "roomState = configData[key] or 0 -- parche: tipos de sala de Repentance que el mod no conoce"
+    }
+   ],
+   "opcional": [
+    {
+     "viejo": "\"Enabled in normal mode\"",
+     "nuevo": "\"Activo en modo normal\""
+    },
+    {
+     "viejo": "\"Disabled in normal mode\"",
+     "nuevo": "\"Inactivo en modo normal\""
+    },
+    {
+     "viejo": "\"Enabled in greed mode\"",
+     "nuevo": "\"Activo en modo Codicia\""
+    },
+    {
+     "viejo": "\"Disabled in greed mode\"",
+     "nuevo": "\"Inactivo en modo Codicia\""
+    },
+    {
+     "viejo": "\"Use angel room pool\"",
+     "nuevo": "\"Usar el pool de la sala del angel\""
+    },
+    {
+     "viejo": "\"Use current room pool\"",
+     "nuevo": "\"Usar el pool de la sala actual\""
+    },
+    {
+     "viejo": "\"Specifies if the item dropped is going to be from angel room pool, or use the pool from the current room.\"",
+     "nuevo": "\"Indica si el objeto sale del pool de la sala del angel o del pool de la sala actual.\""
+    },
+    {
+     "viejo": "\"Fight fallen angels on refights\"",
+     "nuevo": "\"Angeles caidos al repetir el combate\""
+    },
+    {
+     "viejo": "\"Fight normal angels on refights\"",
+     "nuevo": "\"Angeles normales al repetir el combate\""
+    },
+    {
+     "viejo": "\"When you have a key piece dropped by that specific angel, they'll be replaced by their fallen version.\"",
+     "nuevo": "\"Si ya tienes la mitad de llave que suelta ese angel, aparece su version caida.\""
+    },
+    {
+     "viejo": "\"Item drop chance: \"",
+     "nuevo": "\"Probabilidad de objeto: \""
+    },
+    {
+     "viejo": "\"Drop chance increase on failed attempt: \"",
+     "nuevo": "\"Aumento de probabilidad tras fallar: \""
+    },
+    {
+     "viejo": "\"When the chance for item drop fails, the chance is increased the next time by this value.\"",
+     "nuevo": "\"Si no sale objeto, la probabilidad sube este valor en el siguiente intento.\""
+    },
+    {
+     "viejo": "\"All room types included\"",
+     "nuevo": "\"Incluye todos los tipos de sala\""
+    },
+    {
+     "viejo": "\"in case mods add angels to them\"",
+     "nuevo": "\"por si otro mod pone angeles en ellas\""
+    },
+    {
+     "viejo": "text = \"Never\"",
+     "nuevo": "text = \"Nunca\""
+    },
+    {
+     "viejo": "text = \"With key\"",
+     "nuevo": "text = \"Con llave\""
+    },
+    {
+     "viejo": "text = \"Without key\"",
+     "nuevo": "text = \"Sin llave\""
+    },
+    {
+     "viejo": "text = \"Always\"",
+     "nuevo": "text = \"Siempre\""
+    }
+   ]
+  }
+ ]
+}

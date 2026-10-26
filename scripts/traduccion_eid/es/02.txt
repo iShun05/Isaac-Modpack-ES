@@ -1,0 +1,160 @@
+0	Absorbe los charcos al pasar por encima
+1	Absorber charcos reduce el retardo de lágrimas
+2	Todos los familiares se consumen y se sustituyen por un aumento de daño
+3	Algunos familiares pueden darte efectos especiales al consumirse
+4	Afecta a todos los familiares que tengas ahora
+5	De vez en cuando Isaac deja de disparar para soltar una lluvia de lágrimas en arco alto
+6	Inmunidad al fuego
+7	Los fuegos disparan ahora a los enemigos en vez de al jugador
+8	Los fuegos rojos aparecen más a menudo
+9	Coloca un monolito en el suelo
+10	Las lágrimas que lo atraviesan se dividen en tres
+11	Cambia la distribución de las salas especiales
+12	Usarlo tiene una pequeña probabilidad de acabar destruyendo y corrompiendo el dado
+13	Orbital que refleja los proyectiles a 2x velocidad
+14	Causa sangrado al contacto
+15	Lanza una sierra circular que recorre las paredes
+16	Hace saltar las sierras activas a la pared contraria
+17	Las sierras también dañan a los jugadores
+18	Suelta una píldora
+19	Al entrar en salas nuevas puede usar una píldora que ya hayas tomado
+20	Suelta una runa
+21	Los corazones de alma que sueltan las rocas tintadas se convierten en runas
+22	↑ {{Shotspeed}} +0.2 Velocidad de tiro
+23	Aumento de daño que escala con la velocidad de tiro
+24	Genera una gran lágrima inmóvil que actúa como mina
+25	Flota para siempre y explota al tocar a un enemigo
+26	Combina con los efectos de lágrima
+27	Suelta un níquel al entrar en una tienda
+28	Suelta 3 céntimos al entrar en un salón recreativo
+29	Suelta un corazón de alma al entrar en una sala del diablo
+30	Se puede entrar gratis en las bibliotecas
+31	Vasijas, setas, calaveras, pólipos y bloques de hielo tienen el doble de probabilidad de soltar recompensas al romperse
+32	Tomar una píldora te da Ipecac durante la sala
+33	Probabilidad de que los consumibles se sustituyan por el que menos tengas
+34	También puede sustituir corazones si tienes la vida llena
+35	La probabilidad es del 25% y aumenta cuanto mayor sea la diferencia de cantidad, hasta un 25%
+36	En cada sala aparece el fantasma de un personaje aleatorio
+37	El fantasma ataca a los enemigos con los ataques de su personaje
+38	Pueden aparecer brotes en las salas
+39	Regar los brotes los convierte en familiares col
+40	Las coles tienen muchos sabores distintos
+41	Al atacar, sale de ti un anillo pulsante que empuja a los enemigos
+42	Genera 2 monedas aleatorias
+43	Te revive al morir a cambio de 33 monedas
+44	El precio sube 33 tras cada resurrección, hasta un máximo de 99
+45	Cada 10 muertes, un rayo alcanza a un enemigo aleatorio y lo convierte en un Bony azul aliado
+46	Las bombas tienen efectos únicos según el fondo de la sala actual
+47	Las lágrimas se sustituyen por una ráfaga de lágrimas de distinto tamaño y daño
+48	Los enemigos reciben hasta 2x más daño con golpes seguidos
+49	1.5x contra jefes
+50	Empiezan a aparecer enemigos píldora en las salas
+51	Estos enemigos siguen aumentando hasta que uses una píldora
+52	Las píldoras ángel sueltan píldoras buenas
+53	Las píldoras araña sueltan píldoras malas
+54	Otorga un anillo dorado a tu alrededor que dispara lágrimas orbitales
+55	Al recibir daño, el anillo rebota por la sala hasta volver contigo
+56	En las salas sin limpiar aparece un haz de luz
+57	Entrar en la luz genera un anillo de láser teledirigido
+58	Las bombas que suelta Isaac explotan al instante
+59	No recibes daño de tus propias explosiones
+60	Soltar bombas da un bonus de daño por sala
+61	Disparar por primera vez en una sala sin limpiar libera láseres de Soberbia
+62	También activa todos tus efectos de daño
+63	Un pequeño Pereza descansa sobre tu cabeza
+64	Más velocidad en las salas limpias
+65	Aparece un pequeño familiar gusano por cada 10 de daño infligido
+66	A los pedestales de objeto les salen patas y huyen de ti
+67	Atrapar estos pedestales genera una baratija aleatoria
+68	Los enemigos sueltan montones de carne al morir
+69	Al usarlo, todos los montones de carne disparan lágrimas a los enemigos
+70	Te da un traje de robot de cartón durante un rato
+71	Disparas un montón de láseres de corto alcance
+72	Isaac absorbe el daño mientras lleva el traje
+73	Dispara una llama morada
+74	Si la llama mata a un enemigo, al volver a usar el objeto se invoca un fantasma aliado.
+75	Las lágrimas enemigas se convierten en frutas que se pueden comer
+76	Las cerezas aumentan el daño
+77	Los limones aumentan el alcance
+78	Las naranjas aumentan la velocidad de tiro
+79	Los plátanos aumentan la velocidad
+80	Desactiva trampas y peligros
+81	Hace estallar todo lo explosivo de la sala
+82	Puede explotar si lo usas sin parar
+83	Ataque de zarpazo de corto alcance
+84	Inflige daño con mucho retroceso
+85	Genera una caja de música que toca una canción aleatoria
+86	Nana: los enemigos se adormecen
+87	Himno: Isaac gana velocidad y daño
+88	Samba: Isaac gana lágrimas y disparos perforantes
+89	Metal: los enemigos se atacan entre sí al azar
+90	Objeto poni: da vuelo mientras lo llevas
+91	Genera una hormiga león aliada enterrada que absorbe y muerde a los enemigos
+92	Pequeña probabilidad de consumir el poni y convertir a la hormiga león en un familiar permanente
+93	Lanza un ovillo de lana que invoca a una gata Catastrophe aliada.
+94	Consume enemigos y proyectiles cercanos.
+95	Lanza un proyectil que escala según cuántas cosas hayas consumido.
+96	También puedes tragártelo para curarte un corazón entero.
+97	Otorga un familiar con muchas habilidades:
+98	-Guía al jugador a las salas especiales
+99	-Lanza piedras a las rocas tintadas
+100	Aparta las bombas trampa de Isaac
+101	-Puede revivir a Isaac una vez
+102	-Atrae a los enemigos lanzándoles piedras
+103	Si Isaac recibe daño, Virgil confunde al enemigo.
+104	Se pueden lanzar dos fragmentos de espejo
+105	Los fragmentos disparan un láser entre sí
+106	Otorga un familiar grial que se llena de sangre al usar una sala de sacrificio
+107	Cada llenado aumenta el daño 0.2 de forma permanente
+108	Llega al máximo con 6 llenados y te da vuelo
+109	Otorga un familiar orbital que dispara bolas de venda
+110	Las bolas de venda se convierten en un montón de trapos que ralentizan a los enemigos
+111	El familiar puede bloquear disparos, pero se desmorona en un montón de trapos.
+112	Otorga un familiar que absorbe los disparos dirigidos a él
+113	Tras absorber 20 lágrimas, Lil Micheal suelta 20 lágrimas de daño contra un enemigo cercano
+114	Otorga un familiar que se puede lanzar en una dirección
+115	Se engancha a los enemigos y se da un festín con ellos
+116	Comer enemigos aumenta su tamaño y daño
+117	Otorga un familiar orbital cabeza de Envidia
+118	Al recibir un golpe, se divide en cabezas de Envidia más pequeñas que orbitan más lejos e infligen más daño
+119	Otorga un familiar saco que se puede lanzar a los enemigos
+120	Cuantos más recolectables tengas, más daño hace el saco
+121	Otorga un Grill o' Wisp aliado
+122	Quedarte en su aura da bonus de estadísticas
+123	Dispara una lágrima teledirigida a los enemigos
+124	Mejora los efectos de los objetos de signos del Zodiaco
+125	Si limpias una sala sin recibir daño, hay una pequeña probabilidad de duplicar las recompensas
+126	Usar un objeto activo hace caer una roca
+127	Los enemigos pueden aparecer al azar como cajas negras
+128	Tocar una caja negra te convierte en caja negra
+129	Eres invencible mientras eres una caja negra
+130	Los pedestales de objeto empiezan a alternar entre varios objetos del mismo pool.
+131	Da un efecto aleatorio del objeto Campana celestial
+132	Dante y Caronte comparten 3 objetos
+133	Los objetos se eligen al azar cuando Dante y Caronte se separan en un nuevo piso
+134	Los corazones negros se pierden de uno en uno al recibir golpes
+135	No puede tener corazones rojos
+136	{{BlackHeart}} Los aumentos de vida dan corazones negros
+137	{{ffImmoralHeart}} Genera esbirros al recibir daño en una sala sin limpiar
+138	La cantidad de esbirros depende de cuánta vida tenga
+139	{{Collectible⟨c:Pyromancy⟩}} Genera bolas de fuego al infligir 50 de daño a los enemigos
+140	{{ffHalfImmoralHeart}} 50% de probabilidad de que los enemigos muertos por bolas de fuego suelten medios corazones inmorales
+141	{{BlackHeart}} Solo puede tener corazones negros
+142	Solo puede tener 6 contenedores de corazón
+143	{{Collectible⟨c:Malice⟩}} Usar Malicia divide a Fiend contaminado en muchas copias más pequeñas de sí mismo
+144	La cantidad de copias depende de cuánta vida tenga
+145	Las copias pequeñas hacen menos daño, tienen menos invencibilidad y mueren de un solo golpe
+146	Si mueren todas las copias, muere Fiend contaminado
+147	{{Collectible139}} Puede llevar dos baratijas a la vez
+148	{{ffRock}} Todas las baratijas se sustituyen por Rocas únicas
+149	{{ffCrush}} Puede acceder al Metro de Golem, con comerciantes del metro y viajes rápidos
+150	Al limpiar la sala del jefe o encontrar la sala secreta aparecen siempre baratijas de roca
+151	{{SoulHeart}} Los aumentos de vida dan corazones de alma
+152	{{ffRock}} Las rocas sustituyen a los objetos de las {{TreasureRoom}} salas del tesoro y de las {{BossRoom}} salas del jefe
+153	Recibir daño puede hacer que Golem suelte o rompa las rocas y objetos que lleva
+154	{{Heart}} Los corazones son munición: indican cuántas veces puedes disparar
+155	{{SoulHeart}} Cada tipo de corazón hace que Friend dispare balas distintas con efectos especiales
+156	{{Heart}} Friend tiene dos pistolas, ligadas a su vida, con las que puede disparar
+157	Las dos pistolas tienen inventarios distintos
+158	Cerca de un objeto, Friend levanta la pistola que lo recoge
+159	En las salas aparecen enemigos pistoleros que disparan a Friend

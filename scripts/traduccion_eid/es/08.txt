@@ -1,0 +1,160 @@
+0	{{Charm}} Genera un Portal aliado al triturarla el Mendigo de bismuto
+1	{{Rune}} Las runas son más comunes
+2	Usar runas o piedras del alma suelta un fragmento de runa
+3	Suelta 4 fragmentos de runa al triturarla el Mendigo de bismuto
+4	Isaac suelta un pedo aleatorio al recibir daño
+5	{{Charm}} Genera un bicho Litter encantado al triturarla el Mendigo de bismuto
+6	50% de probabilidad de que la recompensa de la sala sea un recolectable del que Isaac no tenga ninguno
+7	Da 3 del recolectable que menos tengas al triturarla el Mendigo de bismuto
+8	Cada piso tiene un punto marcado que se puede volar para generar un fósil
+9	Los montículos de tierra se pueden abrir con bombas
+10	Da un fósil aleatorio al triturarla el Mendigo de bismuto
+11	{{Collectible398}} 13% de probabilidad de disparar lágrimas que encogen a los enemigos
+12	{{Luck}} 100% de probabilidad con 44 de suerte
+13	Encoge a Isaac al triturarla el Mendigo de bismuto
+14	{{Collectible445}} Un lobo aúlla en las salas adyacentes a una sala secreta o supersecreta
+15	Al triturarla el Mendigo de bismuto, se revela la próxima roca tintada que encuentre Isaac
+16	{{Bomb}} Las bombas crean un anillo de ondas de roca
+17	{{Bomb}} Genera 3 bombas al triturarla el Mendigo de bismuto
+18	↓ Pequeña bajada de estadísticas por cada sala limpiada
+19	↑ Aumenta todas las estadísticas al triturarla el Mendigo de bismuto
+20	↑ Las mejoras son proporcionales a las salas limpiadas, hasta 30 salas
+21	{{Bomb}} 13% de probabilidad de soltar una bomba extra al limpiar la sala
+22	20% de probabilidad de que las rocas se sustituyan por rocas bomba
+23	{{Collectible483}} Al triturarla el Mendigo de bismuto, las 3 próximas salas sin limpiar sufren una explosión de Mama Mega
+24	↑ Duplica el tamaño de las lágrimas
+25	Activa 3 efectos de fósil aleatorios al triturarla el Mendigo de bismuto
+26	Genera de 2 a 3 skuzzes morados cada vez que entras en una sala activa
+27	{{Slow}} Este skuzz inflige 3x el daño de Isaac y ralentiza a los enemigos
+28	Genera de 5 a 7 skuzzes azules al triturarla el Mendigo de bismuto
+29	Da una baratija de roca aleatoria al empezar la siguiente partida al triturarla el Mendigo de bismuto
+30	10% de probabilidad de disparar lágrimas que petrifican
+31	{{Luck}} 100% de probabilidad con 45 de suerte
+32	Da un bebé familiar aleatorio al triturarla el Mendigo de bismuto
+33	↑ Mejora un 15% la eficacia de las baratijas de roca fundidas
+34	Da y funde una roca común aleatoria al triturarla el Mendigo de bismuto
+35	{{Coin}} Los objetos de la tienda cuestan un céntimo menos
+36	{{Coin}} Genera 3 monedas al triturarla el Mendigo de bismuto
+37	25% de probabilidad de disparar 4 lágrimas en forma de X
+38	{{Luck}} 100% de probabilidad con 75 de suerte
+39	{{Heart}} Cura 1 corazón rojo al cogerla
+40	{{Charm}} Genera 3 cargadores ahogados aliados y cura un corazón al triturarla el Mendigo de bismuto
+41	20% de generar un hueso orbital al matar a un enemigo
+42	{{Luck}} 40% de probabilidad con 20 de suerte
+43	Da un fósil ya triturado en esta partida al triturarla el Mendigo de bismuto
+44	Las lágrimas son teledirigidas durante un momento al dispararlas
+45	{{Card}} Genera una carta del Mago al triturarla el Mendigo de bismuto
+46	{{Trinket⟨t:Pocket Sand⟩}} Triturar otros fósiles en el Mendigo de bismuto genera Arena de bolsillo
+47	Con este fósil, la Arena de bolsillo se puede moler gratis en la Máquina minera
+48	Genera 2 Arenas de bolsillo al triturarla el Mendigo de bismuto
+49	{{RedChest}} Convierte todos los cofres en cofres rojos
+50	{{RedChest}} Genera un cofre rojo al triturarla el Mendigo de bismuto
+51	{{Beggar}} Los mendigos dan sus recompensas dos veces
+52	{{Card}} Genera una carta del Juicio al triturarla el Mendigo de bismuto
+53	↑ +1.35 Daño
+54	Garantiza una sala del diablo/ángel y genera un corazón negro al triturarla el Mendigo de bismuto
+55	{{EmptyBoneHeart}} Los corazones de hueso aguantan un golpe más antes de romperse
+56	Ese golpe se recupera cada vez que se llena el corazón de hueso
+57	{{Charm}} Genera un Bony gigante aliado al triturarla el Mendigo de bismuto
+58	{{GoldenChest}} Sustituye todos los cofres por cofres dorados
+59	{{GoldenChest}} Genera un cofre dorado al triturarla el Mendigo de bismuto
+60	{{Coin}} 15% de probabilidad de mejorar las monedas a níqueles
+61	7% de probabilidad de mejorarlas a monedas de diez
+62	Genera un cofre tienda al triturarla el Mendigo de bismuto
+63	{{ffGeode}} {{ColorTransform}}Baratija de roca (Geoda)
+64	↑ +0.5 Daño extra si llevas otra Geoda
+65	20% de probabilidad de disparar una lágrima espectral y perforante
+66	{{Luck}} 100% de probabilidad con 40 de suerte
+67	↑ Más probabilidad si llevas otra Geoda
+68	{{Heart}} Cuando Isaac baja a 1 corazón rojo o menos, cura corazones rojos y se rompe
+69	{{SoulHeart}} +1 corazón de alma al romperse la roca si llevas otra Geoda
+70	Reduce el tamaño de Isaac
+71	↑ Encoge más si llevas otra Geoda
+72	↑ Sube la velocidad a 1.75 en las salas limpias
+73	↑ +0.10 Velocidad extra si llevas otra Geoda
+74	{{Slow}} 20% de probabilidad de disparar lágrimas que ralentizan
+75	↑ Si llevas otra Geoda, los enemigos alcanzados por lágrimas ralentizadoras dejan un charco blanco ralentizador
+76	↑ +2 Suerte extra si llevas otra Geoda
+77	10% de probabilidad de disparar una lágrima de moco pegajosa
+78	{{Luck}} 100% de probabilidad con 90 de suerte
+79	{{Slow}} Si llevas otra Geoda, las lágrimas de moco ralentizan a los enemigos
+80	Las lágrimas se disparan ahora en arco
+81	↑ +0.5 Alcance extra si llevas otra Geoda
+82	4% de probabilidad de disparar lágrimas críticas moradas que infligen x5 de daño
+83	{{Luck}} 33% de probabilidad con 11 de suerte
+84	Si se funde, las Geodas ya no necesitan ocupar ambas ranuras de baratija
+85	Cerca de una chimenea:
+86	↑ +4 Daño
+87	Los suelos cálidos dan:
+88	↑ +2 Daño
+89	↑ Si llevas otra Geoda, +5 de daño extra y lágrimas de fuego junto a una chimenea
+90	Las rocas destruidas tienen un 40% de probabilidad de romper las rocas adyacentes
+91	↑ La probabilidad sube al 70% si llevas otra Geoda
+92	↑ Si llevas otra Geoda, los pozos junto a otras rocas también tienen un 20% de probabilidad de rellenarse
+93	↑ +8 Daño
+94	El daño se desvanece en 2 minutos y 13 segundos
+95	↑ Si llevas otra Geoda, el daño baja más despacio
+96	{{Fear}} 10% de probabilidad de disparar lágrimas que asustan
+97	{{Luck}} 100% de probabilidad con 26 de suerte
+98	{{DevilRoom}} Si llevas otra Geoda, los enemigos asustados reciben daño extra según la probabilidad de trato con el diablo
+99	Isaac dispara 3 lágrimas a la vez
+100	Cuando una lágrima golpea a un enemigo, las otras 2 desaparecen
+101	↑ Si llevas otra Geoda, dos lágrimas pueden impactar en un enemigo
+102	Al disparar lanza un láser de corto alcance que inflige un 30% de daño
+103	↑ Dispara 2 rayos si llevas otra Geoda
+104	15% de probabilidad de disparar una lágrima pelota de tenis que rebota y magulla
+105	{{Luck}} 50% de probabilidad con 18 de suerte
+106	↑ Más probabilidad y retroceso si llevas otra Geoda
+107	5% de probabilidad de disparar un gusano perforante que embiste hacia delante
+108	{{Bait}} El gusano marca a los enemigos
+109	Los demás enemigos atacan a los enemigos marcados
+110	↑ Más probabilidad de dispararlo si llevas otra Geoda
+111	{{ffCrush}} 20% de probabilidad de no destruir una geoda al triturarla el Mendigo de bismuto
+112	Los movimientos de Isaac se vuelven erráticos
+113	↑ Si llevas otra Geoda, +1.5 de daño extra y movimientos más intensos
+114	↑ +0.24 Velocidad de tiro
+115	Pasa a la cara B en el primer piso de cada capítulo
+116	↑ +0.07 de velocidad y +0.2 de lágrimas extra si llevas otra Geoda
+117	↑ +0.66 Lágrimas
+118	Pasa a la cara A en el segundo piso de cada capítulo
+119	↑ +0.3 de daño y +0.08 de velocidad de tiro extra si llevas otra Geoda
+120	12% de probabilidad de que los enemigos suelten Fragmentos de prisma al morir
+121	↑ Los Fragmentos de prisma mejoran una estadística aleatoria durante 10 segundos
+122	25% de probabilidad de que aparezca un Fragmento de prisma al limpiar la sala
+123	↑ Si llevas otra geoda, las mejoras se duplican y duran más
+124	15% de probabilidad de disparar un tiro en espiral que adormece
+125	↑ Si llevas otra Geoda, más probabilidad y un 33% de que los enemigos se duerman al instante
+126	{{Pill}} Tomar una píldora obliga a Isaac a tomar otra
+127	↑ Si llevas otra Geoda, Isaac toma además una píldora positiva
+128	{{Coin}} Recibir daño genera 1 moneda
+129	↑ Si llevas otra Geoda, 33% de probabilidad de generar una moneda doble
+130	↑ +1.5 Daño si hay una maldición en el piso
+131	↑ +0.35 Daño durante el piso al entrar por primera vez en una sala de maldición
+132	{{Damage}} Si llevas otra Geoda, el bonus de daño aumenta 1.5x
+133	{{HalfHeart}} Tener medio corazón rojo o menos otorga {{Collectible100}} Pequeño Steven
+134	{{Collectible318}} Recibir daño tiene un 30% de probabilidad de generar un familiar Géminis durante la sala
+135	↑ Si llevas otra Geoda, mejora la probabilidad base de que aparezca Géminis
+136	↑ Si llevas otra Geoda, Pequeño Steven puede aparecer con un corazón o menos
+137	{{Battery}} Los objetos activos necesitan 1 carga menos
+138	↑ Si llevas otra Geoda, necesitan 2 cargas menos
+139	25% de probabilidad de un efecto de seta aleatorio por sala
+140	↑ Si llevas otra Geoda, más probabilidad de obtener un efecto de seta
+141	↑ Si llevas otra Geoda, puedes obtener un efecto de seta adicional
+142	{{Battery}} 25% de probabilidad de generar una batería aleatoria al usar un objeto activo
+143	{{DevilRoom}} Permite a Isaac coger un trato con el diablo gratis
+144	!!! Se destruye al coger uno
+145	↑ Si llevas otra geoda, se consume esa en su lugar
+146	Coger rocas raras o infernales las tritura y las convierte en una roca común
+147	{{HalfSoulHeart}} Triturar rocas genera medio corazón de alma
+148	{{ffGeodeFossil}} {{ColorTransform}}Baratija de roca (Geoda x Fósil)
+149	↑ +1.5 Alcance
+150	↑ +0.75 Alcance extra si llevas otra Geoda
+151	{{ffCrush}} Da una baratija Geoda común o rara al triturarla
+152	{{ffCrush}} Si llevas otra Geoda, da otra baratija Geoda común o rara al triturarla
+153	Aparecen a menudo bolas de fuego orbitales alrededor de Isaac, hasta tres
+154	Pulsa dos veces disparar para lanzar una bola de fuego que deja un rastro de llamas y explota al impactar
+155	Invoca a un ayudante de Fiend Folio que te ayuda en la sala
+156	Lanza al suelo una moneda morada giratoria durante un rato
+157	Los recolectables, enemigos y lágrimas que la tocan cambian
+158	Genera un cofre tienda
+159	Los cofres tienda necesitan una llave y, al abrirse, se convierten en una tienda portátil
