@@ -1,6 +1,6 @@
 # Mods instalados: qué hace cada uno y qué conviene
 
-_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v2.1_
+_Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17.J460 · REPENTOGON 1.1.3 · v2.2_
 
 ## ⭐ Esencial (4)
 
@@ -16,7 +16,7 @@ _Generado desde `datos/mods.json` · The Binding of Isaac: Repentance+ v1.9.7.17
 | Mod | Qué hace | Nota |
 |---|---|---|
 | ["?" Marked Tinted Rocks](https://steamcommunity.com/sharedfiles/filedetails/?id=855188478) | Rocas con «?»: las rocas tintadas se ven mucho más fácil para no pasarlas por alto. |  |
-| [Angels Drop Items](https://steamcommunity.com/sharedfiles/filedetails/?id=840107435) | Angels Drop Items: si ya tienes las dos mitades de llave, Uriel y Gabriel sueltan objetos al morir. |  |
+| [Angels Drop Items](https://steamcommunity.com/sharedfiles/filedetails/?id=840107435) | Angels Drop Items: si ya tienes las dos mitades de llave, Uriel y Gabriel sueltan objetos al morir. | Sustituido por la copia local «Angels Drop Items (corregido)» (mods/angels_drop_items_corregido, creada con `parches`): el original falla en main.lua:325 en las salas que añadió Repentance. La copia además traduce su menú al español. |
 | [No Costumes](https://steamcommunity.com/sharedfiles/filedetails/?id=3728484997) | No Costumes: evita que los objetos cambien el aspecto de tu personaje (no necesita REPENTOGON). ⚙ mejor con REPENTOGON |  |
 | [No Jam](https://steamcommunity.com/sharedfiles/filedetails/?id=2369306194) | No Jam: las máquinas de donación ya no se atascan. |  |
 | [Watch out, laser!](https://steamcommunity.com/sharedfiles/filedetails/?id=2887926286) | Watch out, laser!: efecto visual en los ataques de Brimstone para verlos mejor. |  |
