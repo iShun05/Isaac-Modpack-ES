@@ -1206,13 +1206,14 @@
    "categoria": "Contenido",
    "veredicto": "recomendado",
    "descripcion": "Isaac Reshaken (Vol. 1.5): más de 40 objetos, baratijas, consumibles y enemigos de alta calidad.",
-   "nota": "Actualizado en jul 2026.",
+   "nota": "Actualizado en jul 2026. Apagado por defecto: expansión grande que choca con las demás (Epiphany, además, debe ir sola). Se activa a mano desde Packs ES → Mods.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3134600246",
    "pack": "contenido",
    "rgon": "no",
    "gran": true,
    "suscriptores": 73731,
-   "actualizado": "2026-07-29"
+   "actualizado": "2026-07-29",
+   "apagado": true
   },
   {
    "id": "2376005362",
@@ -1428,13 +1429,14 @@
    "categoria": "Contenido",
    "veredicto": "opcional",
    "descripcion": "Isaac Reflourished!: renueva mecánicas pequeñas (rejillas, menús, controles) más que objetos.",
-   "nota": "Requiere REPENTOGON. Cambia el comportamiento base: pruébalo solo.",
+   "nota": "Requiere REPENTOGON. Cambia el comportamiento base: pruébalo solo. Apagado por defecto: expansión grande que choca con las demás (Epiphany, además, debe ir sola). Se activa a mano desde Packs ES → Mods.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3655824749",
    "pack": "contenido",
    "rgon": "requiere",
    "gran": true,
    "suscriptores": 59638,
-   "actualizado": "2026-08-10"
+   "actualizado": "2026-08-10",
+   "apagado": true
   },
   {
    "id": "2880387531",
@@ -1445,13 +1447,14 @@
    "categoria": "Contenido",
    "veredicto": "opcional",
    "descripcion": "Revelations Ch. 2: capítulo nuevo con pisos, jefes y objetos propios.",
-   "nota": "Necesita Custom Stage API (ya la tienes); REPENTOGON muy recomendado. Última actualización jun 2024.",
+   "nota": "Necesita Custom Stage API (ya la tienes); REPENTOGON muy recomendado. Última actualización jun 2024. Apagado por defecto: expansión grande que choca con las demás (Epiphany, además, debe ir sola). Se activa a mano desde Packs ES → Mods.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2880387531",
    "pack": "contenido",
    "rgon": "recomendado",
    "gran": true,
    "suscriptores": 133451,
-   "actualizado": "2024-06-23"
+   "actualizado": "2024-06-23",
+   "apagado": true
   },
   {
    "id": "3012430463",
@@ -1462,13 +1465,14 @@
    "categoria": "Contenido",
    "veredicto": "opcional",
    "descripcion": "The Binding of Isaac: Epiphany: reescribe el juego con variantes de todos los personajes y mucho contenido nuevo.",
-   "nota": "Es una conversión casi total: úsalo solo, sin otro mod de contenido.",
+   "nota": "Es una conversión casi total: úsalo solo, sin otro mod de contenido. Apagado por defecto: expansión grande que choca con las demás (Epiphany, además, debe ir sola). Se activa a mano desde Packs ES → Mods.",
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3012430463",
    "pack": "contenido",
    "rgon": "no",
    "gran": true,
    "suscriptores": 261300,
-   "actualizado": "2026-03-24"
+   "actualizado": "2026-03-24",
+   "apagado": true
   },
   {
    "id": "3599664675",

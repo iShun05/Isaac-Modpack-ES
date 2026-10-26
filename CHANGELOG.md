@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## v2.4 — 2026-10-26
+### Corregido
+- **Completo encendía las 7 expansiones grandes a la vez**, incluida Epiphany, que debe ir sola. El propio diagnóstico avisaba de «choques casi seguros». Ahora Epiphany, Isaac Reflourished, Revelations Ch. 2 y Reshaken entran apagadas aunque marques el pack de expansiones, y se activan una a una desde **Packs ES → Mods** o la lista del instalador. Siguen activas Repentance Plus!, Fiend Folio: RELOADED y Lazy MattPack. Igual en Mac y en Windows.
+### Archivos y pruebas
+- `datos/mods.json` (4 expansiones con `apagado`), `README.md`, `windows/instalar_windows.ps1`, `VERSION`.
+- Completo pasa de 89 a 85 mods del catálogo (`_decidir`, Mac). Windows lee el mismo campo `apagado` en `Debe-Estar-Activo` (sin cambios de código desde v2.3, donde se comprobó que Mac y Windows dan el mismo resultado).
+
 ## v2.3 — 2026-10-26
 ### Cambiado
 - **Por defecto, la experiencia del juego base:** el perfil **Completo** ya no activa los caprichos ni los trucos. Antes los activaba todos, y en Windows encendía Just Gambling (todo pasaba a ser un gacha). Ahora Completo = base, calidad de vida, interfaz, rendimiento, sinergias, expansiones, personajes y visual. Igual en Mac (`isaac_pack.py`) y en Windows (`lib.ps1`).
